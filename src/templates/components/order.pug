@@ -1,0 +1,35 @@
+section.order.block
+    .container
+        .order-card
+            h2.order__title Комплекс "Схуднення / Вага стоїть"
+
+            .order__offer
+                span.tag 4 по ціні 3
+                span.discount -50% по промокоду
+
+            .order__products
+                img(src="product.jpg" alt="product")
+
+
+            p.order__economy Економія 500€
+
+            .order__price
+                .current 1999 euro
+                .old Стара ціна: 4000 euro
+
+            form.order__form
+                .form-group
+                    label Введіть Ваше ім'я
+                    .input-wrapper
+                        input(type="text" name="name" placeholder="Ваше ім'я" required)
+                        span.icon 👤
+
+                .form-group
+                    label Введіть номер телефону або WhatsApp
+                    .input-wrapper
+                        input(type="tel" name="phone" placeholder="Ваш номер" required)
+                        span.icon 📞
+
+                button.order__submit(type="submit") Підтвердити замовлення →
+
+            p.order__privacy ✔ Ваші персональні дані захищені
