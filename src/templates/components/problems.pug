@@ -1,0 +1,63 @@
+-
+    const categories = [
+        { icon: '🩸', name: 'Тиск / судини' },
+        { icon: '🦴', name: 'Суглоби' },
+        { icon: '🍬', name: 'Діабет' },
+        { icon: '👂', name: 'Слух' },
+        { icon: '👨', name: 'Чоловіче здоров\'я' },
+        { icon: '👁️', name: 'Зір' },
+        { icon: '❤️', name: 'Оздоровлення' },
+        { icon: '👩', name: 'Жіноче здоров\'я' }
+    ]
+
+-
+    const problemsList = categories.map(cat => ({ icon: cat.icon, text: cat.name, value: cat.name }))
+
+-
+    const detailedProblems = [
+        { value: '1', text: 'Важко схуднути, вага стоїть' },
+        { value: '2', text: 'Болять коліна / спина, важко рухатись' },
+        { value: '3', text: 'Тягне на солодке, важко контролювати апетит' },
+        { value: '4', text: 'Підвищений цукор / складно слідкувати за рівнем' },
+        { value: '5', text: 'Стрибає тиск, болить голова' },
+        { value: '6', text: 'Здуття, важкість після їжі, проблеми з травленням' },
+        { value: '7', text: 'Набрякають ноги, важкість, судинні зірочки' },
+        { value: '8', text: 'Постійна втома, хочу виглядати молодше' },
+        { value: '9', text: 'Погіршився зір або слух' },
+        { value: '10', text: 'Немає сил, не так як раніше (для чоловіків)' },
+        { value: '11', text: 'Часті нічні походи в туалет / дискомфорт (для чоловіків)' },
+        { value: '12', text: 'Різкі зміни ваги, самопочуття після 45+ (для жінок)' }
+    ]
+
+section.problems.block
+    .container
+        h2.problems__title З якою проблемою ви хочете працювати зараз?
+
+        .problems-mobile
+            each cat in categories
+                .accordion-item
+                    label.accordion-header
+                        input(type="radio" name="problem" value=cat.name required)
+                        .icon= cat.icon
+                        span= cat.name
+                    .accordion-content
+                        ol
+                            each problem, idx in detailedProblems
+                                li
+                                    span= `${idx + 1} "${problem.text}"`
+        .problems-desktop
+            .categories
+                each cat in categories
+                    button.category-btn
+                        span.icon= cat.icon
+                        span= cat.name
+
+            .problems-list
+                ol.problems-list__numbered
+                    each problem, index in detailedProblems
+                        li
+                            label
+                                input(type="radio" name="problem" value=problem.value)
+                                span= `${index + 1} "${problem.text}"`
+
+        button.problems__next(type="button") Далі →

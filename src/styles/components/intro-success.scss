@@ -1,0 +1,69 @@
+.intro-success {
+  padding: 60px 0;
+  background: #8B0000;
+  color: #fff;
+  text-align: center;
+}
+
+.success-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #d4a017, #ffd700);
+  color: #000;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.intro-success__title {
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+
+.intro-success__text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+}
+
+.intro-success__form .form-group {
+  margin-bottom: 24px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 16px 20px 16px 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #666;
+}
+
+.intro-success__submit {
+  width: 100%;
+  padding: 18px;
+  background: #e63900;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.intro-success__submit:hover {
+  background: #c53000;
+}

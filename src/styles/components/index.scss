@@ -1,19 +1,8 @@
-.foo {
-   width: 240px;
- }
-  
- @media screen and (min-width: 768px) {
-   .foo {
-     width: 576px;
-   }
- }
-  
- .bar {
-   width: 160px;
- }
-  
- @media screen and (min-width: 768px) {
-   .bar {
-     width: 384px;
-   }
- }
+@import "intro";
+@import "intro-popup";
+@import "intro-success";
+@import "problems";
+@import "presentations";
+@import "course";
+@import "order";
+@import "thank-you";

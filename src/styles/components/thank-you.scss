@@ -1,0 +1,54 @@
+.thank-you {
+  padding: 80px 0;
+  background: #8B0000;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.thank-you-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #d4a017, #ffd700);
+  color: #000;
+  padding: 60px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.thank-you__title {
+  margin: 0 0 24px;
+  font-size: 42px;
+}
+
+.thank-you__text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Додаткові зірочки (CSS) */
+.thank-you-card::before,
+.thank-you-card::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.thank-you-card::before {
+  top: -40px;
+  left: -40px;
+}
+
+.thank-you-card::after {
+  bottom: -40px;
+  right: -40px;
+}
