@@ -1,8 +1,9 @@
 body {
   font-family: $main-font;
   font-size: 14px;
-  background: #8b0000;
+  color: white;
 }
+
 html{
   overflow-x: hidden;
 }
@@ -20,11 +21,51 @@ button {
   padding: 0;
 }
 
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom left, #8E191B 0%, #000000 100%);
+  overflow-x: hidden;
+
+  @include rm(1024){
+    background: #8E191B url('../img/bg.png') center/cover no-repeat fixed;
+  }
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  position: absolute;
+  //inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wrapper::before {
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: url("../img/bg-right.svg");
+  //background: yellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.wrapper::after {
+  right: 0;
+  background: url("../img/bg-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @include rm(480) {
     width: 480px;
@@ -93,4 +134,29 @@ button {
 br {
   line-height: 1;
   font-size: 0;
+}
+
+.btn {
+  background: linear-gradient(180deg, #FF774D 0%, #DA0000 100%);
+  transition: .1s;
+
+  &:hover {
+    transition: .1s;
+    transform: scale(1.03);
+  }
+}
+
+.text-gold-fill {
+  background: linear-gradient(45deg, #FFD700, #DAA520, #B8860B, #FFD700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 300%;
+  animation: gold-shine 6s linear infinite;
+}
+
+@keyframes gold-shine {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
