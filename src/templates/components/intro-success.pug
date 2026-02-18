@@ -1,4 +1,4 @@
-section.intro-success.block
+section.intro-success.block(class="screen hidden" id="screen-intro-success")
     .container
         .success-card
             h1.intro-success__title Вітаємо!
@@ -12,7 +12,7 @@ section.intro-success.block
                 .form-group
                     label Введіть промокод з карти
                     .input-wrapper
-                        input(type="text" name="promocode" placeholder="Промокод" required)
+                        input(type="text" name="promo-code" placeholder="Промокод" required)
                         span.icon 🔑
 
-                button.intro-success__submit(type="submit") Почати →
+                button.intro-success__submit(type="submit" disabled data-target-screen="screen-problems") Почати →

@@ -140,7 +140,7 @@
 
 <body class="timer-different ev-date">
   <div class="wrapper">
-    <section class="intro block">
+    <section class="intro block screen" id="screen-intro">
       <div class="container">
         <h1 class="intro__title text-gold-fill">Активуйте ваші бонусні бали</h1>
         <div class="intro__text">
@@ -153,10 +153,10 @@
           <div class="intro__step"><img src="img/icon-click.svg" alt=""><span class="text-bold"> Активуй бонуси</span></div>
           <div class="intro__step"><img src="img/icon-gift.svg" alt=""><span class="text-bold"> Обери продукт і отримай вигоду</span></div>
         </div>
-        <div class="intro__actions"><button class="intro__btn intro__btn--call">Замовити дзвінок оператора</button><button class="intro__btn intro__btn--site">Оформити самостійно на сайті</button></div>
+        <div class="intro__actions"><button class="intro__btn intro__btn--call" data-target-screen="screen-intro-popup">Замовити дзвінок оператора</button><button class="intro__btn intro__btn--site" data-target-screen="screen-intro-success">Оформити самостійно на сайті</button></div>
       </div>
     </section>
-    <section class="intro-popup block">
+    <section class="intro-popup block screen hidden" id="screen-intro-popup">
       <div class="container">
         <h1 class="intro-popup__title">Замовити дзвінок</h1>
         <p class="intro-popup__subtitle">Оператор допоможе активувати бонуси та оформити замовлення.</p>
@@ -174,20 +174,20 @@
         </form>
       </div>
     </section>
-    <section class="intro-success block">
+    <section class="intro-success block screen hidden" id="screen-intro-success">
       <div class="container">
         <div class="success-card">
           <h1 class="intro-success__title">Вітаємо!</h1>
           <p class="intro-success__text">Я допоможу вам використати бонусні бали та підібрати продукти під вашу проблему.<br>Оформлення займе 2-3 хвилини, без дзвінка оператора.</p>
           <form class="intro-success__form">
             <div class="form-group"><label>Введіть промокод з карти</label>
-              <div class="input-wrapper"><input type="text" name="promocode" placeholder="Промокод" required><span class="icon">🔑</span></div>
-            </div><button class="intro-success__submit" type="submit">Почати →</button>
+              <div class="input-wrapper"><input type="text" name="promo-code" placeholder="Промокод" required><span class="icon">🔑</span></div>
+            </div><button class="intro-success__submit" type="submit" disabled data-target-screen="screen-problems">Почати →</button>
           </form>
         </div>
       </div>
     </section>
-    <section class="problems block">
+    <section class="problems block screen hidden" id="screen-problems">
       <div class="container">
         <h2 class="problems__title">З якою проблемою ви хочете працювати зараз?</h2>
         <div class="problems-wrapper">
@@ -354,7 +354,7 @@
         </div><button class="problems__next" type="button">Далі →</button>
       </div>
     </section>
-    <section class="presentations block">
+    <section class="presentations block screen hidden" id="screen-presentations">
       <div class="container">
         <div class="presentation-modal">
           <h2 class="presentation__title">"Важко схуднути, вага стоїть"</h2>
@@ -381,7 +381,7 @@
         </div>
       </div>
     </section>
-    <section class="course block">
+    <section class="course block screen hidden" id="screen-course">
       <div class="container">
         <div class="course-modal">
           <h2 class="course__title">Вибір курсу</h2>
@@ -412,7 +412,7 @@
         </div>
       </div>
     </section>
-    <section class="order block">
+    <section class="order block screen hidden" id="screen-order">
       <div class="container">
         <div class="order-card">
           <h2 class="order__title">Комплекс "Схуднення / Вага стоїть"</h2>
@@ -435,17 +435,7 @@
         </div>
       </div>
     </section>
-    <section class="thank-you block">
-      <div class="container">
-        <div class="thank-you-card">
-          <h1 class="thank-you__title">Дякуємо!</h1>
-          <p class="thank-you__text">Ваше замовлення прийнято та передано в доставку.<br>Оператор служби доставки зв'яжеться з вами найближчим часом.</p>
-          <div class="thank-you__sparkles">
-            <!-- можна додати SVG або просто CSS-зірочки-->
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--include components/thank-you-->
   </div>
   <script src="js/main.js"></script>
 </body>

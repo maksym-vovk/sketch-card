@@ -1,4 +1,4 @@
-section.intro.block
+section.intro.block(class="screen" id="screen-intro")
     .container
         h1.intro__title.text-gold-fill Активуйте ваші бонусні бали
 
@@ -23,5 +23,5 @@ section.intro.block
                 span.text-bold  Обери продукт і отримай вигоду
 
         .intro__actions
-            button.intro__btn.intro__btn--call Замовити дзвінок оператора
-            button.intro__btn.intro__btn--site Оформити самостійно на сайті
+            button.intro__btn.intro__btn--call(data-target-screen="screen-intro-popup") Замовити дзвінок оператора
+            button.intro__btn.intro__btn--site(data-target-screen="screen-intro-success") Оформити самостійно на сайті
