@@ -29,11 +29,11 @@
         { value: '12', text: 'Різкі зміни ваги, самопочуття після 45+ (для жінок)' }
     ]
 
-section.problems.block
+section.problems.block(class="screen hidden" id="screen-problems")
     .container
         h2.problems__title З якою проблемою ви хочете працювати зараз?
 
-        .problems-mobile
+        .problems-wrapper
             each cat in categories
                 .accordion-item
                     label.accordion-header
@@ -45,19 +45,4 @@ section.problems.block
                             each problem, idx in detailedProblems
                                 li
                                     span= `${idx + 1} "${problem.text}"`
-        .problems-desktop
-            .categories
-                each cat in categories
-                    button.category-btn
-                        span.icon= cat.icon
-                        span= cat.name
-
-            .problems-list
-                ol.problems-list__numbered
-                    each problem, index in detailedProblems
-                        li
-                            label
-                                input(type="radio" name="problem" value=problem.value)
-                                span= `${index + 1} "${problem.text}"`
-
         button.problems__next(type="button") Далі →

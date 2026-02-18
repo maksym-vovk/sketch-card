@@ -372,8 +372,121 @@
       }
     });
 
+    const SELECTORS = {
+      SCREEN: '.screen',
+      VISIBLE_SCREEN: '.screen:not(.hidden)',
+      NAVIGATION_BUTTON: '[data-target-screen]'
+    };
+    const CSS_CLASSES = {
+      HIDDEN: 'hidden',
+      SCREEN_EXIT: 'screen-exit',
+      SCREEN_ENTER: 'screen-enter'
+    };
+    const TRANSITION_DURATION = 300; // Match CSS transition duration
+
+    const ScreenManager = {
+      goToScreen(screenId) {
+        const screens = document.querySelectorAll(SELECTORS.SCREEN);
+        const targetScreen = document.getElementById(screenId);
+
+        if (!targetScreen) {
+          console.error(`Screen with ID "${screenId}" not found.`);
+          return;
+        }
+
+        const currentScreen = document.querySelector(SELECTORS.VISIBLE_SCREEN);
+
+        if (currentScreen) {
+          currentScreen.classList.add(CSS_CLASSES.SCREEN_EXIT);
+          setTimeout(() => {
+            screens.forEach(screen => {
+              screen.classList.add(CSS_CLASSES.HIDDEN);
+              screen.classList.remove(CSS_CLASSES.SCREEN_EXIT, CSS_CLASSES.SCREEN_ENTER);
+            });
+            targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
+            targetScreen.classList.add(CSS_CLASSES.SCREEN_ENTER);
+          }, TRANSITION_DURATION);
+        } else {
+          targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
+        }
+      },
+
+      bindButtons() {
+        const buttons = document.querySelectorAll(SELECTORS.NAVIGATION_BUTTON);
+
+        if (buttons.length === 0) {
+          console.warn('No navigation buttons found');
+          return;
+        }
+
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            const targetScreen = button.dataset.targetScreen;
+            this.goToScreen(targetScreen);
+          });
+        });
+      },
+
+      init() {
+        this.bindButtons();
+      }
+
+    };
+
+    const SUBSCRIBE_PAGE = 'subscribe.html';
+    const CALL_FORM_SELECTOR = '.intro-popup__form';
+    const PROMO_CODE_FORM_SELECTOR = '.intro-success__form';
+    const PROMO_CODE_INPUT_SELECTOR = '[name="promo-code"]';
+    const PROMO_CODE_BUTTON_SELECTOR = '.intro-success__submit';
+    const CallRequestForm = {
+      init() {
+        const callRequestForm = document.querySelector(CALL_FORM_SELECTOR);
+
+        if (!callRequestForm) {
+          console.warn('Call request form not found');
+          return;
+        }
+
+        callRequestForm.addEventListener('submit', e => {
+          e.preventDefault();
+          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+        });
+      }
+
+    };
+    const PromoCodeForm = {
+      init() {
+        const promoCodeForm = document.querySelector(PROMO_CODE_FORM_SELECTOR);
+        const promoCodeInput = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_INPUT_SELECTOR) : null;
+        const promoCodeButton = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_BUTTON_SELECTOR) : null;
+
+        if (!promoCodeForm) {
+          console.warn('Promocode form not found');
+          return;
+        }
+
+        promoCodeForm.addEventListener('submit', e => {
+          e.preventDefault();
+        });
+        console.log(promoCodeInput);
+        promoCodeInput.addEventListener('input', e => {
+          promoCodeButton.disabled = e.target.value === '';
+        });
+      }
+
+    };
+    const Forms = {
+      init() {
+        CallRequestForm.init();
+        PromoCodeForm.init();
+      }
+
+    };
+
     function main() {
       scrollSmooth();
+      ScreenManager.init();
+      Forms.init();
     }
 
     if (document.documentElement.clientWidth < 480) {

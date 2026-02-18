@@ -1,19 +1,10 @@
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .intro {
-  padding: 50px 0;
-  background: #8B0000;
-  color: #fff;
+  //color: #fff;
   text-align: center;
 }
 
 .intro__title {
+  font-weight: bold;
   margin: 0 0 24px;
   font-size: 32px;
   line-height: 1.2;
@@ -26,33 +17,35 @@
 }
 
 .intro__card {
-  margin: 0 auto 48px;
+  margin: 0 auto 30px;
   max-width: 480px;
 }
 
 .intro__card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  //border-radius: 10px;
+  //box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
 .intro__steps {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin: 0 0 50px;
+  gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+
 }
 
 .intro__step {
-  width: 120px;
+  max-width: 115px;
+  width: 100%;
 }
 
 .intro__step img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 10px;
+  //width: 70px;
+  //height: 70px;
+  margin: 0 auto 10px;
 }
 
 .intro__step span {
@@ -75,17 +68,11 @@
   border: none;
   text-decoration: none;
   transition: all 0.18s;
+  background: linear-gradient(to top, #FDF29F, #EB4716);
+  max-width: 240px;
+  width: 100%;
 }
 
-.intro__btn--call {
-  background: #ffcc00;
-  color: #000;
-}
-
-.intro__btn--site {
-  background: #fff;
-  color: #8B0000;
-}
 
 .intro__btn:hover {
   opacity: 0.92;
