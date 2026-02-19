@@ -5,7 +5,11 @@ body {
 }
 
 
-html, body, .wrapper {
+html {
+  overflow-y: scroll;
+}
+
+body, .wrapper {
   overflow-x: hidden;
 }
 
