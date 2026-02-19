@@ -45,4 +45,4 @@ section.problems.block(class="screen hidden" id="screen-problems")
                             each problem, idx in detailedProblems
                                 li
                                     span= `${idx + 1} "${problem.text}"`
-        button.problems__next(type="button") Далі →
+        button.problems__next(type="button" disabled data-target-screen="screen-presentations") Далі →
