@@ -434,13 +434,15 @@
     };
 
     const SUBSCRIBE_PAGE = 'subscribe.html';
-    const CALL_FORM_SELECTOR = '.intro-popup__form';
-    const PROMO_CODE_FORM_SELECTOR = '.intro-success__form';
-    const PROMO_CODE_INPUT_SELECTOR = '[name="promo-code"]';
-    const PROMO_CODE_BUTTON_SELECTOR = '.intro-success__submit';
+    const SELECTORS$1 = {
+      CALL_FORM: '.intro-popup__form',
+      PROMO_CODE_FORM: '.intro-success__form',
+      PROMO_CODE_INPUT: '[name="promo-code"]',
+      PROMO_CODE_BUTTON: '.intro-success__submit'
+    };
     const CallRequestForm = {
       init() {
-        const callRequestForm = document.querySelector(CALL_FORM_SELECTOR);
+        const callRequestForm = document.querySelector(SELECTORS$1.CALL_FORM);
 
         if (!callRequestForm) {
           console.warn('Call request form not found');
@@ -456,26 +458,32 @@
     };
     const PromoCodeForm = {
       init() {
-        const promoCodeForm = document.querySelector(PROMO_CODE_FORM_SELECTOR);
-        const promoCodeInput = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_INPUT_SELECTOR) : null;
-        const promoCodeButton = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_BUTTON_SELECTOR) : null;
+        const promoCodeForm = document.querySelector(SELECTORS$1.PROMO_CODE_FORM);
 
         if (!promoCodeForm) {
           console.warn('Promocode form not found');
           return;
         }
 
+        const promoCodeInput = promoCodeForm.querySelector(SELECTORS$1.PROMO_CODE_INPUT);
+        const promoCodeButton = promoCodeForm.querySelector(SELECTORS$1.PROMO_CODE_BUTTON);
+
+        if (!promoCodeInput || !promoCodeButton) {
+          console.warn('Promocode input or button not found');
+          return;
+        }
+
+        promoCodeButton.disabled = promoCodeInput.value.trim() === '';
         promoCodeForm.addEventListener('submit', e => {
           e.preventDefault();
         });
-        console.log(promoCodeInput);
         promoCodeInput.addEventListener('input', e => {
-          promoCodeButton.disabled = e.target.value === '';
+          promoCodeButton.disabled = e.target.value.trim() === '';
         });
       }
 
     };
-    const Forms = {
+    const FormsManager = {
       init() {
         CallRequestForm.init();
         PromoCodeForm.init();
@@ -486,7 +494,7 @@
     function main() {
       scrollSmooth();
       ScreenManager.init();
-      Forms.init();
+      FormsManager.init();
     }
 
     if (document.documentElement.clientWidth < 480) {
