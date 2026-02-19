@@ -1,13 +1,14 @@
 extends settings/layout
 
 prepend html
-  - const lang = "ru";
+  - const lang = locale;
 
 prepend head
-  - const pageTitle = "Sketch Card 2";
+  - const pageTitle = t.common.pageTitle;
   - const themeColor = "#ffffff";
 
 append head
+    link(rel="stylesheet", href=basePath + "css/style.min.css")
 
 append content
     .wrapper
@@ -21,3 +22,4 @@ append content
         //include components/thank-you
 
 append scripts
+    script(src=basePath + "js/main.js")
