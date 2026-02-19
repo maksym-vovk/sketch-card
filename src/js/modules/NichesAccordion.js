@@ -43,12 +43,8 @@ export const NichesAccordion = {
 
             if (!header || !radioInput) return;
 
-            header.addEventListener('click', () => {
-                this.handleAccordionClick(item, accordionItems);
-                nextButton.disabled = false;
-            });
-
             radioInput.addEventListener('change', () => {
+                this.handleAccordionClick(item, accordionItems);
                 nextButton.disabled = false;
             });
         });

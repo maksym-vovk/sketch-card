@@ -548,11 +548,8 @@
           const header = item.querySelector(SELECTORS$2.ACCORDION_HEADER);
           const radioInput = header?.querySelector(SELECTORS$2.RADIO_INPUT);
           if (!header || !radioInput) return;
-          header.addEventListener('click', () => {
-            this.handleAccordionClick(item, accordionItems);
-            nextButton.disabled = false;
-          });
           radioInput.addEventListener('change', () => {
+            this.handleAccordionClick(item, accordionItems);
             nextButton.disabled = false;
           });
         });
