@@ -1,35 +1,34 @@
 section.order.block(class="screen hidden" id="screen-order")
     .container
         .order-card
-            h2.order__title Комплекс "Схуднення / Вага стоїть"
+            h2.order__title= t.order.title
 
             .order__offer
-                span.tag 4 по ціні 3
-                span.discount -50% по промокоду
+                span.tag= t.order.offer.tag
+                span.discount= t.order.offer.discount
 
             .order__products
-                img(src=basePath + "product.jpg" alt="product")
+                img(src=basePath + "img/" + t.order.productsImg alt="product")
 
-
-            p.order__economy Економія 500€
+            p.order__economy= t.order.economy
 
             .order__price
-                .current 1999 euro
-                .old Стара ціна: 4000 euro
+                .current= t.order.price.current
+                .old= t.order.price.old
 
             form.order__form
-                .form-group
-                    label Введіть Ваше ім'я
-                    .input-wrapper
-                        input(type="text" name="name" placeholder="Ваше ім'я" required)
-                        span.icon 👤
+                each field in t.order.form
+                    .form-group
+                        label= field.label
+                        .input-wrapper
+                            input(
+                                type=field.type
+                                name=field.name
+                                placeholder=field.placeholder
+                                required=field.required
+                            )
+                            span.icon= field.icon
 
-                .form-group
-                    label Введіть номер телефону або WhatsApp
-                    .input-wrapper
-                        input(type="tel" name="phone" placeholder="Ваш номер" required)
-                        span.icon 📞
+                button.order__submit(type="submit")= t.order.btnSubmit
 
-                button.order__submit(type="submit") Підтвердити замовлення →
-
-            p.order__privacy ✔ Ваші персональні дані захищені
+            p.order__privacy= t.order.privacyText
