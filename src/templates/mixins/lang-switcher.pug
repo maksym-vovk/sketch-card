@@ -1,7 +1,18 @@
 mixin lang-switcher(page)
-    - const pageName = page || '';
+    -
+        const pageName = page || '';
+        const languages = [
+            { code: 'en', label: 'EN', path: pageName ? '/' + pageName : '/' },
+            { code: 'hr', label: 'HR', path: '/hr/' + pageName },
+            { code: 'sl', label: 'SL', path: '/sl/' + pageName }
+        ];
 
     .lang-switcher
-        a(href="/" + pageName class=locale === 'en' ? 'active' : '') EN
-        a(href="/hr/" + pageName class=locale === 'hr' ? 'active' : '') HR
-        a(href="/sl/" + pageName class=locale === 'sl' ? 'active' : '') SL
+        .lang-switcher__custom
+            .lang-switcher__selected
+                span.lang-switcher__text
+                svg.lang-switcher__arrow(width="12" height="8" viewBox="0 0 12 8")
+                    path(d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none")
+            .lang-switcher__options
+                each lang in languages
+                    .lang-switcher__option(data-value=lang.path data-code=lang.code) #{lang.label}
