@@ -4,7 +4,8 @@ const SELECTORS = {
     CALL_FORM: '.intro-popup__form',
     PROMO_CODE_FORM: '.intro-success__form',
     PROMO_CODE_INPUT: '[name="promo-code"]',
-    PROMO_CODE_BUTTON: '.intro-success__submit'
+    PROMO_CODE_BUTTON: '.intro-success__submit',
+    ORDER_FORM: '.order__form',
 }
 
 const CallRequestForm = {
@@ -52,10 +53,26 @@ const PromoCodeForm = {
     }
 }
 
+const OrderForm = {
+    init() {
+        const orderForm = document.querySelector(SELECTORS.ORDER_FORM);
+
+        if (!orderForm) {
+            console.warn('Order form not found');
+            return;
+        }
+
+        orderForm.addEventListener('submit', e => {
+            e.preventDefault();
+            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+        });
+    }
+}
 
 export const FormsManager = {
     init() {
         CallRequestForm.init();
         PromoCodeForm.init();
+        OrderForm.init();
     }
 }
