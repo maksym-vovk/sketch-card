@@ -1,14 +1,12 @@
-import './helpers/postDate';
-import scrollSmooth from './helpers/smooth-scroll.js';
 import {ScreenManager} from "./modules/ScreenManager";
 import {FormsManager} from "./modules/FormsManager";
 import {NichesAccordion} from "./modules/NichesAccordion";
 import {AppState} from "./modules/AppState";
+import {LanguageSwitcher} from "./modules/LanguageSwitcher";
 
 function main() {
-  scrollSmooth();
-
   AppState.init()
+  LanguageSwitcher.init()
   ScreenManager.init();
   FormsManager.init();
   NichesAccordion.init();

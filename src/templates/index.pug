@@ -1,4 +1,5 @@
 extends settings/layout
+include mixins/lang-switcher
 
 prepend html
   - const lang = locale;
@@ -11,6 +12,9 @@ append head
     link(rel="stylesheet", href=basePath + "css/style.min.css")
 
 append content
+    header
+        .container
+            +lang-switcher()
     .wrapper
         include components/intro
         include components/intro-popup
