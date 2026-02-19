@@ -70,6 +70,10 @@
       PROMO_CODE_BUTTON: '.intro-success__submit',
       ORDER_FORM: '.order__form'
     };
+    const redirectTypes = {
+      CALL_REQUEST: 'call_request',
+      ORDER: 'order'
+    };
     const CallRequestForm = {
       init() {
         const callRequestForm = document.querySelector(SELECTORS$1.CALL_FORM);
@@ -81,7 +85,7 @@
 
         callRequestForm.addEventListener('submit', e => {
           e.preventDefault();
-          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
       }
 
@@ -124,7 +128,7 @@
 
         orderForm.addEventListener('submit', e => {
           e.preventDefault();
-          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
       }
 
@@ -345,9 +349,10 @@
       redirectIfNeeded(savedLang) {
         const currentPath = window.location.pathname;
         const isSubscribePage = currentPath.includes(SUBSCRIBE_PAGE$1);
+        const queryParams = window.location.search;
 
         if (savedLang && !currentPath.includes(`/${savedLang}/`)) {
-          window.location.href = isSubscribePage ? `/${savedLang}/${SUBSCRIBE_PAGE$1}` : `/${savedLang}/`;
+          window.location.href = isSubscribePage ? `/${savedLang}/${SUBSCRIBE_PAGE$1}${queryParams}` : `/${savedLang}/${queryParams}`;
           return true;
         }
 
@@ -371,12 +376,13 @@
       handleOptionClick(option, text, options, custom) {
         const value = option.dataset.value;
         const code = option.dataset.code;
+        const queryParams = window.location.search;
         text.textContent = option.textContent;
         options.forEach(opt => opt.classList.remove(CSS_CLASSES$1.SELECTED));
         option.classList.add(CSS_CLASSES$1.SELECTED);
         this.closeDropdown(custom);
         localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
-        window.location.href = value;
+        window.location.href = value + queryParams;
       },
 
       bindCustomSelect() {
