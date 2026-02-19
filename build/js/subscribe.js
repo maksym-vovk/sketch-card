@@ -50,9 +50,10 @@
       redirectIfNeeded(savedLang) {
         const currentPath = window.location.pathname;
         const isSubscribePage = currentPath.includes(SUBSCRIBE_PAGE);
+        const queryParams = window.location.search;
 
         if (savedLang && !currentPath.includes(`/${savedLang}/`)) {
-          window.location.href = isSubscribePage ? `/${savedLang}/${SUBSCRIBE_PAGE}` : `/${savedLang}/`;
+          window.location.href = isSubscribePage ? `/${savedLang}/${SUBSCRIBE_PAGE}${queryParams}` : `/${savedLang}/${queryParams}`;
           return true;
         }
 
@@ -76,12 +77,13 @@
       handleOptionClick(option, text, options, custom) {
         const value = option.dataset.value;
         const code = option.dataset.code;
+        const queryParams = window.location.search;
         text.textContent = option.textContent;
         options.forEach(opt => opt.classList.remove(CSS_CLASSES.SELECTED));
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
         localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
-        window.location.href = value;
+        window.location.href = value + queryParams;
       },
 
       bindCustomSelect() {
@@ -127,8 +129,50 @@
 
     };
 
+    const SELECTORS$1 = {
+      CALL_TEXT: '.thank-you__text--callback',
+      ORDER_TEXT: '.thank-you__text--order'
+    };
+    const CSS_CLASSES$1 = {
+      HIDDEN: 'hidden'
+    };
+    const ThankYouPageManager = {
+      setCongratulationText() {
+        const queryParams = new URLSearchParams(window.location.search);
+        const redirectType = queryParams.get('redirect');
+        const callText = document.querySelector(SELECTORS$1.CALL_TEXT);
+        const orderText = document.querySelector(SELECTORS$1.ORDER_TEXT);
+
+        if (!callText || !orderText) {
+          console.warn('Congratulation text elements not found');
+          return;
+        }
+
+        switch (redirectType) {
+          case 'call_request':
+            callText.classList.remove(CSS_CLASSES$1.HIDDEN);
+            orderText.classList.add(CSS_CLASSES$1.HIDDEN);
+            break;
+
+          case 'order':
+            orderText.classList.remove(CSS_CLASSES$1.HIDDEN);
+            callText.classList.add(CSS_CLASSES$1.HIDDEN);
+            break;
+
+          default:
+            console.warn('Unknown redirect type, showing default text');
+        }
+      },
+
+      init() {
+        this.setCongratulationText();
+      }
+
+    };
+
     function main() {
       LanguageSwitcher.init();
+      ThankYouPageManager.init();
     }
 
     if (document.documentElement.clientWidth < 480) {

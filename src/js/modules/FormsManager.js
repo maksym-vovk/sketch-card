@@ -8,6 +8,11 @@ const SELECTORS = {
     ORDER_FORM: '.order__form',
 }
 
+const redirectTypes = {
+    CALL_REQUEST: 'call_request',
+    ORDER: 'order'
+};
+
 const CallRequestForm = {
     init() {
         const callRequestForm = document.querySelector(SELECTORS.CALL_FORM);
@@ -19,7 +24,7 @@ const CallRequestForm = {
 
         callRequestForm.addEventListener('submit', e => {
             e.preventDefault();
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
     }
 }
@@ -64,7 +69,7 @@ const OrderForm = {
 
         orderForm.addEventListener('submit', e => {
             e.preventDefault();
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
     }
 }

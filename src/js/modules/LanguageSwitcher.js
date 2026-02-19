@@ -54,11 +54,12 @@ export const LanguageSwitcher = {
     redirectIfNeeded(savedLang) {
         const currentPath = window.location.pathname;
         const isSubscribePage = currentPath.includes(SUBSCRIBE_PAGE);
+        const queryParams = window.location.search;
 
         if (savedLang && !currentPath.includes(`/${savedLang}/`)) {
             window.location.href = isSubscribePage
-                ? `/${savedLang}/${SUBSCRIBE_PAGE}`
-                : `/${savedLang}/`;
+                ? `/${savedLang}/${SUBSCRIBE_PAGE}${queryParams}`
+                : `/${savedLang}/${queryParams}`;
             return true;
         }
 
@@ -82,6 +83,7 @@ export const LanguageSwitcher = {
     handleOptionClick(option, text, options, custom) {
         const value = option.dataset.value;
         const code = option.dataset.code;
+        const queryParams = window.location.search;
 
         text.textContent = option.textContent;
         options.forEach(opt => opt.classList.remove(CSS_CLASSES.SELECTED));
@@ -89,7 +91,7 @@ export const LanguageSwitcher = {
         this.closeDropdown(custom);
 
         localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
-        window.location.href = value;
+        window.location.href = value + queryParams;
     },
 
     bindCustomSelect() {
