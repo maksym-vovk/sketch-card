@@ -4,7 +4,7 @@ const include = require('gulp-include');
 
 function localization() {
   return src(paths.src.localization)
-    .pipe(include())
+    // .pipe(include()) //For copying localization files with includes (if needed)
     .pipe(dest(paths.build.localization));
 }
 

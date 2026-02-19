@@ -12,7 +12,7 @@ const paths = {
     img: 'src/img/*.+(jpg|jpeg|png|svg|ico|gif|webp)',
     svg: 'src/img/**/*.svg',
     fonts: 'src/fonts/**/*',
-    localization: "src/localization/*.json"
+    localization: "src/localization"
   },
   build: {
     main: 'build',

@@ -21,6 +21,17 @@ async function script() {
     sourcemap: dev()
   });
 
+  const subscribeBundle = await rollup.rollup({
+    input: `${paths.src.scripts}/subscribe.js`,
+    plugins: [commonjs(), resolve(), babel(), minify()]
+  });
+
+  await subscribeBundle.write({
+    file: `${paths.build.scripts}/subscribe.js`,
+    format: 'iife',
+    sourcemap: dev()
+  });
+
   return src(`${paths.src.scripts}/libs/*.js`)
     .pipe(dest(paths.build.scripts))
     .pipe(browserSync.reload({ stream: true }));

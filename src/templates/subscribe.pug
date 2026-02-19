@@ -1,16 +1,18 @@
 extends settings/layout
 
 prepend html
-    - const lang = "ru";
+    - const lang = locale;
 
 prepend head
-    - const pageTitle = "Thank you page!";
+    - const pageTitle = t.common.subscribeTitle;
     - const themeColor = "#ffffff";
 
 append head
+    link(rel="stylesheet", href=basePath + "css/subscribe.css")
 
 append content
     .container
         p(style="color: #000; display: flex; justify-content: center; align-items: center; height: 100vh") SUBSCRIBE PAGE
 
 append scripts
+    script(src=basePath + "js/subscribe.js")

@@ -7,6 +7,7 @@ const style = require('./style');
 const script = require('./script');
 const image = require('./image');
 const font = require('./font');
+const localization = require('./localization');
 
 function serve() {
   browserSync({
@@ -25,6 +26,7 @@ function serve() {
   watch(paths.watch.scripts, script);
   watch(paths.watch.images, image);
   watch(paths.watch.font, font);
+  watch(paths.watch.font, localization);
 }
 
 module.exports = serve;
