@@ -1,0 +1,7 @@
+mixin lang-switcher(page)
+    - const pageName = page || '';
+
+    .lang-switcher
+        a(href="/" + pageName class=locale === 'en' ? 'active' : '') EN
+        a(href="/hr/" + pageName class=locale === 'hr' ? 'active' : '') HR
+        a(href="/sl/" + pageName class=locale === 'sl' ? 'active' : '') SL

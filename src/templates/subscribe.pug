@@ -1,4 +1,5 @@
 extends settings/layout
+include mixins/lang-switcher
 
 prepend html
     - const lang = locale;
@@ -8,9 +9,13 @@ prepend head
     - const themeColor = "#ffffff";
 
 append head
-    link(rel="stylesheet", href=basePath + "css/subscribe.css")
+    link(rel="stylesheet", href=basePath + "css/subscribe.min.css")
 
 append content
+    header
+        .container
+            +lang-switcher('subscribe.html')
+
     .container
         p(style="color: #000; display: flex; justify-content: center; align-items: center; height: 100vh") SUBSCRIBE PAGE
 
