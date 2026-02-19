@@ -8,11 +8,11 @@ prepend head
     - const themeColor = "#ffffff";
 
 append head
-    link(rel="stylesheet", href=basePath + "css/subscribe.css")
+    link(rel="stylesheet", href=basePath + "css/subscribe.min.css")
 
 append content
-    .container
-        p(style="color: #000; display: flex; justify-content: center; align-items: center; height: 100vh") SUBSCRIBE PAGE
+    .wrapper
+        include components/thank-you
 
 append scripts
     script(src=basePath + "js/subscribe.js")

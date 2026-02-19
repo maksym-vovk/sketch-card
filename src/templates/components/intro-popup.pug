@@ -1,29 +1,21 @@
 section.intro-popup.block(class="screen hidden" id="screen-intro-popup")
     .container
-        h1.intro-popup__title.title.text-gold-fill Бажаєте, щоб ми все зробили за вас?
-
-        p.intro-popup__subtitle Залиште свої дані, і наш спеціаліст допоможе розібратися з бонусами та оформить доставку за лічені хвилини.
+        h1.intro-popup__title.title.text-gold-fill!= t.introPopup.title
+        p.intro-popup__subtitle!= t.introPopup.subtitle
 
         form.intro-popup__form
-            .form-group
-                label Введіть промокод з карти
-                .input-wrapper
-                    input(type="text" name="promocode" placeholder="Промокод" required)
-                    span.icon 🔑
+            each field in t.introPopup.form
+                .form-group
+                    label= field.label
+                    .input-wrapper
+                        input(
+                            type=field.type
+                            name=field.name
+                            placeholder=field.placeholder
+                            required=field.required
+                        )
+                        span.icon= field.icon
 
-            .form-group
-                label Введіть Ваше ім'я
-                .input-wrapper
-                    input(type="text" name="name" placeholder="Ваше ім'я" required)
-                    span.icon 👤
+            button.intro-popup__submit.btn(type="submit")= t.introPopup.btnSubmit
 
-            .form-group
-                label Залиште свій номер телефону
-                .input-wrapper
-                    input(type="tel" name="phone" placeholder="Ваш номер" required)
-                    span.icon 📞
-
-            button.intro-popup__submit.btn(type="submit") Передзвоніть мені для активації бонусів
-
-            p.intro-popup__privacy
-                | *Ваші персональні дані захищені
+            p.intro-popup__privacy= t.introPopup.privacyText

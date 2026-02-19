@@ -1,34 +1,20 @@
 section.course.block(class="screen hidden" id="screen-course")
     .container
         .course-modal
-            h2.course__title Вибір курсу
+            h2.course__title!= t.course.title
 
             .course-options
-                label.course-option
-                    input(type="radio" name="course" value="complex1" checked)
-                    .option-content
-                        .badge 50%
-                        .products
-                            img(src=basePath + "products-group.jpg" alt="Комплекси продуктів")
+                each option in t.course.options
+                    label.course-option
+                        input(type="radio" name="course" value=option.value checked=option.checked)
+                        .option-content
+                            .badge= option.badge
+                            .products
+                                img(src=basePath + "img/" + option.img alt="Комплекси продуктів")
+                            .price= option.price
+                            .subtitle= option.subtitle
+                            ul
+                                each item in option.productsList
+                                    li= item
 
-                        .price 4 по ціні 3 — Економія 500₴
-                        .subtitle СХУДНЕННЯ / ВАГА СТОЇТЬ
-                        ul
-                            li Slimogi — контроль ваги
-                            li Verminix — паразити
-                            li Ultravix (Detox) — травлення і очищення
-
-                label.course-option
-                    input(type="radio" name="course" value="complex2")
-                    .option-content
-                        .badge 50%
-                        .products
-                            img(src=basePath + "products-group.jpg" alt="Комплекси продуктів")
-
-                        .price 4 по ціні 3 — Економія 500₴
-                        .subtitle СХУДНЕННЯ / ВАГА СТОЇТЬ
-                        ul
-                            li Slimogi — контроль ваги
-                            li Verminix — паразити
-
-            button.course__select(type="button" data-target-screen="screen-order") Оберіть цей комплекс →
+            button.course__select(type="button" data-target-screen="screen-order")= t.course.btnSelect

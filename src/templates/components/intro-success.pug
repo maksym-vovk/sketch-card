@@ -1,19 +1,30 @@
 section.intro-success.block(class="screen hidden" id="screen-intro-success")
     .container
         .success-card
-            h1.intro-success__title Вітання!
+            h1.intro-success__title!= t.introSuccess.title
 
             p.intro-success__text
-                | Бажаєте оформити все самостійно?
-                |
-                br
-                | Це зручно та швидко. Ви обираєте потрібний напрямок підтримки здоров'я, а бонуси застосуються автоматично.
+                - const lines = t.introSuccess.text.split('\n')
+                each line, idx in lines
+                    | #{line}
+                    if idx !== lines.length - 1
+                        br
 
             form.intro-success__form
-                .form-group
-                    label Введіть промокод з вашої картки
-                    .input-wrapper
-                        input(type="text" name="promo-code" placeholder="Промокод" required)
-                        span.icon 🔑
+                each field in t.introSuccess.form
+                    .form-group
+                        label= field.label
+                        .input-wrapper
+                            input(
+                                type=field.type
+                                name=field.name
+                                placeholder=field.placeholder
+                                required=field.required
+                            )
+                            span.icon= field.icon
 
-                button.intro-success__submit(type="submit" disabled data-target-screen="screen-problems") Почати →
+                button.intro-success__submit(
+                    type="submit"
+                    disabled=t.introSuccess.btnSubmit.disabled
+                    data-target-screen=t.introSuccess.btnSubmit.targetScreen
+                )= t.introSuccess.btnSubmit.text
