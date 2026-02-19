@@ -175,14 +175,16 @@
       ThankYouPageManager.init();
     }
 
-    if (document.documentElement.clientWidth < 480) {
-      window.addEventListener('scroll', function () {
-        return setTimeout(main, 1000);
-      }, {
-        once: true
-      });
-    } else {
-      main();
-    }
+    main(); // if (document.documentElement.clientWidth < 480) {
+    //     window.addEventListener('scroll',
+    //         function () {
+    //             return setTimeout(main, 1000);
+    //         }, {
+    //             once: true
+    //         });
+    // } else {
+    //     main();
+    // }
 
 }());
+//# sourceMappingURL=subscribe.js.map
