@@ -19,4 +19,4 @@ if (document.documentElement.clientWidth < 480) {
     });
 } else {
   main();
-};
+}
