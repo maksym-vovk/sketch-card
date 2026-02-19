@@ -4,7 +4,7 @@
 }
 
 .intro-popup__title {
-  font-size: 38px;
+  //font-size: 38px;
   margin: 0 0 16px;
 }
 
@@ -15,6 +15,10 @@
 }
 
 .intro-popup__form {
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #FFB938 0%, #F3CF78 28.37%, #FEF4B3 61.54%, #E0BE80 100%), #F9E5C7;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
   max-width: 480px;
   margin: 0 auto;
 }
@@ -27,20 +31,15 @@
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 14px;
+  color: #21163F;
+
 }
 
 .input-wrapper {
   position: relative;
 }
 
-.input-wrapper input {
-  width: 100%;
-  padding: 16px 20px 16px 50px;
-  border: none;
-  border-radius: 12px;
-  font-size: 17px;
-}
 
 .input-wrapper .icon {
   position: absolute;
@@ -53,12 +52,13 @@
 
 .intro-popup__submit {
   width: 100%;
-  padding: 18px;
+  padding: 15px;
   //background: #e63900;
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 14px;
+  text-align: left;
   font-weight: bold;
   margin: 20px 0 16px;
   cursor: pointer;
@@ -67,4 +67,5 @@
 .intro-popup__privacy {
   font-size: 14px;
   opacity: 0.9;
+  color: #21163f;
 }
