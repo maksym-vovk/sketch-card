@@ -434,13 +434,16 @@
     };
 
     const SUBSCRIBE_PAGE = 'subscribe.html';
-    const CALL_FORM_SELECTOR = '.intro-popup__form';
-    const PROMO_CODE_FORM_SELECTOR = '.intro-success__form';
-    const PROMO_CODE_INPUT_SELECTOR = '[name="promo-code"]';
-    const PROMO_CODE_BUTTON_SELECTOR = '.intro-success__submit';
+    const SELECTORS$1 = {
+      CALL_FORM: '.intro-popup__form',
+      PROMO_CODE_FORM: '.intro-success__form',
+      PROMO_CODE_INPUT: '[name="promo-code"]',
+      PROMO_CODE_BUTTON: '.intro-success__submit',
+      ORDER_FORM: '.order__form'
+    };
     const CallRequestForm = {
       init() {
-        const callRequestForm = document.querySelector(CALL_FORM_SELECTOR);
+        const callRequestForm = document.querySelector(SELECTORS$1.CALL_FORM);
 
         if (!callRequestForm) {
           console.warn('Call request form not found');
@@ -456,37 +459,219 @@
     };
     const PromoCodeForm = {
       init() {
-        const promoCodeForm = document.querySelector(PROMO_CODE_FORM_SELECTOR);
-        const promoCodeInput = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_INPUT_SELECTOR) : null;
-        const promoCodeButton = promoCodeForm ? promoCodeForm.querySelector(PROMO_CODE_BUTTON_SELECTOR) : null;
+        const promoCodeForm = document.querySelector(SELECTORS$1.PROMO_CODE_FORM);
 
         if (!promoCodeForm) {
           console.warn('Promocode form not found');
           return;
         }
 
+        const promoCodeInput = promoCodeForm.querySelector(SELECTORS$1.PROMO_CODE_INPUT);
+        const promoCodeButton = promoCodeForm.querySelector(SELECTORS$1.PROMO_CODE_BUTTON);
+
+        if (!promoCodeInput || !promoCodeButton) {
+          console.warn('Promocode input or button not found');
+          return;
+        }
+
+        promoCodeButton.disabled = promoCodeInput.value.trim() === '';
         promoCodeForm.addEventListener('submit', e => {
           e.preventDefault();
         });
-        console.log(promoCodeInput);
         promoCodeInput.addEventListener('input', e => {
-          promoCodeButton.disabled = e.target.value === '';
+          promoCodeButton.disabled = e.target.value.trim() === '';
         });
       }
 
     };
-    const Forms = {
+    const OrderForm = {
+      init() {
+        const orderForm = document.querySelector(SELECTORS$1.ORDER_FORM);
+
+        if (!orderForm) {
+          console.warn('Order form not found');
+          return;
+        }
+
+        orderForm.addEventListener('submit', e => {
+          e.preventDefault();
+          window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}`;
+        });
+      }
+
+    };
+    const FormsManager = {
       init() {
         CallRequestForm.init();
         PromoCodeForm.init();
+        OrderForm.init();
+      }
+
+    };
+
+    const SELECTORS$2 = {
+      PROBLEMS_SCREEN: '#screen-problems',
+      ACCORDION_ITEMS: '.accordion-item',
+      ACCORDION_HEADER: '.accordion-header',
+      ACCORDION_CONTENT: '.accordion-content',
+      RADIO_INPUT: 'input[type="radio"]',
+      NEXT_BUTTON: '.problems__next'
+    };
+    const NichesAccordion = {
+      handleAccordionClick(clickedItem, allItems) {
+        const wasActive = clickedItem.classList.contains('active');
+        allItems.forEach(item => item.classList.remove('active'));
+
+        if (!wasActive) {
+          clickedItem.classList.add('active');
+        }
+      },
+
+      init() {
+        const problemsScreen = document.querySelector(SELECTORS$2.PROBLEMS_SCREEN);
+
+        if (!problemsScreen) {
+          console.warn('Problems screen not found');
+          return;
+        }
+
+        const accordionItems = problemsScreen.querySelectorAll(SELECTORS$2.ACCORDION_ITEMS);
+        const nextButton = problemsScreen.querySelector(SELECTORS$2.NEXT_BUTTON);
+
+        if (!accordionItems.length || !nextButton) {
+          console.warn('Accordion items or next button not found');
+          return;
+        }
+
+        nextButton.disabled = true;
+        accordionItems.forEach(item => {
+          const header = item.querySelector(SELECTORS$2.ACCORDION_HEADER);
+          const radioInput = header?.querySelector(SELECTORS$2.RADIO_INPUT);
+          if (!header || !radioInput) return;
+          radioInput.addEventListener('change', () => {
+            this.handleAccordionClick(item, accordionItems);
+            nextButton.disabled = false;
+          });
+        });
+      }
+
+    };
+
+    const AppState = {
+      storageKey: 'appState',
+      state: null,
+
+      init() {
+        this.state = this._loadState() || this._initializeState();
+      },
+
+      _initializeState() {
+        const now = Date.now();
+        const initialState = {
+          userId: this._generateUserId(),
+          createdAt: this._formatLocalDate(now),
+          createdAtInKyiv: this._formatKyivDate(now),
+          updatedAt: this._formatLocalDate(now),
+          updatedAtInKyiv: this._formatKyivDate(now),
+          data: {}
+        };
+
+        this._saveToStorage(initialState);
+
+        return initialState;
+      },
+
+      _generateUserId() {
+        return Math.random().toString(36).substring(2, 8);
+      },
+
+      _formatLocalDate(timestamp) {
+        const date = new Date(timestamp);
+        return this._formatToCustomString(date);
+      },
+
+      _formatKyivDate(timestamp) {
+        const date = new Date(timestamp);
+        return this._formatToCustomString(date, 'Europe/Kiev');
+      },
+
+      _formatToCustomString(date, timeZone) {
+        const options = {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false
+        };
+
+        if (timeZone) {
+          options.timeZone = timeZone;
+        }
+
+        const formatted = new Intl.DateTimeFormat('en-GB', options).format(date);
+        return formatted.replace(/\//g, '.').replace(',', ',');
+      },
+
+      _loadState() {
+        try {
+          const stored = localStorage.getItem(this.storageKey);
+          return stored ? JSON.parse(stored) : null;
+        } catch (error) {
+          console.error('Failed to load state:', error);
+          return null;
+        }
+      },
+
+      _saveToStorage(state) {
+        try {
+          localStorage.setItem(this.storageKey, JSON.stringify(state));
+        } catch (error) {
+          console.error('Failed to save state:', error);
+        }
+      },
+
+      set(key, value) {
+        this.state.data[key] = value;
+        this.state.updatedAt = Date.now();
+
+        this._saveToStorage(this.state);
+      },
+
+      get(key) {
+        return this.state.data[key];
+      },
+
+      getAll() {
+        return { ...this.state
+        };
+      },
+
+      getUserId() {
+        return this.state.userId;
+      },
+
+      getCreatedAt() {
+        return this.state.createdAt;
+      },
+
+      getUpdatedAt() {
+        return this.state.updatedAt;
+      },
+
+      clear() {
+        this.state = this._initializeState();
       }
 
     };
 
     function main() {
       scrollSmooth();
+      AppState.init();
       ScreenManager.init();
-      Forms.init();
+      FormsManager.init();
+      NichesAccordion.init();
     }
 
     if (document.documentElement.clientWidth < 480) {
