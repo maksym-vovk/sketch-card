@@ -73,7 +73,8 @@ export const AppState = {
 
     set(key, value) {
         this.state.data[key] = value;
-        this.state.updatedAt = Date.now();
+        this.state.updatedAt = this._formatLocalDate(Date.now());
+        this.state.updatedAtInKyiv = this._formatKyivDate(Date.now())
         this._saveToStorage(this.state);
     },
 
