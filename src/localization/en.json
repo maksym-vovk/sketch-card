@@ -2,5 +2,33 @@
   "common": {
     "pageTitle": "Sketch Card EN",
     "subscribeTitle": "Thank you page EN"
+  },
+
+  "intro": {
+    "title": "Ваш подарунок чекає: активуйте євробонуси",
+    "text1": "Ви отримали",
+    "scratch": "SCRATCH-КАРТКУ",
+    "text2": "з бонусами!",
+    "text3": "Використайте їх зараз для замовлення продуктів з суттєвою вигодою.",
+
+    "cardImg": "cupon.png",
+
+    "steps": [
+      {
+        "img": "icon-scratch.svg",
+        "text": "Зітріть захисний шар на картці"
+      },
+      {
+        "img": "icon-click.svg",
+        "text": "Активуйте бонуси"
+      },
+      {
+        "img": "icon-gift.svg",
+        "text": "Оберіть набір з вигодою"
+      }
+    ],
+
+    "btnCall": "Замовити дзвінок оператора",
+    "btnSite": "Оформити самостійно на сайті"
   }
 }
