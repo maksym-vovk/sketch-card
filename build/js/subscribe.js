@@ -186,4 +186,3 @@
     }
 
 }());
-//# sourceMappingURL=subscribe.js.map
