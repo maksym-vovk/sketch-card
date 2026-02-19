@@ -297,7 +297,14 @@
     };
 
     const SELECTORS$3 = {
-      LANG_SWITCHER_LINK: '.lang-switcher a'
+      CUSTOM: '.lang-switcher__custom',
+      SELECTED: '.lang-switcher__selected',
+      TEXT: '.lang-switcher__text',
+      OPTIONS: '.lang-switcher__option'
+    };
+    const CSS_CLASSES$1 = {
+      ACTIVE: 'active',
+      SELECTED: 'selected'
     };
     const STORAGE_KEY = 'language';
     const SUBSCRIBE_PAGE$1 = 'subscribe.html';
@@ -347,20 +354,55 @@
         return false;
       },
 
-      bindLinks() {
-        const links = document.querySelectorAll(SELECTORS$3.LANG_SWITCHER_LINK);
+      toggleDropdown(custom) {
+        custom.classList.toggle(CSS_CLASSES$1.ACTIVE);
+      },
 
-        if (links.length === 0) {
-          console.warn('No language switcher links found');
+      closeDropdown(custom) {
+        custom.classList.remove(CSS_CLASSES$1.ACTIVE);
+      },
+
+      setSelectedLanguage(text, options, currentLang) {
+        const currentOption = Array.from(options).find(opt => opt.dataset.code === currentLang);
+        text.textContent = currentOption?.textContent || 'EN';
+        currentOption?.classList.add(CSS_CLASSES$1.SELECTED);
+      },
+
+      handleOptionClick(option, text, options, custom) {
+        const value = option.dataset.value;
+        const code = option.dataset.code;
+        text.textContent = option.textContent;
+        options.forEach(opt => opt.classList.remove(CSS_CLASSES$1.SELECTED));
+        option.classList.add(CSS_CLASSES$1.SELECTED);
+        this.closeDropdown(custom);
+        localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
+        window.location.href = value;
+      },
+
+      bindCustomSelect() {
+        const custom = document.querySelector(SELECTORS$3.CUSTOM);
+        const selected = document.querySelector(SELECTORS$3.SELECTED);
+        const text = document.querySelector(SELECTORS$3.TEXT);
+        const options = document.querySelectorAll(SELECTORS$3.OPTIONS);
+
+        if (!custom || !selected) {
+          console.warn('No language switcher found');
           return;
         }
 
-        links.forEach(link => {
-          link.addEventListener('click', () => {
-            const lang = link.textContent.toLowerCase();
-            const value = lang === 'en' ? '' : lang;
-            localStorage.setItem(STORAGE_KEY, value);
+        const currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+        this.setSelectedLanguage(text, options, currentLang);
+        selected.addEventListener('click', e => {
+          e.stopPropagation();
+          this.toggleDropdown(custom);
+        });
+        options.forEach(option => {
+          option.addEventListener('click', () => {
+            this.handleOptionClick(option, text, options, custom);
           });
+        });
+        document.addEventListener('click', () => {
+          this.closeDropdown(custom);
         });
       },
 
@@ -370,11 +412,11 @@
           const redirected = this.redirectIfNeeded(savedLang);
 
           if (!redirected) {
-            this.bindLinks();
+            this.bindCustomSelect();
           }
         } catch (error) {
           console.error('LanguageSwitcher initialization failed:', error);
-          this.bindLinks();
+          this.bindCustomSelect();
         }
       }
 
