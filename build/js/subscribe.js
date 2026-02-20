@@ -86,6 +86,7 @@
         window.location.href = value + queryParams;
       },
 
+      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS.CUSTOM);
         const selected = document.querySelector(SELECTORS.SELECTED);
@@ -187,4 +188,3 @@
     // }
 
 }());
-//# sourceMappingURL=subscribe.js.map
