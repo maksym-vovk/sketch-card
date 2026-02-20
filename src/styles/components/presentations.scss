@@ -3,14 +3,14 @@
   margin: 0 auto;
   background: linear-gradient(135deg, #f7c94d, #ffd700);
   color: #000;
-  padding: 32px 24px;
+  padding: 15px;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);
   text-align: center;
 }
 
 .presentation__title {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -18,7 +18,7 @@
 .presentation__desc {
   font-size: 18px;
   line-height: 1.5;
-  margin: 0 0 24px;
+  margin: 0 0 15px;
 }
 
 .presentation__benefits strong {
@@ -56,7 +56,7 @@
 
 .presentation__recommend strong {
   display: block;
-  margin: 24px 0 16px;
+  margin: 15px 0 16px;
   font-size: 18px;
 }
 .presentation__recommend h3{
@@ -139,4 +139,16 @@
 .presentation__next {
   background: #e63900;
   color: white;
+}
+
+.presentation__footnote,
+.presentation__saving,
+.presentation__price {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.presentation__price {
+  margin-bottom: 0;
 }

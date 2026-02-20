@@ -9,10 +9,15 @@ section.intro.block(class="screen" id="screen-intro")
                 span.text-bold.text-nowrap #{t.intro.scratch}<br>
                 |
                 | #{t.intro.text2}
+
+            .intro__card
+                img(src=basePath + "img/" + t.intro.cardImg alt="EUROBONUS")
+
+
             p #{t.intro.text3}
 
-        .intro__card
-            img(src=basePath + "img/" + t.intro.cardImg alt="EUROBONUS")
+        .intro__text
+
 
         .intro__steps
             each step in t.intro.steps
