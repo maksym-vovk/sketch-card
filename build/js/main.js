@@ -34,9 +34,11 @@
             });
             targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
             targetScreen.classList.add(CSS_CLASSES.SCREEN_ENTER);
+            window.scrollTo(0, 0);
           }, TRANSITION_DURATION);
         } else {
           targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
+          window.scrollTo(0, 0);
         }
       },
 
@@ -142,6 +144,76 @@
 
     };
 
+    const dataConfigParser = configSelector => {
+      const configContainer = document.querySelector(configSelector);
+
+      if (!configContainer) {
+        console.warn(`Config container with selector "${configSelector}" not found.`);
+        return null;
+      }
+
+      return JSON.parse(configContainer.dataset.config);
+    };
+
+    const UniversalRenderer = {
+      basePath: document.documentElement.lang === 'en' ? '' : '../',
+
+      _createElement(config) {
+        const element = document.createElement(config.tag); // Set class
+
+        if (config.className) {
+          element.className = config.className;
+        } // Set text content
+
+
+        if (config.text) {
+          element.textContent = config.text;
+        } // Set attributes
+
+
+        if (config.attributes) {
+          Object.entries(config.attributes).forEach(([key, value]) => {
+            // Handle image src with basePath
+            if (key === 'src' && !value.startsWith('http')) {
+              element.setAttribute(key, this.basePath + value);
+            } else {
+              element.setAttribute(key, value);
+            }
+          });
+        } // Append children
+
+
+        if (config.children) {
+          config.children.forEach(childConfig => {
+            const child = this._createElement(childConfig);
+
+            element.appendChild(child);
+          });
+        }
+
+        return element;
+      },
+
+      _cleanRoot(root) {
+        root.replaceChildren();
+      },
+
+      render(rootSelector, elements) {
+        const root = document.querySelector(rootSelector);
+        const fragment = document.createDocumentFragment();
+
+        this._cleanRoot(root);
+
+        elements.forEach(element => {
+          const createdElement = this._createElement(element);
+
+          fragment.appendChild(createdElement);
+        });
+        root.prepend(fragment);
+      }
+
+    };
+
     const SELECTORS$2 = {
       PROBLEMS_SCREEN: '#screen-problems',
       ACCORDION_CONTAINER: '.problems-wrapper',
@@ -149,12 +221,17 @@
       ACCORDION_HEADER: '.accordion-header',
       ACCORDION_CONTENT: '.accordion-content',
       RADIO_INPUT: 'input[type="radio"]',
-      NEXT_BUTTON: '.problems__next'
+      NEXT_BUTTON: '.problems__next',
+      PRESENTATION_CONTENT: '.presentation-modal__content',
+      ORDER_FORM_CONTENT: '.order-card__content'
     };
     const CSS_CLASSES$1 = {
       ACTIVE: 'active'
     };
     const NichesAccordion = {
+      presentationData: dataConfigParser(SELECTORS$2.PRESENTATION_CONTENT),
+      orderFormData: dataConfigParser(SELECTORS$2.ORDER_FORM_CONTENT),
+
       _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES$1.ACTIVE));
         clickedItem.classList.add(CSS_CLASSES$1.ACTIVE);
@@ -163,19 +240,27 @@
       _handleClick(event, allItems) {
         const accordionItem = event.target.closest(SELECTORS$2.ACCORDION_ITEMS);
         const radioInput = accordionItem?.querySelector(SELECTORS$2.RADIO_INPUT);
+        const niche = accordionItem.dataset.niche;
         if (!accordionItem || !radioInput || event.target === radioInput) return;
         radioInput.checked = true;
 
         this._handleAccordionClick(accordionItem, allItems);
+
+        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData[niche].elements);
       },
 
       _setFirstItemActive(allItems) {
         const firstItem = allItems[0];
         const radioInput = firstItem?.querySelector(SELECTORS$2.RADIO_INPUT);
-        if (!radioInput) return;
+        const niche = firstItem.dataset.niche;
+        if (!firstItem || !radioInput) return;
         radioInput.checked = true;
 
         this._handleAccordionClick(firstItem, allItems);
+
+        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData[niche].elements);
       },
 
       init() {

@@ -1,3 +1,6 @@
+import {dataConfigParser} from "../utils/dataConfigParser";
+import {UniversalRenderer} from "./UniversalRenderer";
+
 const SELECTORS = {
     PROBLEMS_SCREEN: '#screen-problems',
     ACCORDION_CONTAINER: '.problems-wrapper',
@@ -5,7 +8,9 @@ const SELECTORS = {
     ACCORDION_HEADER: '.accordion-header',
     ACCORDION_CONTENT: '.accordion-content',
     RADIO_INPUT: 'input[type="radio"]',
-    NEXT_BUTTON: '.problems__next'
+    NEXT_BUTTON: '.problems__next',
+    PRESENTATION_CONTENT: '.presentation-modal__content',
+    ORDER_FORM_CONTENT: '.order-card__content'
 };
 
 const CSS_CLASSES = {
@@ -13,6 +18,9 @@ const CSS_CLASSES = {
 };
 
 export const NichesAccordion = {
+    presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT),
+    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT),
+
     _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
         clickedItem.classList.add(CSS_CLASSES.ACTIVE);
@@ -21,21 +29,43 @@ export const NichesAccordion = {
     _handleClick(event, allItems) {
         const accordionItem = event.target.closest(SELECTORS.ACCORDION_ITEMS);
         const radioInput = accordionItem?.querySelector(SELECTORS.RADIO_INPUT);
+        const niche = accordionItem.dataset.niche
 
         if (!accordionItem || !radioInput || event.target === radioInput) return;
 
         radioInput.checked = true;
         this._handleAccordionClick(accordionItem, allItems);
+
+        UniversalRenderer.render(
+            SELECTORS.PRESENTATION_CONTENT,
+            this.presentationData[niche].elements
+        )
+
+        UniversalRenderer.render(
+            SELECTORS.ORDER_FORM_CONTENT,
+            this.orderFormData[niche].elements
+        )
     },
 
     _setFirstItemActive(allItems) {
         const firstItem = allItems[0];
         const radioInput = firstItem?.querySelector(SELECTORS.RADIO_INPUT);
+        const niche = firstItem.dataset.niche
 
-        if (!radioInput) return;
+        if (!firstItem || !radioInput) return;
 
         radioInput.checked = true;
         this._handleAccordionClick(firstItem, allItems);
+
+        UniversalRenderer.render(
+            SELECTORS.PRESENTATION_CONTENT,
+            this.presentationData[niche].elements
+        )
+
+        UniversalRenderer.render(
+            SELECTORS.ORDER_FORM_CONTENT,
+            this.orderFormData[niche].elements
+        )
     },
 
     init() {

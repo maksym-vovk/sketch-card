@@ -1,13 +1,46 @@
+-
+    const categories = [
+        {
+            name: t.problems.categories[0].name,
+            niche: "joints",
+            list: t.problems.categories[0].list
+        },
+        {
+            name: t.problems.categories[1].name,
+            niche: "diabetes",
+            list: t.problems.categories[1].list
+        },
+        {
+            name: t.problems.categories[2].name,
+            niche: "blood-pressure",
+            list: t.problems.categories[2].list
+        },
+        {
+            name: t.problems.categories[3].name,
+            niche: "weight-loss",
+            list: t.problems.categories[3].list
+        },
+        {
+            name: t.problems.categories[4].name,
+            niche: "tiredness",
+            list: t.problems.categories[4].list
+        },
+        {
+            name: t.problems.categories[5].name,
+            niche: "parasites",
+            list: t.problems.categories[5].list
+        }
+    ]
+
 section.problems.block(class="screen hidden" id="screen-problems")
     .container
         h2.problems__title= t.problems.title
 
         .problems-wrapper
-            each cat in t.problems.categories
-                .accordion-item
+            each cat in categories
+                .accordion-item(data-niche=cat.niche)
                     label.accordion-header
                         input(type="radio" name="problem" value=cat.name required)
-                        //.icon= cat.icon
                         span= cat.name
 
                     .accordion-content
@@ -19,5 +52,6 @@ section.problems.block(class="screen hidden" id="screen-problems")
 
         button.problems__next(
             type="button"
+            id="from-problems-to-presentation"
             data-target-screen="screen-presentations"
         )= t.problems.btnNext
