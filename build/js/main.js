@@ -144,48 +144,42 @@
 
     const SELECTORS$2 = {
       PROBLEMS_SCREEN: '#screen-problems',
+      ACCORDION_CONTAINER: '.problems-wrapper',
       ACCORDION_ITEMS: '.accordion-item',
       ACCORDION_HEADER: '.accordion-header',
       ACCORDION_CONTENT: '.accordion-content',
       RADIO_INPUT: 'input[type="radio"]',
       NEXT_BUTTON: '.problems__next'
     };
+    const CSS_CLASSES$1 = {
+      ACTIVE: 'active'
+    };
     const NichesAccordion = {
-      handleAccordionClick(clickedItem, allItems) {
-        const wasActive = clickedItem.classList.contains('active');
-        allItems.forEach(item => item.classList.remove('active'));
+      nextButton: null,
 
-        if (!wasActive) {
-          clickedItem.classList.add('active');
-        }
+      handleAccordionClick(clickedItem, allItems) {
+        allItems.forEach(item => item.classList.remove(CSS_CLASSES$1.ACTIVE));
+        clickedItem.classList.add(CSS_CLASSES$1.ACTIVE);
+      },
+
+      handleClick(event, allItems) {
+        const accordionItem = event.target.closest(SELECTORS$2.ACCORDION_ITEMS);
+        const radioInput = accordionItem?.querySelector(SELECTORS$2.RADIO_INPUT);
+        if (!accordionItem || !radioInput || event.target === radioInput) return;
+        radioInput.checked = true;
+        this.handleAccordionClick(accordionItem, allItems);
       },
 
       init() {
         const problemsScreen = document.querySelector(SELECTORS$2.PROBLEMS_SCREEN);
-
-        if (!problemsScreen) {
-          console.warn('Problems screen not found');
-          return;
-        }
-
+        if (!problemsScreen) return console.warn('Problems screen not found');
         const accordionItems = problemsScreen.querySelectorAll(SELECTORS$2.ACCORDION_ITEMS);
-        const nextButton = problemsScreen.querySelector(SELECTORS$2.NEXT_BUTTON);
 
-        if (!accordionItems.length || !nextButton) {
-          console.warn('Accordion items or next button not found');
-          return;
+        if (!accordionItems.length) {
+          return console.warn('Accordion items or next button not found');
         }
 
-        nextButton.disabled = true;
-        accordionItems.forEach(item => {
-          const header = item.querySelector(SELECTORS$2.ACCORDION_HEADER);
-          const radioInput = header?.querySelector(SELECTORS$2.RADIO_INPUT);
-          if (!header || !radioInput) return;
-          radioInput.addEventListener('change', () => {
-            this.handleAccordionClick(item, accordionItems);
-            nextButton.disabled = false;
-          });
-        });
+        problemsScreen.querySelector(SELECTORS$2.ACCORDION_CONTAINER)?.addEventListener('click', e => this.handleClick(e, accordionItems));
       }
 
     };
@@ -306,7 +300,7 @@
       TEXT: '.lang-switcher__text',
       OPTIONS: '.lang-switcher__option'
     };
-    const CSS_CLASSES$1 = {
+    const CSS_CLASSES$2 = {
       ACTIVE: 'active',
       SELECTED: 'selected'
     };
@@ -360,17 +354,17 @@
       },
 
       toggleDropdown(custom) {
-        custom.classList.toggle(CSS_CLASSES$1.ACTIVE);
+        custom.classList.toggle(CSS_CLASSES$2.ACTIVE);
       },
 
       closeDropdown(custom) {
-        custom.classList.remove(CSS_CLASSES$1.ACTIVE);
+        custom.classList.remove(CSS_CLASSES$2.ACTIVE);
       },
 
       setSelectedLanguage(text, options, currentLang) {
         const currentOption = Array.from(options).find(opt => opt.dataset.code === currentLang);
         text.textContent = currentOption?.textContent || 'EN';
-        currentOption?.classList.add(CSS_CLASSES$1.SELECTED);
+        currentOption?.classList.add(CSS_CLASSES$2.SELECTED);
       },
 
       handleOptionClick(option, text, options, custom) {
@@ -378,13 +372,14 @@
         const code = option.dataset.code;
         const queryParams = window.location.search;
         text.textContent = option.textContent;
-        options.forEach(opt => opt.classList.remove(CSS_CLASSES$1.SELECTED));
-        option.classList.add(CSS_CLASSES$1.SELECTED);
+        options.forEach(opt => opt.classList.remove(CSS_CLASSES$2.SELECTED));
+        option.classList.add(CSS_CLASSES$2.SELECTED);
         this.closeDropdown(custom);
         localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
         window.location.href = value + queryParams;
       },
 
+      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS$3.CUSTOM);
         const selected = document.querySelector(SELECTORS$3.SELECTED);
@@ -436,14 +431,16 @@
       NichesAccordion.init();
     }
 
-    if (document.documentElement.clientWidth < 480) {
-      window.addEventListener('scroll', function () {
-        return setTimeout(main, 1000);
-      }, {
-        once: true
-      });
-    } else {
-      main();
-    }
+    main(); // if (document.documentElement.clientWidth < 480) {
+    //   window.addEventListener('scroll',
+    //     function () {
+    //       return setTimeout(main, 1000);
+    //     }, {
+    //       once: true
+    //     });
+    // } else {
+    //   main();
+    // }
 
 }());
+//# sourceMappingURL=main.js.map

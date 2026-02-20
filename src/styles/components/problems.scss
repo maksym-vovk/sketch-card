@@ -47,7 +47,7 @@
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
@@ -143,35 +143,130 @@
   }
 }
 
+.accordion-item:nth-child(1) .accordion-header:before{
+  background-image: url(../../img/joint.svg);
+  background-repeat:no-repeat;
+  background-position: 13px center;
+  background-size: 50px;
+}
+.accordion-item:nth-child(2) .accordion-header:before{
+  background-image: url(../../img/diabette.svg);
+  background-repeat:no-repeat;
+  background-position: 13px center;
+  background-size: 50px;
+}
+.accordion-item:nth-child(3) .accordion-header:before{
+  background-image: url(../../img/blood-pressure.svg);
+  background-repeat:no-repeat;
+  background-position: 13px 13px;
+  background-size: 50px;
+}
+.accordion-item:nth-child(4) .accordion-header:before{
+  background-image: url(../../img/metabolism.svg);
+  background-repeat:no-repeat;
+  background-position: 13px 13px;
+  background-size: 50px;
+}
+.accordion-item:nth-child(5) .accordion-header:before{
+  background-image: url(../../img/weight.svg);
+  background-repeat:no-repeat;
+  background-position: 13px center;
+  background-size: 50px;
+}
+.accordion-item:nth-child(6) .accordion-header:before{
+  background-image: url(../../img/welness.svg);
+  background-repeat:no-repeat;
+  background-position: 13px center;
+  background-size: 50px;
+}
+
+.accordion-header:before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 75px;
+}
 .accordion-item{
-  padding: 16px 20px;
-  background: rgba(255,255,255,0.08);
+  padding: 25px 20px 25px 75px;
+  //background: rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.35);
+  cursor: pointer;
   border-radius: 12px;
   margin-bottom: 20px;
+  position: relative;
 }
 .accordion-header {
   display: flex;
   align-items: center;
   gap: 14px;
   text-align: left;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
+
+}
+.accordion-item.active{
+  border: 1px solid #fff;
 }
 
+.accordion-item.active .accordion-content:after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -55px;
+  width: calc(100% + 50px);
+  height: 1px;
+  background: #ffffff;
+}
+
+.accordion-header input{
+  display: none;
+}
+.accordion-header span{
+  font-size: 20px;
+  line-height: 1.3;
+}
 .accordion-content{
   text-align: left;
   max-height:0;
   overflow:hidden;
   transition:max-height .35s ease;
+  position: relative;
 }
 
 /* внутренний блок с паддингом */
 .accordion-content__inner{
-  padding:16px 0 6px;
+  padding:16px 0 0px;
+  margin-top: 25px;
 }
 
+.accordion-content__inner ol li{
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.accordion-content__inner ol li:last-child{
+  margin-bottom: 0;
+}
+
+.accordion-item.active:before{
+  content: '';
+  background: url("../../img/selected.svg") 0 0 no-repeat;
+  width: 30px;
+  height: 30px;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  position: absolute;
+  top: 23px;
+  right: 10px;
+}
+.accordion-item.active .accordion-item{
+  position: relative;
+}
 .accordion-item.active .accordion-content{
   max-height:500px; /* любое большое */
+  overflow: initial;
 }
 
 
@@ -180,6 +275,7 @@
   padding-left: 0px;
   list-style: none;
   counter-reset: item;
+  margin-left: -55px;
 }
 //
 //.accordion-content li {

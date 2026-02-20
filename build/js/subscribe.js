@@ -86,6 +86,7 @@
         window.location.href = value + queryParams;
       },
 
+      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS.CUSTOM);
         const selected = document.querySelector(SELECTORS.SELECTED);
@@ -175,14 +176,16 @@
       ThankYouPageManager.init();
     }
 
-    if (document.documentElement.clientWidth < 480) {
-      window.addEventListener('scroll', function () {
-        return setTimeout(main, 1000);
-      }, {
-        once: true
-      });
-    } else {
-      main();
-    }
+    main(); // if (document.documentElement.clientWidth < 480) {
+    //     window.addEventListener('scroll',
+    //         function () {
+    //             return setTimeout(main, 1000);
+    //         }, {
+    //             once: true
+    //         });
+    // } else {
+    //     main();
+    // }
 
 }());
+//# sourceMappingURL=subscribe.js.map

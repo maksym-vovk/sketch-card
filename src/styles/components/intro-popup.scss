@@ -6,16 +6,20 @@
 .intro-popup__title {
   //font-size: 38px;
   margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 1.3;
 }
 
 .intro-popup__subtitle {
-  font-size: 18px;
-  margin: 0 0 40px;
+  font-size: 20px;
   opacity: 0.95;
+  line-height: 1.3;
+  margin: 0px 0 18px;
+  color: #333333;
 }
 
 .intro-popup__form {
-  padding: 15px;
+  padding: 20px 15px;
   border-radius: 20px;
   background: linear-gradient(90deg, #FFB938 0%, #F3CF78 28.37%, #FEF4B3 61.54%, #E0BE80 100%), #F9E5C7;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
@@ -31,8 +35,10 @@
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #21163F;
+  text-align: center;
+  display: none;
 
 }
 
@@ -57,15 +63,15 @@
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 14px;
-  text-align: left;
+  font-size: 20px;
   font-weight: bold;
-  margin: 20px 0 16px;
+  margin: 0 0 16px;
   cursor: pointer;
+  text-align: center;
 }
 
 .intro-popup__privacy {
-  font-size: 14px;
+  font-size: 17px;
   opacity: 0.9;
   color: #21163f;
 }
