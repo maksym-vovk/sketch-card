@@ -13,34 +13,42 @@ const CSS_CLASSES = {
 };
 
 export const NichesAccordion = {
-    nextButton: null,
-
-    handleAccordionClick(clickedItem, allItems) {
+    _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
         clickedItem.classList.add(CSS_CLASSES.ACTIVE);
     },
 
-    handleClick(event, allItems) {
+    _handleClick(event, allItems) {
         const accordionItem = event.target.closest(SELECTORS.ACCORDION_ITEMS);
         const radioInput = accordionItem?.querySelector(SELECTORS.RADIO_INPUT);
 
         if (!accordionItem || !radioInput || event.target === radioInput) return;
 
         radioInput.checked = true;
-        this.handleAccordionClick(accordionItem, allItems);
+        this._handleAccordionClick(accordionItem, allItems);
+    },
+
+    _setFirstItemActive(allItems) {
+        const firstItem = allItems[0];
+        const radioInput = firstItem?.querySelector(SELECTORS.RADIO_INPUT);
+
+        if (!radioInput) return;
+
+        radioInput.checked = true;
+        this._handleAccordionClick(firstItem, allItems);
     },
 
     init() {
         const problemsScreen = document.querySelector(SELECTORS.PROBLEMS_SCREEN);
         if (!problemsScreen) return console.warn('Problems screen not found');
 
+        const accordionContainer = problemsScreen.querySelector(SELECTORS.ACCORDION_CONTAINER);
         const accordionItems = problemsScreen.querySelectorAll(SELECTORS.ACCORDION_ITEMS);
+        if (!accordionContainer) return console.warn('AccordionContainer not found');
 
-        if (!accordionItems.length) {
-            return console.warn('Accordion items or next button not found');
-        }
+        this._setFirstItemActive(accordionItems);
 
         problemsScreen.querySelector(SELECTORS.ACCORDION_CONTAINER)
-            ?.addEventListener('click', (e) => this.handleClick(e, accordionItems));
+            ?.addEventListener('click', (e) => this._handleClick(e, accordionItems));
     }
 };
