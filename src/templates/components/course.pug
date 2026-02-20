@@ -1,16 +1,30 @@
+-
+    const courseStatic = [
+        {value: "complex1", checked: true, badge: "50%", img: "img/products-group.png"},
+        {value: "complex2", checked: false, badge: "50%", img: "img/products-group.png"}
+    ]
+
+
+
 section.course.block(class="screen hidden" id="screen-course")
     .container
         .course-modal
             h2.course__title!= t.course.title
 
             .course-options
-                each option in t.course.options
+                each option, index in t.course.options
+                    - const staticOption = courseStatic[index]
                     label.course-option
-                        input(type="radio" name="course" value=option.value checked=option.checked)
+                        input(
+                            type="radio"
+                            name="course"
+                            value=staticOption.value
+                            checked=staticOption.checked
+                        )
                         .option-content
-                            .badge= option.badge
+                            .badge= staticOption.badge
                             .products
-                                img(src=basePath + "img/" + option.img alt="Комплекси продуктів")
+                                img(src=basePath + staticOption.img alt="Комплекси продуктів")
                             .price= option.price
                             .subtitle= option.subtitle
                             ul

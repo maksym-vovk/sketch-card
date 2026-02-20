@@ -4,34 +4,38 @@ section.order.block(class="screen hidden" id="screen-order")
             h2.order__title= t.order.title
 
             .order__products
-                img(src=basePath + "img/" + t.order.productsImg alt="product")
-
+                img(src=basePath + "img/products-group.png" alt="product")
 
             .order__offer
                 span.tag= t.order.offer.tag
                 span.current= t.order.price.current
-                //span.discount= t.order.offer.discount
-
-
-            //p.order__economy= t.order.economy
-            //
-            //.order__price
-            //    .current= t.order.price.current
-            //    .old= t.order.price.old
 
             form.order__form
-                each field in t.order.form
-                    .form-group
-                        label= field.label
-                        .input-wrapper
-                            input(
-                                type=field.type
-                                name=field.name
-                                placeholder=field.placeholder
-                                required=field.required
-                            )
-                            span.icon= field.icon
+
+                // --- Name ---
+                .form-group
+                    .input-wrapper
+                        input(
+                            type="text"
+                            name="name"
+                            placeholder=t.common.namePlaceholder
+                            required
+                        )
+                        span.icon
+                            img(src=basePath + "img/name-icon.svg" alt="")
+
+                // --- Phone ---
+                .form-group
+                    .input-wrapper
+                        input(
+                            type="tel"
+                            name="phone"
+                            placeholder=t.common.phonePlaceholder
+                            required
+                        )
+                        span.icon
+                            img(src=basePath + "img/phone-icon.svg" alt="")
 
                 button.order__submit(type="submit")= t.order.btnSubmit
 
-            p.order__privacy= t.order.privacyText
+            p.order__privacy= t.common.privacyProtected

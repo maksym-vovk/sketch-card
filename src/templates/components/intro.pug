@@ -1,3 +1,5 @@
+- const stepsIcon = ["img/icon-scratch.svg", "img/icon-click.svg", "img/icon-gift.svg"]
+
 section.intro.block(class="screen" id="screen-intro")
     .container
         h1.intro__title.text-gold-fill!= t.intro.title
@@ -11,18 +13,14 @@ section.intro.block(class="screen" id="screen-intro")
                 | #{t.intro.text2}
 
             .intro__card
-                img(src=basePath + "img/" + t.intro.cardImg alt="EUROBONUS")
-
+                img(src=basePath + "img/cupon.png" alt="EUROBONUS")
 
             p #{t.intro.text3}
 
-        .intro__text
-
-
         .intro__steps
-            each step in t.intro.steps
+            each step, index in t.intro.steps
                 .intro__step
-                    img(src=basePath + "img/" + step.img alt="")
+                    img(src=basePath + stepsIcon[index] alt="")
                     span.text-bold #{step.text}
 
         .intro__actions

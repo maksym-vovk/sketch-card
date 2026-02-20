@@ -11,20 +11,21 @@ section.intro-success.block(class="screen hidden" id="screen-intro-success")
                         br
 
             form.intro-success__form
-                each field in t.introSuccess.form
-                    .form-group
-                        label= field.label
-                        .input-wrapper
-                            input(
-                                type=field.type
-                                name=field.name
-                                placeholder=field.placeholder
-                                required=field.required
-                            )
-                            span.icon= field.icon
+
+                // --- Promo code ---
+                .form-group
+                    .input-wrapper
+                        input(
+                            type="text"
+                            name="promo-code"
+                            placeholder=t.common.promoCodePlaceholder
+                            required
+                        )
+                        span.icon
+                            img(src=basePath + "img/promocode-icon.svg" alt="")
 
                 button.intro-success__submit(
                     type="submit"
                     disabled=t.introSuccess.btnSubmit.disabled
-                    data-target-screen=t.introSuccess.btnSubmit.targetScreen
+                    data-target-screen="screen-problems"
                 )= t.introSuccess.btnSubmit.text

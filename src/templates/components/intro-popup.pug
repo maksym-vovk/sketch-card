@@ -2,21 +2,45 @@ section.intro-popup.block(class="screen hidden" id="screen-intro-popup")
     .container
         h1.intro-popup__title.title.text-gold-fill!= t.introPopup.title
 
-
-        form.intro-popup__form
+        form.intro-popup__form.stars-bg
             p.intro-popup__subtitle!= t.introPopup.subtitle
-            each field in t.introPopup.form
-                .form-group
-                    //label= field.label
-                    .input-wrapper
-                        input(
-                            type=field.type
-                            name=field.name
-                            placeholder=field.placeholder
-                            required=field.required
-                        )
-                        span.icon= field.icon
+
+            // --- Promo code ---
+            .form-group
+                .input-wrapper
+                    input(
+                        type="text"
+                        name="promo-code"
+                        placeholder=t.common.promoCodePlaceholder
+                        required
+                    )
+                    span.icon
+                        img(src=basePath + "img/promocode-icon.svg" alt="")
+
+            // --- Name ---
+            .form-group
+                .input-wrapper
+                    input(
+                        type="text"
+                        name="name"
+                        placeholder=t.common.namePlaceholder
+                        required
+                    )
+                    span.icon
+                        img(src=basePath + "img/name-icon.svg" alt="")
+
+            // --- Phone ---
+            .form-group
+                .input-wrapper
+                    input(
+                        type="tel"
+                        name="phone"
+                        placeholder=t.common.phonePlaceholder
+                        required
+                    )
+                    span.icon
+                        img(src=basePath + "img/phone-icon.svg" alt="")
 
             button.intro-popup__submit.btn(type="submit")= t.introPopup.btnSubmit
 
-            p.intro-popup__privacy= t.introPopup.privacyText
+            p.intro-popup__privacy= t.common.privacyProtected
