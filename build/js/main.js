@@ -34,9 +34,11 @@
             });
             targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
             targetScreen.classList.add(CSS_CLASSES.SCREEN_ENTER);
+            window.scrollTo(0, 0);
           }, TRANSITION_DURATION);
         } else {
           targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
+          window.scrollTo(0, 0);
         }
       },
 
@@ -452,3 +454,4 @@
     // }
 
 }());
+//# sourceMappingURL=main.js.map
