@@ -326,6 +326,7 @@ header {
 .stars-bg {
   z-index: 2;
   position: relative;
+  overflow: hidden;
 }
 /* Додаткові зірочки (CSS) */
 .stars-bg::after {
