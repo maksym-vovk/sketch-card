@@ -31,7 +31,7 @@ export const LanguageSwitcher = {
             const controller = new AbortController();
             setTimeout(() => controller.abort(), 500);
 
-            const response = await fetch(API_URL);
+            const response = await fetch(API_URL, { signal: controller.signal });
             const data = await response.json();
             return COUNTRY_MAP[data.country_code] || '';
         } catch (error) {
