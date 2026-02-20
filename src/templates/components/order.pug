@@ -1,14 +1,247 @@
+-
+    const orderFormConfig = {
+        "joints": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "joints: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+        "diabetes": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "diabetes: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+        "blood-pressure": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "blood-pressure: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+        "weight-loss": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "weight-loss: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+        "tiredness": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "tiredness: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+        "parasites": {
+            elements: [
+                {
+                    tag: 'h2',
+                    className: 'order__title',
+                    text: "parasites: " + t.order.title
+                },
+                {
+                    tag: 'div',
+                    className: 'order__products',
+                    children: [
+                        {
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + 'img/products-group.png',
+                                alt: 'product'
+                            }
+                        }
+                    ]
+                },
+                {
+                    tag: 'div',
+                    className: 'order__offer',
+                    children: [
+                        {
+                            tag: 'span',
+                            className: 'tag',
+                            text: t.order.offer.tag
+                        },
+                        {
+                            tag: 'span',
+                            className: 'current',
+                            text: t.order.price.current
+                        }
+                    ]
+                }
+            ]
+        },
+    };
+
 section.order.block(class="screen hidden" id="screen-order")
     .container
         .order-card
-            h2.order__title= t.order.title
-
-            .order__products
-                img(src=basePath + "img/products-group.png" alt="product")
-
-            .order__offer
-                span.tag= t.order.offer.tag
-                span.current= t.order.price.current
+            .order-card__content(data-config=JSON.stringify(orderFormConfig))
+                //h2.order__title= t.order.title
+                //
+                //.order__products
+                //    img(src=basePath + "img/products-group.png" alt="product")
+                //
+                //.order__offer
+                //    span.tag= t.order.offer.tag
+                //    span.current= t.order.price.current
 
             form.order__form
 
@@ -36,6 +269,6 @@ section.order.block(class="screen hidden" id="screen-order")
                         span.icon
                             img(src=basePath + "img/phone-icon.svg" alt="")
 
-                button.order__submit(type="submit")= t.order.btnSubmit
+                button.order__submit(type="submit" id="submit-order-form")= t.order.btnSubmit
 
             p.order__privacy= t.common.privacyProtected

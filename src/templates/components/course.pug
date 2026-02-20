@@ -31,4 +31,8 @@ section.course.block(class="screen hidden" id="screen-course")
                                 each item in option.productsList
                                     li= item
 
-            button.course__select(type="button" data-target-screen="screen-order")= t.course.btnSelect
+            button.course__select(
+                type="button"
+                id="from-course-to-order-form"
+                data-target-screen="screen-order"
+            )= t.course.btnSelect

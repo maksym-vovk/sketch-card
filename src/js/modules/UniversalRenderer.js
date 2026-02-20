@@ -37,9 +37,15 @@ export const UniversalRenderer = {
         return element;
     },
 
+    _cleanRoot(root) {
+        root.replaceChildren();
+    },
+
     render(rootSelector, elements) {
         const root = document.querySelector(rootSelector);
         const fragment = document.createDocumentFragment();
+
+        this._cleanRoot(root)
 
         elements.forEach((element) => {
             const createdElement = this._createElement(element);
