@@ -28,11 +28,12 @@ const API_URL = 'https://ipapi.co/json/';
 export const LanguageSwitcher = {
     async detectUserLanguage() {
         try {
+            const controller = new AbortController();
+            setTimeout(() => controller.abort(), 500);
+
             const response = await fetch(API_URL);
             const data = await response.json();
-            const countryCode = data.country_code;
-
-            return COUNTRY_MAP[countryCode] || '';
+            return COUNTRY_MAP[data.country_code] || '';
         } catch (error) {
             console.warn('Failed to detect language from IP:', error);
             const browserLang = navigator.language.split('-')[0];
