@@ -3,6 +3,8 @@ import {FormsManager} from "./modules/FormsManager";
 import {NichesAccordion} from "./modules/NichesAccordion";
 import {AppState} from "./modules/AppState";
 import {LanguageSwitcher} from "./modules/LanguageSwitcher";
+import {UniversalRenderer} from "./modules/UniversalRenderer";
+// import {presentationsConfig} from "./data/presentationsConfig";
 
 function main() {
   AppState.init()
@@ -10,6 +12,10 @@ function main() {
   ScreenManager.init();
   FormsManager.init();
   NichesAccordion.init();
+  UniversalRenderer.render(
+      ".presentation-modal",
+      JSON.parse(document.querySelector(".presentation-modal").dataset.config['weightControl'].elements)
+  )
 }
 
 main();
