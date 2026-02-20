@@ -1,5 +1,6 @@
 const SELECTORS = {
     PROBLEMS_SCREEN: '#screen-problems',
+    ACCORDION_CONTAINER: '.problems-wrapper',
     ACCORDION_ITEMS: '.accordion-item',
     ACCORDION_HEADER: '.accordion-header',
     ACCORDION_CONTENT: '.accordion-content',
@@ -7,46 +8,39 @@ const SELECTORS = {
     NEXT_BUTTON: '.problems__next'
 };
 
+const CSS_CLASSES = {
+    ACTIVE: 'active'
+};
+
 export const NichesAccordion = {
+    nextButton: null,
+
     handleAccordionClick(clickedItem, allItems) {
-        const wasActive = clickedItem.classList.contains('active');
+        allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
+        clickedItem.classList.add(CSS_CLASSES.ACTIVE);
+    },
 
-        allItems.forEach(item => item.classList.remove('active'));
+    handleClick(event, allItems) {
+        const accordionItem = event.target.closest(SELECTORS.ACCORDION_ITEMS);
+        const radioInput = accordionItem?.querySelector(SELECTORS.RADIO_INPUT);
 
-        if (!wasActive) {
-            clickedItem.classList.add('active');
-        }
+        if (!accordionItem || !radioInput || event.target === radioInput) return;
+
+        radioInput.checked = true;
+        this.handleAccordionClick(accordionItem, allItems);
     },
 
     init() {
         const problemsScreen = document.querySelector(SELECTORS.PROBLEMS_SCREEN);
-
-        if (!problemsScreen) {
-            console.warn('Problems screen not found');
-            return;
-        }
+        if (!problemsScreen) return console.warn('Problems screen not found');
 
         const accordionItems = problemsScreen.querySelectorAll(SELECTORS.ACCORDION_ITEMS);
-        const nextButton = problemsScreen.querySelector(SELECTORS.NEXT_BUTTON);
 
-
-        if (!accordionItems.length || !nextButton) {
-            console.warn('Accordion items or next button not found');
-            return;
+        if (!accordionItems.length) {
+            return console.warn('Accordion items or next button not found');
         }
 
-        nextButton.disabled = true;
-
-        accordionItems.forEach(item => {
-            const header = item.querySelector(SELECTORS.ACCORDION_HEADER);
-            const radioInput = header?.querySelector(SELECTORS.RADIO_INPUT);
-
-            if (!header || !radioInput) return;
-
-            radioInput.addEventListener('change', () => {
-                this.handleAccordionClick(item, accordionItems);
-                nextButton.disabled = false;
-            });
-        });
+        problemsScreen.querySelector(SELECTORS.ACCORDION_CONTAINER)
+            ?.addEventListener('click', (e) => this.handleClick(e, accordionItems));
     }
-}
+};
