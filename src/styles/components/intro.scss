@@ -58,22 +58,22 @@ body, button{
 
 
 .intro__step:nth-child(1){
-  background-image: url(../../img/icon-scratch.svg);
+  background-image: url(../img/icon-scratch.svg);
   background-position: 20px center;
   background-repeat:no-repeat;
   -webkit-background-size: 55px;
   background-size: 55px;
-  //background: url(../../img/icon-scratch.svg) 0 center no-repeat;
+  //background: url(../img/icon-scratch.svg) 0 center no-repeat;
 }
 .intro__step:nth-child(2){
-  //background: url(../../img/icon-click.svg) 7px center no-repeat;
-  background-image: url(../../img/icon-click.svg);
+  //background: url(../img/icon-click.svg) 7px center no-repeat;
+  background-image: url(../img/icon-click.svg);
   background-position: 25px center;
   background-repeat:no-repeat;
 }
 .intro__step:nth-child(3){
-  //background: url(../../img/icon-gift.svg) 7px center no-repeat;
-  background-image: url(../../img/icon-gift.svg);
+  //background: url(../img/icon-gift.svg) 7px center no-repeat;
+  background-image: url(../img/icon-gift.svg);
   background-position: 25px center;
   background-repeat:no-repeat;
 }
