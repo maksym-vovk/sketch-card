@@ -151,7 +151,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     },
     "diabetes": {
       "title": "Paket za uravnavanje ravni sladkorja",
@@ -184,7 +187,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     },
     "bloodPressure": {
       "title": "Paket za krvni tlak in ožilje",
@@ -217,7 +223,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     },
     "weightLoss": {
       "title": "Paket za nadzor telesne teže",
@@ -236,7 +245,7 @@
           "description": "pomaga nadzorovati apetit čez dan."
         },
         {
-          "name": "OzenmicSoft",
+          "name": "Ozenmic Soft",
           "description": "pomaga telesu hitreje razgrajevati hrano."
         },
         {
@@ -250,7 +259,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": " Ви економите 80 євро!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     },
     "tiredness": {
       "title": "Paket proti utrujenosti (Energija)",
@@ -265,7 +277,7 @@
       "recommendName": "«Energija in ravnovesje — kompleks»",
       "products": [
         {
-          "name": "Tonerin",
+          "name": "Guavital+",
           "description": "vrača vitalnost in dobro voljo."
         },
         {
@@ -283,7 +295,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     },
     "parasites": {
       "title": "Celostno zdravje",
@@ -316,7 +331,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+      }
     }
   },
   "order": {

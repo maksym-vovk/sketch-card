@@ -151,7 +151,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     },
     "diabetes": {
       "title": "Set za ravnotežu šećera",
@@ -184,7 +187,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     },
     "bloodPressure": {
       "title": "Set za krvni tlak i žile",
@@ -217,7 +223,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     },
     "weightLoss": {
       "title": "Set za kontrolu težine",
@@ -236,7 +245,7 @@
           "description": "pomaže u suzbijanju apetita tijekom dana."
         },
         {
-          "name": "OzenmicSoft",
+          "name": "Ozenmic Soft",
           "description": "pomaže tijelu brže razgrađivati hranu."
         },
         {
@@ -250,7 +259,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     },
     "tiredness": {
       "title": "Set protiv umora (Energija)",
@@ -265,7 +277,7 @@
       "recommendName": "«Set energija i ravnoteža»",
       "products": [
         {
-          "name": "Tonerin",
+          "name": "Guavital+",
           "description": "vraća energiju i dobro raspoloženje."
         },
         {
@@ -283,7 +295,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     },
     "parasites": {
       "title": "Sveobuhvatna zdravstvena njega",
@@ -316,7 +331,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+      }
     }
   },
   "order": {
