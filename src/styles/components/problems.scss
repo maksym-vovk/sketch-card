@@ -144,37 +144,37 @@
 }
 
 .accordion-item:nth-child(1) .accordion-header:before{
-  background-image: url(../img/joint.svg);
+  background-image: url(../../img/joint.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(2) .accordion-header:before{
-  background-image: url(../img/diabette.svg);
+  background-image: url(../../img/diabette.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(3) .accordion-header:before{
-  background-image: url(../img/blood-pressure.svg);
+  background-image: url(../../img/blood-pressure.svg);
   background-repeat:no-repeat;
   background-position: 13px 13px;
   background-size: 50px;
 }
 .accordion-item:nth-child(4) .accordion-header:before{
-  background-image: url(../img/metabolism.svg);
+  background-image: url(../../img/metabolism.svg);
   background-repeat:no-repeat;
   background-position: 13px 13px;
   background-size: 50px;
 }
 .accordion-item:nth-child(5) .accordion-header:before{
-  background-image: url(../img/weight.svg);
+  background-image: url(../../img/weight.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(6) .accordion-header:before{
-  background-image: url(../img/welness.svg);
+  background-image: url(../../img/welness.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
@@ -206,6 +206,8 @@
   font-size: 16px;
   cursor: pointer;
   padding-left: 55px;
+  padding-right: 40px;
+
 
 }
 .accordion-item.active{
@@ -228,6 +230,7 @@
 .accordion-header span{
   font-size: 20px;
   line-height: 1.3;
+  color: yellow;
 }
 .accordion-content{
   text-align: left;
@@ -251,17 +254,35 @@
 .accordion-content__inner ol li:last-child{
   margin-bottom: 0;
 }
-
-.accordion-item.active:before{
+.accordion-item:after{
   content: '';
-  background: url("../img/selected.svg") 0 0 no-repeat;
-  width: 30px;
-  height: 30px;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  //background: url("../../img/selected.svg") 0 0 no-repeat;
+  //background: url("../../img/arrow1.svg") 0 0 no-repeat;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
   position: absolute;
-  top: 23px;
+  top: 19px;
   right: 10px;
+}
+.accordion-item:before{
+  content: '';
+  //background: url("../../img/selected.svg") 0 0 no-repeat;
+  background: url("../../img/arrow2.svg") center no-repeat;
+  width: 40px;
+  height: 40px;
+  -webkit-background-size: 35px;
+  background-size: 35px;
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  transform: scaleY(-1) rotateZ(45deg);
+  transition: .5s;
+
+}
+.accordion-item.active:before{
+  transform: scaleY(-1) rotateZ(-45deg);
 }
 .accordion-item.active .accordion-item{
   position: relative;
@@ -269,6 +290,45 @@
 .accordion-item.active .accordion-content{
   max-height:500px; /* любое большое */
   overflow: initial;
+}
+
+.accordion-content__btn{
+  //background: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 15px 0 0;
+  width: 100%;
+  border-radius: 9px;
+  font-weight: 300;
+  position: relative;
+  //color: #000;
+  text-align: center;
+  background: #e63900;
+  color: #ffffff;
+}
+.accordion-content__btn:before, .accordion-content__btn:after{
+  content: '';
+  background: url("../../img/arrow3.svg") 0 center no-repeat;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  -webkit-background-size: 30px;
+  background-size: 30px;
+  pointer-events: none;
+}
+.accordion-content__btn:before{
+  content: none;
+  left: 20px;
+  transform: rotateZ(45deg);
+  background-position-y: 12px;
+
+}
+.accordion-content__btn:after{
+  right: 20px;
+  transform: rotateZ(-315deg);
+  background-position-y: 9px;
+
 }
 
 

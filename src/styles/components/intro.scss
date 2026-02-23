@@ -51,30 +51,46 @@ body, button{
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  counter-reset: item-counter;
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
 
+.intro__step{
+  counter-increment: item-counter;
+  position: relative;
+
+
+}
+.intro__step:before{
+  content: counter(item-counter) ")";
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 
 
 .intro__step:nth-child(1){
-  background-image: url(../img/icon-scratch.svg);
-  background-position: 20px center;
+  background-image: url(../../img/icon-scratch.svg);
+  background-position: calc(100% - 20px) center;
   background-repeat:no-repeat;
   -webkit-background-size: 55px;
   background-size: 55px;
-  //background: url(../img/icon-scratch.svg) 0 center no-repeat;
+  //background: url(../../img/icon-scratch.svg) 0 center no-repeat;
 }
 .intro__step:nth-child(2){
-  //background: url(../img/icon-click.svg) 7px center no-repeat;
-  background-image: url(../img/icon-click.svg);
-  background-position: 25px center;
+  //background: url(../../img/icon-click.svg) 7px center no-repeat;
+  background-image: url(../../img/icon-click.svg);
+  background-position: calc(100% - 20px) center;
   background-repeat:no-repeat;
 }
 .intro__step:nth-child(3){
-  //background: url(../img/icon-gift.svg) 7px center no-repeat;
-  background-image: url(../img/icon-gift.svg);
-  background-position: 25px center;
+  //background: url(../../img/icon-gift.svg) 7px center no-repeat;
+  background-image: url(../../img/icon-gift.svg);
+  background-position: calc(100% - 20px) center;
   background-repeat:no-repeat;
 }
 
@@ -84,7 +100,7 @@ body, button{
   display: flex;
   min-height: 65px;
   align-items: center;
-  padding: 0 20px 0 90px;
+  padding: 0 90px 0 45px;
   text-align: left;
   border-radius: 10px;
   background-color: brown;
