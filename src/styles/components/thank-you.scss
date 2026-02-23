@@ -25,6 +25,10 @@ body, button{
   position: relative;
   overflow: hidden;
   z-index: 2;
+
+  @include rm(1024){
+    padding-bottom: 60px;
+  }
 }
 
 .thank-you__title {

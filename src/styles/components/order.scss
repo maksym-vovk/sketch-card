@@ -7,14 +7,35 @@
   padding: 15px;
   border-radius: 16px;
   text-align: center;
-}
 
+  @include rm(768){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+}
+.order-card__content {
+  @include rm(768){
+    display: contents;
+    //flex-wrap: wrap;
+  }
+}
 .order__title {
+  width: 100%;
   margin: 0 0 20px;
   font-size: 40px;
   font-weight: 700;
   padding: 0 30px;
   color: #333;
+
+  @include rm(768){
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .order__offer {
@@ -30,10 +51,26 @@
 
   background: #ff6600;
   color: white;
+
+  @include rm(768){
+    order: 2;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  @include rm(1024){
+    max-width: 450px;
+  }
 }
 .order__offer .tag{
   position: relative;
   top: -4px;
+  margin-right: 5px;
+
+  @include rm(1024){
+    //top: 0;
+    font-size: 30px;
+  }
 }
 
 //.tag,
@@ -60,12 +97,32 @@
   gap: 12px;
   flex-wrap: wrap;
   margin: 20px 0;
+
+  @include rm(768){
+    position: relative;
+    order: 3;
+  }
 }
 
 .order__products img {
   width: 290px;
   height: auto;
   border-radius: 8px;
+
+
+  @include rm(768){
+    width: 100%;
+    max-width: 410px;
+  }
+
+  @include rm(1024){
+    width: 100%;
+    max-width: 560px;
+  }
+  @include rm(1220){
+    width: 100%;
+    max-width: 690px;
+  }
 }
 
 .order__economy {
@@ -82,6 +139,10 @@
   font-size: 35px;
   font-weight: bold;
   color: white;
+
+  @include rm(1024){
+    font-size: 45px;
+  }
 }
 
 .old {
@@ -140,4 +201,22 @@
 .order__privacy {
   font-size: 17px;
   opacity: 0.9;
+}
+
+.order__form {
+  @include rm(768){
+    order: 3;
+    width: 100%;
+    max-width: 250px;
+  }
+  @include rm(1024){
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+
+  }
+
+  @include rm(1220){
+    max-width: 400px;
+  }
 }
