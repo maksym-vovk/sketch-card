@@ -188,15 +188,28 @@
   width: 100px;
   height: 75px;
 }
+
+.problems-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .accordion-item{
+  width: 100%;
   padding: 25px 20px 25px 75px;
   padding: 25px 20px 25px 20px;
   //background: rgba(255,255,255,0.08);
   background: rgba(0,0,0,0.35);
   cursor: pointer;
   border-radius: 12px;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   position: relative;
+
+  //@include rm(640){
+  //  width: calc(50% - 10px);
+  //  align-self: flex-start;
+  //}
 }
 .accordion-header {
   display: flex;
@@ -296,7 +309,7 @@
   //background: #fff;
   padding: 10px 20px;
   font-size: 20px;
-  margin: 15px 0 0;
+  //margin: 15px 0 0;
   width: 100%;
   border-radius: 9px;
   font-weight: 300;
@@ -306,6 +319,10 @@
   background: #e63900;
   color: #ffffff;
   cursor: pointer;
+
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 .accordion-content__btn:before, .accordion-content__btn:after{
   content: '';
