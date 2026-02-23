@@ -17,7 +17,7 @@ body {
 body::before,
 body::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 100px;
   height: 100%;
   z-index: 1;
@@ -326,6 +326,7 @@ header {
 .stars-bg {
   z-index: 2;
   position: relative;
+  overflow: hidden;
 }
 /* Додаткові зірочки (CSS) */
 .stars-bg::after {

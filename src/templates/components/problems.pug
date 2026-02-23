@@ -49,9 +49,14 @@ section.problems.block(class="screen hidden" id="screen-problems")
                                 each problem, idx in cat.list
                                     li
                                         span #{idx + 1}. #{problem}
+                        button.problems__next(
+                            type="button"
+                            id=`from-problems-to-presentation-${cat.niche}`
+                            data-target-screen="screen-presentations"
+                        )= t.problems.btnNext
 
-        button.problems__next(
-            type="button"
-            id="from-problems-to-presentation"
-            data-target-screen="screen-presentations"
-        )= t.problems.btnNext
+        //button.problems__next(
+        //    type="button"
+        //    id="from-problems-to-presentation"
+        //    data-target-screen="screen-presentations"
+        //)= t.problems.btnNext

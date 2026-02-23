@@ -45,3 +45,6 @@ coverage/
 
 #Archive
 *.zip
+
+# Source maps
+*.map

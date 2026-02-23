@@ -144,37 +144,37 @@
 }
 
 .accordion-item:nth-child(1) .accordion-header:before{
-  background-image: url(../../img/joint.svg);
+  background-image: url(../img/joint.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(2) .accordion-header:before{
-  background-image: url(../../img/diabette.svg);
+  background-image: url(../img/diabette.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(3) .accordion-header:before{
-  background-image: url(../../img/blood-pressure.svg);
+  background-image: url(../img/blood-pressure.svg);
   background-repeat:no-repeat;
   background-position: 13px 13px;
   background-size: 50px;
 }
 .accordion-item:nth-child(4) .accordion-header:before{
-  background-image: url(../../img/metabolism.svg);
+  background-image: url(../img/metabolism.svg);
   background-repeat:no-repeat;
   background-position: 13px 13px;
   background-size: 50px;
 }
 .accordion-item:nth-child(5) .accordion-header:before{
-  background-image: url(../../img/weight.svg);
+  background-image: url(../img/weight.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
 }
 .accordion-item:nth-child(6) .accordion-header:before{
-  background-image: url(../../img/welness.svg);
+  background-image: url(../img/welness.svg);
   background-repeat:no-repeat;
   background-position: 13px center;
   background-size: 50px;
@@ -254,7 +254,7 @@
 
 .accordion-item.active:before{
   content: '';
-  background: url("../../img/selected.svg") 0 0 no-repeat;
+  background: url("../img/selected.svg") 0 0 no-repeat;
   width: 30px;
   height: 30px;
   -webkit-background-size: 100%;

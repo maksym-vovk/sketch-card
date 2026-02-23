@@ -2,48 +2,44 @@
   "common": {
     "pageTitle": "Sketch Card EN",
     "subscribeTitle": "Thank you page EN",
-
-    "promoCodePlaceholder": "Промокод",
-    "namePlaceholder": "Ваше ім'я",
-    "phonePlaceholder": "Ваш номер",
-
-    "privacyProtected": "Ваші персональні дані захищені"
+    "promoCodePlaceholder": "Promo code",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "Your contact number",
+    "privacyProtected": "Your personal data is protected"
   },
-
   "intro": {
-    "title": "Ваш подарунок чекає: активуйте євробонуси",
-    "text1": "Ви отримали",
-    "scratch": "SCRATCH-КАРТКУ",
-    "text2": "з бонусами!",
-    "text3": "Використайте їх зараз для замовлення продуктів з суттєвою вигодою.",
-
+    "title": "Your gift is waiting for you: activate euro bonuses",
+    "text1": "You received a",
+    "scratch": "SCRATCH CARD",
+    "text2": "with bonuses!",
+    "text3": "Use them now to order products at great deals.",
     "steps": [
-      { "text": "Зітріть захисний шар на картці" },
-      { "text": "Активуйте бонуси" },
-      { "text": "Оберіть набір з вигодою" }
+      {
+        "text": "Scratch off the card's protective layer"
+      },
+      {
+        "text": "Activate bonuses"
+      },
+      {
+        "text": "Choose a bargain set"
+      }
     ],
-
-    "btnCall": "Замовити дзвінок оператора",
-    "btnSite": "Оформити самостійно на сайті"
+    "btnCall": "Order an operator's call",
+    "btnSite": "Request personally on the website"
   },
-
   "introPopup": {
-    "title": "Бажаєте, щоб ми все зробили за вас?",
-    "subtitle": "Залиште свої дані, і наш спеціаліст допоможе розібратися з бонусами та оформить доставку за лічені хвилини.",
-
-    "btnSubmit": "Передзвоніть мені для активації бонусів",
-    "privacyText": "*Ваші персональні дані захищені"
+    "title": "Would you prefer us to do everything for you?",
+    "subtitle": "Leave your details, and our specialist will help you deal with bonuses and arrange delivery in a matter of minutes.",
+    "btnSubmit": "Call Me Back to activate bonuses",
+    "privacyText": "*Your personal data is protected"
   },
-
   "introSuccess": {
-    "title": "Вітаємо!",
-    "text": "Бажаєте оформити все самостійно?\nЦе зручно та швидко. Ви обираєте потрібний напрямок підтримки здоров'я, а бонуси застосуються автоматично.",
-
+    "title": "Congratulations!",
+    "text": "Preferring to do everything yourself? It's convenient and fast. You choose the desired area of health support, and bonuses will be applied automatically.",
     "btnSubmit": {
-      "text": "Активувати бонуси"
+      "text": "Activate bonuses"
     }
   },
-
   "course": {
     "title": "Вибір курсу",
     "options": [
@@ -67,82 +63,209 @@
     ],
     "btnSelect": "Оберіть цей комплекс →"
   },
-
   "problems": {
-    "title": "Оберіть напрямок, що вас цікавить:",
-    "btnNext": "Далі",
+    "title": "Choose the direction you are interested in:",
+    "btnNext": "Next",
     "categories": [
       {
-        "name": "Турбота про суглоби",
+        "name": "Joint care",
         "list": [
-          "Коліна крутять на погоду",
-          "Спина болить і важко рухатись",
-          "Кожен крок дається з зусиллям"
+          "Knees ache because of the weather",
+          "My back hurts and it's hard to move",
+          "Every step is a struggle"
         ]
       },
       {
-        "name": "Діабет / Контроль цукру",
+        "name": "Diabetes / sugar control",
         "list": [
-          "Різко скаче цукор",
-          "Тягне до солодкого",
-          "Відчуття постійної слабкості"
+          "My blood sugar is spiking",
+          "Craving for sweets",
+          "Feeling of constant weakness"
         ]
       },
       {
-        "name": "Тиск / Судини / Набряки",
+        "name": "Pressure / Blood Vessels / Swelling",
         "list": [
-          "Тиск часто стрибає",
-          "Голова болить",
-          "Ноги до вечора сильно набрякають"
+          "Blood pressure often jumps",
+          "My head hurts",
+          "My legs are very swollen in the evening"
         ]
       },
       {
-        "name": "Стрункість і метаболізм",
+        "name": "Slimness and metabolism",
         "list": [
-          "Вага стоїть на місці або тільки росте з роками",
-          "Улюблений одяг став затісним",
-          "В тілі з’явилася важкість, якої раніше не було"
+          "Weight stays the same or only increases over the years",
+          "My favorite clothes have become too tight",
+          "There is a heaviness in the body that was not there before"
         ]
       },
       {
-        "name": "Позбавлення від втоми",
+        "name": "Fighting fatigue",
         "list": [
-          "Постійне відчуття втоми",
-          "Зовсім немає енергії",
-          "Нічого не радує"
+          "Constant feeling of fatigue",
+          "No energy at all",
+          "Nothing pleases"
         ]
       },
       {
-        "name": "Комплексне оздоровлення",
+        "name": "Overall health improvement",
         "list": [
-          "Організму потрібна підтримка всюди",
-          "Постійно переживаю за своє здоров'я",
-          "Хочу почуватися захищеною(им) та активною(им)"
+          "The body needs total support",
+          "I constantly worry about my health",
+          "I want to feel protected and active"
         ]
       }
     ]
   },
-
+  "presentation": {
+    "btnChange": "Choose a different program",
+    "btnNext": "Next",
+    "joints": {
+      "title": "Joints and movement",
+      "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
+      "benefitsTitle": "How recovery works:",
+      "benefitsList": [
+        "first, the feeling of heaviness and \"aching\" is removed;",
+        "flexibility gradually returns;",
+        "joints receive the necessary nutrition to move comfortably."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Maximum comfort for joints»",
+      "products": [
+        "Steplex - helps relieve pain and make it easier for joints to move.",
+        "Cardiform - removes the feeling of heaviness and improves blood circulation.",
+        "Guavital+ — helps reduce the impact of excess weight on joints.",
+        "Ultraxal - improves the functioning of the stomach, so that everything healthy is better absorbed."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    },
+    "diabetes": {
+      "title": "Sugar Balance Kit",
+      "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
+      "benefitsTitle": "What you will achieve in the course:",
+      "benefitsList": [
+        "glucose levels stabilize (you no longer feel \"sleepy\" after eating);",
+        "the obsessive desire to eat something sweet disappears;",
+        "strength appears, and the overall state of health becomes even and stable."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Comprehensive Sugar Control»",
+      "products": [
+        "Dialos - helps keep sugar normal.",
+        "Inspicure - helps you feel stable and energetic.",
+        "Guavital+ - helps reduce the desire to constantly eat something.",
+        "Ultraxal - takes care of the digestive system and lightness."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    },
+    "bloodPressure": {
+      "title": "Pressure and Blood Vessels Kit",
+      "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
+      "benefitsTitle": "How the body returns to normal:",
+      "benefitsList": [
+        "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
+        "the walls of blood vessels are strengthened so that they respond better to weather changes;",
+        "the pressure stabilizes, and the head becomes clear and \"light\"."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Vascular Program and Fluid Balance»",
+      "products": [
+        "Tonerin — helps keep blood pressure under control.",
+        "Kardivix - helps improve blood circulation and purify blood vessels.",
+        "Guavital+ - removes excess salt and improves metabolism.",
+        "Ultraxal - helps remove swelling and excess water from the body."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    },
+    "weightLoss": {
+      "title": "Weight Control Kit",
+      "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
+      "benefitsTitle": "Usually the body acts step by step:",
+      "benefitsList": [
+        "first curbs appetite;",
+        "removes puffiness and bloating;",
+        "adjusts the metabolism so that the weight finally begins to melt away."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Overall Weight Control»",
+      "products": [
+        "Slimital - helps curb your appetite throughout the day.",
+        "Ozenmic Soft - helps the body break down food faster.",
+        "Vermixin - helps to cleanse the body of all excess.",
+        "Ultraxal - helps digestion work like clockwork."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    },
+    "tiredness": {
+      "title": "Fatigue Kit (Energy)",
+      "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
+      "benefitsTitle": "How energy is returned:",
+      "benefitsList": [
+        "the body is gently cleansed of accumulated toxins;",
+        "the work of the stomach and intestines improves (heaviness disappears);",
+        "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Energy and Balance Program»",
+      "products": [
+        "Tonerin - brings back energy and good mood.",
+        "Vermixin - helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract.",
+        "Ultraxal - helps digestion work smoothly.",
+        "Slimital - keeps you in shape and prevents you from gaining excess weight due to fatigue."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    },
+    "parasites": {
+      "title": "Overall health improvement",
+      "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
+      "benefitsTitle": "What a comprehensive approach provides:",
+      "benefitsList": [
+        "maintaining the heart and blood vessels in good condition;",
+        "improving digestion to keep the immune system strong;",
+        "protect your vision and hearing to make you feel confident and active."
+      ],
+      "recommendTitle": "We have selected a set for you:",
+      "recommendName": "«Overall Health Improvement - Maximum»",
+      "products": [
+        "Ultraxal - for good digestion and lightness.",
+        "Tonerin - to protect blood vessels and the heart.",
+        "Vermixin - helps to cleanse the body of all excess.",
+        "Ausen - supports clear hearing and mind."
+      ],
+      "footnote": "Bonuses will be applied automatically",
+      "saving": "You save 80 euros!",
+      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+    }
+  },
   "order": {
-    "title": "Ваш бонус 80€ активовано!",
+    "title": "Your €80 bonus has been activated!",
     "offer": {
-      "tag": "Набір (4 од.): 167€ - 80€ = ",
-      "discount": "Ваші євробонуси: - 80 €"
+      "tag": "Set (4 units.): 167€ - 80€ =",
+      "discount": "Your euro bonuses: - 80 €"
     },
     "price": {
       "current": "87 €"
     },
-    "btnSubmit": "Підтвердити замовлення"
+    "btnSubmit": "Confirm your order"
   },
-
   "thankYou": {
-    "title": "Дякуємо!",
+    "title": "Thank you!",
     "variants": {
       "callback": {
-        "text": "Ваша заявка вже в роботі.\nОператор зв’яжеться з вами найближчим часом."
+        "text": "Your request is already in progress. The operator will contact you as soon as possible."
       },
       "order": {
-        "text": "Ваше замовлення вже в роботі.\nМи успішно прийняли вашу заявку. Чекайте на дзвінок від оператора найближчим часом. Нехай наші продукти приносять вам лише користь та гарне самопочуття!"
+        "text": "Your order is already in progress. We have successfully processed your request. Expect a call from the operator shortly. May our products bring you only benefits and perfect health!"
       }
     }
   }
