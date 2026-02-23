@@ -11,7 +11,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.joints.title,
                         },
                         {
@@ -84,7 +84,12 @@
                                 {
                                     tag: 'p',
                                     className: 'presentation__price',
-                                    text: t.presentation.joints.price
+                                    text: t.presentation.joints.price.old_price
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    text: t.presentation.joints.price.bonus_price
                                 }
                             ]
                         }
@@ -98,7 +103,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.diabetes.title,
 
                         },
@@ -159,7 +164,8 @@
                                 },
                                 {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price}
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price.old_price},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price.bonus_price}
                             ]
                         }
                     ]
@@ -172,7 +178,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.bloodPressure.title,
 
                         },
@@ -237,7 +243,8 @@
                                     text: t.presentation.bloodPressure.footnote
                                 },
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price}
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price.old_price},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price.bonus_price}
                             ]
                         }
                     ]
@@ -250,7 +257,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.weightLoss.title,
 
                         },
@@ -315,7 +322,8 @@
                                     text: t.presentation.weightLoss.footnote
                                 },
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price}
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price.old_price},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price.bonus_price}
                             ]
                         }
                     ]
@@ -328,7 +336,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.tiredness.title,
 
                         },
@@ -392,7 +400,8 @@
                                     className: 'presentation__footnote',
                                     text: t.presentation.tiredness.footnote
                                 },
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price}
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price.old_price},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price.bonus_price}
                             ]
                         }
                     ]
@@ -405,7 +414,7 @@
                     elements: [
                         {
                             tag: 'h2',
-                            className: 'presentation__title',
+                            className: 'presentation__title title',
                             text: t.presentation.parasites.title,
                         },
                         {
@@ -469,7 +478,8 @@
                                     text: t.presentation.parasites.footnote
                                 },
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price}
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price.old_price},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price.bonus_price}
                             ]
                         }
                     ]

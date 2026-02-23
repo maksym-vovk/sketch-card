@@ -151,7 +151,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     },
     "diabetes": {
       "title": "Sugar Balance Kit",
@@ -184,7 +187,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     },
     "bloodPressure": {
       "title": "Pressure and Blood Vessels Kit",
@@ -217,7 +223,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     },
     "weightLoss": {
       "title": "Weight Control Kit",
@@ -250,7 +259,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     },
     "tiredness": {
       "title": "Fatigue Kit (Energy)",
@@ -283,7 +295,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     },
     "parasites": {
       "title": "Overall health improvement",
@@ -316,7 +331,10 @@
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
-      "price": "Old price: 167 euros. Price with bonuses: 87 euros"
+      "price": {
+        "old_price": "Old price: 167 euros",
+        "bonus_price": "Price with bonuses: 87 euros"
+      }
     }
   },
   "order": {

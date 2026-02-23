@@ -151,7 +151,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     },
     "diabetes": {
       "title": "Paket za uravnavanje ravni sladkorja",
@@ -184,7 +187,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     },
     "bloodPressure": {
       "title": "Paket za krvni tlak in ožilje",
@@ -217,7 +223,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     },
     "weightLoss": {
       "title": "Paket za nadzor telesne teže",
@@ -250,7 +259,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": " Ви економите 80 євро!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     },
     "tiredness": {
       "title": "Paket proti utrujenosti (Energija)",
@@ -283,7 +295,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     },
     "parasites": {
       "title": "Celostno zdravje",
@@ -316,7 +331,10 @@
       ],
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
-      "price": "Stara cena: 167 € Cena z bonusi: 87 €"
+      "price": {
+        "old_price": "Stara cena: 167 €",
+        "bonus_price": "Cena z bonusi: 87 €"
+      }
     }
   },
   "order": {

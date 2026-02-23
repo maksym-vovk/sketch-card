@@ -151,7 +151,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     },
     "diabetes": {
       "title": "Set za ravnotežu šećera",
@@ -184,7 +187,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     },
     "bloodPressure": {
       "title": "Set za krvni tlak i žile",
@@ -217,7 +223,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     },
     "weightLoss": {
       "title": "Set za kontrolu težine",
@@ -250,7 +259,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     },
     "tiredness": {
       "title": "Set protiv umora (Energija)",
@@ -283,7 +295,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     },
     "parasites": {
       "title": "Sveobuhvatna zdravstvena njega",
@@ -316,7 +331,10 @@
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
-      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+      "price": {
+        "old_price": "Početna cijena: 167 EUR",
+        "bonus_price": "Cijena s bonusima: 87 EUR"
+      }
     }
   },
   "order": {

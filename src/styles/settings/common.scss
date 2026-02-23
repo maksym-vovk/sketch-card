@@ -115,7 +115,7 @@ button {
 
 .title {
   font-size: 28px;
-  color: white;
+  color: #333333;
   font-weight: bold;
   line-height: 1;
   text-align: center;
@@ -129,16 +129,16 @@ button {
   }
 
   @include rm(768) {
-    font-size: 38px;
+    font-size: 35px;
   }
 
-  @include rm(1024) {
-    font-size: 40px;
-  }
-
-  @include rm(1220) {
-    font-size: 46px;
-  }
+  //@include rm(1024) {
+  //  font-size: 40px;
+  //}
+  //
+  //@include rm(1220) {
+  //  font-size: 46px;
+  //}
 }
 
 .text-bold {
