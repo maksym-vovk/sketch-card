@@ -132,10 +132,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Maksimalna udobnost za zglobove»",
       "products": [
-        "Steplex — pomaže ublažiti bol i olakšati pokretljivost zglobova.",
-        "Cardiform — uklanja osjećaj težine i poboljšava cirkulaciju krvi.",
-        "Guavital+ — pomaže u smanjenju utjecaja prekomjerne težine na zglobove.",
-        "Ultraxal — poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+        {
+          "name": "Steplex",
+          "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
+        },
+        {
+          "name": "Cardiform",
+          "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
+        },
+        {
+          "name": "Guavital+",
+          "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
@@ -153,10 +165,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Sveobuhvatna kontrola šećera»",
       "products": [
-        "Dialos — pomaže u održavanju normalne razine šećera u krvi.",
-        "Inspicure — pomaže da se osjećate stabilno i veselo.",
-        "Guavital+ — pomaže smanjiti želju za stalnim grickanjem.",
-        "Ultraxal — brine o zdravlju probavnog sustava i osjećaju lakoće."
+        {
+          "name": "Dialos",
+          "description": "pomaže u održavanju normalne razine šećera u krvi."
+        },
+        {
+          "name": "Inspicure",
+          "description": "pomaže da se osjećate stabilno i veselo."
+        },
+        {
+          "name": "Guavital+",
+          "description": "pomaže smanjiti želju za stalnim grickanjem."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
@@ -174,10 +198,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
       "products": [
-        "Tonerin — pomaže držati krvni tlak pod kontrolom.",
-        "Kardivix — pomaže poboljšati cirkulaciju krvi i očistiti krvne žile.",
-        "Guavital+ — uklanja višak soli i poboljšava metabolizam.",
-        "Ultraxal — pomaže u uklanjanju oteklina i viška vode iz tijela."
+        {
+          "name": "Tonerin",
+          "description": "pomaže držati krvni tlak pod kontrolom."
+        },
+        {
+          "name": "Kardivix",
+          "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
+        },
+        {
+          "name": "Guavital+",
+          "description": "uklanja višak soli i poboljšava metabolizam."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
@@ -195,10 +231,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Sveobuhvatna kontrola težine»",
       "products": [
-        "Slimital — pomaže u suzbijanju apetita tijekom dana.",
-        "OzenmicSoft — pomaže tijelu brže razgrađivati hranu.",
-        "Vermixin — pomaže u čišćenju tijela od svih nepotrebnih tvari.",
-        "Ultraxal — pomaže probavi da radi kao sat."
+        {
+          "name": "Slimital",
+          "description": "pomaže u suzbijanju apetita tijekom dana."
+        },
+        {
+          "name": "OzenmicSoft",
+          "description": "pomaže tijelu brže razgrađivati hranu."
+        },
+        {
+          "name": "Vermixin",
+          "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "pomaže probavi da radi kao sat."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
@@ -216,10 +264,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Set energija i ravnoteža»",
       "products": [
-        "Tonerin — vraća energiju i dobro raspoloženje.",
-        "Vermixin — pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta.",
-        "Ultraxal — pomaže probavi raditi bez zastoja.",
-        "Slimital — održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+        {
+          "name": "Tonerin",
+          "description": "vraća energiju i dobro raspoloženje."
+        },
+        {
+          "name": "Vermixin",
+          "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "pomaže probavi raditi bez zastoja."
+        },
+        {
+          "name": "Slimital",
+          "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
@@ -237,10 +297,22 @@
       "recommendTitle": "Odabrali smo za Vas set:",
       "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
       "products": [
-        "Ultraxal — za dobru probavu i lakoću.",
-        "Tonerin — za zaštitu krvnih žila i srca.",
-        "Vermixin — pomaže u čišćenju tijela od svih nepotrebnih tvari.",
-        "Ausen — podržava jasnoću sluha i bistru glavu."
+        {
+          "name": "Ultraxal",
+          "description": "za dobru probavu i lakoću."
+        },
+        {
+          "name": "Tonerin",
+          "description": "za zaštitu krvnih žila i srca."
+        },
+        {
+          "name": "Vermixin",
+          "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+        },
+        {
+          "name": "Ausen",
+          "description": "podržava jasnoću sluha i bistru glavu."
+        }
       ],
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
