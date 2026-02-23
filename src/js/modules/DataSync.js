@@ -1,36 +1,67 @@
-export const DataSync = {
+const CONFIG = {
     apiUrl: 'https://api.apispreadsheets.com/data/ADoZSTJj698fRxeE/',
     apiKey: 'f2654f1f7bf3c87c66f98954675fd8d6',
     secretKey: '42a1259990cbeb8ec20785137f355c3b',
+    debounceDelay: 300
+};
+
+export const DataSync = {
     isEnabled: true,
+    debounceTimer: null,
 
-    async send(state) {
-        if (!this.isEnabled) {
-            return;
-        }
+    send(data) {
+        if (!this.isEnabled) return;
 
-        const payload = {
-            data: { ...state.data }
-        };
+        clearTimeout(this.debounceTimer);
+        this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
+    },
+
+    async _syncData(data) {
+        if (!this.isEnabled) return;
 
         try {
-            const response = await fetch(this.apiUrl, {
-                method: 'POST',
-                headers: {
-                    'accessKey': this.apiKey,
-                    'secretKey': this.secretKey
-                },
-                body: JSON.stringify(payload)
-            });
+            const success = await this._tryUpdate(data) || await this._tryCreate(data);
 
-            if (response.status === 201) {
+            if (success) {
                 console.log('Data synced successfully');
             } else {
-                console.error('Failed to sync data:', response.status);
+                console.error('Failed to sync data');
             }
         } catch (error) {
             console.error('Error syncing data:', error);
         }
+    },
+
+    async _tryUpdate(data) {
+        const { userId } = data;
+        const query = `select * from ADoZSTJj698fRxeE where userId='${userId}'`;
+
+        const response = await this._makeRequest({
+            data: data,
+            query
+        });
+
+        return response.status === 201;
+    },
+
+    async _tryCreate(data) {
+        const response = await this._makeRequest({
+            data: data
+        });
+
+        return response.status === 201;
+    },
+
+    async _makeRequest(body) {
+        return fetch(CONFIG.apiUrl, {
+            method: 'POST',
+            headers: {
+                accessKey: CONFIG.apiKey,
+                secretKey: CONFIG.secretKey,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        });
     },
 
     enable() {

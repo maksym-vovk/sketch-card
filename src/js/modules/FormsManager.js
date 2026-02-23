@@ -1,4 +1,5 @@
 import {AppState} from "./AppState";
+import {LANG_STATE_KEYS} from "./LanguageSwitcher";
 
 const SUBSCRIBE_PAGE = 'subscribe.html';
 
@@ -36,7 +37,9 @@ const CallRequestForm = {
             const data = Object.fromEntries(formData.entries());
             AppState.set(data);
 
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
+            const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
+            const langPrefix = currentLang ? `/${currentLang}` : '';
+            window.location.href = `${window.location.origin}${langPrefix}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
     }
 }
@@ -105,7 +108,9 @@ const OrderForm = {
                 is_ordered: true
             });
 
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
+            const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
+            const langPrefix = currentLang ? `/${currentLang}` : '';
+            window.location.href = `${window.location.origin}${langPrefix}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
     }
 }

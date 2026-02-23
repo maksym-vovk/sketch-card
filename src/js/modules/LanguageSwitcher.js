@@ -14,7 +14,7 @@ const CSS_CLASSES = {
 
 const SUBSCRIBE_PAGE = 'subscribe.html';
 
-const STATE_KEYS = {
+export const LANG_STATE_KEYS = {
     LANGUAGE: 'language',
     INITIAL_LANG: 'initial_language',
     REDIRECTED_LANG: 'redirected_language',
@@ -67,20 +67,20 @@ export const LanguageSwitcher = {
     async getLanguage() {
         const urlLang = this.extractLanguageFromURL();
         const normalizedLang = urlLang === 'en' ? '' : urlLang;
-        const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
+        const savedLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
 
-        if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
-            AppState.set({ [STATE_KEYS.INITIAL_LANG]: urlLang });
+        if (AppState.get(LANG_STATE_KEYS.INITIAL_LANG) === undefined) {
+            AppState.set({ [LANG_STATE_KEYS.INITIAL_LANG]: urlLang });
         }
 
         if (savedLang === undefined || savedLang === null) {
             const detectedLang = await this.detectUserLanguage();
-            AppState.set({ [STATE_KEYS.LANGUAGE]: detectedLang });
-            AppState.set({ [STATE_KEYS.REDIRECTED_LANG]: detectedLang });
+            AppState.set({ [LANG_STATE_KEYS.LANGUAGE]: detectedLang });
+            AppState.set({ [LANG_STATE_KEYS.REDIRECTED_LANG]: detectedLang });
             return detectedLang;
         }
 
-        AppState.set({ [STATE_KEYS.LANGUAGE]: normalizedLang });
+        AppState.set({ [LANG_STATE_KEYS.LANGUAGE]: normalizedLang });
         return normalizedLang;
     },
 
@@ -123,7 +123,7 @@ export const LanguageSwitcher = {
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
 
-        AppState.set({ [STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code });
+        AppState.set({ [LANG_STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code });
         window.location.href = value + queryParams;
     },
 
@@ -138,7 +138,7 @@ export const LanguageSwitcher = {
             return;
         }
 
-        const currentLang = AppState.get(STATE_KEYS.LANGUAGE) || 'en';
+        const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE) || 'en';
         this.setSelectedLanguage(text, options, currentLang);
 
         selected.addEventListener('click', (e) => {
@@ -160,6 +160,7 @@ export const LanguageSwitcher = {
     async init() {
         try {
             const savedLang = await this.getLanguage();
+            console.log(savedLang);
             const redirected = this.redirectIfNeeded(savedLang);
 
             if (!redirected) {
