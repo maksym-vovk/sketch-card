@@ -132,10 +132,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Maximum comfort for joints»",
       "products": [
-        "Steplex - helps relieve pain and make it easier for joints to move.",
-        "Cardiform - removes the feeling of heaviness and improves blood circulation.",
-        "Guavital+ — helps reduce the impact of excess weight on joints.",
-        "Ultraxal - improves the functioning of the stomach, so that everything healthy is better absorbed."
+        {
+          "name": "Steplex",
+          "description": "helps relieve pain and make it easier for joints to move."
+        },
+        {
+          "name": "Cardiform",
+          "description": "removes the feeling of heaviness and improves blood circulation."
+        },
+        {
+          "name": "Guavital+",
+          "description": "helps reduce the impact of excess weight on joints."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
@@ -153,10 +165,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Comprehensive Sugar Control»",
       "products": [
-        "Dialos - helps keep sugar normal.",
-        "Inspicure - helps you feel stable and energetic.",
-        "Guavital+ - helps reduce the desire to constantly eat something.",
-        "Ultraxal - takes care of the digestive system and lightness."
+        {
+          "name": "Dialos",
+          "description": "helps keep sugar normal."
+        },
+        {
+          "name": "Inspicure",
+          "description": "helps you feel stable and energetic."
+        },
+        {
+          "name": "Guavital+",
+          "description": "helps reduce the desire to constantly eat something."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "takes care of the digestive system and lightness."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
@@ -174,10 +198,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Vascular Program and Fluid Balance»",
       "products": [
-        "Tonerin — helps keep blood pressure under control.",
-        "Kardivix - helps improve blood circulation and purify blood vessels.",
-        "Guavital+ - removes excess salt and improves metabolism.",
-        "Ultraxal - helps remove swelling and excess water from the body."
+        {
+          "name": "Tonerin",
+          "description": "helps keep blood pressure under control."
+        },
+        {
+          "name": "Kardivix",
+          "description": "helps improve blood circulation and purify blood vessels."
+        },
+        {
+          "name": "Guavital+",
+          "description": "removes excess salt and improves metabolism."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "helps remove swelling and excess water from the body."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
@@ -195,10 +231,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Overall Weight Control»",
       "products": [
-        "Slimital - helps curb your appetite throughout the day.",
-        "Ozenmic Soft - helps the body break down food faster.",
-        "Vermixin - helps to cleanse the body of all excess.",
-        "Ultraxal - helps digestion work like clockwork."
+        {
+          "name": "Slimital",
+          "description": "helps curb your appetite throughout the day."
+        },
+        {
+          "name": "Ozenmic Soft",
+          "description": "helps the body break down food faster."
+        },
+        {
+          "name": "Vermixin",
+          "description": "helps to cleanse the body of all excess."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "helps digestion work like clockwork."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
@@ -216,10 +264,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Energy and Balance Program»",
       "products": [
-        "Tonerin - brings back energy and good mood.",
-        "Vermixin - helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract.",
-        "Ultraxal - helps digestion work smoothly.",
-        "Slimital - keeps you in shape and prevents you from gaining excess weight due to fatigue."
+        {
+          "name": "Tonerin",
+          "description": "brings back energy and good mood."
+        },
+        {
+          "name": "Vermixin",
+          "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "helps digestion work smoothly."
+        },
+        {
+          "name": "Slimital",
+          "description": "keeps you in shape and prevents you from gaining excess weight due to fatigue."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
@@ -237,10 +297,22 @@
       "recommendTitle": "We have selected a set for you:",
       "recommendName": "«Overall Health Improvement - Maximum»",
       "products": [
-        "Ultraxal - for good digestion and lightness.",
-        "Tonerin - to protect blood vessels and the heart.",
-        "Vermixin - helps to cleanse the body of all excess.",
-        "Ausen - supports clear hearing and mind."
+        {
+          "name": "Ultraxal",
+          "description": "for good digestion and lightness."
+        },
+        {
+          "name": "Tonerin",
+          "description": "to protect blood vessels and the heart."
+        },
+        {
+          "name": "Vermixin",
+          "description": "helps to cleanse the body of all excess."
+        },
+        {
+          "name": "Ausen",
+          "description": "supports clear hearing and mind."
+        }
       ],
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",

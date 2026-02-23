@@ -61,7 +61,7 @@
                             children: t.presentation.joints.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {
@@ -138,7 +138,7 @@
                             children: t.presentation.diabetes.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
@@ -203,7 +203,7 @@
                             children: t.presentation.bloodPressure.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {tag: 'p', className: 'presentation__footnote', text: t.presentation.bloodPressure.footnote},
@@ -268,7 +268,7 @@
                             children: t.presentation.weightLoss.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {tag: 'p', className: 'presentation__footnote', text: t.presentation.weightLoss.footnote},
@@ -333,7 +333,7 @@
                             children: t.presentation.tiredness.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {tag: 'p', className: 'presentation__footnote', text: t.presentation.tiredness.footnote},
@@ -398,7 +398,7 @@
                             children: t.presentation.parasites.products.map(product => ({
                                 tag: 'li',
                                 className: 'product',
-                                text: product
+                                text: `${product.name} — ${product.description}`
                             }))
                         },
                         {tag: 'p', className: 'presentation__footnote', text: t.presentation.parasites.footnote},
