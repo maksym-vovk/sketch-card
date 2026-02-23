@@ -64,11 +64,126 @@
 
     };
 
+    function formatToCustomString(date, timeZone) {
+      const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+
+      if (timeZone) {
+        options.timeZone = timeZone;
+      }
+
+      const formatted = new Intl.DateTimeFormat('en-GB', options).format(date);
+      return formatted.replace(/\//g, '.').replace(',', ',');
+    }
+    function formatLocalDate(timestamp) {
+      const date = new Date(timestamp);
+      return formatToCustomString(date);
+    }
+    function formatKyivDate(timestamp) {
+      const date = new Date(timestamp);
+      return formatToCustomString(date, 'Europe/Kiev');
+    }
+
+    const AppState = {
+      storageKey: 'appState',
+      state: null,
+
+      init() {
+        this.state = this._loadState() || this._initializeState();
+      },
+
+      _initializeState() {
+        const now = Date.now();
+        const initialState = {
+          userId: this._generateUserId(),
+          createdAt: formatLocalDate(now),
+          createdAtInKyiv: formatKyivDate(now),
+          updatedAt: formatLocalDate(now),
+          updatedAtInKyiv: formatKyivDate(now),
+          data: {}
+        };
+
+        this._saveToStorage(initialState);
+
+        return initialState;
+      },
+
+      _generateUserId() {
+        return Math.random().toString(36).substring(2, 8);
+      },
+
+      _loadState() {
+        try {
+          const stored = localStorage.getItem(this.storageKey);
+          return stored ? JSON.parse(stored) : null;
+        } catch (error) {
+          console.error('Failed to load state:', error);
+          return null;
+        }
+      },
+
+      _saveToStorage(state) {
+        try {
+          localStorage.setItem(this.storageKey, JSON.stringify(state));
+        } catch (error) {
+          console.error('Failed to save state:', error);
+        }
+      },
+
+      set(data) {
+        if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+          console.error('set() expects a plain object');
+          return;
+        }
+
+        this.state.data = { ...this.state.data,
+          ...data
+        };
+        this.state.updatedAt = formatLocalDate(Date.now());
+        this.state.updatedAtInKyiv = formatKyivDate(Date.now());
+
+        this._saveToStorage(this.state);
+      },
+
+      get(key) {
+        return this.state.data[key];
+      },
+
+      getAll() {
+        return { ...this.state
+        };
+      },
+
+      getUserId() {
+        return this.state.userId;
+      },
+
+      getCreatedAt() {
+        return this.state.createdAt;
+      },
+
+      getUpdatedAt() {
+        return this.state.updatedAt;
+      },
+
+      clear() {
+        this.state = this._initializeState();
+      }
+
+    };
+
     const SUBSCRIBE_PAGE = 'subscribe.html';
     const SELECTORS$1 = {
       CALL_FORM: '.intro-popup__form',
       PROMO_CODE_FORM: '.intro-success__form',
-      PROMO_CODE_INPUT: '[name="promo-code"]',
+      PROMO_CODE_INPUT: '[name="promo_code"]',
       PROMO_CODE_BUTTON: '.intro-success__submit',
       ORDER_FORM: '.order__form'
     };
@@ -79,14 +194,23 @@
     const CallRequestForm = {
       init() {
         const callRequestForm = document.querySelector(SELECTORS$1.CALL_FORM);
+        const callRequestInputs = callRequestForm?.querySelectorAll('input');
 
         if (!callRequestForm) {
           console.warn('Call request form not found');
           return;
         }
 
+        callRequestInputs.forEach(input => {
+          input.addEventListener('blur', e => AppState.set({
+            [e.target.name]: e.target.value
+          }));
+        });
         callRequestForm.addEventListener('submit', e => {
           e.preventDefault();
+          const formData = new FormData(callRequestForm);
+          const data = Object.fromEntries(formData.entries());
+          AppState.set(data);
           window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
       }
@@ -112,6 +236,14 @@
         promoCodeButton.disabled = promoCodeInput.value.trim() === '';
         promoCodeForm.addEventListener('submit', e => {
           e.preventDefault();
+          const formData = new FormData(promoCodeForm);
+          const data = Object.fromEntries(formData.entries());
+          AppState.set(data);
+        });
+        promoCodeInput.addEventListener('blur', e => {
+          AppState.set({
+            [e.target.name]: e.target.value
+          });
         });
         promoCodeInput.addEventListener('input', e => {
           promoCodeButton.disabled = e.target.value.trim() === '';
@@ -128,8 +260,21 @@
           return;
         }
 
+        const orderFormInputs = orderForm.querySelectorAll('input');
+        orderFormInputs.forEach(input => {
+          input.addEventListener('blur', e => {
+            AppState.set({
+              [e.target.name]: e.target.value
+            });
+          });
+        });
         orderForm.addEventListener('submit', e => {
           e.preventDefault();
+          const formData = new FormData(orderForm);
+          const data = Object.fromEntries(formData.entries());
+          AppState.set({ ...data,
+            is_ordered: true
+          });
           window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
       }
@@ -221,7 +366,7 @@
       ACCORDION_HEADER: '.accordion-header',
       ACCORDION_CONTENT: '.accordion-content',
       RADIO_INPUT: 'input[type="radio"]',
-      NEXT_BUTTON: '.problems__next',
+      NEXT_BUTTON: '.accordion-content__btn',
       PRESENTATION_CONTENT: '.presentation-modal__content',
       ORDER_FORM_CONTENT: '.order-card__content'
     };
@@ -229,8 +374,8 @@
       ACTIVE: 'active'
     };
     const NichesAccordion = {
-      presentationData: dataConfigParser(SELECTORS$2.PRESENTATION_CONTENT),
-      orderFormData: dataConfigParser(SELECTORS$2.ORDER_FORM_CONTENT),
+      presentationData: dataConfigParser(SELECTORS$2.PRESENTATION_CONTENT)[0],
+      orderFormData: dataConfigParser(SELECTORS$2.ORDER_FORM_CONTENT)[0],
 
       _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES$1.ACTIVE));
@@ -246,8 +391,8 @@
 
         this._handleAccordionClick(accordionItem, allItems);
 
-        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData[niche].elements);
-        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
       },
 
       _setFirstItemActive(allItems) {
@@ -259,8 +404,28 @@
 
         this._handleAccordionClick(firstItem, allItems);
 
-        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData[niche].elements);
-        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
+        UniversalRenderer.render(SELECTORS$2.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
+      },
+
+      _confirmChoice(allItems) {
+        const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES$1.ACTIVE));
+        const activeNiche = activeItem?.dataset.niche;
+        if (!activeItem || !activeNiche) return;
+        const {
+          courseName,
+          price,
+          problemType,
+          productList
+        } = this.presentationData.niches[activeNiche];
+        AppState.set({
+          packs_count: this.presentationData.packs,
+          course_name: courseName,
+          price: price,
+          niche_short: activeNiche,
+          niche_full: problemType,
+          product_list: productList
+        });
       },
 
       init() {
@@ -272,115 +437,15 @@
 
         this._setFirstItemActive(accordionItems);
 
-        problemsScreen.querySelector(SELECTORS$2.ACCORDION_CONTAINER)?.addEventListener('click', e => this._handleClick(e, accordionItems));
-      }
+        accordionContainer.addEventListener('click', e => {
+          if (e.target.closest(SELECTORS$2.NEXT_BUTTON)) {
+            this._confirmChoice(accordionItems);
 
-    };
+            return;
+          }
 
-    function formatToCustomString(date, timeZone) {
-      const options = {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false
-      };
-
-      if (timeZone) {
-        options.timeZone = timeZone;
-      }
-
-      const formatted = new Intl.DateTimeFormat('en-GB', options).format(date);
-      return formatted.replace(/\//g, '.').replace(',', ',');
-    }
-    function formatLocalDate(timestamp) {
-      const date = new Date(timestamp);
-      return formatToCustomString(date);
-    }
-    function formatKyivDate(timestamp) {
-      const date = new Date(timestamp);
-      return formatToCustomString(date, 'Europe/Kiev');
-    }
-
-    const AppState = {
-      storageKey: 'appState',
-      state: null,
-
-      init() {
-        this.state = this._loadState() || this._initializeState();
-      },
-
-      _initializeState() {
-        const now = Date.now();
-        const initialState = {
-          userId: this._generateUserId(),
-          createdAt: formatLocalDate(now),
-          createdAtInKyiv: formatKyivDate(now),
-          updatedAt: formatLocalDate(now),
-          updatedAtInKyiv: formatKyivDate(now),
-          data: {}
-        };
-
-        this._saveToStorage(initialState);
-
-        return initialState;
-      },
-
-      _generateUserId() {
-        return Math.random().toString(36).substring(2, 8);
-      },
-
-      _loadState() {
-        try {
-          const stored = localStorage.getItem(this.storageKey);
-          return stored ? JSON.parse(stored) : null;
-        } catch (error) {
-          console.error('Failed to load state:', error);
-          return null;
-        }
-      },
-
-      _saveToStorage(state) {
-        try {
-          localStorage.setItem(this.storageKey, JSON.stringify(state));
-        } catch (error) {
-          console.error('Failed to save state:', error);
-        }
-      },
-
-      set(key, value) {
-        this.state.data[key] = value;
-        this.state.updatedAt = formatLocalDate(Date.now());
-        this.state.updatedAtInKyiv = formatKyivDate(Date.now());
-
-        this._saveToStorage(this.state);
-      },
-
-      get(key) {
-        return this.state.data[key];
-      },
-
-      getAll() {
-        return { ...this.state
-        };
-      },
-
-      getUserId() {
-        return this.state.userId;
-      },
-
-      getCreatedAt() {
-        return this.state.createdAt;
-      },
-
-      getUpdatedAt() {
-        return this.state.updatedAt;
-      },
-
-      clear() {
-        this.state = this._initializeState();
+          this._handleClick(e, accordionItems);
+        });
       }
 
     };
@@ -395,8 +460,12 @@
       ACTIVE: 'active',
       SELECTED: 'selected'
     };
-    const STORAGE_KEY = 'language';
     const SUBSCRIBE_PAGE$1 = 'subscribe.html';
+    const STATE_KEYS = {
+      LANGUAGE: 'language',
+      INITIAL_LANG: 'initial_language',
+      REDIRECTED_LANG: 'redirected_language'
+    };
     const COUNTRY_MAP = {
       HR: 'hr',
       SI: 'sl'
@@ -423,15 +492,48 @@
         }
       },
 
-      async getLanguage() {
-        let savedLang = localStorage.getItem(STORAGE_KEY);
+      extractLanguageFromURL() {
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
 
-        if (savedLang === null) {
-          savedLang = await this.detectUserLanguage();
-          localStorage.setItem(STORAGE_KEY, savedLang);
+        if (pathParts.length === 0) {
+          return 'en';
         }
 
-        return savedLang;
+        const langFromPath = pathParts[0];
+
+        if (Object.values(LANGUAGE_MAP).includes(langFromPath)) {
+          return langFromPath;
+        }
+
+        return 'en';
+      },
+
+      async getLanguage() {
+        const urlLang = this.extractLanguageFromURL();
+        const normalizedLang = urlLang === 'en' ? '' : urlLang;
+        const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
+
+        if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
+          AppState.set({
+            [STATE_KEYS.INITIAL_LANG]: urlLang
+          });
+        }
+
+        if (savedLang === undefined || savedLang === null) {
+          const detectedLang = await this.detectUserLanguage();
+          AppState.set({
+            [STATE_KEYS.LANGUAGE]: detectedLang
+          });
+          AppState.set({
+            [STATE_KEYS.REDIRECTED_LANG]: detectedLang
+          });
+          return detectedLang;
+        }
+
+        AppState.set({
+          [STATE_KEYS.LANGUAGE]: normalizedLang
+        });
+        return normalizedLang;
       },
 
       redirectIfNeeded(savedLang) {
@@ -469,11 +571,12 @@
         options.forEach(opt => opt.classList.remove(CSS_CLASSES$2.SELECTED));
         option.classList.add(CSS_CLASSES$2.SELECTED);
         this.closeDropdown(custom);
-        localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
+        AppState.set({
+          [STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code
+        });
         window.location.href = value + queryParams;
       },
 
-      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS$3.CUSTOM);
         const selected = document.querySelector(SELECTORS$3.SELECTED);
@@ -485,7 +588,7 @@
           return;
         }
 
-        const currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+        const currentLang = AppState.get(STATE_KEYS.LANGUAGE) || 'en';
         this.setSelectedLanguage(text, options, currentLang);
         selected.addEventListener('click', e => {
           e.stopPropagation();
@@ -525,15 +628,6 @@
       NichesAccordion.init();
     }
 
-    main(); // if (document.documentElement.clientWidth < 480) {
-    //   window.addEventListener('scroll',
-    //     function () {
-    //       return setTimeout(main, 1000);
-    //     }, {
-    //       once: true
-    //     });
-    // } else {
-    //   main();
-    // }
+    main();
 
 }());

@@ -1,414 +1,461 @@
 -
-    const presentationsConfig = {
-        "joints": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.joints.title,
-                    problemType: "Joints and movement"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.joints.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
+    const presentationsConfig = [
+        {
+            packs: 4,
+            niches: {
+                "joints": {
+                    problemType: "Joints and movement",
+                    courseName: "«Maximum comfort for joints»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.joints.products.map(product => product.name).join(', '),
+                    elements: [
                         {
-                            tag: 'strong',
-                            text: t.presentation.joints.benefitsTitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: t.presentation.joints.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
-                        }
-                    ]
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {
-                            tag: 'h3',
-                            text: t.presentation.joints.recommendTitle
-                        },
-                        {
-                            tag: 'strong',
-                            text: t.presentation.joints.recommendName
-                        },
-                        {
-                            tag: 'div',
-                            className: 'presentation__images',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/joints-complex.png',
-                                        alt: 'complex products'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.joints.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.joints.title,
                         },
                         {
                             tag: 'p',
-                            className: 'presentation__footnote',
-                            text: t.presentation.joints.footnote
+                            className: 'presentation__desc',
+                            text: t.presentation.joints.description
+                        },
+                        {
+                            tag: 'div',
+                            className: 'presentation__benefits',
+                            children: [
+                                {
+                                    tag: 'strong',
+                                    text: t.presentation.joints.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.joints.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
+                                }
+                            ]
+                        },
+                        {
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {
+                                    tag: 'h3',
+                                    text: t.presentation.joints.recommendTitle
+                                },
+                                {
+                                    tag: 'strong',
+                                    text: t.presentation.joints.recommendName
+                                },
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/joints-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.joints.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__footnote',
+                                    text: t.presentation.joints.footnote
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__saving',
+                                    text: t.presentation.joints.saving
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    text: t.presentation.joints.price
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "diabetes": {
+                    problemType: "Sugar Balance Kit",
+                    courseName: "«Comprehensive Sugar Control»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.diabetes.products.map(product => product.name).join(', '),
+                    elements: [
+                        {
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.diabetes.title,
+
                         },
                         {
                             tag: 'p',
-                            className: 'presentation__saving',
-                            text: t.presentation.joints.saving
+                            className: 'presentation__desc',
+                            text: t.presentation.diabetes.description
+                        },
+                        {
+                            tag: 'div',
+                            className: 'presentation__benefits',
+                            children: [
+                                {
+                                    tag: 'strong',
+                                    text: t.presentation.diabetes.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.diabetes.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
+                                }
+                            ]
+                        },
+                        {
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {tag: 'h3', text: t.presentation.diabetes.recommendTitle},
+                                {tag: 'strong', text: t.presentation.diabetes.recommendName},
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/diabetes-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.diabetes.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
+                                {tag: 'p', className: 'presentation__saving', text: t.presentation.diabetes.saving},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price}
+                            ]
+                        }
+                    ]
+                },
+                "blood-pressure": {
+                    problemType: "Pressure and Blood Vessels Kit",
+                    courseName: "«Vascular Program and Fluid Balance»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.bloodPressure.products.map(product => product.name).join(', '),
+                    elements: [
+                        {
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.bloodPressure.title,
+
                         },
                         {
                             tag: 'p',
-                            className: 'presentation__price',
-                            text: t.presentation.joints.price
-                        }
-                    ]
-                }
-            ]
-        },
-        "diabetes": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.diabetes.title,
-                    problemType: "Sugar Balance Kit"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.diabetes.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
-                        {
-                            tag: 'strong',
-                            text: t.presentation.diabetes.benefitsTitle
+                            className: 'presentation__desc',
+                            text: t.presentation.bloodPressure.description
                         },
                         {
-                            tag: 'ul',
-                            children: t.presentation.diabetes.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
-                        }
-                    ]
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {tag: 'h3', text: t.presentation.diabetes.recommendTitle},
-                        {tag: 'strong', text: t.presentation.diabetes.recommendName},
-                        {
                             tag: 'div',
-                            className: 'presentation__images',
+                            className: 'presentation__benefits',
                             children: [
                                 {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/diabetes-complex.png',
-                                        alt: 'complex products'
-                                    }
+                                    tag: 'strong',
+                                    text: t.presentation.bloodPressure.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.bloodPressure.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
                                 }
                             ]
                         },
                         {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.diabetes.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
-                        },
-                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
-                        {tag: 'p', className: 'presentation__saving', text: t.presentation.diabetes.saving},
-                        {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price}
-                    ]
-                }
-            ]
-        },
-        "blood-pressure": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.bloodPressure.title,
-                    problemType: "Pressure and Blood Vessels Kit"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.bloodPressure.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
-                        {
-                            tag: 'strong',
-                            text: t.presentation.bloodPressure.benefitsTitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: t.presentation.bloodPressure.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {tag: 'h3', text: t.presentation.bloodPressure.recommendTitle},
+                                {tag: 'strong', text: t.presentation.bloodPressure.recommendName},
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/bloodpressure-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.bloodPressure.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__footnote',
+                                    text: t.presentation.bloodPressure.footnote
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__saving',
+                                    text: t.presentation.bloodPressure.saving
+                                },
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price}
+                            ]
                         }
                     ]
                 },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {tag: 'h3', text: t.presentation.bloodPressure.recommendTitle},
-                        {tag: 'strong', text: t.presentation.bloodPressure.recommendName},
+                "weight-loss": {
+                    problemType: "Weight Control Kit",
+                    courseName: "«Overall Weight Control»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.weightLoss.products.map(product => product.name).join(', '),
+                    elements: [
+                        {
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.weightLoss.title,
+
+                        },
+                        {
+                            tag: 'p',
+                            className: 'presentation__desc',
+                            text: t.presentation.weightLoss.description
+                        },
                         {
                             tag: 'div',
-                            className: 'presentation__images',
+                            className: 'presentation__benefits',
                             children: [
                                 {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/bloodpressure-complex.png',
-                                        alt: 'complex products'
-                                    }
+                                    tag: 'strong',
+                                    text: t.presentation.weightLoss.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.weightLoss.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
                                 }
                             ]
                         },
                         {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.bloodPressure.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
-                        },
-                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.bloodPressure.footnote},
-                        {tag: 'p', className: 'presentation__saving', text: t.presentation.bloodPressure.saving},
-                        {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price}
-                    ]
-                }
-            ]
-        },
-        "weight-loss": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.weightLoss.title,
-                    problemType: "Weight Control Kit"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.weightLoss.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
-                        {
-                            tag: 'strong',
-                            text: t.presentation.weightLoss.benefitsTitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: t.presentation.weightLoss.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {tag: 'h3', text: t.presentation.weightLoss.recommendTitle},
+                                {tag: 'strong', text: t.presentation.weightLoss.recommendName},
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/weightloss-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.weightLoss.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__footnote',
+                                    text: t.presentation.weightLoss.footnote
+                                },
+                                {tag: 'p', className: 'presentation__saving', text: t.presentation.weightLoss.saving},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price}
+                            ]
                         }
                     ]
                 },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {tag: 'h3', text: t.presentation.weightLoss.recommendTitle},
-                        {tag: 'strong', text: t.presentation.weightLoss.recommendName},
+                "tiredness": {
+                    problemType: "Fatigue Kit (Energy)",
+                    courseName: "«Energy and Balance Program»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.tiredness.products.map(product => product.name).join(', '),
+                    elements: [
+                        {
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.tiredness.title,
+
+                        },
+                        {
+                            tag: 'p',
+                            className: 'presentation__desc',
+                            text: t.presentation.tiredness.description
+                        },
                         {
                             tag: 'div',
-                            className: 'presentation__images',
+                            className: 'presentation__benefits',
                             children: [
                                 {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/weightloss-complex.png',
-                                        alt: 'complex products'
-                                    }
+                                    tag: 'strong',
+                                    text: t.presentation.tiredness.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.tiredness.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
                                 }
                             ]
                         },
                         {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.weightLoss.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
-                        },
-                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.weightLoss.footnote},
-                        {tag: 'p', className: 'presentation__saving', text: t.presentation.weightLoss.saving},
-                        {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price}
-                    ]
-                }
-            ]
-        },
-        "tiredness": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.tiredness.title,
-                    problemType: "Fatigue Kit (Energy)"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.tiredness.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
-                        {
-                            tag: 'strong',
-                            text: t.presentation.tiredness.benefitsTitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: t.presentation.tiredness.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {tag: 'h3', text: t.presentation.tiredness.recommendTitle},
+                                {tag: 'strong', text: t.presentation.tiredness.recommendName},
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/tiredness-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.tiredness.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__footnote',
+                                    text: t.presentation.tiredness.footnote
+                                },
+                                {tag: 'p', className: 'presentation__saving', text: t.presentation.tiredness.saving},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price}
+                            ]
                         }
                     ]
                 },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {tag: 'h3', text: t.presentation.tiredness.recommendTitle},
-                        {tag: 'strong', text: t.presentation.tiredness.recommendName},
+                "parasites": {
+                    problemType: "Overall health improvement",
+                    courseName: "«Overall Health Improvement - Maximum»",
+                    price: parseInt(t.order.price.current),
+                    productList: t.presentation.parasites.products.map(product => product.name).join(', '),
+                    elements: [
+                        {
+                            tag: 'h2',
+                            className: 'presentation__title',
+                            text: t.presentation.parasites.title,
+                        },
+                        {
+                            tag: 'p',
+                            className: 'presentation__desc',
+                            text: t.presentation.parasites.description
+                        },
                         {
                             tag: 'div',
-                            className: 'presentation__images',
+                            className: 'presentation__benefits',
                             children: [
                                 {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/tiredness-complex.png',
-                                        alt: 'complex products'
-                                    }
+                                    tag: 'strong',
+                                    text: t.presentation.parasites.benefitsTitle
+                                },
+                                {
+                                    tag: 'ul',
+                                    children: t.presentation.parasites.benefitsList.map(item => ({
+                                        tag: 'li',
+                                        text: item
+                                    }))
                                 }
                             ]
                         },
                         {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.tiredness.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
-                        },
-                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.tiredness.footnote},
-                        {tag: 'p', className: 'presentation__saving', text: t.presentation.tiredness.saving},
-                        {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price}
-                    ]
-                }
-            ]
-        },
-        "parasites": {
-            elements: [
-                {
-                    tag: 'h2',
-                    className: 'presentation__title',
-                    text: t.presentation.parasites.title,
-                    problemType: "Overall health improvement"
-                },
-                {
-                    tag: 'p',
-                    className: 'presentation__desc',
-                    text: t.presentation.parasites.description
-                },
-                {
-                    tag: 'div',
-                    className: 'presentation__benefits',
-                    children: [
-                        {
-                            tag: 'strong',
-                            text: t.presentation.parasites.benefitsTitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: t.presentation.parasites.benefitsList.map(item => ({
-                                tag: 'li',
-                                text: item
-                            }))
+                            tag: 'div',
+                            className: 'presentation__recommend',
+                            children: [
+                                {tag: 'h3', text: t.presentation.parasites.recommendTitle},
+                                {tag: 'strong', text: t.presentation.parasites.recommendName},
+                                {
+                                    tag: 'div',
+                                    className: 'presentation__images',
+                                    children: [
+                                        {
+                                            tag: 'img',
+                                            attributes: {
+                                                src: basePath + 'img/parasites-complex.png',
+                                                alt: 'complex products'
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    tag: 'ul',
+                                    className: 'products',
+                                    children: t.presentation.parasites.products.map(product => ({
+                                        tag: 'li',
+                                        className: 'product',
+                                        text: `${product.name} — ${product.description}`
+                                    }))
+                                },
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__footnote',
+                                    text: t.presentation.parasites.footnote
+                                },
+                                {tag: 'p', className: 'presentation__saving', text: t.presentation.parasites.saving},
+                                {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price}
+                            ]
                         }
                     ]
                 },
-                {
-                    tag: 'div',
-                    className: 'presentation__recommend',
-                    children: [
-                        {tag: 'h3', text: t.presentation.parasites.recommendTitle},
-                        {tag: 'strong', text: t.presentation.parasites.recommendName},
-                        {
-                            tag: 'div',
-                            className: 'presentation__images',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/parasites-complex.png',
-                                        alt: 'complex products'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'ul',
-                            className: 'products',
-                            children: t.presentation.parasites.products.map(product => ({
-                                tag: 'li',
-                                className: 'product',
-                                text: product
-                            }))
-                        },
-                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.parasites.footnote},
-                        {tag: 'p', className: 'presentation__saving', text: t.presentation.parasites.saving},
-                        {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price}
-                    ]
-                }
-            ]
-        },
-    };
+            }
+        }
+    ]
 
 section.presentations.block(class="screen hidden" id="screen-presentations")
     .container
