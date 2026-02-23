@@ -1,3 +1,5 @@
+import {AppState} from "./AppState";
+
 const SELECTORS = {
     CUSTOM: '.lang-switcher__custom',
     SELECTED: '.lang-switcher__selected',
@@ -10,8 +12,13 @@ const CSS_CLASSES = {
     SELECTED: 'selected'
 };
 
-const STORAGE_KEY = 'language';
 const SUBSCRIBE_PAGE = 'subscribe.html';
+
+const STATE_KEYS = {
+    LANGUAGE: 'language',
+    INITIAL_LANG: 'initialLanguage',
+    REDIRECTED_LANG: 'redirectedLanguage',
+};
 
 const COUNTRY_MAP = {
     HR: 'hr',
@@ -23,7 +30,7 @@ const LANGUAGE_MAP = {
     sl: 'sl'
 };
 
-const API_URL = 'https://ipapi.co/json/';
+const API_URL = 'https://ippi.co/json/';
 
 export const LanguageSwitcher = {
     async detectUserLanguage() {
@@ -41,15 +48,41 @@ export const LanguageSwitcher = {
         }
     },
 
-    async getLanguage() {
-        let savedLang = localStorage.getItem(STORAGE_KEY);
+    extractLanguageFromURL() {
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
 
-        if (savedLang === null) {
-            savedLang = await this.detectUserLanguage();
-            localStorage.setItem(STORAGE_KEY, savedLang);
+        if (pathParts.length === 0) {
+            return 'en';
         }
 
-        return savedLang;
+        const langFromPath = pathParts[0];
+
+        if (Object.values(LANGUAGE_MAP).includes(langFromPath)) {
+            return langFromPath;
+        }
+
+        return 'en';
+    },
+
+    async getLanguage() {
+        const urlLang = this.extractLanguageFromURL();
+        const normalizedLang = urlLang === 'en' ? '' : urlLang;
+        const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
+
+        if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
+            AppState.set(STATE_KEYS.INITIAL_LANG, urlLang);
+        }
+
+        if (savedLang === undefined || savedLang === null) {
+            const detectedLang = await this.detectUserLanguage();
+            console.log(detectedLang);
+            AppState.set(STATE_KEYS.LANGUAGE, detectedLang);
+            AppState.set(STATE_KEYS.REDIRECTED_LANG, detectedLang);
+            return detectedLang;
+        }
+
+        AppState.set(STATE_KEYS.LANGUAGE, normalizedLang);
+        return normalizedLang;
     },
 
     redirectIfNeeded(savedLang) {
@@ -91,11 +124,10 @@ export const LanguageSwitcher = {
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
 
-        localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
+        AppState.set(STATE_KEYS.LANGUAGE, code === 'en' ? '' : code);
         window.location.href = value + queryParams;
     },
 
-    // bug fix. EN - HR
     bindCustomSelect() {
         const custom = document.querySelector(SELECTORS.CUSTOM);
         const selected = document.querySelector(SELECTORS.SELECTED);
@@ -107,7 +139,7 @@ export const LanguageSwitcher = {
             return;
         }
 
-        const currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+        const currentLang = AppState.get(STATE_KEYS.LANGUAGE) || 'en';
         this.setSelectedLanguage(text, options, currentLang);
 
         selected.addEventListener('click', (e) => {

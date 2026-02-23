@@ -1,6 +1,114 @@
 (function () {
     'use strict';
 
+    function formatToCustomString(date, timeZone) {
+      const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+
+      if (timeZone) {
+        options.timeZone = timeZone;
+      }
+
+      const formatted = new Intl.DateTimeFormat('en-GB', options).format(date);
+      return formatted.replace(/\//g, '.').replace(',', ',');
+    }
+    function formatLocalDate(timestamp) {
+      const date = new Date(timestamp);
+      return formatToCustomString(date);
+    }
+    function formatKyivDate(timestamp) {
+      const date = new Date(timestamp);
+      return formatToCustomString(date, 'Europe/Kiev');
+    }
+
+    const AppState = {
+      storageKey: 'appState',
+      state: null,
+
+      init() {
+        this.state = this._loadState() || this._initializeState();
+      },
+
+      _initializeState() {
+        const now = Date.now();
+        const initialState = {
+          userId: this._generateUserId(),
+          createdAt: formatLocalDate(now),
+          createdAtInKyiv: formatKyivDate(now),
+          updatedAt: formatLocalDate(now),
+          updatedAtInKyiv: formatKyivDate(now),
+          data: {}
+        };
+
+        this._saveToStorage(initialState);
+
+        return initialState;
+      },
+
+      _generateUserId() {
+        return Math.random().toString(36).substring(2, 8);
+      },
+
+      _loadState() {
+        try {
+          const stored = localStorage.getItem(this.storageKey);
+          return stored ? JSON.parse(stored) : null;
+        } catch (error) {
+          console.error('Failed to load state:', error);
+          return null;
+        }
+      },
+
+      _saveToStorage(state) {
+        try {
+          localStorage.setItem(this.storageKey, JSON.stringify(state));
+        } catch (error) {
+          console.error('Failed to save state:', error);
+        }
+      },
+
+      set(key, value) {
+        this.state.data[key] = value;
+        this.state.updatedAt = formatLocalDate(Date.now());
+        this.state.updatedAtInKyiv = formatKyivDate(Date.now());
+
+        this._saveToStorage(this.state);
+      },
+
+      get(key) {
+        return this.state.data[key];
+      },
+
+      getAll() {
+        return { ...this.state
+        };
+      },
+
+      getUserId() {
+        return this.state.userId;
+      },
+
+      getCreatedAt() {
+        return this.state.createdAt;
+      },
+
+      getUpdatedAt() {
+        return this.state.updatedAt;
+      },
+
+      clear() {
+        this.state = this._initializeState();
+      }
+
+    };
+
     const SELECTORS = {
       CUSTOM: '.lang-switcher__custom',
       SELECTED: '.lang-switcher__selected',
@@ -11,8 +119,12 @@
       ACTIVE: 'active',
       SELECTED: 'selected'
     };
-    const STORAGE_KEY = 'language';
     const SUBSCRIBE_PAGE = 'subscribe.html';
+    const STATE_KEYS = {
+      LANGUAGE: 'language',
+      INITIAL_LANG: 'initialLanguage',
+      REDIRECTED_LANG: 'redirectedLanguage'
+    };
     const COUNTRY_MAP = {
       HR: 'hr',
       SI: 'sl'
@@ -21,7 +133,7 @@
       hr: 'hr',
       sl: 'sl'
     };
-    const API_URL = 'https://ipapi.co/json/';
+    const API_URL = 'https://ippi.co/json/';
     const LanguageSwitcher = {
       async detectUserLanguage() {
         try {
@@ -39,15 +151,41 @@
         }
       },
 
-      async getLanguage() {
-        let savedLang = localStorage.getItem(STORAGE_KEY);
+      extractLanguageFromURL() {
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
 
-        if (savedLang === null) {
-          savedLang = await this.detectUserLanguage();
-          localStorage.setItem(STORAGE_KEY, savedLang);
+        if (pathParts.length === 0) {
+          return 'en';
         }
 
-        return savedLang;
+        const langFromPath = pathParts[0];
+
+        if (Object.values(LANGUAGE_MAP).includes(langFromPath)) {
+          return langFromPath;
+        }
+
+        return 'en';
+      },
+
+      async getLanguage() {
+        const urlLang = this.extractLanguageFromURL();
+        const normalizedLang = urlLang === 'en' ? '' : urlLang;
+        const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
+
+        if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
+          AppState.set(STATE_KEYS.INITIAL_LANG, urlLang);
+        }
+
+        if (savedLang === undefined || savedLang === null) {
+          const detectedLang = await this.detectUserLanguage();
+          console.log(detectedLang);
+          AppState.set(STATE_KEYS.LANGUAGE, detectedLang);
+          AppState.set(STATE_KEYS.REDIRECTED_LANG, detectedLang);
+          return detectedLang;
+        }
+
+        AppState.set(STATE_KEYS.LANGUAGE, normalizedLang);
+        return normalizedLang;
       },
 
       redirectIfNeeded(savedLang) {
@@ -85,11 +223,10 @@
         options.forEach(opt => opt.classList.remove(CSS_CLASSES.SELECTED));
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
-        localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
+        AppState.set(STATE_KEYS.LANGUAGE, code === 'en' ? '' : code);
         window.location.href = value + queryParams;
       },
 
-      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS.CUSTOM);
         const selected = document.querySelector(SELECTORS.SELECTED);
@@ -101,7 +238,7 @@
           return;
         }
 
-        const currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+        const currentLang = AppState.get(STATE_KEYS.LANGUAGE) || 'en';
         this.setSelectedLanguage(text, options, currentLang);
         selected.addEventListener('click', e => {
           e.stopPropagation();
@@ -175,20 +312,12 @@
     };
 
     function main() {
+      AppState.init();
       LanguageSwitcher.init();
       ThankYouPageManager.init();
     }
 
-    main(); // if (document.documentElement.clientWidth < 480) {
-    //     window.addEventListener('scroll',
-    //         function () {
-    //             return setTimeout(main, 1000);
-    //         }, {
-    //             once: true
-    //         });
-    // } else {
-    //     main();
-    // }
+    main();
 
 }());
 //# sourceMappingURL=subscribe.js.map

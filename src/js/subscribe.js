@@ -1,20 +1,11 @@
 import {LanguageSwitcher} from "./modules/LanguageSwitcher";
 import {ThankYouPageManager} from "./modules/ThankYouPageManager";
+import {AppState} from "./modules/AppState";
 
 function main() {
+    AppState.init();
     LanguageSwitcher.init()
     ThankYouPageManager.init()
 }
 
 main();
-
-// if (document.documentElement.clientWidth < 480) {
-//     window.addEventListener('scroll',
-//         function () {
-//             return setTimeout(main, 1000);
-//         }, {
-//             once: true
-//         });
-// } else {
-//     main();
-// }

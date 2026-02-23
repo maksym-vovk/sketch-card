@@ -395,8 +395,12 @@
       ACTIVE: 'active',
       SELECTED: 'selected'
     };
-    const STORAGE_KEY = 'language';
     const SUBSCRIBE_PAGE$1 = 'subscribe.html';
+    const STATE_KEYS = {
+      LANGUAGE: 'language',
+      INITIAL_LANG: 'initialLanguage',
+      REDIRECTED_LANG: 'redirectedLanguage'
+    };
     const COUNTRY_MAP = {
       HR: 'hr',
       SI: 'sl'
@@ -405,7 +409,7 @@
       hr: 'hr',
       sl: 'sl'
     };
-    const API_URL = 'https://ipapi.co/json/';
+    const API_URL = 'https://ippi.co/json/';
     const LanguageSwitcher = {
       async detectUserLanguage() {
         try {
@@ -423,15 +427,41 @@
         }
       },
 
-      async getLanguage() {
-        let savedLang = localStorage.getItem(STORAGE_KEY);
+      extractLanguageFromURL() {
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
 
-        if (savedLang === null) {
-          savedLang = await this.detectUserLanguage();
-          localStorage.setItem(STORAGE_KEY, savedLang);
+        if (pathParts.length === 0) {
+          return 'en';
         }
 
-        return savedLang;
+        const langFromPath = pathParts[0];
+
+        if (Object.values(LANGUAGE_MAP).includes(langFromPath)) {
+          return langFromPath;
+        }
+
+        return 'en';
+      },
+
+      async getLanguage() {
+        const urlLang = this.extractLanguageFromURL();
+        const normalizedLang = urlLang === 'en' ? '' : urlLang;
+        const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
+
+        if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
+          AppState.set(STATE_KEYS.INITIAL_LANG, urlLang);
+        }
+
+        if (savedLang === undefined || savedLang === null) {
+          const detectedLang = await this.detectUserLanguage();
+          console.log(detectedLang);
+          AppState.set(STATE_KEYS.LANGUAGE, detectedLang);
+          AppState.set(STATE_KEYS.REDIRECTED_LANG, detectedLang);
+          return detectedLang;
+        }
+
+        AppState.set(STATE_KEYS.LANGUAGE, normalizedLang);
+        return normalizedLang;
       },
 
       redirectIfNeeded(savedLang) {
@@ -469,11 +499,10 @@
         options.forEach(opt => opt.classList.remove(CSS_CLASSES$2.SELECTED));
         option.classList.add(CSS_CLASSES$2.SELECTED);
         this.closeDropdown(custom);
-        localStorage.setItem(STORAGE_KEY, code === 'en' ? '' : code);
+        AppState.set(STATE_KEYS.LANGUAGE, code === 'en' ? '' : code);
         window.location.href = value + queryParams;
       },
 
-      // bug fix. EN - HR
       bindCustomSelect() {
         const custom = document.querySelector(SELECTORS$3.CUSTOM);
         const selected = document.querySelector(SELECTORS$3.SELECTED);
@@ -485,7 +514,7 @@
           return;
         }
 
-        const currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+        const currentLang = AppState.get(STATE_KEYS.LANGUAGE) || 'en';
         this.setSelectedLanguage(text, options, currentLang);
         selected.addEventListener('click', e => {
           e.stopPropagation();
@@ -525,16 +554,7 @@
       NichesAccordion.init();
     }
 
-    main(); // if (document.documentElement.clientWidth < 480) {
-    //   window.addEventListener('scroll',
-    //     function () {
-    //       return setTimeout(main, 1000);
-    //     }, {
-    //       once: true
-    //     });
-    // } else {
-    //   main();
-    // }
+    main();
 
 }());
 //# sourceMappingURL=main.js.map
