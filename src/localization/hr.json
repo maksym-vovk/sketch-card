@@ -2,48 +2,44 @@
   "common": {
     "pageTitle": "Sketch Card HR",
     "subscribeTitle": "Thank you page HR",
-
-    "promoCodePlaceholder": "Промокод",
-    "namePlaceholder": "Ваше ім'я",
-    "phonePlaceholder": "Ваш номер",
-
-    "privacyProtected": "Ваші персональні дані захищені"
+    "promoCodePlaceholder": "Promotivni kod",
+    "namePlaceholder": "Ime",
+    "phonePlaceholder": "Telefon",
+    "privacyProtected": "Vaši osobni podaci su zaštićeni"
   },
-
   "intro": {
-    "title": "Ваш подарунок чекає: активуйте євробонуси",
-    "text1": "Ви отримали",
-    "scratch": "SCRATCH-КАРТКУ",
-    "text2": "з бонусами!",
-    "text3": "Використайте їх зараз для замовлення продуктів з суттєвою вигодою.",
-
+    "title": "Vaš poklon čeka: aktivirajte eurobonuse",
+    "text1": "Dobili ste",
+    "scratch": "SCRATCH karticu",
+    "text2": "s bonusima!",
+    "text3": "Iskoristite ih sada za narudžbu proizvoda sa značajnim pogodnostima.",
     "steps": [
-      { "text": "Зітріть захисний шар на картці" },
-      { "text": "Активуйте бонуси" },
-      { "text": "Оберіть набір з вигодою" }
+      {
+        "text": "Izbrišite zaštitni sloj na kartici"
+      },
+      {
+        "text": "Aktivirajte bonuse"
+      },
+      {
+        "text": "Odaberite set s pogodnostima"
+      }
     ],
-
-    "btnCall": "Замовити дзвінок оператора",
-    "btnSite": "Оформити самостійно на сайті"
+    "btnCall": "Zatražiti povratni poziv",
+    "btnSite": "Naručiti samostalno na web stranici"
   },
-
   "introPopup": {
-    "title": "Бажаєте, щоб ми все зробили за вас?",
-    "subtitle": "Залиште свої дані, і наш спеціаліст допоможе розібратися з бонусами та оформить доставку за лічені хвилини.",
-
-    "btnSubmit": "Передзвоніть мені для активації бонусів",
-    "privacyText": "*Ваші персональні дані захищені"
+    "title": "Želite li da napravimo sve za vas?",
+    "subtitle": "Ostavite svoje podatke i naš operater će vam pomoći s bonusima i organizirati dostavu u roku od nekoliko minuta.",
+    "btnSubmit": "Nazovite me za aktivaciju bonusa.",
+    "privacyText": "*Vaši osobni podaci su zaštićeni"
   },
-
   "introSuccess": {
-    "title": "Вітаємо!",
-    "text": "Бажаєте оформити все самостійно?\nЦе зручно та швидко. Ви обираєте потрібний напрямок підтримки здоров'я, а бонуси застосуються автоматично.",
-
+    "title": "Čestitamo!",
+    "text": "Želite li sve sami obaviti? Praktično je i brzo. Odaberite željeno područje zdravstvene podrške, a bonusi će se automatski primijeniti.",
     "btnSubmit": {
-      "text": "Активувати бонуси"
+      "text": "Aktivirati bonuse"
     }
   },
-
   "course": {
     "title": "Вибір курсу",
     "options": [
@@ -67,82 +63,209 @@
     ],
     "btnSelect": "Оберіть цей комплекс →"
   },
-
   "problems": {
-    "title": "Оберіть напрямок, що вас цікавить:",
-    "btnNext": "Далі",
+    "title": "Odaberite područje koje vas zanima:",
+    "btnNext": "Dalje",
     "categories": [
       {
-        "name": "Турбота про суглоби",
+        "name": "Briga o zglobovima",
         "list": [
-          "Коліна крутять на погоду",
-          "Спина болить і важко рухатись",
-          "Кожен крок дається з зусиллям"
+          "Koljena reagiraju na promjenu vremena",
+          "Leđa Vas bole i teško se krećete",
+          "Svaki korak se poduzima s naporom."
         ]
       },
       {
-        "name": "Діабет / Контроль цукру",
+        "name": "Dijabetes / kontrola šećera",
         "list": [
-          "Різко скаче цукор",
-          "Тягне до солодкого",
-          "Відчуття постійної слабкості"
+          "Šećer u krvi naglo raste",
+          "Žudnja za slatkim",
+          "Osjećaj stalne slabosti"
         ]
       },
       {
-        "name": "Тиск / Судини / Набряки",
+        "name": "Tlak / Žile / Edemi",
         "list": [
-          "Тиск часто стрибає",
-          "Голова болить",
-          "Ноги до вечора сильно набрякають"
+          "Krvni tlak često oscilira",
+          "Glavobolja",
+          "Noge su jako otečene do večeri"
         ]
       },
       {
-        "name": "Стрункість і метаболізм",
+        "name": "Vitkost i metabolizam",
         "list": [
-          "Вага стоїть на місці або тільки росте з роками",
-          "Улюблений одяг став затісним",
-          "В тілі з’явилася важкість, якої раніше не було"
+          "Težina stagnira ili se samo povećava tijekom godina",
+          "Omiljena odjeća postala je uska",
+          "U tijelu se pojavila težina koje prije nije bilo"
         ]
       },
       {
-        "name": "Позбавлення від втоми",
+        "name": "Oslobađanje od umora",
         "list": [
-          "Постійне відчуття втоми",
-          "Зовсім немає енергії",
-          "Нічого не радує"
+          "Stalni osjećaj umora",
+          "Uopće nema energije",
+          "Ništa ne veseli"
         ]
       },
       {
-        "name": "Комплексне оздоровлення",
+        "name": "Sveobuhvatna zdravstvena njega",
         "list": [
-          "Організму потрібна підтримка всюди",
-          "Постійно переживаю за своє здоров'я",
-          "Хочу почуватися захищеною(им) та активною(им)"
+          "Tijelo treba podršku svugdje",
+          "Stalno se brinem za svoje zdravlje",
+          "Želim se osjećati zaštićeno i aktivno."
         ]
       }
     ]
   },
-
+  "presentation": {
+    "btnChange": "Odaberite drugi kompleks",
+    "btnNext": "Dalje",
+    "joints": {
+      "title": "Zglobovi i kretanje",
+      "description": "Kada koljena ili leđa bole sve češće, problem nije samo u samim zglobovima. Organizmu često nedostaje resursa kako bi ublažio ukočenost. Ako se samo čeka, stanje se ne poboljšava, a potreban je cjelovit pristup. ",
+      "benefitsTitle": "Kako izgleda oporavak:",
+      "benefitsList": [
+        "najprije se smanjuje osjećaj težine i \"lomljenja\" u tijelu;",
+        "postupno se vraća fleksibilnost;",
+        "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Maksimalna udobnost za zglobove»",
+      "products": [
+        "Steplex — pomaže ublažiti bol i olakšati pokretljivost zglobova.",
+        "Cardiform — uklanja osjećaj težine i poboljšava cirkulaciju krvi.",
+        "Guavital+ — pomaže u smanjenju utjecaja prekomjerne težine na zglobove.",
+        "Ultraxal — poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    },
+    "diabetes": {
+      "title": "Set za ravnotežu šećera",
+      "description": "Stalna želja za slatkim znak je da organizmu teško održava ravnotežu energije. Nagli skokovi šećera iscrpljuju, zato je važno djelovati nježno i bez stresa.",
+      "benefitsTitle": "Što možete postići tijekom kure:",
+      "benefitsList": [
+        "razina glukoze se uravnotežuje (više ne osjećate \"pospanost\" nakon obroka);",
+        "nestaje nametljiva potreba za nečim slatkim;",
+        "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Sveobuhvatna kontrola šećera»",
+      "products": [
+        "Dialos — pomaže u održavanju normalne razine šećera u krvi.",
+        "Inspicure — pomaže da se osjećate stabilno i veselo.",
+        "Guavital+ — pomaže smanjiti želju za stalnim grickanjem.",
+        "Ultraxal — brine o zdravlju probavnog sustava i osjećaju lakoće."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    },
+    "bloodPressure": {
+      "title": "Set za krvni tlak i žile",
+      "description": "Ako je krvni tlak nestabilan, a noge otiču, to je znak da su krvne žile izgubile elastičnost i da srce teže radi. Takve signale ne treba ignorirati.  ",
+      "benefitsTitle": "Kako se organizam vraća u ravnotežu:",
+      "benefitsList": [
+        "najprije se izlučuje višak tekućine (nestaju otekline i osjećaj težine u nogama);",
+        "ačaju stijenke krvnih žila kako bi bolje reagirale na promjene vremena;",
+        "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
+      "products": [
+        "Tonerin — pomaže držati krvni tlak pod kontrolom.",
+        "Kardivix — pomaže poboljšati cirkulaciju krvi i očistiti krvne žile.",
+        "Guavital+ — uklanja višak soli i poboljšava metabolizam.",
+        "Ultraxal — pomaže u uklanjanju oteklina i viška vode iz tijela."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    },
+    "weightLoss": {
+      "title": "Set za kontrolu težine",
+      "description": "Kada težina \"stoji\", to je vrlo česta situacija, osobito s godinama. Organizmu je teže razgrađivati hranu nego prije. Upravo zato je važno odabrati pravi pristup, a ne očekivati čudo preko noći.",
+      "benefitsTitle": "Organizam obično djeluje postupno:",
+      "benefitsList": [
+        "najprije smanjuje apetit;",
+        "uklanja zadržavanje tekućine i nadutost;",
+        "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Sveobuhvatna kontrola težine»",
+      "products": [
+        "Slimital — pomaže u suzbijanju apetita tijekom dana.",
+        "OzenmicSoft — pomaže tijelu brže razgrađivati hranu.",
+        "Vermixin — pomaže u čišćenju tijela od svih nepotrebnih tvari.",
+        "Ultraxal — pomaže probavi da radi kao sat."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    },
+    "tiredness": {
+      "title": "Set protiv umora (Energija)",
+      "description": "Osjećaj \"umornosti\" već od jutra često znači da je organizam nakupio previše suvišnog i jednostavno ne može pratiti. Obična kava ovdje ne pomaže, potrebno je očistiti sustav iznutra. ",
+      "benefitsTitle": "Kako se vraća energija:",
+      "benefitsList": [
+        "organizam se nježno oslobađa od nakupljenih toksina;",
+        "rad želuca i crijeva se normalizira (nestaje osjećaj težine);",
+        "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Set energija i ravnoteža»",
+      "products": [
+        "Tonerin — vraća energiju i dobro raspoloženje.",
+        "Vermixin — pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta.",
+        "Ultraxal — pomaže probavi raditi bez zastoja.",
+        "Slimital — održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    },
+    "parasites": {
+      "title": "Sveobuhvatna zdravstvena njega",
+      "description": "Kad svi tjelesni sustavi počnu propadati — bilo vid, bilo sluh, bilo srce — tijelu je potrebno samo opće resetiranje. To je poput temeljitog remonta, koji je bolje napraviti na vrijeme. ",
+      "benefitsTitle": "Što pruža cjelovit pristup:",
+      "benefitsList": [
+        "održavanje srca i krvnih žila u tonusu;",
+        "normalizacija probave kako bi imunološki sustav bio snažan;",
+        "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
+      ],
+      "recommendTitle": "Odabrali smo za Vas set:",
+      "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
+      "products": [
+        "Ultraxal — za dobru probavu i lakoću.",
+        "Tonerin — za zaštitu krvnih žila i srca.",
+        "Vermixin — pomaže u čišćenju tijela od svih nepotrebnih tvari.",
+        "Ausen — podržava jasnoću sluha i bistru glavu."
+      ],
+      "footnote": "🎁 Bonusi će se primijeniti automatski",
+      "saving": "⭐ Uštedite 80 EUR!",
+      "price": "Početna cijena: 167 EUR Cijena s bonusima: 87 EUR"
+    }
+  },
   "order": {
-    "title": "Ваш бонус 80€ активовано!",
+    "title": "Vaš bonus od 80 € je aktiviran!",
     "offer": {
-      "tag": "Набір (4 од.): 167€ - 80€ = ",
-      "discount": "Ваші євробонуси: - 80 €"
+      "tag": "Set (4 kom): 167€ - 80€ = ",
+      "discount": "Vaši eurobonusi: - 80 €"
     },
     "price": {
       "current": "87 €"
     },
-    "btnSubmit": "Підтвердити замовлення"
+    "btnSubmit": "Potvrditi narudžbu"
   },
-
   "thankYou": {
-    "title": "Дякуємо!",
+    "title": "Hvala!",
     "variants": {
       "callback": {
-        "text": "Ваша заявка вже в роботі.\nОператор зв’яжеться з вами найближчим часом."
+        "text": "Vaša se prijava već obrađuje. Operater će vas uskoro kontaktirati."
       },
       "order": {
-        "text": "Ваше замовлення вже в роботі.\nМи успішно прийняли вашу заявку. Чекайте на дзвінок від оператора найближчим часом. Нехай наші продукти приносять вам лише користь та гарне самопочуття!"
+        "text": "Vaša se prijava već obrađuje. Uspješno smo prihvatili vašu prijavu. Uskoro očekujte poziv operatera. Neka vam naši proizvodi donose samo koristi i dobrobit!"
       }
     }
   }

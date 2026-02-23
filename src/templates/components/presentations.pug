@@ -5,12 +5,12 @@
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'joints: Набір для контролю ваги'
+                    text: t.presentation.joints.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.joints.description
                 },
                 {
                     tag: 'div',
@@ -18,15 +18,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.joints.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.joints.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -34,8 +33,14 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {
+                            tag: 'h3',
+                            text: t.presentation.joints.recommendTitle
+                        },
+                        {
+                            tag: 'strong',
+                            text: t.presentation.joints.recommendName
+                        },
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -52,51 +57,43 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.joints.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
+                        {
+                            tag: 'p',
+                            className: 'presentation__footnote',
+                            text: t.presentation.joints.footnote
+                        },
+                        {
+                            tag: 'p',
+                            className: 'presentation__saving',
+                            text: t.presentation.joints.saving
+                        },
                         {
                             tag: 'p',
                             className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
+                            text: t.presentation.joints.price
                         }
                     ]
-                },
+                }
             ]
         },
+
         "diabetes": {
             elements: [
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'diabetes: Набір для контролю ваги'
+                    text: t.presentation.diabetes.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.diabetes.description
                 },
                 {
                     tag: 'div',
@@ -104,15 +101,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.diabetes.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.diabetes.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -120,8 +116,8 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {tag: 'h3', text: t.presentation.diabetes.recommendTitle},
+                        {tag: 'strong', text: t.presentation.diabetes.recommendName},
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -138,51 +134,31 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.diabetes.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
-                        {
-                            tag: 'p',
-                            className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
-                        }
+                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
+                        {tag: 'p', className: 'presentation__saving', text: t.presentation.diabetes.saving},
+                        {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price}
                     ]
-                },
+                }
             ]
         },
+
         "blood-pressure": {
             elements: [
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'blood-pressure: Набір для контролю ваги'
+                    text: t.presentation.bloodPressure.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.bloodPressure.description
                 },
                 {
                     tag: 'div',
@@ -190,15 +166,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.bloodPressure.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.bloodPressure.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -206,8 +181,8 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {tag: 'h3', text: t.presentation.bloodPressure.recommendTitle},
+                        {tag: 'strong', text: t.presentation.bloodPressure.recommendName},
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -224,38 +199,17 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.bloodPressure.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
-                        {
-                            tag: 'p',
-                            className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
-                        }
+                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.bloodPressure.footnote},
+                        {tag: 'p', className: 'presentation__saving', text: t.presentation.bloodPressure.saving},
+                        {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price}
                     ]
-                },
+                }
             ]
         },
         "weight-loss": {
@@ -263,12 +217,12 @@
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'weight-loss: Набір для контролю ваги'
+                    text: t.presentation.weightLoss.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.weightLoss.description
                 },
                 {
                     tag: 'div',
@@ -276,15 +230,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.weightLoss.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.weightLoss.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -292,8 +245,8 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {tag: 'h3', text: t.presentation.weightLoss.recommendTitle},
+                        {tag: 'strong', text: t.presentation.weightLoss.recommendName},
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -310,38 +263,17 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.weightLoss.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
-                        {
-                            tag: 'p',
-                            className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
-                        }
+                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.weightLoss.footnote},
+                        {tag: 'p', className: 'presentation__saving', text: t.presentation.weightLoss.saving},
+                        {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price}
                     ]
-                },
+                }
             ]
         },
         "tiredness": {
@@ -349,12 +281,12 @@
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'tiredness: Набір для контролю ваги'
+                    text: t.presentation.tiredness.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.tiredness.description
                 },
                 {
                     tag: 'div',
@@ -362,15 +294,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.tiredness.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.tiredness.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -378,8 +309,8 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {tag: 'h3', text: t.presentation.tiredness.recommendTitle},
+                        {tag: 'strong', text: t.presentation.tiredness.recommendName},
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -396,38 +327,17 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.tiredness.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
-                        {
-                            tag: 'p',
-                            className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
-                        }
+                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.tiredness.footnote},
+                        {tag: 'p', className: 'presentation__saving', text: t.presentation.tiredness.saving},
+                        {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price}
                     ]
-                },
+                }
             ]
         },
         "parasites": {
@@ -435,12 +345,12 @@
                 {
                     tag: 'h2',
                     className: 'presentation__title',
-                    text: 'parasites: Набір для контролю ваги'
+                    text: t.presentation.parasites.title
                 },
                 {
                     tag: 'p',
                     className: 'presentation__desc',
-                    text: 'Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.'
+                    text: t.presentation.parasites.description
                 },
                 {
                     tag: 'div',
@@ -448,15 +358,14 @@
                     children: [
                         {
                             tag: 'strong',
-                            text: 'Зазвичай організм діє поступово:'
+                            text: t.presentation.parasites.benefitsTitle
                         },
                         {
                             tag: 'ul',
-                            children: [
-                                {tag: 'li', text: 'спочатку приборкує апетит;'},
-                                {tag: 'li', text: 'прибирає набряки та здуття;'},
-                                {tag: 'li', text: 'налагоджує обмін речовин, щоб вага нарешті почала танути.'}
-                            ]
+                            children: t.presentation.parasites.benefitsList.map(item => ({
+                                tag: 'li',
+                                text: item
+                            }))
                         }
                     ]
                 },
@@ -464,8 +373,8 @@
                     tag: 'div',
                     className: 'presentation__recommend',
                     children: [
-                        {tag: 'h3', text: 'Ми підібрали для вас набір:'},
-                        {tag: 'strong', text: '«Комплексний контроль ваги»'},
+                        {tag: 'h3', text: t.presentation.parasites.recommendTitle},
+                        {tag: 'strong', text: t.presentation.parasites.recommendName},
                         {
                             tag: 'div',
                             className: 'presentation__images',
@@ -482,38 +391,17 @@
                         {
                             tag: 'ul',
                             className: 'products',
-                            children: [
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Slimogi — допомагає стримувати апетит протягом дня.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'OzenmicSoft — допомагає організму швидше розщеплювати їжу.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Vermixin — сприяє очищенню організму від усього зайвого.'
-                                },
-                                {
-                                    tag: 'li',
-                                    className: 'product',
-                                    text: 'Ultraxal — допомагає травленню працювати як годинник.'
-                                }
-                            ]
+                            children: t.presentation.parasites.products.map(product => ({
+                                tag: 'li',
+                                className: 'product',
+                                text: product
+                            }))
                         },
-                        {tag: 'p', className: 'presentation__footnote', text: '🎁 Бонуси застосуються автоматично'},
-                        {tag: 'p', className: 'presentation__saving', text: '⭐ Ви економите 80 євро!'},
-                        {
-                            tag: 'p',
-                            className: 'presentation__price',
-                            text: 'Стара ціна: 167 євро Ціна з бонусами: 87 євро'
-                        }
+                        {tag: 'p', className: 'presentation__footnote', text: t.presentation.parasites.footnote},
+                        {tag: 'p', className: 'presentation__saving', text: t.presentation.parasites.saving},
+                        {tag: 'p', className: 'presentation__price', text: t.presentation.parasites.price}
                     ]
-                },
+                }
             ]
         },
     };
@@ -556,5 +444,5 @@ section.presentations.block(class="screen hidden" id="screen-presentations")
                 //    p.presentation__price Стара ціна: 167 євро Ціна з бонусами: 87 євро
 
             .presentation__actions
-                button.presentation__change(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems") Виберіть інший комплекс
-                button.presentation__next(type="button" data-target-screen="screen-order" id="from-presentation-to-order-form") Далі →
+                button.presentation__change(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems")!= t.presentation.btnChange
+                button.presentation__next(type="button" data-target-screen="screen-order" id="from-presentation-to-order-form")!= t.presentation.btnNext
