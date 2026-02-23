@@ -74,8 +74,15 @@
         }
       },
 
-      set(key, value) {
-        this.state.data[key] = value;
+      set(data) {
+        if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+          console.error('set() expects a plain object');
+          return;
+        }
+
+        this.state.data = { ...this.state.data,
+          ...data
+        };
         this.state.updatedAt = formatLocalDate(Date.now());
         this.state.updatedAtInKyiv = formatKyivDate(Date.now());
 
@@ -122,8 +129,8 @@
     const SUBSCRIBE_PAGE = 'subscribe.html';
     const STATE_KEYS = {
       LANGUAGE: 'language',
-      INITIAL_LANG: 'initialLanguage',
-      REDIRECTED_LANG: 'redirectedLanguage'
+      INITIAL_LANG: 'initial_language',
+      REDIRECTED_LANG: 'redirected_language'
     };
     const COUNTRY_MAP = {
       HR: 'hr',
@@ -133,7 +140,7 @@
       hr: 'hr',
       sl: 'sl'
     };
-    const API_URL = 'https://ippi.co/json/';
+    const API_URL = 'https://ipapi.co/json/';
     const LanguageSwitcher = {
       async detectUserLanguage() {
         try {
@@ -173,18 +180,25 @@
         const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
 
         if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
-          AppState.set(STATE_KEYS.INITIAL_LANG, urlLang);
+          AppState.set({
+            [STATE_KEYS.INITIAL_LANG]: urlLang
+          });
         }
 
         if (savedLang === undefined || savedLang === null) {
           const detectedLang = await this.detectUserLanguage();
-          console.log(detectedLang);
-          AppState.set(STATE_KEYS.LANGUAGE, detectedLang);
-          AppState.set(STATE_KEYS.REDIRECTED_LANG, detectedLang);
+          AppState.set({
+            [STATE_KEYS.LANGUAGE]: detectedLang
+          });
+          AppState.set({
+            [STATE_KEYS.REDIRECTED_LANG]: detectedLang
+          });
           return detectedLang;
         }
 
-        AppState.set(STATE_KEYS.LANGUAGE, normalizedLang);
+        AppState.set({
+          [STATE_KEYS.LANGUAGE]: normalizedLang
+        });
         return normalizedLang;
       },
 
@@ -223,7 +237,9 @@
         options.forEach(opt => opt.classList.remove(CSS_CLASSES.SELECTED));
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
-        AppState.set(STATE_KEYS.LANGUAGE, code === 'en' ? '' : code);
+        AppState.set({
+          [STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code
+        });
         window.location.href = value + queryParams;
       },
 

@@ -1,5 +1,6 @@
 import {dataConfigParser} from "../utils/dataConfigParser";
 import {UniversalRenderer} from "./UniversalRenderer";
+import {AppState} from "./AppState";
 
 const SELECTORS = {
     PROBLEMS_SCREEN: '#screen-problems',
@@ -8,7 +9,7 @@ const SELECTORS = {
     ACCORDION_HEADER: '.accordion-header',
     ACCORDION_CONTENT: '.accordion-content',
     RADIO_INPUT: 'input[type="radio"]',
-    NEXT_BUTTON: '.problems__next',
+    NEXT_BUTTON: '.accordion-content__btn',
     PRESENTATION_CONTENT: '.presentation-modal__content',
     ORDER_FORM_CONTENT: '.order-card__content'
 };
@@ -18,8 +19,8 @@ const CSS_CLASSES = {
 };
 
 export const NichesAccordion = {
-    presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT),
-    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT),
+    presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT)[0],
+    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT)[0],
 
     _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
@@ -38,12 +39,12 @@ export const NichesAccordion = {
 
         UniversalRenderer.render(
             SELECTORS.PRESENTATION_CONTENT,
-            this.presentationData[niche].elements
+            this.presentationData.niches[niche].elements
         )
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData[niche].elements
+            this.orderFormData.niches[niche].elements
         )
     },
 
@@ -59,14 +60,33 @@ export const NichesAccordion = {
 
         UniversalRenderer.render(
             SELECTORS.PRESENTATION_CONTENT,
-            this.presentationData[niche].elements
+            this.presentationData.niches[niche].elements
         )
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData[niche].elements
+            this.orderFormData.niches[niche].elements
         )
     },
+
+    _confirmChoice(allItems) {
+        const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES.ACTIVE));
+        const activeNiche = activeItem?.dataset.niche;
+
+        if (!activeItem || !activeNiche) return;
+
+        const { courseName, price, problemType, productList } = this.presentationData.niches[activeNiche];
+
+        AppState.set({
+            packs_count: this.presentationData.packs,
+            course_name: courseName,
+            price: price,
+            niche_short: activeNiche,
+            niche_full: problemType,
+            product_list: productList
+        })
+    },
+
 
     init() {
         const problemsScreen = document.querySelector(SELECTORS.PROBLEMS_SCREEN);
@@ -78,7 +98,12 @@ export const NichesAccordion = {
 
         this._setFirstItemActive(accordionItems);
 
-        problemsScreen.querySelector(SELECTORS.ACCORDION_CONTAINER)
-            ?.addEventListener('click', (e) => this._handleClick(e, accordionItems));
+        accordionContainer.addEventListener('click', (e) => {
+            if (e.target.closest(SELECTORS.NEXT_BUTTON)) {
+                this._confirmChoice(accordionItems);
+                return;
+            }
+            this._handleClick(e, accordionItems);
+        });
     }
 };

@@ -44,8 +44,16 @@ export const AppState = {
         }
     },
 
-    set(key, value) {
-        this.state.data[key] = value;
+    set(data) {
+        if (typeof data !== 'object' || data === null || Array.isArray(data)) {
+            console.error('set() expects a plain object');
+            return;
+        }
+
+        this.state.data = {
+            ...this.state.data,
+            ...data
+        }
         this.state.updatedAt = formatLocalDate(Date.now());
         this.state.updatedAtInKyiv = formatKyivDate(Date.now())
         this._saveToStorage(this.state);

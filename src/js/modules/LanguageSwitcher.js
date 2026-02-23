@@ -16,8 +16,8 @@ const SUBSCRIBE_PAGE = 'subscribe.html';
 
 const STATE_KEYS = {
     LANGUAGE: 'language',
-    INITIAL_LANG: 'initialLanguage',
-    REDIRECTED_LANG: 'redirectedLanguage',
+    INITIAL_LANG: 'initial_language',
+    REDIRECTED_LANG: 'redirected_language',
 };
 
 const COUNTRY_MAP = {
@@ -30,7 +30,7 @@ const LANGUAGE_MAP = {
     sl: 'sl'
 };
 
-const API_URL = 'https://ippi.co/json/';
+const API_URL = 'https://ipapi.co/json/';
 
 export const LanguageSwitcher = {
     async detectUserLanguage() {
@@ -70,18 +70,17 @@ export const LanguageSwitcher = {
         const savedLang = AppState.get(STATE_KEYS.LANGUAGE);
 
         if (AppState.get(STATE_KEYS.INITIAL_LANG) === undefined) {
-            AppState.set(STATE_KEYS.INITIAL_LANG, urlLang);
+            AppState.set({ [STATE_KEYS.INITIAL_LANG]: urlLang });
         }
 
         if (savedLang === undefined || savedLang === null) {
             const detectedLang = await this.detectUserLanguage();
-            console.log(detectedLang);
-            AppState.set(STATE_KEYS.LANGUAGE, detectedLang);
-            AppState.set(STATE_KEYS.REDIRECTED_LANG, detectedLang);
+            AppState.set({ [STATE_KEYS.LANGUAGE]: detectedLang });
+            AppState.set({ [STATE_KEYS.REDIRECTED_LANG]: detectedLang });
             return detectedLang;
         }
 
-        AppState.set(STATE_KEYS.LANGUAGE, normalizedLang);
+        AppState.set({ [STATE_KEYS.LANGUAGE]: normalizedLang });
         return normalizedLang;
     },
 
@@ -124,7 +123,7 @@ export const LanguageSwitcher = {
         option.classList.add(CSS_CLASSES.SELECTED);
         this.closeDropdown(custom);
 
-        AppState.set(STATE_KEYS.LANGUAGE, code === 'en' ? '' : code);
+        AppState.set({ [STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code });
         window.location.href = value + queryParams;
     },
 

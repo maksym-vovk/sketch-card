@@ -1,9 +1,11 @@
+import {AppState} from "./AppState";
+
 const SUBSCRIBE_PAGE = 'subscribe.html';
 
 const SELECTORS = {
     CALL_FORM: '.intro-popup__form',
     PROMO_CODE_FORM: '.intro-success__form',
-    PROMO_CODE_INPUT: '[name="promo-code"]',
+    PROMO_CODE_INPUT: '[name="promo_code"]',
     PROMO_CODE_BUTTON: '.intro-success__submit',
     ORDER_FORM: '.order__form',
 }
@@ -16,14 +18,24 @@ const redirectTypes = {
 const CallRequestForm = {
     init() {
         const callRequestForm = document.querySelector(SELECTORS.CALL_FORM);
+        const callRequestInputs = callRequestForm?.querySelectorAll('input');
 
         if (!callRequestForm) {
             console.warn('Call request form not found');
             return;
         }
 
+        callRequestInputs.forEach(input => {
+            input.addEventListener('blur', e => AppState.set({ [e.target.name]: e.target.value }));
+        })
+
         callRequestForm.addEventListener('submit', e => {
             e.preventDefault();
+
+            const formData = new FormData(callRequestForm);
+            const data = Object.fromEntries(formData.entries());
+            AppState.set(data);
+
             window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
     }
@@ -50,6 +62,14 @@ const PromoCodeForm = {
 
         promoCodeForm.addEventListener('submit', e => {
             e.preventDefault();
+
+            const formData = new FormData(promoCodeForm);
+            const data = Object.fromEntries(formData.entries());
+            AppState.set(data);
+        });
+
+        promoCodeInput.addEventListener('blur', e => {
+            AppState.set({ [e.target.name]: e.target.value });
         });
 
         promoCodeInput.addEventListener('input', e => {
@@ -67,8 +87,24 @@ const OrderForm = {
             return;
         }
 
+        const orderFormInputs = orderForm.querySelectorAll('input');
+
+        orderFormInputs.forEach(input => {
+            input.addEventListener('blur', e => {
+                AppState.set({ [e.target.name]: e.target.value });
+            });
+        });
+
         orderForm.addEventListener('submit', e => {
             e.preventDefault();
+
+            const formData = new FormData(orderForm);
+            const data = Object.fromEntries(formData.entries());
+            AppState.set({
+                ...data,
+                is_ordered: true
+            });
+
             window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
     }
