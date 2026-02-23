@@ -153,7 +153,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     },
     "diabetes": {
@@ -189,7 +189,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     },
     "bloodPressure": {
@@ -225,7 +225,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     },
     "weightLoss": {
@@ -261,7 +261,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     },
     "tiredness": {
@@ -277,7 +277,7 @@
       "recommendName": "«Energy and Balance Program»",
       "products": [
         {
-          "name": "Tonerin",
+          "name": "Guavital+",
           "description": "brings back energy and good mood."
         },
         {
@@ -297,7 +297,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     },
     "parasites": {
@@ -333,7 +333,7 @@
       "saving": "You save 80 euros!",
       "price": {
         "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 87 euros"
+        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
       }
     }
   },

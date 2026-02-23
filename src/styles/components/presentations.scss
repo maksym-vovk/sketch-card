@@ -69,7 +69,7 @@
   display: block;
   display: block;
   margin: 20px 0 12px;
-  font-size: 19px;
+  font-size: 25px;
   font-weight: bold;
 
   @include rm(1024){
@@ -110,6 +110,9 @@
 }
 
 .presentation__recommend {
+  display: flex;
+  flex-direction: column;
+
   @include rm(1024){
     display: contents;
   }
@@ -126,6 +129,7 @@
 }
 
 .presentation__recommend h3 {
+  order: 2;
   font-size: 25px;
   font-weight: bold;
 
@@ -137,6 +141,7 @@
 .presentation__recommend h3 + strong {
   font-style: italic;
   font-size: 22px;
+  order: 2;
 
   @include rm(1024){
     width: 100%;
@@ -189,6 +194,7 @@
 .presentation__images {
   padding-top: 20px;
   position: relative;
+  order: 2;
 
   @include rm(1024){
     padding-top: 0;
@@ -212,6 +218,7 @@
 }
 
 .presentations .products {
+  order: 4;
   @include rm(1024){
     margin: 0;
     max-width: 450px;
@@ -227,7 +234,8 @@
   flex-direction: column;
   gap: 16px;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 10px;
+  order: 5;
 
   @include rm(1024){
     width: 100%;
@@ -266,10 +274,35 @@
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: bold;
+  order: 3;
 
   @include rm(1024){
+    order: 4;
     width: 100%;
     margin-bottom: 0;
+  }
+}
+
+.presentation__price {
+  width: fit-content;
+  margin-bottom: 0;
+  padding: 10px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  background: green;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  @include rm(375){
+    font-size: 23px;
+  }
+
+  @include rm(1024){
+    width: fit-content;
+    font-size: 23px;
   }
 }
 
@@ -280,7 +313,7 @@
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background: green;
+  background: red;
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -292,6 +325,14 @@
   //}
 }
 
-.presentation__price {
-  margin-bottom: 0;
+.presentation__price:not(:last-of-type) {
+  margin-bottom: 10px;
+
+  @include rm(1024){
+    margin-bottom: 0;
+  }
+}
+
+.old-price {
+  text-decoration: line-through;
 }
