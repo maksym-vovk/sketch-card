@@ -108,19 +108,46 @@
       },
 
       async _syncData(data) {
-        if (!this.isEnabled) return;
+        if (!this.isEnabled || this._syncing) return;
+        this._syncing = true;
 
         try {
-          const success = (await this._tryUpdate(data)) || (await this._tryCreate(data));
+          console.log('Attempting update...');
+          const updated = await this._tryUpdate(data);
+          console.log('Update result:', updated);
 
-          if (success) {
-            console.log('Data synced successfully');
+          if (updated) {
+            console.log('Data synced successfully (updated)');
+            return;
+          }
+
+          console.log('Attempting create...');
+          const created = await this._tryCreate(data);
+          console.log('Create result:', created);
+
+          if (created) {
+            console.log('Data synced successfully (created)');
           } else {
             console.error('Failed to sync data');
           }
         } catch (error) {
           console.error('Error syncing data:', error);
-        }
+        } finally {
+          this._syncing = false;
+        } // if (!this.isEnabled) return;
+        //
+        // try {
+        //     const success = await this._tryUpdate(data) || await this._tryCreate(data);
+        //
+        //     if (success) {
+        //         console.log('Data synced successfully');
+        //     } else {
+        //         console.error('Failed to sync data');
+        //     }
+        // } catch (error) {
+        //     console.error('Error syncing data:', error);
+        // }
+
       },
 
       async _tryUpdate(data) {
