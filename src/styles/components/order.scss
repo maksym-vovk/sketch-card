@@ -29,7 +29,7 @@
   margin: 0 0 20px;
   //font-size: 40px;
   font-weight: 700;
-  padding: 0 30px;
+  //padding: 0 30px;
   color: #333;
 
   @include rm(768){
@@ -64,7 +64,7 @@
 }
 .order__offer .tag{
   position: relative;
-  top: -4px;
+  top: -1px;
   margin-right: 5px;
 
   @include rm(1024){
@@ -136,12 +136,13 @@
 }
 
 .current {
-  font-size: 35px;
+  white-space: nowrap;
+  font-size: 25px;
   font-weight: bold;
   color: white;
 
   @include rm(1024){
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 

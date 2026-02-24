@@ -1,4 +1,5 @@
 - const stepsIcon = ["img/icon-scratch.svg", "img/icon-click.svg", "img/icon-gift.svg"]
+- const cardSrcMap = { en: "img/cupon-en.png",hr: "img/cupon-hr.png", sl: "img/cupon-sl.png"}
 
 section.intro.block(class="screen" id="screen-intro")
     .container
@@ -13,7 +14,7 @@ section.intro.block(class="screen" id="screen-intro")
                 | #{t.intro.text2}
 
             .intro__card
-                img(src=basePath + "img/cupon.png" alt="EUROBONUS")
+                img(src=basePath + cardSrcMap[locale] alt="EUROBONUS")
 
             p #{t.intro.text3}
 
