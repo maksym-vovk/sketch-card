@@ -293,14 +293,25 @@
 
         if (savedLang === undefined || savedLang === null) {
           const detectedLang = await this.detectUserLanguage();
+
+          if (normalizedLang) {
+            AppState.set({
+              [LANG_STATE_KEYS.LANGUAGE]: normalizedLang
+            });
+            return normalizedLang;
+          }
+
           AppState.set({
             [LANG_STATE_KEYS.LANGUAGE]: detectedLang
           });
-          AppState.set({
-            [LANG_STATE_KEYS.REDIRECTED_LANG]: detectedLang
-          });
           return detectedLang;
-        }
+        } // if (savedLang === undefined || savedLang === null) {
+        //     const detectedLang = await this.detectUserLanguage();
+        //     AppState.set({ [LANG_STATE_KEYS.LANGUAGE]: detectedLang });
+        //     AppState.set({ [LANG_STATE_KEYS.REDIRECTED_LANG]: detectedLang });
+        //     return detectedLang;
+        // }
+
 
         AppState.set({
           [LANG_STATE_KEYS.LANGUAGE]: normalizedLang
