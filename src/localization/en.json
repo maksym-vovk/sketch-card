@@ -356,6 +356,7 @@
   },
   "order": {
     "title": "Your €80 bonus has been activated!",
+    "special": "Special offer",
     "offer": {
       "tag": "Set (4 units.): 167€ - 80€ =",
       "discount": "Your euro bonuses: - 80 €"
