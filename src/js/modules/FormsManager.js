@@ -1,4 +1,6 @@
 import {AppState} from "./AppState";
+import {LANG_STATE_KEYS} from "./LanguageSwitcher";
+import {initPhoneInputValidation} from "../utils/validators";
 
 const SUBSCRIBE_PAGE = 'subscribe.html';
 
@@ -26,6 +28,7 @@ const CallRequestForm = {
         }
 
         callRequestInputs.forEach(input => {
+            initPhoneInputValidation(input)
             input.addEventListener('blur', e => AppState.set({ [e.target.name]: e.target.value }));
         })
 
@@ -36,7 +39,9 @@ const CallRequestForm = {
             const data = Object.fromEntries(formData.entries());
             AppState.set(data);
 
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
+            const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
+            const langPrefix = currentLang ? `/${currentLang}` : '';
+            window.location.href = `${window.location.origin}${langPrefix}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.CALL_REQUEST}`;
         });
     }
 }
@@ -90,6 +95,7 @@ const OrderForm = {
         const orderFormInputs = orderForm.querySelectorAll('input');
 
         orderFormInputs.forEach(input => {
+            initPhoneInputValidation(input)
             input.addEventListener('blur', e => {
                 AppState.set({ [e.target.name]: e.target.value });
             });
@@ -105,7 +111,9 @@ const OrderForm = {
                 is_ordered: true
             });
 
-            window.location.href = `${window.location.origin}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
+            const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
+            const langPrefix = currentLang ? `/${currentLang}` : '';
+            window.location.href = `${window.location.origin}${langPrefix}/${SUBSCRIBE_PAGE}?redirect=${redirectTypes.ORDER}`;
         });
     }
 }

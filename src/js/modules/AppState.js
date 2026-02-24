@@ -1,4 +1,5 @@
 import { formatLocalDate, formatKyivDate } from "../utils/dataFormatters";
+import {DataSync} from "./DataSync";
 
 export const AppState = {
     storageKey: 'appState',
@@ -16,7 +17,6 @@ export const AppState = {
             createdAtInKyiv: formatKyivDate(now),
             updatedAt: formatLocalDate(now),
             updatedAtInKyiv: formatKyivDate(now),
-            data: {}
         };
         this._saveToStorage(initialState);
         return initialState;
@@ -50,17 +50,19 @@ export const AppState = {
             return;
         }
 
-        this.state.data = {
-            ...this.state.data,
-            ...data
+        this.state = {
+            ...this.state,
+            ...data,
+            updatedAt: formatLocalDate(Date.now()),
+            updatedAtInKyiv: formatKyivDate(Date.now())
         }
-        this.state.updatedAt = formatLocalDate(Date.now());
-        this.state.updatedAtInKyiv = formatKyivDate(Date.now())
         this._saveToStorage(this.state);
+
+        DataSync.send(this.state)
     },
 
     get(key) {
-        return this.state.data[key];
+        return this.state[key];
     },
 
     getAll() {
