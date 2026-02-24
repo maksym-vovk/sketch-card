@@ -63,12 +63,16 @@ body, button {
   margin: 0 auto 30px;
 
 
-  @include rm(640){
-    max-width: 480px;
+  @include rm(640) {
+    max-width: 600px;
   }
 
-  @include rm(768){
-    max-width: 715px;
+  //@include rm(768) {
+  //  max-width: 715px;
+  //}
+
+  @include rm(1024) {
+    max-width: 975px;
   }
 
 }
@@ -88,15 +92,26 @@ body, button {
   -webkit-background-size: 45px;
   background-size: 45px;
 
-  @include rm(640){
-    padding-right: 0;
+  @include rm(640) {
+    padding-right: 10px;
     padding-top: 10px;
-    padding-bottom: 55px;
+    //padding-bottom: 55px;
+    padding-right: 95px;
     width: calc(50% - 8px);
   }
 
   @include rm(768) {
+    //padding: 20px;
+    //padding-right: 100px;
+    //width: calc(33% - 10px);
+  }
+
+  @include rm(1024) {
+    padding: 20px;
+    padding-right: 100px;
+    //padding-bottom: 105px;
     width: calc(33% - 10px);
+    //justify-content: center;
   }
 }
 
@@ -117,8 +132,14 @@ body, button {
   -webkit-background-size: 55px;
   background-size: 55px;
 
-  @include rm(640) {
-    background-position:  center bottom 10px;
+  @include rm(768) {
+
+    //background-position: center bottom 10px;
+  }
+  @include rm(1024) {
+    padding-right: 100px;
+    //background-position: center bottom 30px;
+    background-size: 70px;
   }
 }
 
@@ -126,8 +147,16 @@ body, button {
   background-image: url(../../img/icon-click.svg);
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
-    @include rm(640) {
-    background-position:  center bottom 10px;
+  @include rm(640) {
+    padding-right: 130px;
+    //background-position: center bottom 10px;
+  }
+
+  @include rm(1024) {
+    padding-right: 140px;
+    //background-position: center bottom 20px;
+    background-size: 55px;
+    //width: 220px;
   }
 }
 
@@ -135,8 +164,17 @@ body, button {
   background-image: url(../../img/icon-gift.svg);
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
-    @include rm(640) {
-    background-position:  center bottom 10px;
+  @include rm(640) {
+    padding-right: 110px;
+
+    //background-position: center bottom 10px;
+  }
+
+  @include rm(1024) {
+    padding-right: 130px;
+    //width: 320px;
+    //background-position: center bottom 20px;
+    background-size: 55px;
   }
 }
 
@@ -179,7 +217,12 @@ body, button {
   color: black;
 
   @include rm(640) {
+    font-size: 17px;
     width: calc(50% - 12px);
+  }
+
+  @include rm(768) {
+    font-size: 19px;
   }
 }
 
