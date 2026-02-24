@@ -112,9 +112,12 @@ export const LanguageSwitcher = {
         const queryParams = window.location.search;
 
         if (savedLang && !currentPath.includes(`/${savedLang}/`)) {
-            window.location.href = isSubscribePage
+            window.location.replace(isSubscribePage
                 ? `/${savedLang}/${SUBSCRIBE_PAGE}${queryParams}`
-                : `/${savedLang}/${queryParams}`;
+                : `/${savedLang}/${queryParams}`);
+            // window.location.href = isSubscribePage
+            //     ? `/${savedLang}/${SUBSCRIBE_PAGE}${queryParams}`
+            //     : `/${savedLang}/${queryParams}`;
             return true;
         }
 
@@ -146,7 +149,8 @@ export const LanguageSwitcher = {
         this.closeDropdown(custom);
 
         AppState.set({ [LANG_STATE_KEYS.LANGUAGE]: code === 'en' ? '' : code });
-        window.location.href = value + queryParams;
+        window.location.replace(value + queryParams);
+        // window.location.href = value + queryParams;
     },
 
     bindCustomSelect() {
