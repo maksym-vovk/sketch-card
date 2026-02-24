@@ -454,11 +454,24 @@
         }
       },
 
-      init() {
-        this.setCongratulationText();
+      clearStateAfterSync() {
         setTimeout(() => {
           AppState.clear();
         }, 1000);
+      },
+
+      handlePageShow() {
+        window.addEventListener('pageshow', event => {
+          if (event.persisted) {
+            window.location.reload();
+          }
+        });
+      },
+
+      init() {
+        this.setCongratulationText();
+        this.clearStateAfterSync();
+        this.handlePageShow();
       }
 
     };
