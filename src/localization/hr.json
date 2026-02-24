@@ -1,7 +1,7 @@
 {
   "common": {
-    "pageTitle": "Sketch Card HR",
-    "subscribeTitle": "Thank you page HR",
+    "pageTitle": "Dobili ste SCRATCH karticu bonusima!",
+    "subscribeTitle": "Hvala!",
     "promoCodePlaceholder": "Promotivni kod",
     "namePlaceholder": "Ime",
     "phonePlaceholder": "Telefon",
@@ -372,7 +372,7 @@
         "text": "Vaša se prijava već obrađuje. Operater će vas uskoro kontaktirati."
       },
       "order": {
-        "text": "Vaša se prijava već obrađuje. Uspješno smo prihvatili vašu prijavu. Uskoro očekujte poziv operatera. Neka vam naši proizvodi donose samo koristi i dobrobit!"
+        "text": "Uspješno smo zaprimili vašu prijavu. Očekujte poziv našeg operatera radi potvrde podataka za dostavu. Neka vam naši proizvodi donesu samo korist i dobro osjećanje!"
       }
     }
   }

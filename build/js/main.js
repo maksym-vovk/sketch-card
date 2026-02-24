@@ -315,9 +315,8 @@
           const data = await response.json();
           AppState.set({
             api_country_code: data.country_code
-          }); // return COUNTRY_MAP[data.country_code] || '';
-
-          return COUNTRY_MAP['HR'] || '';
+          });
+          return COUNTRY_MAP[data.country_code] || '';
         } catch (error) {
           console.warn('Failed to detect language from IP:', error);
           const browserLang = navigator.language.split('-')[0];

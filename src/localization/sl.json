@@ -1,7 +1,7 @@
 {
   "common": {
-    "pageTitle": "Sketch Card SL",
-    "subscribeTitle": "Thank you page SL",
+    "pageTitle": "Prejeli ste SREČKO bonusi!",
+    "subscribeTitle": "Hvala!",
     "promoCodePlaceholder": "Promocijska koda",
     "namePlaceholder": "Vaše ime",
     "phonePlaceholder": "Vaša številka",
@@ -372,7 +372,7 @@
         "text": "Vaša prijava se že obdeluje. Operater vas bo kmalu kontaktiral"
       },
       "order": {
-        "text": "Vaše naročilo je že v obdelavi. Vašo zahtevo smo uspešno sprejeli. Kmalu pričakujte klic operaterja. Naj vam naši izdelki prinesejo le koristi in odlično počutje!"
+        "text": "Uspešno smo prejeli vašo prijavo. Pričakujte klic našega operaterja za potrditev podatkov za dostavo. Naj vam naši izdelki prinesejo le koristi in dobro počutje!"
       }
     }
   }

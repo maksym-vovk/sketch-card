@@ -1,7 +1,7 @@
 {
   "common": {
-    "pageTitle": "Sketch Card EN",
-    "subscribeTitle": "Thank you page EN",
+    "pageTitle": "You received a SCRATCH CARD with bonuses!",
+    "subscribeTitle": "Thank you!",
     "promoCodePlaceholder": "Promo code",
     "namePlaceholder": "Your name",
     "phonePlaceholder": "Your contact number",
@@ -372,7 +372,7 @@
         "text": "Your request is already in progress. The operator will contact you as soon as possible."
       },
       "order": {
-        "text": "Your order is already in progress. We have successfully processed your request. Expect a call from the operator shortly. May our products bring you only benefits and perfect health!"
+        "text": "We have successfully received your request. Please wait for a call from our operator to confirm the delivery details. May our products bring you only benefits and good well-being!"
       }
     }
   }
