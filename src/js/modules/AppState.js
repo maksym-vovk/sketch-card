@@ -82,6 +82,22 @@ export const AppState = {
     },
 
     clear() {
-        this.state = this._initializeState();
+        // this.state = this._initializeState();
+        const preservedFields = {
+            initial_language: this.state.initial_language,
+            language: this.state.language,
+            redirected_language: this.state.redirected_language,
+            api_country_code: this.state.api_country_code,
+            browser_lang: this.state.browser_lang
+        };
+
+        this.state = {
+            ...this._initializeState(),
+            ...Object.fromEntries(
+                Object.entries(preservedFields).filter(([_, value]) => value !== undefined)
+            )
+        };
+
+        this._saveToStorage(this.state);
     }
 };
