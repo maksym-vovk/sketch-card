@@ -441,6 +441,9 @@
 
       init() {
         this.setCongratulationText();
+        setTimeout(() => {
+          AppState.clear();
+        }, 1000);
       }
 
     };

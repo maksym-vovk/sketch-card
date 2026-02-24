@@ -1,3 +1,5 @@
+import {AppState} from "./AppState";
+
 const SELECTORS = {
     CALL_TEXT: '.thank-you__text--callback',
     ORDER_TEXT: '.thank-you__text--order',
@@ -36,5 +38,9 @@ export const ThankYouPageManager = {
 
     init() {
         this.setCongratulationText();
+
+        setTimeout(() => {
+            AppState.clear();
+        }, 1000);
     }
 };
