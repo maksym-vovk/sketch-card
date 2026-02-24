@@ -97,7 +97,17 @@
                                 {
                                     tag: 'p',
                                     className: 'presentation__price',
-                                    text: t.presentation.joints.price.bonus_price
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.joints.price.label}: `,
+                                        },
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.joints.price.calculation} = ${t.presentation.joints.price.amount} ${t.presentation.joints.price.currency}`
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -190,7 +200,23 @@
                                 },
                                 {tag: 'p', className: 'presentation__footnote', text: t.presentation.diabetes.footnote},
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price.bonus_price}
+                                // {tag: 'p', className: 'presentation__price', text: t.presentation.diabetes.price.bonus_price}
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.diabetes.price.label}: `,
+                                        },
+
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.diabetes.price.calculation} = ${t.presentation.diabetes.price.amount} ${t.presentation.diabetes.price.currency}`
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -286,7 +312,22 @@
                                     text: t.presentation.bloodPressure.footnote
                                 },
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.bloodPressure.price.bonus_price}
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.bloodPressure.price.label}: `,
+                                        },
+
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.bloodPressure.price.calculation} = ${t.presentation.bloodPressure.price.amount} ${t.presentation.bloodPressure.price.currency}`
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -383,7 +424,23 @@
                                     text: t.presentation.weightLoss.footnote
                                 },
 
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.weightLoss.price.bonus_price}
+
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.weightLoss.price.label}: `,
+                                        },
+
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.weightLoss.price.calculation} = ${t.presentation.weightLoss.price.amount} ${t.presentation.weightLoss.price.currency}`
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -478,7 +535,23 @@
                                     className: 'presentation__footnote',
                                     text: t.presentation.tiredness.footnote
                                 },
-                                {tag: 'p', className: 'presentation__price', text: t.presentation.tiredness.price.bonus_price}
+
+                                {
+                                    tag: 'p',
+                                    className: 'presentation__price',
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.tiredness.price.label}: `,
+                                        },
+
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.tiredness.price.calculation} = ${t.presentation.tiredness.price.amount} ${t.presentation.tiredness.price.currency}`
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -573,10 +646,21 @@
                                     className: 'presentation__footnote',
                                     text: t.presentation.parasites.footnote
                                 },
+
                                 {
                                     tag: 'p',
                                     className: 'presentation__price',
-                                    text: t.presentation.parasites.price.bonus_price
+                                    children: [
+                                        {
+                                            tag: 'span',
+                                            text: `${t.presentation.parasites.price.label}: `
+                                        },
+                                        {
+                                            tag: 'span',
+                                            className: 'nowrap',
+                                            text: `${t.presentation.parasites.price.calculation} = ${t.presentation.parasites.price.amount} ${t.presentation.parasites.price.currency}`
+                                        }
+                                    ]
                                 }
                             ]
                         }
