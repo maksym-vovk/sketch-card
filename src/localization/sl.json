@@ -152,8 +152,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "diabetes": {
@@ -188,8 +190,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "bloodPressure": {
@@ -224,8 +228,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "weightLoss": {
@@ -260,8 +266,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": " Ви економите 80 євро!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "tiredness": {
@@ -296,8 +304,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "parasites": {
@@ -332,8 +342,10 @@
       "footnote": "Bonusi se uporabijo samodejno",
       "saving": "Prihranite 80 €!",
       "price": {
-        "old_price": "Stara cena: 167 €",
-        "bonus_price": "Cena z bonusi: 167 - 80 = 87 euros"
+        "label": "Cena z bonusi",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     }
   },

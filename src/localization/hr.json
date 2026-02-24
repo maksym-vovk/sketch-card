@@ -152,8 +152,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "diabetes": {
@@ -188,8 +190,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "bloodPressure": {
@@ -224,8 +228,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "weightLoss": {
@@ -260,8 +266,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "tiredness": {
@@ -296,8 +304,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "parasites": {
@@ -332,8 +342,10 @@
       "footnote": "Bonusi će se primijeniti automatski",
       "saving": "Uštedite 80 EUR!",
       "price": {
-        "old_price": "Početna cijena: 167 EUR",
-        "bonus_price": "Cijena s bonusima: 167 - 80 = 87 euros"
+        "label": "Cijena s bonusima",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     }
   },

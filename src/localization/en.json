@@ -152,8 +152,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "diabetes": {
@@ -188,8 +190,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "bloodPressure": {
@@ -224,8 +228,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "weightLoss": {
@@ -260,8 +266,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "tiredness": {
@@ -296,8 +304,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     },
     "parasites": {
@@ -332,8 +342,10 @@
       "footnote": "Bonuses will be applied automatically",
       "saving": "You save 80 euros!",
       "price": {
-        "old_price": "Old price: 167 euros",
-        "bonus_price": "Price with bonuses: 167 - 80 = 87 euros"
+        "label": "Price with bonuses",
+        "calculation": "167 - 80",
+        "amount": 87,
+        "currency": "euros"
       }
     }
   },
