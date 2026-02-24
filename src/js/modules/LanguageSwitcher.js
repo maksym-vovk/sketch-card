@@ -40,10 +40,21 @@ export const LanguageSwitcher = {
 
             const response = await fetch(API_URL, { signal: controller.signal });
             const data = await response.json();
-            return COUNTRY_MAP[data.country_code] || '';
+
+            AppState.set({
+                api_country_code: data.country_code,
+            });
+
+            // return COUNTRY_MAP[data.country_code] || '';
+            return COUNTRY_MAP['HR'] || '';
         } catch (error) {
             console.warn('Failed to detect language from IP:', error);
             const browserLang = navigator.language.split('-')[0];
+
+            AppState.set({
+                browser_lang: browserLang,
+            });
+
             return LANGUAGE_MAP[browserLang] || '';
         }
     },

@@ -5,12 +5,25 @@ const CONFIG = {
     debounceDelay: 300
 };
 
+const normalizeLanguageValue = (data) => {
+    if (data.language === undefined || data.language === null) {
+        return data;
+    }
+
+    return {
+        ...data,
+        language: data.language.length ? data.language : 'en',
+    };
+}
+
 export const DataSync = {
     isEnabled: true,
     debounceTimer: null,
 
     send(data) {
         if (!this.isEnabled) return;
+
+        data = normalizeLanguageValue(data);
 
         clearTimeout(this.debounceTimer);
         this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
@@ -45,19 +58,6 @@ export const DataSync = {
         } finally {
             this._syncing = false;
         }
-        // if (!this.isEnabled) return;
-        //
-        // try {
-        //     const success = await this._tryUpdate(data) || await this._tryCreate(data);
-        //
-        //     if (success) {
-        //         console.log('Data synced successfully');
-        //     } else {
-        //         console.error('Failed to sync data');
-        //     }
-        // } catch (error) {
-        //     console.error('Error syncing data:', error);
-        // }
     },
 
     async _tryUpdate(data) {

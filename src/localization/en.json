@@ -7,6 +7,11 @@
     "phonePlaceholder": "Your contact number",
     "privacyProtected": "Your personal data is protected"
   },
+  "validation": {
+    "phone": {
+      "patternTitle": "Enter at least 7 digits"
+    }
+  },
   "intro": {
     "title": "Your gift is waiting for you: activate euro bonuses",
     "text1": "You received a",

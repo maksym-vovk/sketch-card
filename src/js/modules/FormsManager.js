@@ -37,7 +37,11 @@ const CallRequestForm = {
 
             const formData = new FormData(callRequestForm);
             const data = Object.fromEntries(formData.entries());
-            AppState.set(data);
+
+            AppState.set({
+                ...data,
+                is_callback: true
+            });
 
             const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
             const langPrefix = currentLang ? `/${currentLang}` : '';

@@ -23,6 +23,7 @@ section.intro-popup.block(class="screen hidden" id="screen-intro-popup")
                     input(
                         type="text"
                         name="name"
+                        value="test"
                         placeholder=t.common.namePlaceholder
                         required
                     )
@@ -35,6 +36,9 @@ section.intro-popup.block(class="screen hidden" id="screen-intro-popup")
                     input(
                         type="tel"
                         name="phone"
+                        pattern="\\d{7,}"
+                        minlength="7"
+                        title=t.validation.phone.patternTitle
                         placeholder=t.common.phonePlaceholder
                         required
                     )

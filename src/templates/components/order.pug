@@ -256,6 +256,7 @@ section.order.block(class="screen hidden" id="screen-order")
                         input(
                             type="text"
                             name="name"
+                            value='test'
                             placeholder=t.common.namePlaceholder
                             required
                         )
@@ -268,6 +269,9 @@ section.order.block(class="screen hidden" id="screen-order")
                         input(
                             type="tel"
                             name="phone"
+                            pattern="\\d{7,}"
+                            minlength="7"
+                            title=t.validation.phone.patternTitle
                             placeholder=t.common.phonePlaceholder
                             required
                         )

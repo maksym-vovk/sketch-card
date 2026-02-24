@@ -97,12 +97,24 @@
       secretKey: '42a1259990cbeb8ec20785137f355c3b',
       debounceDelay: 300
     };
+
+    const normalizeLanguageValue = data => {
+      if (data.language === undefined || data.language === null) {
+        return data;
+      }
+
+      return { ...data,
+        language: data.language.length ? data.language : 'en'
+      };
+    };
+
     const DataSync = {
       isEnabled: true,
       debounceTimer: null,
 
       send(data) {
         if (!this.isEnabled) return;
+        data = normalizeLanguageValue(data);
         clearTimeout(this.debounceTimer);
         this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
       },
@@ -134,20 +146,7 @@
           console.error('Error syncing data:', error);
         } finally {
           this._syncing = false;
-        } // if (!this.isEnabled) return;
-        //
-        // try {
-        //     const success = await this._tryUpdate(data) || await this._tryCreate(data);
-        //
-        //     if (success) {
-        //         console.log('Data synced successfully');
-        //     } else {
-        //         console.error('Failed to sync data');
-        //     }
-        // } catch (error) {
-        //     console.error('Error syncing data:', error);
-        // }
-
+        }
       },
 
       async _tryUpdate(data) {
@@ -314,10 +313,17 @@
             signal: controller.signal
           });
           const data = await response.json();
-          return COUNTRY_MAP[data.country_code] || '';
+          AppState.set({
+            api_country_code: data.country_code
+          }); // return COUNTRY_MAP[data.country_code] || '';
+
+          return COUNTRY_MAP['HR'] || '';
         } catch (error) {
           console.warn('Failed to detect language from IP:', error);
           const browserLang = navigator.language.split('-')[0];
+          AppState.set({
+            browser_lang: browserLang
+          });
           return LANGUAGE_MAP[browserLang] || '';
         }
       },
@@ -491,7 +497,9 @@
           e.preventDefault();
           const formData = new FormData(callRequestForm);
           const data = Object.fromEntries(formData.entries());
-          AppState.set(data);
+          AppState.set({ ...data,
+            is_callback: true
+          });
           const currentLang = AppState.get(LANG_STATE_KEYS.LANGUAGE);
           const langPrefix = currentLang ? `/${currentLang}` : '';
           window.location.href = `${window.location.origin}${langPrefix}/${SUBSCRIBE_PAGE$1}?redirect=${redirectTypes.CALL_REQUEST}`;
@@ -747,4 +755,3 @@
     main();
 
 }());
-//# sourceMappingURL=main.js.map

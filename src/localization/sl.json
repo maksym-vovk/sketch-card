@@ -7,6 +7,11 @@
     "phonePlaceholder": "Vaša številka",
     "privacyProtected": "Vaši osebni podatki so zaščiteni"
   },
+  "validation": {
+    "phone": {
+      "patternTitle": "Vnesite vsaj 7 številk"
+    }
+  },
   "intro": {
     "title": "Vaše darilo čaka: aktivirajte svoje Eurobonuse",
     "text1": "Prejeli ste",
