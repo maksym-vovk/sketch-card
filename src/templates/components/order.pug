@@ -244,12 +244,13 @@ section.order.block(class="screen hidden" id="screen-order")
                 //.order__products
                 //    img(src=basePath + "img/products-group.png" alt="product")
                 //
-                //.order__offer
-                //    span.tag= t.order.offer.tag
-                //    span.current= t.order.price.current
+
 
             form.order__form
-
+                .special__offer
+                    span.tag= t.order.special
+                        | :
+                    span.current= t.order.price.current
                 // --- Name ---
                 .form-group
                     .input-wrapper

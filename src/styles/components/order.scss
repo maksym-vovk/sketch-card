@@ -37,7 +37,24 @@
     margin-bottom: 0;
   }
 }
+.special__offer {
+    width: 100%;
+    padding: 18px;
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 20px;
 
+  & .current {
+    font-size: 25px;
+    @include rm(1024){
+      font-size: 35px;
+    }
+  }
+}
 .order__offer {
   //display: flex;
   //gap: 12px;
@@ -62,6 +79,10 @@
     max-width: 450px;
   }
 }
+
+
+
+.special__offer .tag,
 .order__offer .tag{
   position: relative;
   top: -1px;
@@ -102,6 +123,10 @@
     position: relative;
     order: 3;
   }
+  //@include rm(1220){
+  //  max-width: 690px;
+  //  width: 100%;
+  //}
 }
 
 .order__products img {
