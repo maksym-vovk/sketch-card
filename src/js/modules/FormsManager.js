@@ -1,5 +1,6 @@
 import {AppState} from "./AppState";
 import {LANG_STATE_KEYS} from "./LanguageSwitcher";
+import {initPhoneInputValidation} from "../utils/validators";
 
 const SUBSCRIBE_PAGE = 'subscribe.html';
 
@@ -27,6 +28,7 @@ const CallRequestForm = {
         }
 
         callRequestInputs.forEach(input => {
+            initPhoneInputValidation(input)
             input.addEventListener('blur', e => AppState.set({ [e.target.name]: e.target.value }));
         })
 
@@ -93,6 +95,7 @@ const OrderForm = {
         const orderFormInputs = orderForm.querySelectorAll('input');
 
         orderFormInputs.forEach(input => {
+            initPhoneInputValidation(input)
             input.addEventListener('blur', e => {
                 AppState.set({ [e.target.name]: e.target.value });
             });

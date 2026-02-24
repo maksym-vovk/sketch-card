@@ -424,6 +424,14 @@
 
     };
 
+    const initPhoneInputValidation = input => {
+      if (input.type === 'tel' || input.name === 'phone') {
+        input.addEventListener('input', e => {
+          e.target.value = e.target.value.replace(/\D/g, '');
+        });
+      }
+    };
+
     const SUBSCRIBE_PAGE$1 = 'subscribe.html';
     const SELECTORS$2 = {
       CALL_FORM: '.intro-popup__form',
@@ -447,6 +455,7 @@
         }
 
         callRequestInputs.forEach(input => {
+          initPhoneInputValidation(input);
           input.addEventListener('blur', e => AppState.set({
             [e.target.name]: e.target.value
           }));
@@ -509,6 +518,7 @@
 
         const orderFormInputs = orderForm.querySelectorAll('input');
         orderFormInputs.forEach(input => {
+          initPhoneInputValidation(input);
           input.addEventListener('blur', e => {
             AppState.set({
               [e.target.name]: e.target.value
@@ -710,4 +720,3 @@
     main();
 
 }());
-//# sourceMappingURL=main.js.map
