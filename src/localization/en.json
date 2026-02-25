@@ -138,12 +138,12 @@
       "recommendName": "«Maximum comfort for joints»",
       "products": [
         {
-          "name": "Steplex",
-          "description": "helps relieve pain and make it easier for joints to move."
-        },
-        {
           "name": "Cardiform",
           "description": "removes the feeling of heaviness and improves blood circulation."
+        },
+        {
+          "name": "Steplex",
+          "description": "helps relieve pain and make it easier for joints to move."
         },
         {
           "name": "Guavital+",
@@ -184,12 +184,12 @@
           "description": "helps you feel stable and energetic."
         },
         {
-          "name": "Guavital+",
-          "description": "helps reduce the desire to constantly eat something."
-        },
-        {
           "name": "Ultraxal",
           "description": "takes care of the digestive system and lightness."
+        },
+        {
+          "name": "Guavital+",
+          "description": "helps reduce the desire to constantly eat something."
         }
       ],
       "footnote": "Bonuses will be applied automatically",
@@ -214,20 +214,21 @@
       "recommendName": "«Vascular Program and Fluid Balance»",
       "products": [
         {
-          "name": "Tonerin",
-          "description": "helps keep blood pressure under control."
-        },
-        {
           "name": "Kardivix",
           "description": "helps improve blood circulation and purify blood vessels."
         },
         {
-          "name": "Guavital+",
-          "description": "removes excess salt and improves metabolism."
-        },
-        {
           "name": "Ultraxal",
           "description": "helps remove swelling and excess water from the body."
+        },
+        {
+          "name": "Tonerin",
+          "description": "helps keep blood pressure under control."
+        },
+
+        {
+          "name": "Guavital+",
+          "description": "removes excess salt and improves metabolism."
         }
       ],
       "footnote": "Bonuses will be applied automatically",
@@ -256,16 +257,16 @@
           "description": "helps curb your appetite throughout the day."
         },
         {
-          "name": "Ozenmic Soft",
-          "description": "helps the body break down food faster."
+          "name": "Ultraxal",
+          "description": "helps digestion work like clockwork."
         },
         {
           "name": "Vermixin",
           "description": "helps to cleanse the body of all excess."
         },
         {
-          "name": "Ultraxal",
-          "description": "helps digestion work like clockwork."
+          "name": "Ozenmic Soft",
+          "description": "helps the body break down food faster."
         }
       ],
       "footnote": "Bonuses will be applied automatically",
@@ -328,20 +329,20 @@
       "recommendName": "«Overall Health Improvement - Maximum»",
       "products": [
         {
-          "name": "Ultraxal",
-          "description": "for good digestion and lightness."
-        },
-        {
-          "name": "Tonerin",
-          "description": "to protect blood vessels and the heart."
+          "name": "Ausen",
+          "description": "supports clear hearing and mind."
         },
         {
           "name": "Vermixin",
           "description": "helps to cleanse the body of all excess."
         },
         {
-          "name": "Ausen",
-          "description": "supports clear hearing and mind."
+          "name": "Tonerin",
+          "description": "to protect blood vessels and the heart."
+        },
+        {
+          "name": "Ultraxal",
+          "description": "for good digestion and lightness."
         }
       ],
       "footnote": "Bonuses will be applied automatically",
