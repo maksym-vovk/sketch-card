@@ -742,7 +742,7 @@
           course_name: courseName,
           price: price,
           niche_short: activeNiche,
-          niche_full: problemType,
+          chosen_problem: problemType,
           product_list: productList
         });
       },
@@ -780,4 +780,3 @@
     main();
 
 }());
-//# sourceMappingURL=main.js.map
