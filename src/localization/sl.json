@@ -376,8 +376,8 @@
         "hint": "Prosimo, počakajte klic našega operaterja."
       },
       "order": {
-        "text": "Uspešno smo prejeli vašo zahtevo. Prosimo, počakajte klic našega operaterja za potrditev podrobnosti dostave. Naj naši izdelki prinesejo le koristi in dobro počutje!",
-        "hint": "Prosimo, počakajte klic našega operaterja za potrditev\npodrobnosti dostave."
+        "text": "Uspešno smo prejeli vašo zahtevo. Naj naši izdelki prinesejo le koristi in dobro počutje!",
+        "hint": "Prosimo, počakajte klic našega operaterja za potrditev podrobnosti dostave."
       }
     }
   }

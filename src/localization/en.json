@@ -375,8 +375,8 @@
         "hint": "Please wait for a call from our operator."
       },
       "order": {
-        "text": "We have successfully received your request. Please wait for a call from our operator to confirm the delivery details. May our products bring you only benefits and good well-being!",
-        "hint": "Please wait for a call from our operator to confirm\nthe delivery details."
+        "text": "We have successfully received your request. May our products bring you only benefits and good well-being!",
+        "hint": "Please wait for a call from our operator to confirm the delivery details."
       }
     }
   }
