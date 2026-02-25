@@ -4,19 +4,11 @@ section.thank-you.block
             h1.thank-you__title= t.thankYou.title
 
             // вариант: заявка на звонок
-            p.thank-you__text.thank-you__text--callback
-                - const cb = t.thankYou.variants.callback.text.split('\n')
-                each line, idx in cb
-                    | #{line}
-                    if idx !== cb.length - 1
-                        br
+            .thank-you__text--callback
+                p.thank-you__text= t.thankYou.variants.callback.text
+                p.thank-you__hint= t.thankYou.variants.callback.hint
 
             // вариант: заказ
-            p.thank-you__text.thank-you__text--order.hidden
-                - const ord = t.thankYou.variants.order.text.split('\n')
-                each line, idx in ord
-                    | #{line}
-                    if idx !== ord.length - 1
-                        br
-
-            .thank-you__sparkles
+            .thank-you__text--order.hidden
+                p.thank-you__text= t.thankYou.variants.order.text
+                p.thank-you__hint= t.thankYou.variants.order.hint

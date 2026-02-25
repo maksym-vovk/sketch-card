@@ -371,10 +371,12 @@
     "title": "Thank you!",
     "variants": {
       "callback": {
-        "text": "Your request is already in progress. The operator will contact you as soon as possible."
+        "text": "Your request is already being processed.",
+        "hint": "Please wait for a call from our operator."
       },
       "order": {
-        "text": "We have successfully received your request. Please wait for a call from our operator to confirm the delivery details. May our products bring you only benefits and good well-being! "
+        "text": "We have successfully received your request. Please wait for a call from our operator to confirm the delivery details. May our products bring you only benefits and good well-being!",
+        "hint": "Please wait for a call from our operator to confirm\nthe delivery details."
       }
     }
   }
