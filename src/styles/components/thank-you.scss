@@ -21,12 +21,13 @@ body, button{
   background: linear-gradient(90deg, #FFB938 0%, #F3CF78 28.37%, #FEF4B3 61.54%, #E0BE80 100%), #F9E5C7;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
   color: #000;
-  padding: 40px 30px;
+  padding: 30px 20px;
   position: relative;
   overflow: hidden;
   z-index: 2;
 
   @include rm(1024){
+    padding: 40px 30px;
     padding-bottom: 60px;
   }
 }
@@ -40,6 +41,26 @@ body, button{
   font-size: 20px;
   line-height: 1.2;
   margin: 0;
+}
+
+.thank-you__hint {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 20px 0 0;
+  background-color: red;
+  /* color: #fff; */
+  padding: 20px 10px;
+  border-radius: 0px;
+  border: 1px solid;
+  box-shadow: 2px 2px 6px #333;
+  padding-left: 70px;
+  text-align: left;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJiaSBiaS1waG9uZS12aWJyYXRlIiBmaWxsPSJjdXJyZW50Q29sb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAgM0g2YTEgMSAwIDAgMC0xIDF2OGExIDEgMCAwIDAgMSAxaDRhMSAxIDAgMCAwIDEtMVY0YTEgMSAwIDAgMC0xLTF6TTYgMmEyIDIgMCAwIDAtMiAydjhhMiAyIDAgMCAwIDIgMmg0YTIgMiAwIDAgMCAyLTJWNGEyIDIgMCAwIDAtMi0ySDZ6Ii8+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCAxMmExIDEgMCAxIDAgMC0yIDEgMSAwIDAgMCAwIDJ6TTEuNTk5IDQuMDU4YS41LjUgMCAwIDEgLjIwOC42NzZBNi45NjcgNi45NjcgMCAwIDAgMSA4YzAgMS4xOC4yOTIgMi4yOTIuODA3IDMuMjY2YS41LjUgMCAwIDEtLjg4NC40NjhBNy45NjggNy45NjggMCAwIDEgMCA4YzAtMS4zNDcuMzM0LTIuNjE5LjkyMy0zLjczNGEuNS41IDAgMCAxIC42NzYtLjIwOHptMTIuODAyIDBhLjUuNSAwIDAgMSAuNjc2LjIwOEE3Ljk2NyA3Ljk2NyAwIDAgMSAxNiA4YTcuOTY3IDcuOTY3IDAgMCAxLS45MjMgMy43MzQuNS41IDAgMCAxLS44ODQtLjQ2OEE2Ljk2NyA2Ljk2NyAwIDAgMCAxNSA4YzAtMS4xOC0uMjkyLTIuMjkyLS44MDctMy4yNjZhLjUuNSAwIDAgMSAuMjA4LS42NzZ6TTMuMDU3IDUuNTM0YS41LjUgMCAwIDEgLjI4NC42NDhBNC45ODYgNC45ODYgMCAwIDAgMyA4YzAgLjY0Mi4xMiAxLjI1NS4zNCAxLjgxOGEuNS41IDAgMSAxLS45My4zNjRBNS45ODYgNS45ODYgMCAwIDEgMiA4YzAtLjc2OS4xNDUtMS41MDUuNDEtMi4xODJhLjUuNSAwIDAgMSAuNjQ3LS4yODR6bTkuODg2IDBhLjUuNSAwIDAgMSAuNjQ4LjI4NEMxMy44NTUgNi40OTUgMTQgNy4yMzEgMTQgOGMwIC43NjktLjE0NSAxLjUwNS0uNDEgMi4xODJhLjUuNSAwIDAgMS0uOTMtLjM2NEMxMi44OCA5LjI1NSAxMyA4LjY0MiAxMyA4YzAtLjY0Mi0uMTItMS4yNTUtLjM0LTEuODE4YS41LjUgMCAwIDEgLjI4My0uNjQ4eiIvPgo8L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: 17px center;
+  background-size: 40px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.2);
 }
 
 

@@ -371,10 +371,12 @@
     "title": "Hvala!",
     "variants": {
       "callback": {
-        "text": "Vaša se prijava već obrađuje. Operater će vas uskoro kontaktirati."
+        "text": "Vaš zahtjev je već u obradi.",
+        "hint": "Molimo pričekajte poziv našeg operatera."
       },
       "order": {
-        "text": "Uspješno smo zaprimili vašu prijavu. Očekujte poziv našeg operatera radi potvrde podataka za dostavu. Neka vam naši proizvodi donesu samo korist i dobro osjećanje!"
+        "text": "Uspješno smo zaprimili vaš zahtjev. Neka naši proizvodi donesu samo korist i dobrobit!",
+        "hint": "Molimo pričekajte poziv našeg operatera kako biste potvrdili detalje isporuke."
       }
     }
   }

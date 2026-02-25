@@ -40,7 +40,7 @@
 .special__offer {
     width: 100%;
     padding: 18px;
-    background: darkred;
+    background: #f60;
     color: white;
     border: none;
     border-radius: 50px;
@@ -49,6 +49,7 @@
     margin: 20px 0 20px;
 
   & .current {
+    color: white;
     font-size: 25px;
     @include rm(1024){
       font-size: 35px;
@@ -60,14 +61,16 @@
   //gap: 12px;
   justify-content: center;
   margin-bottom: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #333;
 
-  padding: 14px;
-  border-radius: 20px;
+  //padding: 14px;
+  //border-radius: 20px;
   font-size: 19px;
   font-weight: bold;
 
-  background: #ff6600;
-  color: white;
+  //background: #ff6600;
+  color: #333;
 
   @include rm(768){
     order: 2;
@@ -164,7 +167,7 @@
   white-space: nowrap;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: #333;
 
   @include rm(1024){
     font-size: 40px;

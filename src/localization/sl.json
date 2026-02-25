@@ -372,10 +372,12 @@
     "title": "Hvala!",
     "variants": {
       "callback": {
-        "text": "Vaša prijava se že obdeluje. Operater vas bo kmalu kontaktiral"
+        "text": "Vaša zahteva je že v obdelavi.",
+        "hint": "Prosimo, počakajte klic našega operaterja."
       },
       "order": {
-        "text": "Uspešno smo prejeli vašo prijavo. Pričakujte klic našega operaterja za potrditev podatkov za dostavo. Naj vam naši izdelki prinesejo le koristi in dobro počutje!"
+        "text": "Uspešno smo prejeli vašo zahtevo. Naj naši izdelki prinesejo le koristi in dobro počutje!",
+        "hint": "Prosimo, počakajte klic našega operaterja za potrditev podrobnosti dostave."
       }
     }
   }
