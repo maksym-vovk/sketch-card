@@ -138,13 +138,14 @@
       "recommendName": "«Maksimalno udobje za sklepe»",
       "products": [
         {
-          "name": "Steplex",
-          "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
-        },
-        {
           "name": "Cardiform",
           "description": "odstraňuje pocit ťažkosti a zlepšuje krvný obeh."
         },
+        {
+          "name": "Steplex",
+          "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
+        },
+
         {
           "name": "Guavital+",
           "description": "pomaga zmanjšati vpliv odvečne telesne teže na sklepe."
@@ -184,12 +185,12 @@
           "description":"pomaga ohranjati stabilno in vitalno počutje."
         },
         {
-          "name": "Guavital+",
-          "description": "pomaga zmanjšati stalno željo po prigrizkih."
-        },
-        {
           "name": "Ultraxal",
           "description": "skrbi za zdravje prebavnega sistema in občutek lahkotnosti."
+        },
+        {
+          "name": "Guavital+",
+          "description": "pomaga zmanjšati stalno željo po prigrizkih."
         }
       ],
       "footnote": "Bonusi se uporabijo samodejno",
@@ -214,20 +215,21 @@
       "recommendName": "«Kompleks za ožilje in ravnovesje tekočin»",
       "products": [
         {
-          "name": "Tonerin",
-          "description": "pomaga ohranjati krvni tlak pod nadzorom."
-        },
-        {
           "name": "Kardivix",
           "description": "prispeva k izboljšanju prekrvavitve in čiščenju žil."
         },
         {
-          "name": "Guavital+",
-          "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
-        },
-        {
           "name": "Ultraxal",
           "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
+        },
+        {
+          "name": "Tonerin",
+          "description": "pomaga ohranjati krvni tlak pod nadzorom."
+        },
+
+        {
+          "name": "Guavital+",
+          "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
         }
       ],
       "footnote": "Bonusi se uporabijo samodejno",
@@ -256,16 +258,16 @@
           "description": "pomaga nadzorovati apetit čez dan."
         },
         {
-          "name": "Ozenmic Soft",
-          "description": "pomaga telesu hitreje razgrajevati hrano."
+          "name": "Ultraxal",
+          "description": "pomaga prebavi delovati kot ura."
         },
         {
           "name": "Vermixin",
           "description": "prispeva k čiščenju telesa od odvečnih snovi."
         },
         {
-          "name": "Ultraxal",
-          "description": "pomaga prebavi delovati kot ura."
+          "name": "Ozenmic Soft",
+          "description": "pomaga telesu hitreje razgrajevati hrano."
         }
       ],
       "footnote": "Bonusi se uporabijo samodejno",
@@ -328,20 +330,20 @@
       "recommendName": "«Celostno zdravje — maksimum»",
       "products": [
         {
-          "name": "Ultraxal",
-          "description":  "za dobro prebavo in občutek lahkotnosti."
-        },
-        {
-          "name": "Tonerin",
-          "description": "za zaščito žil in srca."
+          "name": "Ausen",
+          "description": "podpira jasnost sluha in bistro glavo."
         },
         {
           "name": "Vermixin",
           "description": "prispeva k čiščenju telesa od vsega odvečnega."
         },
         {
-          "name": "Ausen",
-          "description": "podpira jasnost sluha in bistro glavo."
+          "name": "Tonerin",
+          "description": "za zaščito žil in srca."
+        },
+        {
+          "name": "Ultraxal",
+          "description":  "za dobro prebavo in občutek lahkotnosti."
         }
       ],
       "footnote": "Bonusi se uporabijo samodejno",
