@@ -307,6 +307,10 @@
   @include rm(375){
     font-size: 20px;
   }
+  @include rm(425){
+    font-size: 23px;
+  }
+
 
   @include rm(1024){
     width: fit-content;
@@ -357,8 +361,18 @@
 }
 
 
+html[lang="sl"] .presentation__price {
+  font-size: 19px;
+}
+
 @include rm(375){
   html[lang="sl"] .presentation__price {
     font-size: 23px;
+  }
+}
+
+@include rm(425){
+  html[lang="sl"] .presentation__price {
+    font-size: 26px;
   }
 }

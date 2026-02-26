@@ -76,6 +76,9 @@
   //background: #ff6600;
   color: #333;
 
+  @include rm(375){
+    font-size: 23px;
+  }
   @include rm(768){
     order: 2;
     width: 100%;
