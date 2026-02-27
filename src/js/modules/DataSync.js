@@ -35,18 +35,18 @@ export const DataSync = {
         this._syncing = true;
 
         try {
-            console.log('Attempting update...');
+            // console.log('Attempting update...');
             const updated = await this._tryUpdate(data);
-            console.log('Update result:', updated);
+            // console.log('Update result:', updated);
 
             if (updated) {
                 console.log('Data synced successfully (updated)');
                 return;
             }
 
-            console.log('Attempting create...');
+            // console.log('Attempting create...');
             const created = await this._tryCreate(data);
-            console.log('Create result:', created);
+            // console.log('Create result:', created);
 
             if (created) {
                 console.log('Data synced successfully (created)');
