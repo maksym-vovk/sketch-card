@@ -186,7 +186,7 @@ export const LanguageSwitcher = {
     async init() {
         try {
             const savedLang = await this.getLanguage();
-            console.log(savedLang);
+            // console.log(savedLang);
             const redirected = this.redirectIfNeeded(savedLang);
 
             if (!redirected) {
