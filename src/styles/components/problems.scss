@@ -305,20 +305,20 @@
   overflow: initial;
 }
 
-.accordion-content__btn{
+.accordion-content__btn {
   //background: #fff;
-  padding: 10px 20px;
-  font-size: 20px;
-  //margin: 15px 0 0;
-  width: 100%;
-  border-radius: 9px;
-  font-weight: 300;
+  //padding: 10px 20px;
+  //font-size: 20px;
+  ////margin: 15px 0 0;
+  //width: 100%;
+  //border-radius: 9px;
+  //font-weight: 300;
   position: relative;
-  //color: #000;
-  text-align: center;
-  background: #e63900;
-  color: #ffffff;
-  cursor: pointer;
+  ////color: #000;
+  //text-align: center;
+  //background: #e63900;
+  //color: #ffffff;
+  //cursor: pointer;
 
   max-width: 320px;
   margin: 0 auto;
@@ -345,7 +345,7 @@
 .accordion-content__btn:after{
   right: 20px;
   transform: rotateZ(-315deg);
-  background-position-y: 9px;
+  background-position-y: 15px;
 
 }
 

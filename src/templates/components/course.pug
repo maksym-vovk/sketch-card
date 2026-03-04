@@ -56,20 +56,20 @@ section.course.block(class="screen hidden" id="screen-course")
                             ul
                                 each item in option.productsList
                                     li= item
-                            button.course__select(
+                            button.course__details.btn(
                                 type="button"
                                 id="from-course-to-presentations"
                                 data-target-screen="screen-presentations"
                             )= 'Детальніше'
                             //)= t.course.btnSelect
-                            button.course__select(
+                            button.course__select.btn(
                                 type="button"
                                 id="from-course-to-order-form"
                                 data-target-screen="screen-order"
                             )= 'Замовити'
                             //)= t.course.btnSelect
 
-            button.course__select(
+            button.course__problems.btn(
                 type="button"
                 id="from-course-to-problems"
                 data-target-screen="screen-problems"

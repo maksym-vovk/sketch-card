@@ -161,11 +161,21 @@ br {
 
 .btn {
   background: linear-gradient(180deg, #FF774D 0%, #DA0000 100%);
-  transition: .1s;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  border: 0;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.30);
+  transition: .3s;
 
   &:hover {
-    transition: .1s;
-    transform: scale(1.03);
+    transition: .3s;
+    transform: scale(1.02);
   }
 }
 

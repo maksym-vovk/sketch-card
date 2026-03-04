@@ -159,7 +159,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 20px 0;
   counter-reset: my-counter;
   list-style-type: none;
@@ -272,8 +272,11 @@
 }
 
 .presentation__next {
-  background: #e63900;
-  color: white;
+  //background: #e63900;
+  //color: white;
+
+  background: #fff;
+  color: #8b0000;
 }
 
 .presentation__footnote,
