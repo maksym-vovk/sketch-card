@@ -262,7 +262,6 @@
   @include rm(1024){
     max-width: 300px;
     width: 100%;
-
   }
 }
 
@@ -270,14 +269,14 @@
   background: white;
   color: #8B0000;
 }
-
-.presentation__next {
-  //background: #e63900;
-  //color: white;
-
-  background: #fff;
-  color: #8b0000;
-}
+//
+//.presentation__next {
+//  //background: #e63900;
+//  //color: white;
+//
+//  background: #fff;
+//  color: #8b0000;
+//}
 
 .presentation__footnote,
 .presentation__price {
