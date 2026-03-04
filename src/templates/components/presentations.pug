@@ -676,6 +676,6 @@ section.presentations.block(class="screen hidden" id="screen-presentations")
             .presentation-modal__content(data-config=JSON.stringify(presentationsConfig))
 
             .presentation__actions
-                button.presentation__change(type="button" data-target-screen="screen-course" id="from-presentation-to-course")!= t.presentation.btnChange
-                button.presentation__next(type="button" data-target-screen="screen-order" id="from-presentation-to-order-form")!= t.presentation.btnNext
-                button.presentation__next(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems")!= 'Вибрати іншу проблему'
+                button.presentation__change.btn(type="button" data-target-screen="screen-course" id="from-presentation-to-course")!= t.presentation.btnChange
+                button.presentation__next.btn(type="button" data-target-screen="screen-order" id="from-presentation-to-order-form")!= t.presentation.btnNext
+                button.presentation__next.btn(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems")!= 'Вибрати іншу проблему'

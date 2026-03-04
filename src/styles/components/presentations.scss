@@ -159,7 +159,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 20px 0;
   counter-reset: my-counter;
   list-style-type: none;
@@ -262,7 +262,6 @@
   @include rm(1024){
     max-width: 300px;
     width: 100%;
-
   }
 }
 
@@ -270,11 +269,14 @@
   background: white;
   color: #8B0000;
 }
-
-.presentation__next {
-  background: #e63900;
-  color: white;
-}
+//
+//.presentation__next {
+//  //background: #e63900;
+//  //color: white;
+//
+//  background: #fff;
+//  color: #8b0000;
+//}
 
 .presentation__footnote,
 .presentation__price {

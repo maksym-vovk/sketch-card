@@ -1,0 +1,213 @@
+-
+    const nichesLocale = t.course.niches
+
+    const COURSE_CONFIG = {
+        'joints': {
+            title: nichesLocale.joints.title,
+            courses: {
+                4: {
+                    badge: nichesLocale.joints.courses[0].badge,
+                    price: nichesLocale.joints.courses[0].price,
+                    discount: nichesLocale.joints.courses[0].discount,
+                    subtitle: nichesLocale.joints.courses[0].subtitle,
+                    benefits: nichesLocale.joints.courses[0].benefits,
+                    image: 'products-group.png'
+                },
+                6: {
+                    badge: nichesLocale.joints.courses[1].badge,
+                    price: nichesLocale.joints.courses[1].price,
+                    discount: nichesLocale.joints.courses[1].discount,
+                    subtitle: nichesLocale.joints.courses[1].subtitle,
+                    benefits: nichesLocale.joints.courses[1].benefits,
+                    image: 'products-group-large.png'
+                }
+            }
+        },
+        'diabetes': {
+            title: nichesLocale.diabetes.title,
+            courses: {
+                4: {
+                    badge: nichesLocale.diabetes.courses[0].badge,
+                    price: nichesLocale.diabetes.courses[0].price,
+                    discount: nichesLocale.diabetes.courses[0].discount,
+                    subtitle: nichesLocale.diabetes.courses[0].subtitle,
+                    benefits: nichesLocale.diabetes.courses[0].benefits,
+                    image: 'diabetes-group.png'
+                },
+                6: {
+                    badge: nichesLocale.diabetes.courses[1].badge,
+                    price: nichesLocale.diabetes.courses[1].price,
+                    discount: nichesLocale.diabetes.courses[1].discount,
+                    subtitle: nichesLocale.diabetes.courses[1].subtitle,
+                    benefits: nichesLocale.diabetes.courses[1].benefits,
+                    image: 'diabetes-group-large.png'
+                }
+            }
+        },
+        'blood-pressure': {
+            title: nichesLocale['blood-pressure'].title,
+            courses: {
+                4: {
+                    badge: nichesLocale['blood-pressure'].courses[0].badge,
+                    price: nichesLocale['blood-pressure'].courses[0].price,
+                    discount: nichesLocale['blood-pressure'].courses[0].discount,
+                    subtitle: nichesLocale['blood-pressure'].courses[0].subtitle,
+                    benefits: nichesLocale['blood-pressure'].courses[0].benefits,
+                    image: 'pressure-group.png'
+                },
+                6: {
+                    badge: nichesLocale['blood-pressure'].courses[1].badge,
+                    price: nichesLocale['blood-pressure'].courses[1].price,
+                    discount: nichesLocale['blood-pressure'].courses[1].discount,
+                    subtitle: nichesLocale['blood-pressure'].courses[1].subtitle,
+                    benefits: nichesLocale['blood-pressure'].courses[1].benefits,
+                    image: 'pressure-group-large.png'
+                }
+            }
+        },
+        'weight-loss': {
+            title: nichesLocale['weight-loss'].title,
+            courses: {
+                4: {
+                    badge: nichesLocale['weight-loss'].courses[0].badge,
+                    price: nichesLocale['weight-loss'].courses[0].price,
+                    discount: nichesLocale['weight-loss'].courses[0].discount,
+                    subtitle: nichesLocale['weight-loss'].courses[0].subtitle,
+                    benefits: nichesLocale['weight-loss'].courses[0].benefits,
+                    image: 'weight-loss-group.png'
+                },
+                6: {
+                    badge: nichesLocale['weight-loss'].courses[1].badge,
+                    price: nichesLocale['weight-loss'].courses[1].price,
+                    discount: nichesLocale['weight-loss'].courses[1].discount,
+                    subtitle: nichesLocale['weight-loss'].courses[1].subtitle,
+                    benefits: nichesLocale['weight-loss'].courses[1].benefits,
+                    image: 'weight-loss-group-large.png'
+                }
+            }
+        },
+        'tiredness': {
+            title: nichesLocale.tiredness.title,
+            courses: {
+                4: {
+                    badge: nichesLocale.tiredness.courses[0].badge,
+                    price: nichesLocale.tiredness.courses[0].price,
+                    discount: nichesLocale.tiredness.courses[0].discount,
+                    subtitle: nichesLocale.tiredness.courses[0].subtitle,
+                    benefits: nichesLocale.tiredness.courses[0].benefits,
+                    image: 'tiredness-group.png'
+                },
+                6: {
+                    badge: nichesLocale.tiredness.courses[1].badge,
+                    price: nichesLocale.tiredness.courses[1].price,
+                    discount: nichesLocale.tiredness.courses[1].discount,
+                    subtitle: nichesLocale.tiredness.courses[1].subtitle,
+                    benefits: nichesLocale.tiredness.courses[1].benefits,
+                    image: 'tiredness-group-large.png'
+                }
+            }
+        },
+        'parasites': {
+            title: nichesLocale.parasites.title,
+            courses: {
+                4: {
+                    badge: nichesLocale.parasites.courses[0].badge,
+                    price: nichesLocale.parasites.courses[0].price,
+                    discount: nichesLocale.parasites.courses[0].discount,
+                    subtitle: nichesLocale.parasites.courses[0].subtitle,
+                    benefits: nichesLocale.parasites.courses[0].benefits,
+                    image: 'parasites-group.png'
+                },
+                6: {
+                    badge: nichesLocale.parasites.courses[1].badge,
+                    price: nichesLocale.parasites.courses[1].price,
+                    discount: nichesLocale.parasites.courses[1].discount,
+                    subtitle: nichesLocale.parasites.courses[1].subtitle,
+                    benefits: nichesLocale.parasites.courses[1].benefits,
+                    image: 'parasites-group-large.png'
+                }
+            }
+        }
+    };
+
+    function createCourseOption(niche, packs, complexNumber) {
+        const config = COURSE_CONFIG[niche];
+        const courseData = config.courses[packs];
+
+        return {
+            tag: 'label',
+            className: 'course-option',
+            attributes: {
+                'data-niche': niche,
+                'data-packs': packs
+            },
+            children: [
+                {
+                    tag: 'input',
+                    attributes: {
+                        type: 'radio',
+                        name: 'course',
+                        value: `complex${complexNumber}`,
+                        checked: complexNumber === 1
+                    }
+                },
+                {
+                    tag: 'div',
+                    className: 'option-content',
+                    children: [
+                        {
+                            tag: 'div',
+                            className: 'badge',
+                            text: courseData.badge
+                        },
+                        {
+                            tag: 'div',
+                            className: 'products',
+                            children: [{
+                                tag: 'img',
+                                attributes: {
+                                    src: basePath + `img/${courseData.image}`,
+                                    alt: config.title
+                                }
+                            }]
+                        },
+                        {
+                            tag: 'div',
+                            className: 'price',
+                            text: courseData.price
+                        },
+                        courseData.discount && {
+                            tag: 'div',
+                            className: 'discount',
+                            text: courseData.discount
+                        },
+                        {
+                            tag: 'div',
+                            className: 'subtitle',
+                            text: courseData.subtitle
+                        },
+                        {
+                            tag: 'ul',
+                            children: courseData.benefits.map(text => ({
+                                tag: 'li',
+                                text
+                            }))
+                        }].filter(Boolean)
+                }
+            ]
+        };
+    }
+
+    function generateNiches(packs, complexNumber) {
+        return Object.keys(COURSE_CONFIG).reduce((acc, niche) => {
+            acc[niche] = {
+                elements: [createCourseOption(niche, packs, complexNumber)]
+            };
+            return acc;
+        }, {});
+    }
+
+    const courseConfig = [
+        {packs: 4, niches: generateNiches(4, 1)},
+        {packs: 6, niches: generateNiches(6, 2)}
+    ];

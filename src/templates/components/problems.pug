@@ -49,7 +49,7 @@ section.problems.block(class="screen hidden" id="screen-problems")
                                 each problem, idx in cat.list
                                     li
                                         span #{idx + 1}. #{problem}
-                        button.accordion-content__btn(
+                        button.accordion-content__btn.btn(
                             type="button"
                             id=`from-problems-to-course-${cat.niche}`
                             data-target-screen="screen-course"

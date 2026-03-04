@@ -1,6 +1,7 @@
 import {dataConfigParser} from "../utils/dataConfigParser";
 import {UniversalRenderer} from "./UniversalRenderer";
 import {AppState} from "./AppState";
+import {ScreenManager} from "./ScreenManager";
 
 const SELECTORS = {
     PROBLEMS_SCREEN: '#screen-problems',
@@ -11,6 +12,8 @@ const SELECTORS = {
     RADIO_INPUT: 'input[type="radio"]',
     NEXT_BUTTON: '.accordion-content__btn',
     PRESENTATION_CONTENT: '.presentation-modal__content',
+    FOUR_COURSE_CONTENT: '#four-course',
+    SIX_COURSE_CONTENT: '#six-course',
     ORDER_FORM_CONTENT: '.order-card__content'
 };
 
@@ -20,6 +23,8 @@ const CSS_CLASSES = {
 
 export const NichesAccordion = {
     presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT)[0],
+    fourCourseData: dataConfigParser(SELECTORS.FOUR_COURSE_CONTENT),
+    sixCourseData: dataConfigParser(SELECTORS.SIX_COURSE_CONTENT),
     orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT)[0],
 
     _handleAccordionClick(clickedItem, allItems) {
@@ -36,6 +41,16 @@ export const NichesAccordion = {
 
         radioInput.checked = true;
         this._handleAccordionClick(accordionItem, allItems);
+
+        UniversalRenderer.render(
+            SELECTORS.FOUR_COURSE_CONTENT,
+            this.fourCourseData.niches[niche].elements
+        )
+
+        UniversalRenderer.render(
+            SELECTORS.SIX_COURSE_CONTENT,
+            this.sixCourseData.niches[niche].elements
+        )
 
         UniversalRenderer.render(
             SELECTORS.PRESENTATION_CONTENT,
@@ -57,6 +72,16 @@ export const NichesAccordion = {
 
         radioInput.checked = true;
         this._handleAccordionClick(firstItem, allItems);
+
+        UniversalRenderer.render(
+            SELECTORS.FOUR_COURSE_CONTENT,
+            this.fourCourseData.niches[niche].elements
+        )
+
+        UniversalRenderer.render(
+            SELECTORS.SIX_COURSE_CONTENT,
+            this.sixCourseData.niches[niche].elements
+        )
 
         UniversalRenderer.render(
             SELECTORS.PRESENTATION_CONTENT,

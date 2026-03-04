@@ -240,10 +240,12 @@
 }
 
 .order__form {
+  margin-bottom: 20px;
   @include rm(768){
     order: 3;
     width: 100%;
     max-width: 250px;
+    margin-bottom: 0;
   }
   @include rm(1024){
     width: 100%;
@@ -254,5 +256,14 @@
 
   @include rm(1220){
     max-width: 400px;
+  }
+}
+
+.order__next {
+  background: #fff;
+  color: #8b0000;
+  @include rm(768){
+    max-width: 400px;
+    order: 4;
   }
 }
