@@ -134,74 +134,66 @@
         const config = COURSE_CONFIG[niche];
         const courseData = config.courses[packs];
 
-        return {
-            tag: 'label',
-            className: 'course-option',
-            attributes: {
-                'data-niche': niche,
-                'data-packs': packs
-            },
-            children: [
-                {
-                    tag: 'input',
-                    attributes: {
-                        type: 'radio',
-                        name: 'course',
-                        value: `complex${complexNumber}`,
-                        checked: complexNumber === 1
-                    }
-                },
-                {
-                    tag: 'div',
-                    className: 'option-content',
-                    children: [
-                        {
-                            tag: 'div',
-                            className: 'badge',
-                            text: courseData.badge
-                        },
-                        {
-                            tag: 'div',
-                            className: 'products',
-                            children: [{
-                                tag: 'img',
-                                attributes: {
-                                    src: basePath + `img/${courseData.image}`,
-                                    alt: config.title
-                                }
-                            }]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'price',
-                            text: courseData.price
-                        },
-                        courseData.discount && {
-                            tag: 'div',
-                            className: 'discount',
-                            text: courseData.discount
-                        },
-                        {
-                            tag: 'div',
-                            className: 'subtitle',
-                            text: courseData.subtitle
-                        },
-                        {
-                            tag: 'ul',
-                            children: courseData.benefits.map(text => ({
-                                tag: 'li',
-                                text
-                            }))
-                        }].filter(Boolean)
+        return [
+            {
+                tag: 'input',
+                attributes: {
+                    type: 'radio',
+                    name: 'course',
+                    value: `complex${complexNumber}`,
+                    checked: complexNumber === 1
                 }
-            ]
-        };
+            },
+            {
+                tag: 'div',
+                className: 'option-content',
+                children: [
+                    {
+                        tag: 'div',
+                        className: 'badge',
+                        text: courseData.badge
+                    },
+                    {
+                        tag: 'div',
+                        className: 'products',
+                        children: [{
+                            tag: 'img',
+                            attributes: {
+                                src: basePath + `img/${courseData.image}`,
+                                alt: config.title
+                            }
+                        }]
+                    },
+                    {
+                        tag: 'div',
+                        className: 'price',
+                        text: courseData.price
+                    },
+                    // courseData.discount && {
+                    //     tag: 'div',
+                    //     className: 'discount',
+                    //     text: courseData.discount
+                    // },
+                    {
+                        tag: 'div',
+                        className: 'subtitle',
+                        text: courseData.subtitle
+                    },
+                    {
+                        tag: 'ul',
+                        children: courseData.benefits.map(text => ({
+                            tag: 'li',
+                            text
+                        }))
+                    }].filter(Boolean)
+            }
+        ]
     }
 
     function generateNiches(packs, complexNumber) {
         return Object.keys(COURSE_CONFIG).reduce((acc, niche) => {
             acc[niche] = {
-                elements: [createCourseOption(niche, packs, complexNumber)]
+                elements: createCourseOption(niche, packs, complexNumber)
             };
             return acc;
         }, {});
