@@ -682,7 +682,7 @@
       ACCORDION_ITEMS: '.accordion-item',
       ACCORDION_HEADER: '.accordion-header',
       ACCORDION_CONTENT: '.accordion-content',
-      RADIO_INPUT: 'input[type="radio"]',
+      RADIO_INPUT: `#screen-problems input[type="radio"]`,
       NEXT_BUTTON: '.accordion-content__btn',
       PRESENTATION_CONTENT: '.presentation-modal__content',
       FOUR_COURSE_CONTENT: '#four-course',
@@ -693,10 +693,8 @@
       ACTIVE: 'active'
     };
     const NichesAccordion = {
-      presentationData: dataConfigParser(SELECTORS$3.PRESENTATION_CONTENT)[0],
       fourCourseData: dataConfigParser(SELECTORS$3.FOUR_COURSE_CONTENT),
       sixCourseData: dataConfigParser(SELECTORS$3.SIX_COURSE_CONTENT),
-      orderFormData: dataConfigParser(SELECTORS$3.ORDER_FORM_CONTENT)[0],
 
       _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES$2.ACTIVE));
@@ -714,8 +712,6 @@
 
         UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
       },
 
       _setFirstItemActive(allItems) {
@@ -729,28 +725,21 @@
 
         UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
       },
 
       _confirmChoice(allItems) {
         const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES$2.ACTIVE));
         const activeNiche = activeItem?.dataset.niche;
-        if (!activeItem || !activeNiche) return;
-        const {
-          courseName,
-          price,
-          problemType,
-          productList
-        } = this.presentationData.niches[activeNiche];
-        AppState.set({
-          packs_count: this.presentationData.packs,
-          course_name: courseName,
-          price: price,
-          niche_short: activeNiche,
-          chosen_problem: problemType,
-          product_list: productList
-        });
+        if (!activeItem || !activeNiche) return; // const { courseName, price, problemType, productList } = this.presentationData.niches[activeNiche];
+        //
+        // AppState.set({
+        //     packs_count: this.presentationData.packs,
+        //     course_name: courseName,
+        //     price: price,
+        //     niche_short: activeNiche,
+        //     chosen_problem: problemType,
+        //     product_list: productList
+        // })
       },
 
       init() {
@@ -775,8 +764,100 @@
 
     };
 
+    const SELECTORS$4 = {
+      COURSE_SCREEN: '#screen-course',
+      COURSE_CONTAINER: '.course-options',
+      COURSE_ITEMS: '.course-option',
+      NEXT_BUTTON: '.course__select',
+      RADIO_INPUT: `#screen-course input[type="radio"]`,
+      PRESENTATION_CONTENT: '.presentation-modal__content',
+      FOUR_COURSE_CONTENT: '#four-course',
+      SIX_COURSE_CONTENT: '#six-course',
+      ORDER_FORM_CONTENT: '.order-card__content'
+    };
+    const CSS_CLASSES$3 = {
+      ACTIVE: 'active'
+    };
     const CourseSwitcher = {
-      init() {}
+      presentationData: dataConfigParser(SELECTORS$4.PRESENTATION_CONTENT),
+      orderFormData: dataConfigParser(SELECTORS$4.ORDER_FORM_CONTENT)[0],
+
+      _handleAccordionClick(clickedItem, allItems) {
+        allItems.forEach(item => item.classList.remove(CSS_CLASSES$3.ACTIVE));
+        clickedItem.classList.add(CSS_CLASSES$3.ACTIVE);
+      },
+
+      _setFirstItemActive(allItems) {
+        const firstItem = allItems[0];
+        const radioInput = firstItem?.querySelector(SELECTORS$4.RADIO_INPUT);
+        const niche = radioInput.dataset.niche;
+        const packs = Number(radioInput.dataset.packs);
+        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        if (!firstItem || !radioInput) return;
+        radioInput.checked = true;
+
+        this._handleAccordionClick(firstItem, allItems);
+
+        UniversalRenderer.render(SELECTORS$4.PRESENTATION_CONTENT, presentationElements);
+        UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
+      },
+
+      _handleClick(event, allItems) {
+        const courseItem = event.target.closest(SELECTORS$4.COURSE_ITEMS);
+        const radioInput = courseItem?.querySelector(SELECTORS$4.RADIO_INPUT);
+        const niche = radioInput.dataset.niche;
+        const packs = Number(radioInput.dataset.packs);
+        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        if (!courseItem || !radioInput || event.target === radioInput) return;
+        radioInput.checked = true;
+
+        this._handleAccordionClick(courseItem, allItems);
+
+        UniversalRenderer.render(SELECTORS$4.PRESENTATION_CONTENT, presentationElements);
+        UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
+      },
+
+      _confirmChoice(allItems) {
+        const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES$3.ACTIVE));
+        const radioInput = activeItem?.querySelector(SELECTORS$4.RADIO_INPUT);
+        const activeNiche = radioInput?.dataset.niche;
+        const activePacks = Number(radioInput.dataset.packs);
+        if (!activeItem || !activeNiche) return;
+        const {
+          courseName,
+          price,
+          problemType,
+          productList
+        } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
+        AppState.set({
+          packs_count: activePacks,
+          course_name: courseName,
+          price: price,
+          niche_short: activeNiche,
+          chosen_problem: problemType,
+          product_list: productList
+        });
+      },
+
+      init() {
+        const problemsScreen = document.querySelector(SELECTORS$4.COURSE_SCREEN);
+        if (!problemsScreen) return console.warn('Problems screen not found');
+        const coursesContainer = problemsScreen.querySelector(SELECTORS$4.COURSE_CONTAINER);
+        const coursesItems = problemsScreen.querySelectorAll(SELECTORS$4.COURSE_ITEMS);
+        if (!coursesContainer) return console.warn('Courses Container not found');
+
+        this._setFirstItemActive(coursesItems);
+
+        coursesContainer.addEventListener('click', e => {
+          if (e.target.closest(SELECTORS$4.NEXT_BUTTON)) {
+            this._confirmChoice(coursesItems);
+
+            return;
+          }
+
+          this._handleClick(e, coursesItems);
+        });
+      }
 
     };
 
