@@ -4,6 +4,32 @@
         {value: "complex2", checked: false, badge: "50%", img: "img/products-group.png"}
     ]
 
+    const courseConfig = [
+        {
+            packs: 4,
+            niches: {
+                "joints": {
+                    elements: []
+                },
+                "diabetes": {
+                    elements: []
+                },
+                "blood-pressure": {
+                    elements: []
+                },
+                "weight-loss": {
+                    elements: []
+                },
+                "tiredness": {
+                    elements: []
+                },
+                "parasites": {
+                    elements: []
+                },
+            }
+        }
+    ]
+
 
 
 section.course.block(class="screen hidden" id="screen-course")
@@ -30,9 +56,21 @@ section.course.block(class="screen hidden" id="screen-course")
                             ul
                                 each item in option.productsList
                                     li= item
+                            button.course__select(
+                                type="button"
+                                id="from-course-to-presentations"
+                                data-target-screen="screen-presentations"
+                            )= 'Детальніше'
+                            //)= t.course.btnSelect
+                            button.course__select(
+                                type="button"
+                                id="from-course-to-order-form"
+                                data-target-screen="screen-order"
+                            )= 'Замовити'
+                            //)= t.course.btnSelect
 
-            button.course__select(
-                type="button"
-                id="from-course-to-order-form"
-                data-target-screen="screen-order"
-            )= t.course.btnSelect
+            //button.course__select(
+            //    type="button"
+            //    id="from-course-to-order-form"
+            //    data-target-screen="screen-order"
+            //)= t.course.btnSelect
