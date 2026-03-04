@@ -53,7 +53,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "Uštedite 80 EUR!",
             "price": "99€",
             "discount": "-50€",
             "subtitle": "Комплекс для суглобів - 4 пакети",
@@ -65,7 +65,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "Uštedite 90 EUR!",
             "price": "149€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
@@ -82,7 +82,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "45%",
+            "badge": "Uštedite 80 EUR!",
             "price": "89€",
             "discount": "-40€",
             "subtitle": "Комплекс при діабеті - 4 пакети",
@@ -94,7 +94,7 @@
           },
           {
             "packs": 6,
-            "badge": "55%",
+            "badge": "Uštedite 90 EUR!",
             "price": "139€",
             "discount": "-85€",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
@@ -111,7 +111,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "Uštedite 80 EUR!",
             "price": "95€",
             "discount": "-50€",
             "subtitle": "Комплекс для тиску - 4 пакети",
@@ -123,7 +123,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "Uštedite 90 EUR!",
             "price": "145€",
             "discount": "-95€",
             "subtitle": "Комплекс для тиску - 6 пакетів",
@@ -140,7 +140,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "Uštedite 80 EUR!",
             "price": "92€",
             "discount": "-48€",
             "subtitle": "Комплекс для схуднення - 4 пакети",
@@ -152,7 +152,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "Uštedite 90 EUR!",
             "price": "142€",
             "discount": "-90€",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
@@ -169,7 +169,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "Uštedite 80 EUR!",
             "price": "88€",
             "discount": "-45€",
             "subtitle": "Комплекс від втоми - 4 пакети",
@@ -182,7 +182,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "Uštedite 90 EUR!",
             "price": "138€",
             "discount": "-88€",
             "subtitle": "Комплекс від втоми - 6 пакетів",
@@ -200,7 +200,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "45%",
+            "badge": "Uštedite 80 EUR!",
             "price": "94€",
             "discount": "-42€",
             "subtitle": "Комплекс від паразитів - 4 пакети",
@@ -212,7 +212,7 @@
           },
           {
             "packs": 6,
-            "badge": "55%",
+            "badge": "Uštedite 90 EUR!",
             "price": "144€",
             "discount": "-80€",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
