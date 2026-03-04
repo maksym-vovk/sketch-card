@@ -674,39 +674,8 @@ section.presentations.block(class="screen hidden" id="screen-presentations")
     .container
         .presentation-modal
             .presentation-modal__content(data-config=JSON.stringify(presentationsConfig))
-                //h2.presentation__title "Набір для контролю ваги"
-                //
-                //p.presentation__desc
-                //    | Коли вага «стоїть», це дуже поширена ситуація — особливо з віком. Організму важче розщеплювати їжу, ніж раніше. Саме тому важливо обрати правильний курс, а не чекати дива за один день.
-                //
-                //.presentation__benefits
-                //    strong Зазвичай організм діє поступово:
-                //    ul
-                //        li спочатку приборкує апетит;
-                //        li прибирає набряки та здуття;
-                //        li налагоджує обмін речовин, щоб вага нарешті почала танути.
-                //
-                //.presentation__recommend
-                //    h3 Ми підібрали для вас набір:
-                //
-                //    strong «Комплексний контроль ваги»
-                //
-                //    .presentation__images
-                //        img(src=basePath + "img/products-group.png" alt="Комплекси продуктів")
-                //
-                //
-                //    ul.products
-                //        li.product Slimogi — допомагає стримувати апетит протягом дня.
-                //        li.product OzenmicSoft — допомагає організму швидше розщеплювати їжу.
-                //        li.product Vermixin — сприяє очищенню організму від усього зайвого.
-                //        li.product Ultraxal — допомагає травленню працювати як годинник.
-                //
-                //    p.presentation__footnote 🎁 Бонуси застосуються автоматично
-                //
-                //    p.presentation__saving ⭐ Ви економите 80 євро!
-                //
-                //    p.presentation__price Стара ціна: 167 євро Ціна з бонусами: 87 євро
 
             .presentation__actions
-                button.presentation__change(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems")!= t.presentation.btnChange
+                button.presentation__change(type="button" data-target-screen="screen-course" id="from-presentation-to-course")!= t.presentation.btnChange
                 button.presentation__next(type="button" data-target-screen="screen-order" id="from-presentation-to-order-form")!= t.presentation.btnNext
+                button.presentation__next(type="button" data-target-screen="screen-problems" id="from-presentation-to-problems")!= 'Вибрати іншу проблему'
