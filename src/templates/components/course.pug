@@ -8,12 +8,12 @@ section.course.block(class="screen hidden" id="screen-course")
             .course-options
                 label.course-option
                     .course-option__content#four-course(data-config=JSON.stringify(courseConfig[0]))
-                    button.course__select(
+                    button.course__select.course__details.btn(
                         type="button"
                         id="from-course-to-presentations"
                         data-target-screen="screen-presentations"
                     )= 'Детальніше'
-                    button.course__select(
+                    button.course__select.btn(
                         type="button"
                         id="from-course-to-order-form"
                         data-target-screen="screen-order"
@@ -21,12 +21,12 @@ section.course.block(class="screen hidden" id="screen-course")
 
                 label.course-option
                     .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
-                    button.course__select(
+                    button.course__select.course__details.btn(
                         type="button"
                         id="from-course-to-presentations"
                         data-target-screen="screen-presentations"
                     )= 'Детальніше'
-                    button.course__select(
+                    button.course__select.btn(
                            type="button"
                         id="from-course-to-order-form"
                         data-target-screen="screen-order"

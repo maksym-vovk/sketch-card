@@ -53,7 +53,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "You save 80 euros!",
             "price": "99€",
             "discount": "-50€",
             "subtitle": "Комплекс для суглобів - 4 пакети",
@@ -65,7 +65,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "You save 90 euros!",
             "price": "149€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
@@ -111,7 +111,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "You save 80 euros!",
             "price": "95€",
             "discount": "-50€",
             "subtitle": "Комплекс для тиску - 4 пакети",
@@ -123,7 +123,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "You save 90 euros!",
             "price": "145€",
             "discount": "-95€",
             "subtitle": "Комплекс для тиску - 6 пакетів",
@@ -140,7 +140,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "You save 80 euros!",
             "price": "92€",
             "discount": "-48€",
             "subtitle": "Комплекс для схуднення - 4 пакети",
@@ -152,7 +152,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "You save 90 euros!",
             "price": "142€",
             "discount": "-90€",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
@@ -169,7 +169,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "50%",
+            "badge": "You save 80 euros!",
             "price": "88€",
             "discount": "-45€",
             "subtitle": "Комплекс від втоми - 4 пакети",
@@ -182,7 +182,7 @@
           },
           {
             "packs": 6,
-            "badge": "60%",
+            "badge": "You save 90 euros!",
             "price": "138€",
             "discount": "-88€",
             "subtitle": "Комплекс від втоми - 6 пакетів",
