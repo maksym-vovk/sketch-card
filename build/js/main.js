@@ -212,7 +212,7 @@
       },
 
       _generateUserId() {
-        return Math.random().toString(36).substring(2, 8);
+        return 'dev-' + Math.random().toString(36).substring(2, 8);
       },
 
       _loadState() {
@@ -778,3 +778,4 @@
     main();
 
 }());
+//# sourceMappingURL=main.js.map
