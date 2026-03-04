@@ -9,7 +9,7 @@ const SELECTORS = {
     ACCORDION_ITEMS: '.accordion-item',
     ACCORDION_HEADER: '.accordion-header',
     ACCORDION_CONTENT: '.accordion-content',
-    RADIO_INPUT: 'input[type="radio"]',
+    RADIO_INPUT: `#screen-problems input[type="radio"]`,
     NEXT_BUTTON: '.accordion-content__btn',
     PRESENTATION_CONTENT: '.presentation-modal__content',
     FOUR_COURSE_CONTENT: '#four-course',
@@ -22,10 +22,8 @@ const CSS_CLASSES = {
 };
 
 export const NichesAccordion = {
-    presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT)[0],
     fourCourseData: dataConfigParser(SELECTORS.FOUR_COURSE_CONTENT),
     sixCourseData: dataConfigParser(SELECTORS.SIX_COURSE_CONTENT),
-    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT)[0],
 
     _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
@@ -51,16 +49,6 @@ export const NichesAccordion = {
             SELECTORS.SIX_COURSE_CONTENT,
             this.sixCourseData.niches[niche].elements
         )
-
-        UniversalRenderer.render(
-            SELECTORS.PRESENTATION_CONTENT,
-            this.presentationData.niches[niche].elements
-        )
-
-        UniversalRenderer.render(
-            SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData.niches[niche].elements
-        )
     },
 
     _setFirstItemActive(allItems) {
@@ -82,16 +70,6 @@ export const NichesAccordion = {
             SELECTORS.SIX_COURSE_CONTENT,
             this.sixCourseData.niches[niche].elements
         )
-
-        UniversalRenderer.render(
-            SELECTORS.PRESENTATION_CONTENT,
-            this.presentationData.niches[niche].elements
-        )
-
-        UniversalRenderer.render(
-            SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData.niches[niche].elements
-        )
     },
 
     _confirmChoice(allItems) {
@@ -100,16 +78,16 @@ export const NichesAccordion = {
 
         if (!activeItem || !activeNiche) return;
 
-        const { courseName, price, problemType, productList } = this.presentationData.niches[activeNiche];
-
-        AppState.set({
-            packs_count: this.presentationData.packs,
-            course_name: courseName,
-            price: price,
-            niche_short: activeNiche,
-            chosen_problem: problemType,
-            product_list: productList
-        })
+        // const { courseName, price, problemType, productList } = this.presentationData.niches[activeNiche];
+        //
+        // AppState.set({
+        //     packs_count: this.presentationData.packs,
+        //     course_name: courseName,
+        //     price: price,
+        //     niche_short: activeNiche,
+        //     chosen_problem: problemType,
+        //     product_list: productList
+        // })
     },
 
 
