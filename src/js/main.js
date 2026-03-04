@@ -3,6 +3,7 @@ import {FormsManager} from "./modules/FormsManager";
 import {NichesAccordion} from "./modules/NichesAccordion";
 import {AppState} from "./modules/AppState";
 import {LanguageSwitcher} from "./modules/LanguageSwitcher";
+import {CourseSwitcher} from "./modules/CourseSwitcher";
 
 function main() {
   AppState.init()
@@ -10,6 +11,7 @@ function main() {
   ScreenManager.init();
   FormsManager.init();
   NichesAccordion.init();
+  CourseSwitcher.init();
 }
 
 main();

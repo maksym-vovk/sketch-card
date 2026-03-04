@@ -1,36 +1,4 @@
--
-    const courseStatic = [
-        {value: "complex1", checked: true, badge: "50%", img: "img/products-group.png"},
-        {value: "complex2", checked: false, badge: "50%", img: "img/products-group.png"}
-    ]
-
-    const courseConfig = [
-        {
-            packs: 4,
-            niches: {
-                "joints": {
-                    elements: []
-                },
-                "diabetes": {
-                    elements: []
-                },
-                "blood-pressure": {
-                    elements: []
-                },
-                "weight-loss": {
-                    elements: []
-                },
-                "tiredness": {
-                    elements: []
-                },
-                "parasites": {
-                    elements: []
-                },
-            }
-        }
-    ]
-
-
+include ../data/courses/config
 
 section.course.block(class="screen hidden" id="screen-course")
     .container
@@ -38,36 +6,31 @@ section.course.block(class="screen hidden" id="screen-course")
             h2.course__title!= t.course.title
 
             .course-options
-                each option, index in t.course.options
-                    - const staticOption = courseStatic[index]
-                    label.course-option
-                        input(
-                            type="radio"
-                            name="course"
-                            value=staticOption.value
-                            checked=staticOption.checked
-                        )
-                        .option-content
-                            .badge= staticOption.badge
-                            .products
-                                img(src=basePath + staticOption.img alt="Комплекси продуктів")
-                            .price= option.price
-                            .subtitle= option.subtitle
-                            ul
-                                each item in option.productsList
-                                    li= item
-                            button.course__select(
-                                type="button"
-                                id="from-course-to-presentations"
-                                data-target-screen="screen-presentations"
-                            )= 'Детальніше'
-                            //)= t.course.btnSelect
-                            button.course__select(
-                                type="button"
-                                id="from-course-to-order-form"
-                                data-target-screen="screen-order"
-                            )= 'Замовити'
-                            //)= t.course.btnSelect
+                label.course-option
+                    .course-option__content#four-course(data-config=JSON.stringify(courseConfig[0]))
+                    button.course__select(
+                        type="button"
+                        id="from-course-to-presentations"
+                        data-target-screen="screen-presentations"
+                    )= 'Детальніше'
+                    button.course__select(
+                        type="button"
+                        id="from-course-to-order-form"
+                        data-target-screen="screen-order"
+                    )= 'Замовити'
+
+                label.course-option
+                    .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
+                    button.course__select(
+                        type="button"
+                        id="from-course-to-presentations"
+                        data-target-screen="screen-presentations"
+                    )= 'Детальніше'
+                    button.course__select(
+                           type="button"
+                        id="from-course-to-order-form"
+                        data-target-screen="screen-order"
+                    )= 'Замовити'
 
             button.course__select(
                 type="button"

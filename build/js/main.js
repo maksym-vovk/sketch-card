@@ -685,6 +685,8 @@
       RADIO_INPUT: 'input[type="radio"]',
       NEXT_BUTTON: '.accordion-content__btn',
       PRESENTATION_CONTENT: '.presentation-modal__content',
+      FOUR_COURSE_CONTENT: '#four-course',
+      SIX_COURSE_CONTENT: '#six-course',
       ORDER_FORM_CONTENT: '.order-card__content'
     };
     const CSS_CLASSES$2 = {
@@ -692,6 +694,8 @@
     };
     const NichesAccordion = {
       presentationData: dataConfigParser(SELECTORS$3.PRESENTATION_CONTENT)[0],
+      fourCourseData: dataConfigParser(SELECTORS$3.FOUR_COURSE_CONTENT),
+      sixCourseData: dataConfigParser(SELECTORS$3.SIX_COURSE_CONTENT),
       orderFormData: dataConfigParser(SELECTORS$3.ORDER_FORM_CONTENT)[0],
 
       _handleAccordionClick(clickedItem, allItems) {
@@ -708,6 +712,8 @@
 
         this._handleAccordionClick(accordionItem, allItems);
 
+        UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
+        UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
       },
@@ -721,6 +727,8 @@
 
         this._handleAccordionClick(firstItem, allItems);
 
+        UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
+        UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.PRESENTATION_CONTENT, this.presentationData.niches[niche].elements);
         UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, this.orderFormData.niches[niche].elements);
       },
@@ -767,14 +775,21 @@
 
     };
 
+    const CourseSwitcher = {
+      init() {}
+
+    };
+
     function main() {
       AppState.init();
       LanguageSwitcher.init();
       ScreenManager.init();
       FormsManager.init();
       NichesAccordion.init();
+      CourseSwitcher.init();
     }
 
     main();
 
 }());
+//# sourceMappingURL=main.js.map
