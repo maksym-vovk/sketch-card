@@ -82,7 +82,7 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "45%",
+            "badge": "You save 80 euros!",
             "price": "89€",
             "discount": "-40€",
             "subtitle": "Комплекс при діабеті - 4 пакети",
@@ -94,7 +94,7 @@
           },
           {
             "packs": 6,
-            "badge": "55%",
+            "badge": "You save 90 euros!",
             "price": "139€",
             "discount": "-85€",
             "subtitle": "Комплекс при діабеті - 6 пакетів",

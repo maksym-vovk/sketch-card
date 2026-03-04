@@ -10,6 +10,7 @@
 
   @include rm(1024) {
     max-width: 100%;
+    padding: 25px;
   }
 }
 
@@ -32,7 +33,7 @@
 
 .course-option {
   //display: block;
-  cursor: pointer;
+  //cursor: pointer;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
