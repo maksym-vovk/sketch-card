@@ -32,6 +32,7 @@
   //for additional info
   &--additional .order-additional {
     display: block;
+    width: 100%;
   }
 }
 
@@ -252,6 +253,7 @@
   opacity: 0.9;
 }
 
+.order__form,
 .order__wrapper {
   margin-bottom: 20px;
   @include rm(768){
