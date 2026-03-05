@@ -66,7 +66,7 @@
           {
             "packs": 6,
             "badge": "You save 90 euros!",
-            "price": "149€",
+            "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "benefits": [
@@ -225,25 +225,6 @@
         ]
       }
     },
-    "options": [
-      {
-        "price": "4 по ціні 3 — Економія 500₴",
-        "subtitle": "СХУДНЕННЯ / ВАГА СТОЇТЬ",
-        "productsList": [
-          "Slimogi — контроль ваги",
-          "Verminix — паразити",
-          "Ultravix (Detox) — травлення і очищення"
-        ]
-      },
-      {
-        "price": "4 по ціні 3 — Економія 500₴",
-        "subtitle": "СХУДНЕННЯ / ВАГА СТОЇТЬ",
-        "productsList": [
-          "Slimogi — контроль ваги",
-          "Verminix — паразити"
-        ]
-      }
-    ],
     "btnSelect": "Оберіть цей комплекс →"
   },
   "problems": {
@@ -303,245 +284,662 @@
   "presentation": {
     "btnChange": "Choose a different program",
     "btnNext": "Next",
-    "joints": {
-      "title": "Joints and movement",
-      "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
-      "benefitsTitle": "How recovery works:",
-      "benefitsList": [
-        "first, the feeling of heaviness and \"aching\" is removed;",
-        "flexibility gradually returns;",
-        "joints receive the necessary nutrition to move comfortably."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Maximum comfort for joints»",
-      "products": [
-        {
-          "name": "Cardiform",
-          "description": "removes the feeling of heaviness and improves blood circulation."
-        },
-        {
-          "name": "Steplex",
-          "description": "helps relieve pain and make it easier for joints to move."
-        },
-        {
-          "name": "Guavital+",
-          "description": "helps reduce the impact of excess weight on joints."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "diabetes": {
-      "title": "Sugar Balance Kit",
-      "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
-      "benefitsTitle": "What you will achieve in the course:",
-      "benefitsList": [
-        "glucose levels stabilize (you no longer feel \"sleepy\" after eating);",
-        "the obsessive desire to eat something sweet disappears;",
-        "strength appears, and the overall state of health becomes even and stable."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Comprehensive Sugar Control»",
-      "products": [
-        {
-          "name": "Dialos",
-          "description": "helps keep sugar normal."
-        },
-        {
-          "name": "Inspicure",
-          "description": "helps you feel stable and energetic."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "takes care of the digestive system and lightness."
-        },
-        {
-          "name": "Guavital+",
-          "description": "helps reduce the desire to constantly eat something."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "bloodPressure": {
-      "title": "Pressure and Blood Vessels Kit",
-      "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
-      "benefitsTitle": "How the body returns to normal:",
-      "benefitsList": [
-        "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
-        "the walls of blood vessels are strengthened so that they respond better to weather changes;",
-        "the pressure stabilizes, and the head becomes clear and \"light\"."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Vascular Program and Fluid Balance»",
-      "products": [
-        {
-          "name": "Kardivix",
-          "description": "helps improve blood circulation and purify blood vessels."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "helps remove swelling and excess water from the body."
-        },
-        {
-          "name": "Tonerin",
-          "description": "helps keep blood pressure under control."
-        },
-        {
-          "name": "Guavital+",
-          "description": "removes excess salt and improves metabolism."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "weightLoss": {
-      "title": "Weight Control Kit",
-      "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
-      "benefitsTitle": "Usually the body acts step by step:",
-      "benefitsList": [
-        "first curbs appetite;",
-        "removes puffiness and bloating;",
-        "adjusts the metabolism so that the weight finally begins to melt away."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Overall Weight Control»",
-      "products": [
-        {
-          "name": "Slimital",
-          "description": "helps curb your appetite throughout the day."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "helps digestion work like clockwork."
-        },
-        {
-          "name": "Vermixin",
-          "description": "helps to cleanse the body of all excess."
-        },
-        {
-          "name": "Ozenmic Soft",
-          "description": "helps the body break down food faster."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "tiredness": {
-      "title": "Fatigue Kit (Energy)",
-      "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
-      "benefitsTitle": "How energy is returned:",
-      "benefitsList": [
-        "the body is gently cleansed of accumulated toxins;",
-        "the work of the stomach and intestines improves (heaviness disappears);",
-        "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Energy and Balance Program»",
-      "products": [
-        {
-          "name": "Guavital+",
-          "description": "brings back energy and good mood."
-        },
-        {
-          "name": "Vermixin",
-          "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "helps digestion work smoothly."
-        },
-        {
-          "name": "Slimital",
-          "description": "keeps you in shape and prevents you from gaining excess weight due to fatigue."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "parasites": {
-      "title": "Overall health improvement",
-      "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
-      "benefitsTitle": "What a comprehensive approach provides:",
-      "benefitsList": [
-        "maintaining the heart and blood vessels in good condition;",
-        "improving digestion to keep the immune system strong;",
-        "protect your vision and hearing to make you feel confident and active."
-      ],
-      "recommendTitle": "We have selected a set for you:",
-      "recommendName": "«Overall Health Improvement - Maximum»",
-      "products": [
-        {
-          "name": "Ausen",
-          "description": "supports clear hearing and mind."
-        },
-        {
-          "name": "Vermixin",
-          "description": "helps to cleanse the body of all excess."
-        },
-        {
-          "name": "Tonerin",
-          "description": "to protect blood vessels and the heart."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "for good digestion and lightness."
-        }
-      ],
-      "footnote": "Bonuses will be applied automatically",
-      "saving": "You save 80 euros!",
-      "price": {
-        "label": "Price with bonuses",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Joints and movement",
+            "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
+            "benefitsTitle": "How recovery works:",
+            "benefitsList": [
+              "first, the feeling of heaviness and \"aching\" is removed;",
+              "flexibility gradually returns;",
+              "joints receive the necessary nutrition to move comfortably."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Maximum comfort for joints»",
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Joints and movement - 6",
+            "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
+            "benefitsTitle": "How recovery works:",
+            "benefitsList": [
+              "first, the feeling of heaviness and \"aching\" is removed;",
+              "flexibility gradually returns;",
+              "joints receive the necessary nutrition to move comfortably."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Maximum comfort for joints»",
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Sugar Balance Kit",
+            "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
+            "benefitsTitle": "What you will achieve in the course:",
+            "benefitsList": [
+              "glucose levels stabilize (you no longer feel \"sleepy\" after eating);",
+              "the obsessive desire to eat something sweet disappears;",
+              "strength appears, and the overall state of health becomes even and stable."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Comprehensive Sugar Control»",
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "helps keep sugar normal."
+              },
+              {
+                "name": "Inspicure",
+                "description": "helps you feel stable and energetic."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "takes care of the digestive system and lightness."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the desire to constantly eat something."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Sugar Balance Kit - 6",
+            "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
+            "benefitsTitle": "What you will achieve in the course:",
+            "benefitsList": [
+              "glucose levels stabilize (you no longer feel \"sleepy\" after eating);",
+              "the obsessive desire to eat something sweet disappears;",
+              "strength appears, and the overall state of health becomes even and stable."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Comprehensive Sugar Control»",
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "helps keep sugar normal."
+              },
+              {
+                "name": "Inspicure",
+                "description": "helps you feel stable and energetic."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "takes care of the digestive system and lightness."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the desire to constantly eat something."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Pressure and Blood Vessels Kit",
+            "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
+            "benefitsTitle": "How the body returns to normal:",
+            "benefitsList": [
+              "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
+              "the walls of blood vessels are strengthened so that they respond better to weather changes;",
+              "the pressure stabilizes, and the head becomes clear and \"light\"."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Vascular Program and Fluid Balance»",
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "helps improve blood circulation and purify blood vessels."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps remove swelling and excess water from the body."
+              },
+              {
+                "name": "Tonerin",
+                "description": "helps keep blood pressure under control."
+              },
+              {
+                "name": "Guavital+",
+                "description": "removes excess salt and improves metabolism."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Pressure and Blood  - 6Vessels Kit",
+            "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
+            "benefitsTitle": "How the body returns to normal:",
+            "benefitsList": [
+              "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
+              "the walls of blood vessels are strengthened so that they respond better to weather changes;",
+              "the pressure stabilizes, and the head becomes clear and \"light\"."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Vascular Program and Fluid Balance»",
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "helps improve blood circulation and purify blood vessels."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps remove swelling and excess water from the body."
+              },
+              {
+                "name": "Tonerin",
+                "description": "helps keep blood pressure under control."
+              },
+              {
+                "name": "Guavital+",
+                "description": "removes excess salt and improves metabolism."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Weight Control Kit",
+            "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
+            "benefitsTitle": "Usually the body acts step by step:",
+            "benefitsList": [
+              "first curbs appetite;",
+              "removes puffiness and bloating;",
+              "adjusts the metabolism so that the weight finally begins to melt away."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Overall Weight Control»",
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "helps curb your appetite throughout the day."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps digestion work like clockwork."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps to cleanse the body of all excess."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "helps the body break down food faster."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Weight Control Kit - 6",
+            "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
+            "benefitsTitle": "Usually the body acts step by step:",
+            "benefitsList": [
+              "first curbs appetite;",
+              "removes puffiness and bloating;",
+              "adjusts the metabolism so that the weight finally begins to melt away."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Overall Weight Control»",
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "helps curb your appetite throughout the day."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps digestion work like clockwork."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps to cleanse the body of all excess."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "helps the body break down food faster."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Fatigue Kit (Energy)",
+            "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
+            "benefitsTitle": "How energy is returned:",
+            "benefitsList": [
+              "the body is gently cleansed of accumulated toxins;",
+              "the work of the stomach and intestines improves (heaviness disappears);",
+              "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Energy and Balance Program»",
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "brings back energy and good mood."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps digestion work smoothly."
+              },
+              {
+                "name": "Slimital",
+                "description": "keeps you in shape and prevents you from gaining excess weight due to fatigue."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Fatigue Kit ( - 6Energy)",
+            "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
+            "benefitsTitle": "How energy is returned:",
+            "benefitsList": [
+              "the body is gently cleansed of accumulated toxins;",
+              "the work of the stomach and intestines improves (heaviness disappears);",
+              "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Energy and Balance Program»",
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "brings back energy and good mood."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "helps digestion work smoothly."
+              },
+              {
+                "name": "Slimital",
+                "description": "keeps you in shape and prevents you from gaining excess weight due to fatigue."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Overall health improvement",
+            "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
+            "benefitsTitle": "What a comprehensive approach provides:",
+            "benefitsList": [
+              "maintaining the heart and blood vessels in good condition;",
+              "improving digestion to keep the immune system strong;",
+              "protect your vision and hearing to make you feel confident and active."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Overall Health Improvement - Maximum»",
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "supports clear hearing and mind."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps to cleanse the body of all excess."
+              },
+              {
+                "name": "Tonerin",
+                "description": "to protect blood vessels and the heart."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "for good digestion and lightness."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Overall health improvement - 6",
+            "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
+            "benefitsTitle": "What a comprehensive approach provides:",
+            "benefitsList": [
+              "maintaining the heart and blood vessels in good condition;",
+              "improving digestion to keep the immune system strong;",
+              "protect your vision and hearing to make you feel confident and active."
+            ],
+            "recommendTitle": "We have selected a set for you:",
+            "recommendName": "«Overall Health Improvement - Maximum»",
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "supports clear hearing and mind."
+              },
+              {
+                "name": "Vermixin",
+                "description": "helps to cleanse the body of all excess."
+              },
+              {
+                "name": "Tonerin",
+                "description": "to protect blood vessels and the heart."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "for good digestion and lightness."
+              }
+            ],
+            "footnote": "Bonuses will be applied automatically",
+            "saving": "You save 80 euros!",
+            "price": {
+              "label": "Price with bonuses",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
       }
     }
   },
   "order": {
     "title": "Your €80 bonus has been activated!",
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      }
+    },
     "special": "Special offer",
-    "offer": {
-      "tag": "Set (4 units.): 167€ - 80€ =",
-      "discount": "Your euro bonuses: - 80 €"
-    },
-    "price": {
-      "current": "87 €"
-    },
     "btnSubmit": "Confirm your order"
   },
   "thankYou": {

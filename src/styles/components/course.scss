@@ -49,6 +49,10 @@
     width: calc(50% - 10px);
     align-items: stretch;
   }
+
+  &.active {
+    border-color: green;
+  }
 }
 
 .course-option input[type=radio] {

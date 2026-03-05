@@ -66,7 +66,7 @@
           {
             "packs": 6,
             "badge": "Uštedite 90 EUR!",
-            "price": "149€",
+            "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "benefits": [
@@ -225,25 +225,6 @@
         ]
       }
     },
-    "options": [
-      {
-        "price": "4 по ціні 3 — Економія 500₴",
-        "subtitle": "СХУДНЕННЯ / ВАГА СТОЇТЬ",
-        "productsList": [
-          "Slimogi — контроль ваги",
-          "Verminix — паразити",
-          "Ultravix (Detox) — травлення і очищення"
-        ]
-      },
-      {
-        "price": "4 по ціні 3 — Економія 500₴",
-        "subtitle": "СХУДНЕННЯ / ВАГА СТОЇТЬ",
-        "productsList": [
-          "Slimogi — контроль ваги",
-          "Verminix — паразити"
-        ]
-      }
-    ],
     "btnSelect": "Оберіть цей комплекс →"
   },
   "problems": {
@@ -303,245 +284,663 @@
   "presentation": {
     "btnChange": "Odaberite drugi kompleks",
     "btnNext": "Dalje",
-    "joints": {
-      "title": "Zglobovi i kretanje",
-      "description": "Kada koljena ili leđa bole sve češće, problem nije samo u samim zglobovima. Organizmu često nedostaje resursa kako bi ublažio ukočenost. Ako se samo čeka, stanje se ne poboljšava, a potreban je cjelovit pristup. ",
-      "benefitsTitle": "Kako izgleda oporavak:",
-      "benefitsList": [
-        "najprije se smanjuje osjećaj težine i \"lomljenja\" u tijelu;",
-        "postupno se vraća fleksibilnost;",
-        "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Maksimalna udobnost za zglobove»",
-      "products": [
-        {
-          "name": "Cardiform",
-          "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
-        },
-        {
-          "name": "Steplex",
-          "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
-        },
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Zglobovi i kretanje",
+            "description": "Kada koljena ili leđa bole sve češće, problem nije samo u samim zglobovima. Organizmu često nedostaje resursa kako bi ublažio ukočenost. Ako se samo čeka, stanje se ne poboljšava, a potreban je cjelovit pristup. ",
+            "benefitsTitle": "Kako izgleda oporavak:",
+            "benefitsList": [
+              "najprije se smanjuje osjećaj težine i \"lomljenja\" u tijelu;",
+              "postupno se vraća fleksibilnost;",
+              "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Maksimalna udobnost za zglobove»",
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
+              },
 
-        {
-          "name": "Guavital+",
-          "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "diabetes": {
-      "title": "Set za ravnotežu šećera",
-      "description": "Stalna želja za slatkim znak je da organizmu teško održava ravnotežu energije. Nagli skokovi šećera iscrpljuju, zato je važno djelovati nježno i bez stresa.",
-      "benefitsTitle": "Što možete postići tijekom kure:",
-      "benefitsList": [
-        "razina glukoze se uravnotežuje (više ne osjećate \"pospanost\" nakon obroka);",
-        "nestaje nametljiva potreba za nečim slatkim;",
-        "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Sveobuhvatna kontrola šećera»",
-      "products": [
-        {
-          "name": "Dialos",
-          "description": "pomaže u održavanju normalne razine šećera u krvi."
-        },
-        {
-          "name": "Inspicure",
-          "description": "pomaže da se osjećate stabilno i veselo."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
-        },
-        {
-          "name": "Guavital+",
-          "description": "pomaže smanjiti želju za stalnim grickanjem."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "bloodPressure": {
-      "title": "Set za krvni tlak i žile",
-      "description": "Ako je krvni tlak nestabilan, a noge otiču, to je znak da su krvne žile izgubile elastičnost i da srce teže radi. Takve signale ne treba ignorirati.  ",
-      "benefitsTitle": "Kako se organizam vraća u ravnotežu:",
-      "benefitsList": [
-        "najprije se izlučuje višak tekućine (nestaju otekline i osjećaj težine u nogama);",
-        "ačaju stijenke krvnih žila kako bi bolje reagirale na promjene vremena;",
-        "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
-      "products": [
-        {
-          "name": "Kardivix",
-          "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
-        },
-        {
-          "name": "Tonerin",
-          "description": "pomaže držati krvni tlak pod kontrolom."
-        },
-        {
-          "name": "Guavital+",
-          "description": "uklanja višak soli i poboljšava metabolizam."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "weightLoss": {
-      "title": "Set za kontrolu težine",
-      "description": "Kada težina \"stoji\", to je vrlo česta situacija, osobito s godinama. Organizmu je teže razgrađivati hranu nego prije. Upravo zato je važno odabrati pravi pristup, a ne očekivati čudo preko noći.",
-      "benefitsTitle": "Organizam obično djeluje postupno:",
-      "benefitsList": [
-        "najprije smanjuje apetit;",
-        "uklanja zadržavanje tekućine i nadutost;",
-        "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Sveobuhvatna kontrola težine»",
-      "products": [
-        {
-          "name": "Slimital",
-          "description": "pomaže u suzbijanju apetita tijekom dana."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "pomaže probavi da radi kao sat."
-        },
-        {
-          "name": "Vermixin",
-          "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-        },
-        {
-          "name": "Ozenmic Soft",
-          "description": "pomaže tijelu brže razgrađivati hranu."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "tiredness": {
-      "title": "Set protiv umora (Energija)",
-      "description": "Osjećaj \"umornosti\" već od jutra često znači da je organizam nakupio previše suvišnog i jednostavno ne može pratiti. Obična kava ovdje ne pomaže, potrebno je očistiti sustav iznutra. ",
-      "benefitsTitle": "Kako se vraća energija:",
-      "benefitsList": [
-        "organizam se nježno oslobađa od nakupljenih toksina;",
-        "rad želuca i crijeva se normalizira (nestaje osjećaj težine);",
-        "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Set energija i ravnoteža»",
-      "products": [
-        {
-          "name": "Guavital+",
-          "description": "vraća energiju i dobro raspoloženje."
-        },
-        {
-          "name": "Vermixin",
-          "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "pomaže probavi raditi bez zastoja."
-        },
-        {
-          "name": "Slimital",
-          "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
-      }
-    },
-    "parasites": {
-      "title": "Sveobuhvatna zdravstvena njega",
-      "description": "Kad svi tjelesni sustavi počnu propadati — bilo vid, bilo sluh, bilo srce — tijelu je potrebno samo opće resetiranje. To je poput temeljitog remonta, koji je bolje napraviti na vrijeme. ",
-      "benefitsTitle": "Što pruža cjelovit pristup:",
-      "benefitsList": [
-        "održavanje srca i krvnih žila u tonusu;",
-        "normalizacija probave kako bi imunološki sustav bio snažan;",
-        "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
-      ],
-      "recommendTitle": "Odabrali smo za Vas set:",
-      "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
-      "products": [
-        {
-          "name": "Ausen",
-          "description": "podržava jasnoću sluha i bistru glavu."
-        },
-        {
-          "name": "Vermixin",
-          "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-        },
-        {
-          "name": "Tonerin",
-          "description": "za zaštitu krvnih žila i srca."
-        },
-        {
-          "name": "Ultraxal",
-          "description": "za dobru probavu i lakoću."
-        }
-      ],
-      "footnote": "Bonusi će se primijeniti automatski",
-      "saving": "Uštedite 80 EUR!",
-      "price": {
-        "label": "Cijena s bonusima",
-        "calculation": "167 - 80",
-        "amount": 87,
-        "currency": "euros"
+              {
+                "name": "Guavital+",
+                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Zglobovi i kretanje",
+            "description": "Kada koljena ili leđa bole sve češće, problem nije samo u samim zglobovima. Organizmu često nedostaje resursa kako bi ublažio ukočenost. Ako se samo čeka, stanje se ne poboljšava, a potreban je cjelovit pristup. ",
+            "benefitsTitle": "Kako izgleda oporavak:",
+            "benefitsList": [
+              "najprije se smanjuje osjećaj težine i \"lomljenja\" u tijelu;",
+              "postupno se vraća fleksibilnost;",
+              "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Maksimalna udobnost za zglobove»",
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Set za ravnotežu šećera",
+            "description": "Stalna želja za slatkim znak je da organizmu teško održava ravnotežu energije. Nagli skokovi šećera iscrpljuju, zato je važno djelovati nježno i bez stresa.",
+            "benefitsTitle": "Što možete postići tijekom kure:",
+            "benefitsList": [
+              "razina glukoze se uravnotežuje (više ne osjećate \"pospanost\" nakon obroka);",
+              "nestaje nametljiva potreba za nečim slatkim;",
+              "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna kontrola šećera»",
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaže u održavanju normalne razine šećera u krvi."
+              },
+              {
+                "name": "Inspicure",
+                "description": "pomaže da se osjećate stabilno i veselo."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaže smanjiti želju za stalnim grickanjem."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Set za ravnotežu šećera",
+            "description": "Stalna želja za slatkim znak je da organizmu teško održava ravnotežu energije. Nagli skokovi šećera iscrpljuju, zato je važno djelovati nježno i bez stresa.",
+            "benefitsTitle": "Što možete postići tijekom kure:",
+            "benefitsList": [
+              "razina glukoze se uravnotežuje (više ne osjećate \"pospanost\" nakon obroka);",
+              "nestaje nametljiva potreba za nečim slatkim;",
+              "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna kontrola šećera»",
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaže u održavanju normalne razine šećera u krvi."
+              },
+              {
+                "name": "Inspicure",
+                "description": "pomaže da se osjećate stabilno i veselo."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaže smanjiti želju za stalnim grickanjem."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Set za krvni tlak i žile",
+            "description": "Ako je krvni tlak nestabilan, a noge otiču, to je znak da su krvne žile izgubile elastičnost i da srce teže radi. Takve signale ne treba ignorirati.  ",
+            "benefitsTitle": "Kako se organizam vraća u ravnotežu:",
+            "benefitsList": [
+              "najprije se izlučuje višak tekućine (nestaju otekline i osjećaj težine u nogama);",
+              "ačaju stijenke krvnih žila kako bi bolje reagirale na promjene vremena;",
+              "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaže držati krvni tlak pod kontrolom."
+              },
+              {
+                "name": "Guavital+",
+                "description": "uklanja višak soli i poboljšava metabolizam."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Set za krvni tlak i žile",
+            "description": "Ako je krvni tlak nestabilan, a noge otiču, to je znak da su krvne žile izgubile elastičnost i da srce teže radi. Takve signale ne treba ignorirati.  ",
+            "benefitsTitle": "Kako se organizam vraća u ravnotežu:",
+            "benefitsList": [
+              "najprije se izlučuje višak tekućine (nestaju otekline i osjećaj težine u nogama);",
+              "ačaju stijenke krvnih žila kako bi bolje reagirale na promjene vremena;",
+              "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaže držati krvni tlak pod kontrolom."
+              },
+              {
+                "name": "Guavital+",
+                "description": "uklanja višak soli i poboljšava metabolizam."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Set za kontrolu težine",
+            "description": "Kada težina \"stoji\", to je vrlo česta situacija, osobito s godinama. Organizmu je teže razgrađivati hranu nego prije. Upravo zato je važno odabrati pravi pristup, a ne očekivati čudo preko noći.",
+            "benefitsTitle": "Organizam obično djeluje postupno:",
+            "benefitsList": [
+              "najprije smanjuje apetit;",
+              "uklanja zadržavanje tekućine i nadutost;",
+              "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna kontrola težine»",
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaže u suzbijanju apetita tijekom dana."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi da radi kao sat."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaže tijelu brže razgrađivati hranu."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Set za kontrolu težine",
+            "description": "Kada težina \"stoji\", to je vrlo česta situacija, osobito s godinama. Organizmu je teže razgrađivati hranu nego prije. Upravo zato je važno odabrati pravi pristup, a ne očekivati čudo preko noći.",
+            "benefitsTitle": "Organizam obično djeluje postupno:",
+            "benefitsList": [
+              "najprije smanjuje apetit;",
+              "uklanja zadržavanje tekućine i nadutost;",
+              "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna kontrola težine»",
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaže u suzbijanju apetita tijekom dana."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi da radi kao sat."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaže tijelu brže razgrađivati hranu."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Set protiv umora (Energija)",
+            "description": "Osjećaj \"umornosti\" već od jutra često znači da je organizam nakupio previše suvišnog i jednostavno ne može pratiti. Obična kava ovdje ne pomaže, potrebno je očistiti sustav iznutra. ",
+            "benefitsTitle": "Kako se vraća energija:",
+            "benefitsList": [
+              "organizam se nježno oslobađa od nakupljenih toksina;",
+              "rad želuca i crijeva se normalizira (nestaje osjećaj težine);",
+              "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Set energija i ravnoteža»",
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vraća energiju i dobro raspoloženje."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi raditi bez zastoja."
+              },
+              {
+                "name": "Slimital",
+                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Set protiv umora (Energija)",
+            "description": "Osjećaj \"umornosti\" već od jutra često znači da je organizam nakupio previše suvišnog i jednostavno ne može pratiti. Obična kava ovdje ne pomaže, potrebno je očistiti sustav iznutra. ",
+            "benefitsTitle": "Kako se vraća energija:",
+            "benefitsList": [
+              "organizam se nježno oslobađa od nakupljenih toksina;",
+              "rad želuca i crijeva se normalizira (nestaje osjećaj težine);",
+              "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Set energija i ravnoteža»",
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vraća energiju i dobro raspoloženje."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi raditi bez zastoja."
+              },
+              {
+                "name": "Slimital",
+                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "title": "Sveobuhvatna zdravstvena njega",
+            "description": "Kad svi tjelesni sustavi počnu propadati — bilo vid, bilo sluh, bilo srce — tijelu je potrebno samo opće resetiranje. To je poput temeljitog remonta, koji je bolje napraviti na vrijeme. ",
+            "benefitsTitle": "Što pruža cjelovit pristup:",
+            "benefitsList": [
+              "održavanje srca i krvnih žila u tonusu;",
+              "normalizacija probave kako bi imunološki sustav bio snažan;",
+              "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podržava jasnoću sluha i bistru glavu."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaštitu krvnih žila i srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "za dobru probavu i lakoću."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          },
+          {
+            "packs": 6,
+            "title": "Sveobuhvatna zdravstvena njega",
+            "description": "Kad svi tjelesni sustavi počnu propadati — bilo vid, bilo sluh, bilo srce — tijelu je potrebno samo opće resetiranje. To je poput temeljitog remonta, koji je bolje napraviti na vrijeme. ",
+            "benefitsTitle": "Što pruža cjelovit pristup:",
+            "benefitsList": [
+              "održavanje srca i krvnih žila u tonusu;",
+              "normalizacija probave kako bi imunološki sustav bio snažan;",
+              "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
+            ],
+            "recommendTitle": "Odabrali smo za Vas set:",
+            "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podržava jasnoću sluha i bistru glavu."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaštitu krvnih žila i srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "za dobru probavu i lakoću."
+              }
+            ],
+            "footnote": "Bonusi će se primijeniti automatski",
+            "saving": "Uštedite 80 EUR!",
+            "price": {
+              "label": "Cijena s bonusima",
+              "calculation": "167 - 80",
+              "amount": 87,
+              "currency": "euros"
+            }
+          }
+        ]
       }
     }
   },
   "order": {
     "title": "Vaš bonus od 80 € je aktiviran!",
     "special": "Specijalna ponuda",
-    "offer": {
-      "tag": "Set (4 kom): 167€ - 80€ = ",
-      "discount": "Vaši eurobonusi: - 80 €"
-    },
-    "price": {
-      "current": "87 €"
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      }
     },
     "btnSubmit": "Potvrditi narudžbu"
   },
