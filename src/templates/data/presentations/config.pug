@@ -41,6 +41,7 @@
                     benefitsList: presentNichesLocale.joints.courses[1].benefitsList,
                     recommendTitle: presentNichesLocale.joints.courses[1].recommendTitle,
                     recommendName: presentNichesLocale.joints.courses[1].recommendName,
+                    recommendExtra: presentNichesLocale.joints.courses[1].recommendExtra,
                     saving: presentNichesLocale.joints.courses[1].saving,
                     products: presentNichesLocale.joints.courses[1].products,
                     footnote: presentNichesLocale.joints.courses[1].footnote,
@@ -93,6 +94,7 @@
                     benefitsList: presentNichesLocale.diabetes.courses[1].benefitsList,
                     recommendTitle: presentNichesLocale.diabetes.courses[1].recommendTitle,
                     recommendName: presentNichesLocale.diabetes.courses[1].recommendName,
+                    recommendExtra: presentNichesLocale.diabetes.courses[1].recommendExtra,
                     saving: presentNichesLocale.diabetes.courses[1].saving,
                     products: presentNichesLocale.diabetes.courses[1].products,
                     footnote: presentNichesLocale.diabetes.courses[1].footnote,
@@ -145,6 +147,7 @@
                     benefitsList: presentNichesLocale['blood-pressure'].courses[1].benefitsList,
                     recommendTitle: presentNichesLocale['blood-pressure'].courses[1].recommendTitle,
                     recommendName: presentNichesLocale['blood-pressure'].courses[1].recommendName,
+                    recommendExtra: presentNichesLocale['blood-pressure'].courses[1].recommendExtra,
                     saving: presentNichesLocale['blood-pressure'].courses[1].saving,
                     products: presentNichesLocale['blood-pressure'].courses[1].products,
                     footnote: presentNichesLocale['blood-pressure'].courses[1].footnote,
@@ -197,6 +200,7 @@
                     benefitsList: presentNichesLocale['weight-loss'].courses[1].benefitsList,
                     recommendTitle: presentNichesLocale['weight-loss'].courses[1].recommendTitle,
                     recommendName: presentNichesLocale['weight-loss'].courses[1].recommendName,
+                    recommendExtra: presentNichesLocale['weight-loss'].courses[1].recommendExtra,
                     saving: presentNichesLocale['weight-loss'].courses[1].saving,
                     products: presentNichesLocale['weight-loss'].courses[1].products,
                     footnote: presentNichesLocale['weight-loss'].courses[1].footnote,
@@ -249,6 +253,7 @@
                     benefitsList: presentNichesLocale.tiredness.courses[1].benefitsList,
                     recommendTitle: presentNichesLocale.tiredness.courses[1].recommendTitle,
                     recommendName: presentNichesLocale.tiredness.courses[1].recommendName,
+                    recommendExtra: presentNichesLocale.tiredness.courses[1].recommendExtra,
                     saving: presentNichesLocale.tiredness.courses[1].saving,
                     products: presentNichesLocale.tiredness.courses[1].products,
                     footnote: presentNichesLocale.tiredness.courses[1].footnote,
@@ -301,6 +306,7 @@
                     benefitsList: presentNichesLocale.parasites.courses[1].benefitsList,
                     recommendTitle: presentNichesLocale.parasites.courses[1].recommendTitle,
                     recommendName: presentNichesLocale.parasites.courses[1].recommendName,
+                    recommendExtra: presentNichesLocale.parasites.courses[1].recommendExtra,
                     saving: presentNichesLocale.parasites.courses[1].saving,
                     products: presentNichesLocale.parasites.courses[1].products,
                     footnote: presentNichesLocale.parasites.courses[1].footnote,
@@ -370,7 +376,11 @@
                             {
                                 tag: 'strong',
                                 text: presentationData.recommendName
-                            }
+                            },
+                            packs === 6 && {
+                                tag: 'p',
+                                text: presentationData.recommendExtra
+                            },
                         ]
                     },
                     {
