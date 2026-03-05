@@ -1,4 +1,5 @@
 import {dataConfigParser} from "../utils/dataConfigParser";
+import {addModifierClass} from "../utils/selectors";
 import {UniversalRenderer} from "./UniversalRenderer";
 import {AppState} from "./AppState";
 
@@ -7,6 +8,7 @@ const SELECTORS = {
     COURSE_CONTAINER: '.course-options',
     COURSE_ITEMS: '.course-option',
     NEXT_BUTTON: '.course__select',
+    ORDER_BUTTON: '.course__select--order',
     RADIO_INPUT: `#screen-course input[type="radio"]`,
     PRESENTATION_CONTENT: '.presentation-modal__content',
     FOUR_COURSE_CONTENT: '#four-course',
@@ -21,7 +23,7 @@ const CSS_CLASSES = {
 
 export const CourseSwitcher = {
     presentationData: dataConfigParser(SELECTORS.PRESENTATION_CONTENT),
-    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT)[0],
+    orderFormData: dataConfigParser(SELECTORS.ORDER_FORM_CONTENT),
 
     _handleAccordionClick(clickedItem, allItems) {
         allItems.forEach(item => item.classList.remove(CSS_CLASSES.ACTIVE));
@@ -35,11 +37,14 @@ export const CourseSwitcher = {
         const packs = Number(radioInput.dataset.packs)
 
         const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
 
         if (!firstItem || !radioInput) return;
 
         radioInput.checked = true;
         this._handleAccordionClick(firstItem, allItems);
+
+        console.log(this.orderFormData);
 
         UniversalRenderer.render(
             SELECTORS.PRESENTATION_CONTENT,
@@ -48,19 +53,20 @@ export const CourseSwitcher = {
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData.niches[niche].elements
+            orderFormElements
         )
     },
 
     _handleClick(event, allItems) {
         const courseItem = event.target.closest(SELECTORS.COURSE_ITEMS);
         const radioInput = courseItem?.querySelector(SELECTORS.RADIO_INPUT);
-        const niche = radioInput.dataset.niche
-        const packs = Number(radioInput.dataset.packs)
+        const niche = radioInput?.dataset.niche
+        const packs = Number(radioInput?.dataset.packs)
+
+        if (!courseItem || !radioInput || !niche || !packs || event.target === radioInput) return;
 
         const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
-
-        if (!courseItem || !radioInput || event.target === radioInput) return;
+        const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
 
         radioInput.checked = true;
         this._handleAccordionClick(courseItem, allItems);
@@ -72,7 +78,7 @@ export const CourseSwitcher = {
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
-            this.orderFormData.niches[niche].elements
+            orderFormElements
         )
     },
 
@@ -112,10 +118,19 @@ export const CourseSwitcher = {
         this._setFirstItemActive(coursesItems);
 
         coursesContainer.addEventListener('click', (e) => {
-            if (e.target.closest(SELECTORS.NEXT_BUTTON)) {
+            if (e.target.closest(SELECTORS.ORDER_BUTTON)) {
+                this._handleClick(e, coursesItems);
+                addModifierClass(SELECTORS.ORDER_FORM_CONTENT, 'additional');
                 this._confirmChoice(coursesItems);
                 return;
             }
+
+            if (e.target.closest(SELECTORS.NEXT_BUTTON)) {
+                this._handleClick(e, coursesItems);
+                this._confirmChoice(coursesItems);
+                return;
+            }
+
             this._handleClick(e, coursesItems);
         });
     }

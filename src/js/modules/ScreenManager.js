@@ -1,13 +1,19 @@
+import {removeModifierClass} from "../utils/selectors";
+
 const SELECTORS = {
     SCREEN: '.screen',
     VISIBLE_SCREEN: '.screen:not(.hidden)',
-    NAVIGATION_BUTTON: '[data-target-screen]'
+    NAVIGATION_BUTTON: '[data-target-screen]',
+
+    ORDER_FORM_CONTENT: '.order-card__content',
+    ORDER_BACK_BUTTON: '.order__next[data-target-screen="screen-course"]',
+
 };
 
 const CSS_CLASSES = {
     HIDDEN: 'hidden',
     SCREEN_EXIT: 'screen-exit',
-    SCREEN_ENTER: 'screen-enter'
+    SCREEN_ENTER: 'screen-enter',
 };
 
 const TRANSITION_DURATION = 300; // Match CSS transition duration
@@ -44,12 +50,25 @@ export const ScreenManager = {
         }
     },
 
+    _handleOrderBackButton() {
+        setTimeout(() => {
+            removeModifierClass(SELECTORS.ORDER_FORM_CONTENT, 'additional');
+        }, TRANSITION_DURATION);
+    },
+
     bindButtons() {
         const buttons = document.querySelectorAll(SELECTORS.NAVIGATION_BUTTON);
+        const backButton = document.querySelector(SELECTORS.ORDER_BACK_BUTTON);
 
         if (buttons.length === 0) {
             console.warn('No navigation buttons found');
             return;
+        }
+
+        if (backButton) {
+            backButton.addEventListener('click', () => {
+                this._handleOrderBackButton();
+            });
         }
 
         buttons.forEach(button => {

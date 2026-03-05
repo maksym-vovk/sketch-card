@@ -1,244 +1,246 @@
--
-    const orderFormConfig = [
-        {
-            packs: 4,
-            niches: {
-                "joints": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/joints-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "diabetes": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/diabetes-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "blood-pressure": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/bloodpressure-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "weight-loss": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/weightloss-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "tiredness": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/tiredness-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-                "parasites": {
-                    elements: [
-                        {
-                            tag: 'h2',
-                            className: 'order__title title',
-                            text: t.order.title
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__products',
-                            children: [
-                                {
-                                    tag: 'img',
-                                    attributes: {
-                                        src: basePath + 'img/parasites-complex.png',
-                                        alt: 'product'
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            tag: 'div',
-                            className: 'order__offer',
-                            children: [
-                                {
-                                    tag: 'span',
-                                    className: 'tag',
-                                    text: t.order.offer.tag
-                                },
-                                {
-                                    tag: 'span',
-                                    className: 'current',
-                                    text: t.order.price.current
-                                }
-                            ]
-                        }
-                    ]
-                },
-            }
-        }
-    ]
+include ../data/order/config
+
+// -
+//     const orderFormConfig = [
+//         {
+//             packs: 4,
+//             niches: {
+//                 "joints": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/joints-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//                 "diabetes": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/diabetes-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//                 "blood-pressure": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/bloodpressure-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//                 "weight-loss": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/weightloss-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//                 "tiredness": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/tiredness-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//                 "parasites": {
+//                     elements: [
+//                         {
+//                             tag: 'h2',
+//                             className: 'order__title title',
+//                             text: t.order.title
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__products',
+//                             children: [
+//                                 {
+//                                     tag: 'img',
+//                                     attributes: {
+//                                         src: basePath + 'img/parasites-complex.png',
+//                                         alt: 'product'
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         {
+//                             tag: 'div',
+//                             className: 'order__offer',
+//                             children: [
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'tag',
+//                                     text: t.order.offer.tag
+//                                 },
+//                                 {
+//                                     tag: 'span',
+//                                     className: 'current',
+//                                     text: t.order.price.current
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 },
+//             }
+//         }
+//     ]
 
 section.order.block(class="screen hidden" id="screen-order")
     .container
         .order-card
-            .order-card__content(data-config=JSON.stringify(orderFormConfig))
+            .order-card__content(data-config=JSON.stringify(orderConfig))
                 //h2.order__title title= t.order.title
                 //
                 //.order__products
@@ -247,10 +249,10 @@ section.order.block(class="screen hidden" id="screen-order")
 
 
             form.order__form
-                .special__offer
-                    span.tag= t.order.special
-                        | :
-                    span.current= t.order.price.current
+                //.special__offer
+                //    span.tag= t.order.special
+                //        | :
+                //    span.current= t.order.price.current
                 // --- Name ---
                 .form-group
                     .input-wrapper

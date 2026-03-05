@@ -66,7 +66,7 @@
           {
             "packs": 6,
             "badge": "Uštedite 90 EUR!",
-            "price": "149€",
+            "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "benefits": [
@@ -784,12 +784,163 @@
   "order": {
     "title": "Vaš bonus od 80 € je aktiviran!",
     "special": "Specijalna ponuda",
-    "offer": {
-      "tag": "Set (4 kom): 167€ - 80€ = ",
-      "discount": "Vaši eurobonusi: - 80 €"
-    },
-    "price": {
-      "current": "87 €"
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 kom): 167€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 kom): 218€ - 80€ = ",
+              "discount": "Vaši eurobonusi: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      }
     },
     "btnSubmit": "Potvrditi narudžbu"
   },

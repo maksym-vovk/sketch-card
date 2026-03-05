@@ -33,9 +33,9 @@ export const NichesAccordion = {
     _handleClick(event, allItems) {
         const accordionItem = event.target.closest(SELECTORS.ACCORDION_ITEMS);
         const radioInput = accordionItem?.querySelector(SELECTORS.RADIO_INPUT);
-        const niche = accordionItem.dataset.niche
+        const niche = accordionItem?.dataset.niche
 
-        if (!accordionItem || !radioInput || event.target === radioInput) return;
+        if (!accordionItem || !radioInput || event.target === radioInput || !niche) return;
 
         radioInput.checked = true;
         this._handleAccordionClick(accordionItem, allItems);

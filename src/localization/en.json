@@ -66,7 +66,7 @@
           {
             "packs": 6,
             "badge": "You save 90 euros!",
-            "price": "149€",
+            "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "benefits": [
@@ -328,7 +328,7 @@
           },
           {
             "packs": 6,
-            "title": "Joints and movement",
+            "title": "Joints and movement - 6",
             "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
             "benefitsTitle": "How recovery works:",
             "benefitsList": [
@@ -410,7 +410,7 @@
           },
           {
             "packs": 6,
-            "title": "Sugar Balance Kit",
+            "title": "Sugar Balance Kit - 6",
             "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
             "benefitsTitle": "What you will achieve in the course:",
             "benefitsList": [
@@ -492,7 +492,7 @@
           },
           {
             "packs": 6,
-            "title": "Pressure and Blood Vessels Kit",
+            "title": "Pressure and Blood  - 6Vessels Kit",
             "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
             "benefitsTitle": "How the body returns to normal:",
             "benefitsList": [
@@ -574,7 +574,7 @@
           },
           {
             "packs": 6,
-            "title": "Weight Control Kit",
+            "title": "Weight Control Kit - 6",
             "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
             "benefitsTitle": "Usually the body acts step by step:",
             "benefitsList": [
@@ -656,7 +656,7 @@
           },
           {
             "packs": 6,
-            "title": "Fatigue Kit (Energy)",
+            "title": "Fatigue Kit ( - 6Energy)",
             "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
             "benefitsTitle": "How energy is returned:",
             "benefitsList": [
@@ -738,7 +738,7 @@
           },
           {
             "packs": 6,
-            "title": "Overall health improvement",
+            "title": "Overall health improvement - 6",
             "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
             "benefitsTitle": "What a comprehensive approach provides:",
             "benefitsList": [
@@ -781,14 +781,165 @@
   },
   "order": {
     "title": "Your €80 bonus has been activated!",
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "offer": {
+              "tag": "Set (4 units.): 167€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "87 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          },
+          {
+            "packs": 6,
+            "offer": {
+              "tag": "Set (6 units.): 218€ - 80€ =",
+              "discount": "Your euro bonuses: - 80 €"
+            },
+            "price": {
+              "current": "138 €"
+            },
+            "description": "You’ll see me if you order immediately"
+          }
+        ]
+      }
+    },
     "special": "Special offer",
-    "offer": {
-      "tag": "Set (4 units.): 167€ - 80€ =",
-      "discount": "Your euro bonuses: - 80 €"
-    },
-    "price": {
-      "current": "87 €"
-    },
     "btnSubmit": "Confirm your order"
   },
   "thankYou": {
