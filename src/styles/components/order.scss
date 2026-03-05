@@ -8,14 +8,19 @@
   border-radius: 16px;
   text-align: center;
 
-  @include rm(768){
+  @include rm(768) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     gap: 20px;
+
+  }
+
+  @include rm(1024){
+    padding: 20px;
   }
 }
 
@@ -24,18 +29,23 @@
 }
 
 .order-card__content {
-  @include rm(768){
+  @include rm(768) {
     display: contents;
     //flex-wrap: wrap;
   }
 
   //for additional info
   &--additional .order-additional {
+    font-size: 20px;
     display: block;
     width: 100%;
+    margin-bottom: 20px;
+
+    @include rm(768){
+      margin-bottom: 0;
+    }
   }
 }
-
 
 
 .order__title {
@@ -46,30 +56,43 @@
   //padding: 0 30px;
   color: #333;
 
-  @include rm(768){
+  @include rm(768) {
     width: 100%;
     margin-bottom: 0;
   }
 }
+
 .special__offer {
+  width: 100%;
+  padding: 18px;
+  background: #f60;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  //margin: 20px 0 20px;
+
+  @include rm(768) {
     width: 100%;
-    padding: 18px;
-    background: #f60;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 20px 0 20px;
+    max-width: 280px;
+  }
+  @include rm(1024) {
+    max-width: 350px;
+  }
+  @include rm(1220) {
+    max-width: 400px;
+  }
 
   & .current {
     color: white;
     font-size: 25px;
-    @include rm(1024){
+    @include rm(1024) {
       font-size: 35px;
     }
   }
 }
+
 .order__offer {
   //display: flex;
   //gap: 12px;
@@ -90,29 +113,34 @@
   //background: #ff6600;
   color: #333;
 
-  @include rm(375){
+  @include rm(375) {
     font-size: 23px;
   }
-  @include rm(768){
+  @include rm(768) {
     order: 2;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
-  @include rm(1024){
+  @include rm(1024) {
+    margin-bottom: 20px;
     max-width: 450px;
+    //margin-bottom: 40px;
+  }
+  @include rm(1220) {
+    margin-bottom: 50px;
   }
 }
 
 
-
 .special__offer .tag,
-.order__offer .tag{
+.order__offer .tag {
   position: relative;
   top: -1px;
   margin-right: 5px;
 
-  @include rm(1024){
+  @include rm(1024) {
     //top: 0;
     font-size: 30px;
   }
@@ -143,14 +171,18 @@
   flex-wrap: wrap;
   margin: 20px 0;
 
-  @include rm(768){
+  @include rm(768) {
     position: relative;
     order: 3;
+    margin-top: -40px;
+    margin-bottom: 0;
   }
-  //@include rm(1220){
-  //  max-width: 690px;
-  //  width: 100%;
-  //}
+  @include rm(1024){
+    margin-top: -85px;
+  }
+  @include rm(1220){
+    margin-top: -125px;
+  }
 }
 
 .order__products img {
@@ -159,16 +191,16 @@
   border-radius: 8px;
 
 
-  @include rm(768){
+  @include rm(768) {
     width: 100%;
-    max-width: 410px;
+    max-width: 385px;
   }
 
-  @include rm(1024){
+  @include rm(1024) {
     width: 100%;
     max-width: 560px;
   }
-  @include rm(1220){
+  @include rm(1220) {
     width: 100%;
     max-width: 690px;
   }
@@ -190,7 +222,7 @@
   font-weight: bold;
   color: #333;
 
-  @include rm(1024){
+  @include rm(1024) {
     font-size: 40px;
   }
 }
@@ -253,23 +285,36 @@
   opacity: 0.9;
 }
 
-.order__form,
 .order__wrapper {
+  width: 100%;
   margin-bottom: 20px;
-  @include rm(768){
-    order: 3;
-    width: 100%;
-    max-width: 250px;
+  @include rm(768) {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 0;
   }
-  @include rm(1024){
+  @include rm(1024) {
+
+  }
+}
+
+.order__form {
+  margin-bottom: 20px;
+  @include rm(768) {
+    order: 3;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 0;
+  }
+  @include rm(1024) {
     width: 100%;
     max-width: 350px;
     position: relative;
 
   }
 
-  @include rm(1220){
+  @include rm(1220) {
     max-width: 400px;
   }
 }
@@ -277,8 +322,9 @@
 .order__next {
   background: #fff;
   color: #8b0000;
-  @include rm(768){
+  @include rm(768) {
     max-width: 400px;
     order: 4;
+    margin: 0 auto;
   }
 }
