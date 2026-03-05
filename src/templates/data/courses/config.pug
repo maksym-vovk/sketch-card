@@ -10,7 +10,7 @@
                     price: nichesLocale.joints.courses[0].price,
                     discount: nichesLocale.joints.courses[0].discount,
                     subtitle: nichesLocale.joints.courses[0].subtitle,
-                    benefits: nichesLocale.joints.courses[0].benefits,
+                    products: nichesLocale.joints.courses[0].products,
                     image: 'joints-complex.png'
                 },
                 6: {
@@ -18,7 +18,7 @@
                     price: nichesLocale.joints.courses[1].price,
                     discount: nichesLocale.joints.courses[1].discount,
                     subtitle: nichesLocale.joints.courses[1].subtitle,
-                    benefits: nichesLocale.joints.courses[1].benefits,
+                    description: nichesLocale.joints.courses[1].description,
                     image: 'joints-complex.png'
                 }
             }
@@ -31,7 +31,7 @@
                     price: nichesLocale.diabetes.courses[0].price,
                     discount: nichesLocale.diabetes.courses[0].discount,
                     subtitle: nichesLocale.diabetes.courses[0].subtitle,
-                    benefits: nichesLocale.diabetes.courses[0].benefits,
+                    products: nichesLocale.diabetes.courses[0].products,
                     image: 'diabetes-complex.png'
                 },
                 6: {
@@ -39,7 +39,7 @@
                     price: nichesLocale.diabetes.courses[1].price,
                     discount: nichesLocale.diabetes.courses[1].discount,
                     subtitle: nichesLocale.diabetes.courses[1].subtitle,
-                    benefits: nichesLocale.diabetes.courses[1].benefits,
+                    description: nichesLocale.diabetes.courses[1].description,
                     image: 'diabetes-complex.png'
                 }
             }
@@ -52,7 +52,7 @@
                     price: nichesLocale['blood-pressure'].courses[0].price,
                     discount: nichesLocale['blood-pressure'].courses[0].discount,
                     subtitle: nichesLocale['blood-pressure'].courses[0].subtitle,
-                    benefits: nichesLocale['blood-pressure'].courses[0].benefits,
+                    products: nichesLocale['blood-pressure'].courses[0].products,
                     image: 'bloodpressure-complex.png'
                 },
                 6: {
@@ -60,7 +60,7 @@
                     price: nichesLocale['blood-pressure'].courses[1].price,
                     discount: nichesLocale['blood-pressure'].courses[1].discount,
                     subtitle: nichesLocale['blood-pressure'].courses[1].subtitle,
-                    benefits: nichesLocale['blood-pressure'].courses[1].benefits,
+                    description: nichesLocale['blood-pressure'].courses[1].description,
                     image: 'bloodpressure-complex.png'
                 }
             }
@@ -73,7 +73,7 @@
                     price: nichesLocale['weight-loss'].courses[0].price,
                     discount: nichesLocale['weight-loss'].courses[0].discount,
                     subtitle: nichesLocale['weight-loss'].courses[0].subtitle,
-                    benefits: nichesLocale['weight-loss'].courses[0].benefits,
+                    products: nichesLocale['weight-loss'].courses[0].products,
                     image: 'weightloss-complex.png'
                 },
                 6: {
@@ -81,7 +81,7 @@
                     price: nichesLocale['weight-loss'].courses[1].price,
                     discount: nichesLocale['weight-loss'].courses[1].discount,
                     subtitle: nichesLocale['weight-loss'].courses[1].subtitle,
-                    benefits: nichesLocale['weight-loss'].courses[1].benefits,
+                    description: nichesLocale['weight-loss'].courses[1].description,
                     image: 'weightloss-complex.png'
                 }
             }
@@ -94,7 +94,7 @@
                     price: nichesLocale.tiredness.courses[0].price,
                     discount: nichesLocale.tiredness.courses[0].discount,
                     subtitle: nichesLocale.tiredness.courses[0].subtitle,
-                    benefits: nichesLocale.tiredness.courses[0].benefits,
+                    products: nichesLocale.tiredness.courses[0].products,
                     image: 'tiredness-complex.png'
                 },
                 6: {
@@ -102,7 +102,7 @@
                     price: nichesLocale.tiredness.courses[1].price,
                     discount: nichesLocale.tiredness.courses[1].discount,
                     subtitle: nichesLocale.tiredness.courses[1].subtitle,
-                    benefits: nichesLocale.tiredness.courses[1].benefits,
+                    description: nichesLocale.tiredness.courses[1].description,
                     image: 'tiredness-complex.png'
                 }
             }
@@ -115,7 +115,7 @@
                     price: nichesLocale.parasites.courses[0].price,
                     discount: nichesLocale.parasites.courses[0].discount,
                     subtitle: nichesLocale.parasites.courses[0].subtitle,
-                    benefits: nichesLocale.parasites.courses[0].benefits,
+                    products: nichesLocale.parasites.courses[0].products,
                     image: 'parasites-complex.png'
                 },
                 6: {
@@ -123,7 +123,7 @@
                     price: nichesLocale.parasites.courses[1].price,
                     discount: nichesLocale.parasites.courses[1].discount,
                     subtitle: nichesLocale.parasites.courses[1].subtitle,
-                    benefits: nichesLocale.parasites.courses[1].benefits,
+                    description: nichesLocale.parasites.courses[1].description,
                     image: 'parasites-complex.png'
                 }
             }
@@ -181,13 +181,25 @@
                         className: 'subtitle',
                         text: courseData.subtitle
                     },
-                    {
+                    packs === 4 && {
                         tag: 'ul',
-                        children: courseData.benefits.map(text => ({
+                        children: courseData.products.map(product => ({
                             tag: 'li',
-                            text
+                            text: `${product.name} - ${product.description}`
                         }))
-                    }].filter(Boolean)
+                    },
+                    packs === 6 && {
+                        tag: 'p',
+                        className: 'course-option__description bold',
+                        text: courseData.description[0]
+                    },
+                    packs === 6 && {
+                        tag: 'p',
+                        className: 'course-option__description',
+                        text: courseData.description[1]
+                    }
+
+                ].filter(Boolean)
             }
         ]
     }
