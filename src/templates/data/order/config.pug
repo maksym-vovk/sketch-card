@@ -1,0 +1,256 @@
+-
+    const orderNichesLocale = t.order.niches
+
+    const ORDER_CONFIG = {
+        'joints': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.joints.courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.joints.courses[0].price.current
+                    },
+                    description: orderNichesLocale.joints.courses[0].description,
+                    image: 'joints-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.joints.courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.joints.courses[1].price.current
+                    },
+                    description: orderNichesLocale.joints.courses[1].description,
+                    image: 'joints-complex.png'
+                }
+            }
+        },
+        'diabetes': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.diabetes.courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.diabetes.courses[0].price.current
+                    },
+                    description: orderNichesLocale.diabetes.courses[0].description,
+                    image: 'diabetes-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.diabetes.courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.diabetes.courses[1].price.current
+                    },
+                    description: orderNichesLocale.diabetes.courses[1].description,
+                    image: 'diabetes-complex.png'
+                }
+            }
+        },
+        'blood-pressure': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale['blood-pressure'].courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale['blood-pressure'].courses[0].price.current
+                    },
+                    description: orderNichesLocale['blood-pressure'].courses[0].description,
+                    image: 'bloodpressure-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale['blood-pressure'].courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale['blood-pressure'].courses[1].price.current
+                    },
+                    description: orderNichesLocale['blood-pressure'].courses[1].description,
+                    image: 'bloodpressure-complex.png'
+                }
+            }
+        },
+        'weight-loss': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale['weight-loss'].courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale['weight-loss'].courses[0].price.current
+                    },
+                    description: orderNichesLocale['weight-loss'].courses[0].description,
+                    image: 'weightloss-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale['weight-loss'].courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale['weight-loss'].courses[1].price.current
+                    },
+                    description: orderNichesLocale['weight-loss'].courses[1].description,
+                    image: 'weightloss-complex.png'
+                }
+            }
+        },
+        'tiredness': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.tiredness.courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.tiredness.courses[0].price.current
+                    },
+                    description: orderNichesLocale.tiredness.courses[0].description,
+                    image: 'tiredness-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.tiredness.courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.tiredness.courses[1].price.current
+                    },
+                    description: orderNichesLocale.tiredness.courses[1].description,
+                    image: 'tiredness-complex.png'
+                }
+            }
+        },
+        'parasites': {
+            courses: {
+                4: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.parasites.courses[0].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.parasites.courses[0].price.current
+                    },
+                    description: orderNichesLocale.parasites.courses[0].description,
+                    image: 'parasites-complex.png'
+                },
+                6: {
+                    title: t.order.title,
+                    offer: {
+                        tag: orderNichesLocale.parasites.courses[1].tag
+                    },
+                    special: t.order.special,
+                    price: {
+                        current: orderNichesLocale.parasites.courses[1].price.current
+                    },
+                    description: orderNichesLocale.parasites.courses[1].description,
+                    image: 'parasites-complex.png'
+                }
+            }
+        }
+    };
+
+    function createOrderContent(niche, packs) {
+        const config = ORDER_CONFIG[niche];
+        const orderData = config.courses[packs];
+
+        return [
+            {
+                tag: 'h2',
+                className: 'order__title title',
+                text: orderData.title
+            },
+            {
+                tag: 'div',
+                className: 'order__products',
+                children: [
+                    {
+                        tag: 'img',
+                        attributes: {
+                            src: basePath + `img/${orderData.image}`,
+                            alt: 'product'
+                        }
+                    }
+                ]
+            },
+            {
+                tag: 'div',
+                className: 'order__offer',
+                children: [
+                    {
+                        tag: 'span',
+                        className: 'tag',
+                        text: orderData.offer.tag
+                    },
+                    {
+                        tag: 'span',
+                        className: 'current',
+                        text: orderData.price.current
+                    }
+                ]
+            },
+            {
+                tag: 'div',
+                className: 'order__wrapper',
+                children: [
+                    {
+                        tag: 'div',
+                        className: 'special__offer',
+                        children: [
+                            {
+                                tag: 'span',
+                                className: 'tag',
+                                text: orderData.special + ': '
+                            },
+                            {
+                                tag: 'span',
+                                className: 'current',
+                                text: orderData.price.current
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                tag: 'p',
+                className: 'order__description order-additional',
+                text: orderData.description
+            }
+        ]
+    }
+
+    function generateOrderNiches(packs) {
+        return Object.keys(ORDER_CONFIG).reduce((acc, niche) => {
+            acc[niche] = {
+                elements: createOrderContent(niche, packs)
+            };
+            return acc;
+        }, {});
+    }
+
+    const orderConfig = [
+        {packs: 4, niches: generateOrderNiches(4)},
+        {packs: 6, niches: generateOrderNiches(6)}
+    ];
