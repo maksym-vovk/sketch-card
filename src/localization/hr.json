@@ -57,10 +57,23 @@
             "price": "99€",
             "discount": "-50€",
             "subtitle": "Комплекс для суглобів - 4 пакети",
-            "benefits": [
-              "Покращує рухливість суглобів",
-              "Зменшує біль та запалення",
-              "Підтримує здоров'я хрящів"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -69,10 +82,9 @@
             "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
-            "benefits": [
-              "Покращує рухливість суглобів",
-              "Зменшує біль та запалення",
-              "Підтримує здоров'я хрящів"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
@@ -86,10 +98,23 @@
             "price": "89€",
             "discount": "-40€",
             "subtitle": "Комплекс при діабеті - 4 пакети",
-            "benefits": [
-              "Нормалізує рівень цукру",
-              "Покращує метаболізм",
-              "Знижує тягу до солодкого"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -98,10 +123,9 @@
             "price": "139€",
             "discount": "-85€",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
-            "benefits": [
-              "Нормалізує рівень цукру",
-              "Покращує метаболізм",
-              "Знижує тягу до солодкого"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
@@ -115,10 +139,23 @@
             "price": "95€",
             "discount": "-50€",
             "subtitle": "Комплекс для тиску - 4 пакети",
-            "benefits": [
-              "Стабілізує тиск",
-              "Підтримує серцево-судинну систему",
-              "Знижує ризик гіпертонії"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -127,10 +164,9 @@
             "price": "145€",
             "discount": "-95€",
             "subtitle": "Комплекс для тиску - 6 пакетів",
-            "benefits": [
-              "Стабілізує тиск",
-              "Підтримує серцево-судинну систему",
-              "Знижує ризик гіпертонії"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
@@ -144,10 +180,23 @@
             "price": "92€",
             "discount": "-48€",
             "subtitle": "Комплекс для схуднення - 4 пакети",
-            "benefits": [
-              "Прискорює метаболізм",
-              "Зменшує апетит",
-              "Спалює жирові відкладення"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -156,10 +205,9 @@
             "price": "142€",
             "discount": "-90€",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
-            "benefits": [
-              "Прискорює метаболізм",
-              "Зменшує апетит",
-              "Спалює жирові відкладення"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
@@ -173,11 +221,23 @@
             "price": "88€",
             "discount": "-45€",
             "subtitle": "Комплекс від втоми - 4 пакети",
-            "benefits": [
-              "Підвищує енергію",
-              "Покращує концентрацію",
-              "Зменшує втому",
-              "Нормалізує сон"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -186,11 +246,9 @@
             "price": "138€",
             "discount": "-88€",
             "subtitle": "Комплекс від втоми - 6 пакетів",
-            "benefits": [
-              "Підвищує енергію",
-              "Покращує концентрацію",
-              "Зменшує втому",
-              "Нормалізує сон"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
@@ -204,10 +262,23 @@
             "price": "94€",
             "discount": "-42€",
             "subtitle": "Комплекс від паразитів - 4 пакети",
-            "benefits": [
-              "Виводить паразитів",
-              "Очищує організм",
-              "Відновлює мікрофлору"
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "removes the feeling of heaviness and improves blood circulation."
+              },
+              {
+                "name": "Steplex",
+                "description": "helps relieve pain and make it easier for joints to move."
+              },
+              {
+                "name": "Guavital+",
+                "description": "helps reduce the impact of excess weight on joints."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+              }
             ]
           },
           {
@@ -216,10 +287,9 @@
             "price": "144€",
             "discount": "-80€",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
-            "benefits": [
-              "Виводить паразитів",
-              "Очищує організм",
-              "Відновлює мікрофлору"
+            "description": [
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
             ]
           }
         ]
