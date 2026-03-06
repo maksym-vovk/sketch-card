@@ -93,6 +93,7 @@
             "products": [
               {
                 "name": "Dialos",
+                "amount": "(2 packs)",
                 "description": "helps keep sugar normal."
               },
               {
@@ -105,6 +106,7 @@
               },
               {
                 "name": "Guavital+",
+                "amount": "(2 packs)",
                 "description": "helps reduce the desire to constantly eat something."
               }
             ]
@@ -143,10 +145,12 @@
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "helps remove swelling and excess water from the body."
               },
               {
                 "name": "Tonerin",
+                "amount": "(2 packs)",
                 "description": "helps keep blood pressure under control."
               },
               {
@@ -185,6 +189,7 @@
             "products": [
               {
                 "name": "Slimital",
+                "amount": "(2 packs)",
                 "description": "helps curb your appetite throughout the day."
               },
               {
@@ -197,6 +202,7 @@
               },
               {
                 "name": "Ozenmic Soft",
+                "amount": "(2 packs)",
                 "description": "helps the body break down food faster."
               }
             ]
@@ -235,10 +241,12 @@
               },
               {
                 "name": "Vermixin",
+                "amount": "(2 packs)",
                 "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "helps digestion work smoothly."
               },
               {
@@ -285,10 +293,12 @@
               },
               {
                 "name": "Tonerin",
+                "amount": "(2 packs)",
                 "description": "to protect blood vessels and the heart."
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "for good digestion and lightness."
               }
             ]
@@ -521,7 +531,7 @@
               "joints receive the necessary nutrition to move comfortably."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Maximum comfort for joints»",
+            "recommendName": "«Легкий рух»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -557,7 +567,7 @@
               "strength appears, and the overall state of health becomes even and stable."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Comprehensive Sugar Control»",
+            "recommendName": "«Комплексний контроль цукру»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -593,7 +603,7 @@
               "the pressure stabilizes, and the head becomes clear and \"light\"."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Vascular Program and Fluid Balance»",
+            "recommendName": "«Здорові судини»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -629,7 +639,7 @@
               "adjusts the metabolism so that the weight finally begins to melt away."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Overall Weight Control»",
+            "recommendName": "«Базове Схуднення»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -665,7 +675,7 @@
               "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Energy and Balance Program»",
+            "recommendName": "«Баланс енергії»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -701,7 +711,7 @@
               "protect your vision and hearing to make you feel confident and active."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Overall Health Improvement - Maximum»",
+            "recommendName": "«Здоров’я щодня»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
