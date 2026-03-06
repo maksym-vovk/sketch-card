@@ -12,6 +12,291 @@
       "patternTitle": "Vnesite vsaj 7 številk"
     }
   },
+  "productList": {
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "odstraňuje pocit ťažkosti a zlepšuje krvný obeh."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaga zmanjšati vpliv odvečne telesne teže na sklepe."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "izboljšuje delovanje želodca, da se koristne snovi bolje absorbirajo."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "odstraňuje pocit ťažkosti a zlepšuje krvný obeh."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaga zmanjšati vpliv odvečne telesne teže na sklepe."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "izboljšuje delovanje želodca, da se koristne snovi bolje absorbirajo."
+              }
+            ]
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaga ohranjati raven sladkorja v mejah normale."
+              },
+              {
+                "name": "Inspicure",
+                "description":"pomaga ohranjati stabilno in vitalno počutje."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "skrbi za zdravje prebavnega sistema in občutek lahkotnosti."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaga zmanjšati stalno željo po prigrizkih."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaga ohranjati raven sladkorja v mejah normale."
+              },
+              {
+                "name": "Inspicure",
+                "description":"pomaga ohranjati stabilno in vitalno počutje."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "skrbi za zdravje prebavnega sistema in občutek lahkotnosti."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaga zmanjšati stalno željo po prigrizkih."
+              }
+            ]
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "prispeva k izboljšanju prekrvavitve in čiščenju žil."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaga ohranjati krvni tlak pod nadzorom."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "prispeva k izboljšanju prekrvavitve in čiščenju žil."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaga ohranjati krvni tlak pod nadzorom."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
+              }
+            ]
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaga nadzorovati apetit čez dan."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga prebavi delovati kot ura."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa od odvečnih snovi."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaga telesu hitreje razgrajevati hrano."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaga nadzorovati apetit čez dan."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga prebavi delovati kot ura."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa od odvečnih snovi."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaga telesu hitreje razgrajevati hrano."
+              }
+            ]
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vrača vitalnost in dobro voljo."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa pred paraziti in normalnemu delovanju prebavnega sistema."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga prebavi delovati brez motenj."
+              },
+              {
+                "name": "Slimital",
+                "description": "ohranja obliko telesa in preprečuje pridobivanje odvečne teže zaradi utrujenosti."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vrača vitalnost in dobro voljo."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa pred paraziti in normalnemu delovanju prebavnega sistema."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaga prebavi delovati brez motenj."
+              },
+              {
+                "name": "Slimital",
+                "description": "ohranja obliko telesa in preprečuje pridobivanje odvečne teže zaradi utrujenosti."
+              }
+            ]
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podpira jasnost sluha in bistro glavo."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa od vsega odvečnega."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaščito žil in srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description":  "za dobro prebavo in občutek lahkotnosti."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podpira jasnost sluha in bistro glavo."
+              },
+              {
+                "name": "Vermixin",
+                "description": "prispeva k čiščenju telesa od vsega odvečnega."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaščito žil in srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description":  "za dobro prebavo in občutek lahkotnosti."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+
   "intro": {
     "title": "Vaše darilo čaka: aktivirajte svoje Eurobonuse",
     "text1": "Prejeli ste",
@@ -53,38 +338,16 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "99€",
-            "discount": "-50€",
-            "subtitle": "Комплекс для суглобів - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс для суглобів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 80 €!",
-            "price": "138€",
-            "discount": "-80€",
+            "badge": "You save",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
+              "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє тривалому відчуттю легкості та допомагає підтримувати гнучкість щодня!"
             ]
           }
         ]
@@ -94,38 +357,16 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "89€",
-            "discount": "-40€",
-            "subtitle": "Комплекс при діабеті - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс при діабеті - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 90 €!",
-            "price": "139€",
-            "discount": "-85€",
+            "badge": "You save",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Dialos та Guavital+!",
+              "Довша підтримка допомагає організму м’якше звикнути до нового режиму харчування! Це сприяє стабільному рівню енергії протягом дня."
             ]
           }
         ]
@@ -135,38 +376,16 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "95€",
-            "discount": "-50€",
-            "subtitle": "Комплекс для тиску - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс для тиску - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 90 €!",
-            "price": "145€",
-            "discount": "-95€",
+            "badge": "You save",
             "subtitle": "Комплекс для тиску - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Tonerin та Ultraxal!.",
+              "Сприяє кращій адаптації до змін погоди та допомагає підтримувати ясність голови."
             ]
           }
         ]
@@ -176,34 +395,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "92€",
-            "discount": "-48€",
-            "subtitle": "Комплекс для схуднення - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс для схуднення - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 90 €!",
-            "price": "142€",
-            "discount": "-90€",
+            "badge": "You save",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
@@ -217,38 +414,16 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "88€",
-            "discount": "-45€",
-            "subtitle": "Комплекс від втоми - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс від втоми - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 90 €!",
-            "price": "138€",
-            "discount": "-88€",
+            "badge": "You save",
             "subtitle": "Комплекс від втоми - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
+              "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу."
             ]
           }
         ]
@@ -258,38 +433,16 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Prihranite 80 €!",
-            "price": "94€",
-            "discount": "-42€",
-            "subtitle": "Комплекс від паразитів - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "badge": "You save",
+            "subtitle": "Комплекс від паразитів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Prihranite 90 €!",
-            "price": "144€",
-            "discount": "-80€",
+            "badge": "You save",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
+              "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню організму."
             ]
           }
         ]
@@ -370,32 +523,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Maksimalno udobje za sklepe»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "odstraňuje pocit ťažkosti a zlepšuje krvný obeh."
-              },
-              {
-                "name": "Steplex",
-                "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaga zmanjšati vpliv odvečne telesne teže na sklepe."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "izboljšuje delovanje želodca, da se koristne snovi bolje absorbirajo."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -411,32 +542,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Maksimalno udobje za sklepe»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "odstraňuje pocit ťažkosti a zlepšuje krvný obeh."
-              },
-              {
-                "name": "Steplex",
-                "description": "pomaga zmanjšati bolečino in olajšati gibanje sklepov."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaga zmanjšati vpliv odvečne telesne teže na sklepe."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "izboljšuje delovanje želodca, da se koristne snovi bolje absorbirajo."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -456,31 +565,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celovit nadzor sladkorja»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Dialos",
-                "description": "pomaga ohranjati raven sladkorja v mejah normale."
-              },
-              {
-                "name": "Inspicure",
-                "description":"pomaga ohranjati stabilno in vitalno počutje."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "skrbi za zdravje prebavnega sistema in občutek lahkotnosti."
-              },
-              {
-                "name": "Guavital+",
-                "description": "pomaga zmanjšati stalno željo po prigrizkih."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -496,31 +584,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celovit nadzor sladkorja»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Dialos",
-                "description": "pomaga ohranjati raven sladkorja v mejah normale."
-              },
-              {
-                "name": "Inspicure",
-                "description":"pomaga ohranjati stabilno in vitalno počutje."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "skrbi za zdravje prebavnega sistema in občutek lahkotnosti."
-              },
-              {
-                "name": "Guavital+",
-                "description": "pomaga zmanjšati stalno željo po prigrizkih."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -540,32 +607,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Kompleks za ožilje in ravnovesje tekočin»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Kardivix",
-                "description": "prispeva k izboljšanju prekrvavitve in čiščenju žil."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
-              },
-              {
-                "name": "Tonerin",
-                "description": "pomaga ohranjati krvni tlak pod nadzorom."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -581,32 +626,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Kompleks za ožilje in ravnovesje tekočin»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Kardivix",
-                "description": "prispeva k izboljšanju prekrvavitve in čiščenju žil."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
-              },
-              {
-                "name": "Tonerin",
-                "description": "pomaga ohranjati krvni tlak pod nadzorom."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaga izločati odvečno sol in izboljšuje presnovo."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -626,31 +649,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celovit nadzor telesne teže»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Slimital",
-                "description": "pomaga nadzorovati apetit čez dan."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga prebavi delovati kot ura."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa od odvečnih snovi."
-              },
-              {
-                "name": "Ozenmic Soft",
-                "description": "pomaga telesu hitreje razgrajevati hrano."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -666,31 +668,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celovit nadzor telesne teže»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Slimital",
-                "description": "pomaga nadzorovati apetit čez dan."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga prebavi delovati kot ura."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa od odvečnih snovi."
-              },
-              {
-                "name": "Ozenmic Soft",
-                "description": "pomaga telesu hitreje razgrajevati hrano."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -710,31 +691,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Energija in ravnovesje — kompleks»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Guavital+",
-                "description": "vrača vitalnost in dobro voljo."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa pred paraziti in normalnemu delovanju prebavnega sistema."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga prebavi delovati brez motenj."
-              },
-              {
-                "name": "Slimital",
-                "description": "ohranja obliko telesa in preprečuje pridobivanje odvečne teže zaradi utrujenosti."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -750,31 +710,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Energija in ravnovesje — kompleks»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Guavital+",
-                "description": "vrača vitalnost in dobro voljo."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa pred paraziti in normalnemu delovanju prebavnega sistema."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaga prebavi delovati brez motenj."
-              },
-              {
-                "name": "Slimital",
-                "description": "ohranja obliko telesa in preprečuje pridobivanje odvečne teže zaradi utrujenosti."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -794,31 +733,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celostno zdravje — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Ausen",
-                "description": "podpira jasnost sluha in bistro glavo."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa od vsega odvečnega."
-              },
-              {
-                "name": "Tonerin",
-                "description": "za zaščito žil in srca."
-              },
-              {
-                "name": "Ultraxal",
-                "description":  "za dobro prebavo in občutek lahkotnosti."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           },
           {
@@ -834,31 +752,10 @@
             "recommendTitle": "Za vas smo izbrali paket:",
             "recommendName": "«Celostno zdravje — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Ausen",
-                "description": "podpira jasnost sluha in bistro glavo."
-              },
-              {
-                "name": "Vermixin",
-                "description": "prispeva k čiščenju telesa od vsega odvečnega."
-              },
-              {
-                "name": "Tonerin",
-                "description": "za zaščito žil in srca."
-              },
-              {
-                "name": "Ultraxal",
-                "description":  "za dobro prebavo in občutek lahkotnosti."
-              }
-            ],
             "footnote": "Bonusi se uporabijo samodejno",
-            "saving": "Prihranite 80 €!",
+            "saving": "Prihranite",
             "price": {
-              "label": "Cena z bonusi",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cena z bonusi"
             }
           }
         ]
@@ -866,32 +763,30 @@
     }
   },
   "order": {
-    "title": "Vaš bonus 80 € je aktiviran!",
-    "special": "Posebna akcija",
+    "title": {
+      "beforePrice": "Vaš bonus",
+      "afterPrice": "je aktiviran!"
+    },
+    "tags": [
+      {
+        "packs": 4,
+        "tag": "Set (4 kosi):"
+      },
+      {
+        "packs": 6,
+        "tag": "Set (6 kosi):"
+      }
+    ],
     "niches": {
       "joints": {
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -899,25 +794,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -925,25 +806,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -951,25 +818,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -977,25 +830,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -1003,29 +842,16 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kosi): 167 € - 80 € = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kosi): 218€ - 80€ = ",
-              "discount": "Vaši evro bonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       }
     },
+    "special": "Posebna akcija",
     "btnSubmit": "Potrdi naročilo"
   },
   "thankYou": {

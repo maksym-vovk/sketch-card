@@ -1,0 +1,33 @@
+-
+    const pricing = {
+        currency: {
+            full: "euros",
+            short: "€"
+        },
+        courses: {
+            "4packs": {
+                originalPrice: 167,
+                discount: 80,
+                finalPrice: 87
+            },
+            "6packs": {
+                originalPrice: 179,
+                discount: 80,
+                finalPrice: 99
+            }
+        }
+    };
+
+    function getCoursePrice(packs) {
+        const key = `${packs}packs`;
+        const course = pricing.courses[key];
+
+        if (!course) {
+            console.warn(`Course pack "${key}" not found`);
+            return null;
+        }
+
+        return Object.assign({}, course, {
+            currency: pricing.currency
+        });
+    }
