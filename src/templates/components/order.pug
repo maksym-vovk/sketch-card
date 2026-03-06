@@ -34,9 +34,9 @@ section.order.block(class="screen hidden" id="screen-order")
                         span.icon
                             img(src=basePath + "img/phone-icon.svg" alt="")
 
-                button.order__submit(type="submit" id="submit-order-form")= t.order.btnSubmit
+                button.order__submit.btn-arrow.btn-arrow--right(type="submit" id="submit-order-form")= t.order.btnSubmit
 
                 p.order__privacy= t.common.privacyProtected
 
-            button.order__next.btn(type="button" data-target-screen="screen-course" id="from-order-form-to-course")!= 'Вибрати інший курс'
+            button.order__next.btn.btn-arrow.btn-arrow--left.btn-arrow--double.btn-arrow--black(type="button" data-target-screen="screen-course" id="from-order-form-to-course")!= 'Вибрати інший курс'
 
