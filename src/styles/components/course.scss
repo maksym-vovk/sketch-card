@@ -82,6 +82,33 @@
   margin: 12px 0;
 }
 
+.option-content .price {
+  width: fit-content;
+  padding: 10px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  background: green;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  margin: 0 auto 30px;
+  line-height: 1.3;
+
+  @include rm(375){
+    font-size: 20px;
+  }
+  @include rm(425){
+    font-size: 23px;
+  }
+
+
+  @include rm(1024){
+    width: fit-content;
+    font-size: 23px;
+  }
+}
+
 .subtitle {
   font-size: 20px;
   font-weight: bold;

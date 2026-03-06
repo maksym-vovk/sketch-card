@@ -93,6 +93,7 @@
             "products": [
               {
                 "name": "Dialos",
+                "amount": "(2 packs)",
                 "description": "pomaga ohranjati raven sladkorja v mejah normale."
               },
               {
@@ -105,6 +106,7 @@
               },
               {
                 "name": "Guavital+",
+                "amount": "(2 packs)",
                 "description": "pomaga zmanjšati stalno željo po prigrizkih."
               }
             ]
@@ -143,10 +145,12 @@
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "pomaga zmanjšati otekline in odstraniti odvečno tekočino iz telesa."
               },
               {
                 "name": "Tonerin",
+                "amount": "(2 packs)",
                 "description": "pomaga ohranjati krvni tlak pod nadzorom."
               },
               {
@@ -185,6 +189,7 @@
             "products": [
               {
                 "name": "Slimital",
+                "amount": "(2 packs)",
                 "description": "pomaga nadzorovati apetit čez dan."
               },
               {
@@ -197,6 +202,7 @@
               },
               {
                 "name": "Ozenmic Soft",
+                "amount": "(2 packs)",
                 "description": "pomaga telesu hitreje razgrajevati hrano."
               }
             ]
@@ -235,10 +241,12 @@
               },
               {
                 "name": "Vermixin",
+                "amount": "(2 packs)",
                 "description": "prispeva k čiščenju telesa pred paraziti in normalnemu delovanju prebavnega sistema."
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "pomaga prebavi delovati brez motenj."
               },
               {
@@ -285,10 +293,12 @@
               },
               {
                 "name": "Tonerin",
+                "amount": "(2 packs)",
                 "description": "za zaščito žil in srca."
               },
               {
                 "name": "Ultraxal",
+                "amount": "(2 packs)",
                 "description": "za dobro prebavo in občutek lahkotnosti."
               }
             ]
@@ -521,7 +531,7 @@
               "sklepi prejmejo potrebno prehrano za udobno gibanje."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Maksimalno udobje za sklepe»",
+            "recommendName": "«Легкий рух»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -557,7 +567,7 @@
               "povrne se energija, splošno počutje pa postane enakomerno in stabilno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Celovit nadzor sladkorja»",
+            "recommendName": "«Комплексний контроль цукру»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -593,7 +603,7 @@
               "tlak se stabilizira, glava pa postane jasna in »lahka«."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Kompleks za ožilje in ravnovesje tekočin»",
+            "recommendName": "«Здорові судини»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -629,7 +639,7 @@
               "uravna presnovo, da se teža končno začne zniževati"
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Celovit nadzor telesne teže»",
+            "recommendName": "«Базове Схуднення»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -665,7 +675,7 @@
               "začnete spati dovolj in občutite val moči, ki ga dolgo ni bilo."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Energija in ravnovesje — kompleks»",
+            "recommendName": "«Баланс енергії»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -701,7 +711,7 @@
               "zaščito vida in sluha, da se počutite samozavestno in aktivno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Celostno zdravje — maksimum»",
+            "recommendName": "«Здоров’я щодня»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
