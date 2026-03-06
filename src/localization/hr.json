@@ -337,16 +337,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "99€",
-            "discount": "-50€",
+            "badge": "You save",
             "subtitle": "Комплекс для суглобів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "138€",
-            "discount": "-100€",
+            "badge": "You save",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
@@ -360,16 +356,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "89€",
-            "discount": "-40€",
+            "badge": "You save",
             "subtitle": "Комплекс при діабеті - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "139€",
-            "discount": "-85€",
+            "badge": "You save",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Dialos та Guavital+!",
@@ -383,16 +375,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "95€",
-            "discount": "-50€",
+            "badge": "You save",
             "subtitle": "Комплекс для тиску - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "145€",
-            "discount": "-95€",
+            "badge": "You save",
             "subtitle": "Комплекс для тиску - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Tonerin та Ultraxal!.",
@@ -406,16 +394,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "92€",
-            "discount": "-48€",
+            "badge": "You save",
             "subtitle": "Комплекс для схуднення - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "142€",
-            "discount": "-90€",
+            "badge": "You save",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
@@ -429,16 +413,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "88€",
-            "discount": "-45€",
+            "badge": "You save",
             "subtitle": "Комплекс від втоми - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "138€",
-            "discount": "-88€",
+            "badge": "You save",
             "subtitle": "Комплекс від втоми - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
@@ -452,16 +432,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "45%",
-            "price": "94€",
-            "discount": "-42€",
+            "badge": "You save",
             "subtitle": "Комплекс від паразитів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "55%",
-            "price": "144€",
-            "discount": "-80€",
+            "badge": "You save",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
@@ -548,12 +524,9 @@
             "recommendName": "«Maksimalna udobnost za zglobove»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -570,12 +543,9 @@
             "recommendName": "«Maksimalna udobnost za zglobove»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -596,12 +566,9 @@
             "recommendName": "«Sveobuhvatna kontrola šećera»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -618,12 +585,9 @@
             "recommendName": "«Sveobuhvatna kontrola šećera»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -644,12 +608,9 @@
             "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -666,12 +627,9 @@
             "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -692,12 +650,9 @@
             "recommendName": "«Sveobuhvatna kontrola težine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -714,12 +669,9 @@
             "recommendName": "«Sveobuhvatna kontrola težine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -740,12 +692,9 @@
             "recommendName": "«Set energija i ravnoteža»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -762,12 +711,9 @@
             "recommendName": "«Set energija i ravnoteža»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -788,12 +734,9 @@
             "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           },
           {
@@ -810,12 +753,9 @@
             "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite 80 EUR!",
+            "saving": "Uštedite",
             "price": {
-              "label": "Cijena s bonusima",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Cijena s bonusima"
             }
           }
         ]
@@ -823,32 +763,30 @@
     }
   },
   "order": {
-    "title": "Vaš bonus od 80 € je aktiviran!",
-    "special": "Specijalna ponuda",
+    "title": {
+      "beforePrice": "Vaš bonus od",
+      "afterPrice": "je aktiviran!"
+    },
+    "tags": [
+      {
+        "packs": 4,
+        "tag": "Set (4 kom):"
+      },
+      {
+        "packs": 6,
+        "tag": "Set (6 kom):"
+      }
+    ],
     "niches": {
       "joints": {
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -856,25 +794,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -882,25 +806,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -908,25 +818,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -934,25 +830,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -960,29 +842,16 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 kom): 167€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 kom): 218€ - 80€ = ",
-              "discount": "Vaši eurobonusi: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       }
     },
+    "special": "Specijalna ponuda",
     "btnSubmit": "Potvrditi narudžbu"
   },
   "thankYou": {

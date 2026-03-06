@@ -120,7 +120,7 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Vascular Program and Fluid Balance»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "products": [
               {
                 "name": "Kardivix",
@@ -140,12 +140,9 @@
               }
             ],
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
@@ -180,12 +177,9 @@
               }
             ],
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -371,16 +365,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "99€",
-            "discount": "-50€",
+            "badge": "You save",
             "subtitle": "Комплекс для суглобів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "138€",
-            "discount": "-100€",
+            "badge": "You save",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
@@ -394,16 +384,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "89€",
-            "discount": "-40€",
+            "badge": "You save",
             "subtitle": "Комплекс при діабеті - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "139€",
-            "discount": "-85€",
+            "badge": "You save",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Dialos та Guavital+!",
@@ -417,16 +403,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "95€",
-            "discount": "-50€",
+            "badge": "You save",
             "subtitle": "Комплекс для тиску - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "145€",
-            "discount": "-95€",
+            "badge": "You save",
             "subtitle": "Комплекс для тиску - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Tonerin та Ultraxal!.",
@@ -440,16 +422,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "92€",
-            "discount": "-48€",
+            "badge": "You save",
             "subtitle": "Комплекс для схуднення - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "142€",
-            "discount": "-90€",
+            "badge": "You save",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
@@ -463,16 +441,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "You save 80 euros!",
-            "price": "88€",
-            "discount": "-45€",
+            "badge": "You save",
             "subtitle": "Комплекс від втоми - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "You save 80 euros!",
-            "price": "138€",
-            "discount": "-88€",
+            "badge": "You save",
             "subtitle": "Комплекс від втоми - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
@@ -486,16 +460,12 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "45%",
-            "price": "94€",
-            "discount": "-42€",
+            "badge": "You save",
             "subtitle": "Комплекс від паразитів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "55%",
-            "price": "144€",
-            "discount": "-80€",
+            "badge": "You save",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
             "description": [
               "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
@@ -579,19 +549,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Maximum comfort for joints»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Joints and movement - 6",
+            "title": "Joints and movement",
             "description": "When your knees or back hurt more and more often, it's not just the joints themselves. The body often does not have enough resources to relieve stiffness. If you just wait, it won't get any easier; a comprehensive approach is needed. ",
             "benefitsTitle": "How recovery works:",
             "benefitsList": [
@@ -603,12 +570,9 @@
             "recommendName": "«Maximum comfort for joints»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -627,19 +591,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Comprehensive Sugar Control»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Sugar Balance Kit - 6",
+            "title": "Sugar Balance Kit",
             "description": "Constant cravings for sweets are a signal that the body is having difficulty maintaining energy balance. Sudden spikes in sugar are debilitating, so it's important to act gently and stress-free.",
             "benefitsTitle": "What you will achieve in the course:",
             "benefitsList": [
@@ -651,12 +612,9 @@
             "recommendName": "«Comprehensive Sugar Control»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -675,19 +633,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Vascular Program and Fluid Balance»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Pressure and Blood  - 6Vessels Kit",
+            "title": "Pressure and Blood Vessels Kit",
             "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
             "benefitsTitle": "How the body returns to normal:",
             "benefitsList": [
@@ -699,12 +654,9 @@
             "recommendName": "«Vascular Program and Fluid Balance»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -723,19 +675,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Overall Weight Control»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Weight Control Kit - 6",
+            "title": "Weight Control Kit",
             "description": "When weight “stagnates,” it’s a very common situation, especially with age. It is harder for the body to break down food than before. That is why it is important to choose the right course, and not expect a miracle in one day.",
             "benefitsTitle": "Usually the body acts step by step:",
             "benefitsList": [
@@ -747,12 +696,9 @@
             "recommendName": "«Overall Weight Control»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -771,19 +717,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Energy and Balance Program»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Fatigue Kit ( - 6Energy)",
+            "title": "Fatigue Kit (Energy)",
             "description": "Feeling \"broken\" in the morning often means that the body has accumulated too much excess and simply cannot cope with it. Regular coffee won't help here — you need to clean your system from the inside.",
             "benefitsTitle": "How energy is returned:",
             "benefitsList": [
@@ -795,12 +738,9 @@
             "recommendName": "«Energy and Balance Program»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -819,19 +759,16 @@
             ],
             "recommendTitle": "We have selected a set for you:",
             "recommendName": "«Overall Health Improvement - Maximum»",
-            "recommendExtra":  "Extra text for 6 packs course",
+            "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           },
           {
             "packs": 6,
-            "title": "Overall health improvement - 6",
+            "title": "Overall health improvement",
             "description": "When all the body's systems begin to fail — vision, hearing, heart — the body simply needs a general reboot. It's like a major overhaul that's better done on time.",
             "benefitsTitle": "What a comprehensive approach provides:",
             "benefitsList": [
@@ -843,12 +780,9 @@
             "recommendName": "«Overall Health Improvement - Maximum»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
-            "saving": "You save 80 euros!",
+            "saving": "You save",
             "price": {
-              "label": "Price with bonuses",
-              "calculation": "167 - 80",
-              "amount": 87,
-              "currency": "euros"
+              "label": "Price with bonuses"
             }
           }
         ]
@@ -856,31 +790,30 @@
     }
   },
   "order": {
-    "title": "Your €80 bonus has been activated!",
+    "title": {
+      "beforePrice": "Your",
+      "afterPrice": "bonus has been activated!"
+    },
+    "tags": [
+      {
+        "packs": 4,
+        "tag": "Set (4 units.):"
+      },
+      {
+        "packs": 6,
+        "tag": "Set (6 units.):"
+      }
+    ],
     "niches": {
       "joints": {
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -888,25 +821,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -914,25 +833,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -940,25 +845,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -966,25 +857,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       },
@@ -992,25 +869,11 @@
         "courses": [
           {
             "packs": 4,
-            "offer": {
-              "tag": "Set (4 units.): 167€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "87 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           },
           {
             "packs": 6,
-            "offer": {
-              "tag": "Set (6 units.): 218€ - 80€ =",
-              "discount": "Your euro bonuses: - 80 €"
-            },
-            "price": {
-              "current": "138 €"
-            },
-            "description": "You’ll see me if you order immediately"
+            "description": "Additional text for order screen"
           }
         ]
       }
