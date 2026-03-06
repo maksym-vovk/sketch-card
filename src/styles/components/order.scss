@@ -39,10 +39,21 @@
     font-size: 20px;
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 
-    @include rm(768){
-      margin-bottom: 0;
+    //@include rm(768){
+    //  margin-bottom: 0;
+    //}
+
+    @include rm(768) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    @include rm(1024) {
+      margin-bottom: 20px;
+    }
+    @include rm(1220) {
+      margin-bottom: 50px;
     }
   }
 }
@@ -117,22 +128,19 @@
     font-size: 23px;
   }
   @include rm(768) {
-    order: 2;
+    //order: 2;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
   }
   @include rm(1024) {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     max-width: 450px;
     //margin-bottom: 40px;
   }
-  @include rm(1220) {
-    margin-bottom: 50px;
-  }
-}
 
+}
 
 .special__offer .tag,
 .order__offer .tag {

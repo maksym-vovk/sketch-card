@@ -110,17 +110,6 @@
         "courses": [
           {
             "packs": 4,
-            "title": "Pressure and Blood Vessels Kit",
-            "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
-            "benefitsTitle": "How the body returns to normal:",
-            "benefitsList": [
-              "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
-              "the walls of blood vessels are strengthened so that they respond better to weather changes;",
-              "the pressure stabilizes, and the head becomes clear and \"light\"."
-            ],
-            "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Vascular Program and Fluid Balance»",
-            "recommendExtra": "Extra text for 6 packs course",
             "products": [
               {
                 "name": "Kardivix",
@@ -138,26 +127,10 @@
                 "name": "Guavital+",
                 "description": "removes excess salt and improves metabolism."
               }
-            ],
-            "footnote": "Bonuses will be applied automatically",
-            "saving": "You save",
-            "price": {
-              "label": "Price with bonuses"
-            }
+            ]
           },
           {
             "packs": 6,
-            "title": "Pressure and Blood  - 6Vessels Kit",
-            "description": "If your blood pressure is unstable and your legs are swollen, this is a sign that your blood vessels have lost their elasticity and your heart is having a hard time working. Do not ignore these signals.",
-            "benefitsTitle": "How the body returns to normal:",
-            "benefitsList": [
-              "first, excess water comes out (swelling and feeling of heaviness in the legs disappear);",
-              "the walls of blood vessels are strengthened so that they respond better to weather changes;",
-              "the pressure stabilizes, and the head becomes clear and \"light\"."
-            ],
-            "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Vascular Program and Fluid Balance»",
-            "recommendExtra": "Extra text for 6 packs course",
             "products": [
               {
                 "name": "Kardivix",
@@ -175,12 +148,7 @@
                 "name": "Guavital+",
                 "description": "removes excess salt and improves metabolism."
               }
-            ],
-            "footnote": "Bonuses will be applied automatically",
-            "saving": "You save",
-            "price": {
-              "label": "Price with bonuses"
-            }
+            ]
           }
         ]
       },
@@ -366,12 +334,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс для суглобів - 4 пакети"
+            "subtitle": "Легкий рух"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс для суглобів - 6 пакетів",
+            "subtitle": "Свобода рухів на максимум",
             "description": [
               "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
               "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє тривалому відчуттю легкості та допомагає підтримувати гнучкість щодня!"
@@ -385,12 +353,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс при діабеті - 4 пакети"
+            "subtitle": "Комплексний контроль цукру"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс при діабеті - 6 пакетів",
+            "subtitle": "Максимальний баланс цукру та енергія",
             "description": [
               "Посилений курс із додатковими упаковками Dialos та Guavital+!",
               "Довша підтримка допомагає організму м’якше звикнути до нового режиму харчування! Це сприяє стабільному рівню енергії протягом дня."
@@ -404,12 +372,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс для тиску - 4 пакети"
+            "subtitle": "Здорові судини"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс для тиску - 6 пакетів",
+            "subtitle": "Чисте серце та судини",
             "description": [
               "Посилений курс із додатковими упаковками Tonerin та Ultraxal!.",
               "Сприяє кращій адаптації до змін погоди та допомагає підтримувати ясність голови."
@@ -423,12 +391,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс для схуднення - 4 пакети"
+            "subtitle": "Базове Схуднення"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс для схуднення - 6 пакетів",
+            "subtitle": "Повне перевтілення",
             "description": [
               "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
               "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
@@ -442,12 +410,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс від втоми - 4 пакети"
+            "subtitle": "Баланс енергії"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс від втоми - 6 пакетів",
+            "subtitle": "Енергія 24/7",
             "description": [
               "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
               "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу."
@@ -461,12 +429,12 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Комплекс від паразитів - 4 пакети"
+            "subtitle": "Здоров’я щодня"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Комплекс від паразитів - 6 пакетів",
+            "subtitle": "Золотий стандарт здоров'я",
             "description": [
               "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
               "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню організму."
@@ -567,7 +535,7 @@
               "joints receive the necessary nutrition to move comfortably."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Maximum comfort for joints»",
+            "recommendName": "«Свобода рухів на максимум»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -609,7 +577,7 @@
               "strength appears, and the overall state of health becomes even and stable."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Comprehensive Sugar Control»",
+            "recommendName": "«Максимальний баланс цукру та енергія»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -651,7 +619,7 @@
               "the pressure stabilizes, and the head becomes clear and \"light\"."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Vascular Program and Fluid Balance»",
+            "recommendName": "«Чисте серце та судини»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -693,7 +661,7 @@
               "adjusts the metabolism so that the weight finally begins to melt away."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Overall Weight Control»",
+            "recommendName": "«Повне перевтілення»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -735,7 +703,7 @@
               "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Energy and Balance Program»",
+            "recommendName": "«Енергія 24/7»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -777,7 +745,7 @@
               "protect your vision and hearing to make you feel confident and active."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "«Overall Health Improvement - Maximum»",
+            "recommendName": "«Золотий стандарт здоров'я»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save",
@@ -809,11 +777,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Приєднуйтесь до тисяч наших клієнтів, які вже повернули собі легкість рухів»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Приєднуйтесь до тисяч наших клієнтів, які вже повернули собі легкість рухів»"
           }
         ]
       },
@@ -821,11 +789,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Оберіть життя без постійних \"гойдалок\" цукру та втоми»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Оберіть життя без постійних \"гойдалок\" цукру та втоми»"
           }
         ]
       },
@@ -833,11 +801,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Подаруйте собі гарне самопочуття та забудьте про важкість у ногах!»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Подаруйте собі гарне самопочуття та забудьте про важкість у ногах!»"
           }
         ]
       },
@@ -845,11 +813,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Вже за два тижні відображення у дзеркалі почне вас щиро радувати!»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Вже за два тижні відображення у дзеркалі почне вас щиро радувати!»"
           }
         ]
       },
@@ -857,11 +825,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Прокидайтеся з новими силами та бажанням жити на повну!»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Прокидайтеся з новими силами та бажанням жити на повну!»"
           }
         ]
       },
@@ -869,11 +837,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "Additional text for order screen"
+            "description": "«Подбайте про свій організм сьогодні, щоб він віддячив вам чудовим самопочуттям щодня!»"
           },
           {
             "packs": 6,
-            "description": "Additional text for order screen"
+            "description": "«Подбайте про свій організм сьогодні, щоб він віддячив вам чудовим самопочуттям щодня!»"
           }
         ]
       }

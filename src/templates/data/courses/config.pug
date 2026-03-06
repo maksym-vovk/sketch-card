@@ -174,8 +174,25 @@
                     packs === 4 && {
                         tag: 'ul',
                         children: courseData.products.map(product => ({
+
                             tag: 'li',
-                            text: `${product.name} - ${product.description}`
+                            children: [
+                                {
+                                    tag: 'div',
+                                    className: 'product__content',
+                                    children: [
+                                        {
+                                            className: 'text-bold',
+                                            tag: 'b',
+                                            text: product.name
+                                        },
+                                        {
+                                            tag: 'span',
+                                            text: ` — ${product.description}`
+                                        }
+                                    ]
+                                }
+                            ]
                         }))
                     },
                     packs === 6 && {
