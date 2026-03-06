@@ -5,7 +5,10 @@
     "promoCodePlaceholder": "Promotivni kod",
     "namePlaceholder": "Ime",
     "phonePlaceholder": "Telefon",
-    "privacyProtected": "Vaši osobni podaci su zaštićeni"
+    "privacyProtected": "Vaši osobni podaci su zaštićeni",
+    "price": {
+      "bonuses": "Cijena s bonusima"
+    }
   },
   "validation": {
     "phone": {
@@ -42,10 +45,12 @@
             "products": [
               {
                 "name": "Cardiform",
+                "amount": "(2 packs)",
                 "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
               },
               {
                 "name": "Steplex",
+                "amount": "(2 packs)",
                 "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
               },
               {
@@ -519,10 +524,7 @@
             "recommendName": "«Maksimalna udobnost za zglobove»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -538,10 +540,7 @@
             "recommendName": "«Свобода рухів на максимум»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       },
@@ -561,10 +560,7 @@
             "recommendName": "«Sveobuhvatna kontrola šećera»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -580,10 +576,7 @@
             "recommendName": "«Максимальний баланс цукру та енергія»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       },
@@ -603,10 +596,7 @@
             "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -622,10 +612,7 @@
             "recommendName": "«Чисте серце та судини»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       },
@@ -645,10 +632,7 @@
             "recommendName": "«Sveobuhvatna kontrola težine»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -664,10 +648,7 @@
             "recommendName": "«Повне перевтілення»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       },
@@ -687,10 +668,7 @@
             "recommendName": "«Set energija i ravnoteža»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -706,10 +684,7 @@
             "recommendName": "«Енергія 24/7»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       },
@@ -729,10 +704,7 @@
             "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           },
           {
             "packs": 6,
@@ -748,10 +720,7 @@
             "recommendName": "«Золотий стандарт здоров'я»",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
-            "saving": "Uštedite",
-            "price": {
-              "label": "Cijena s bonusima"
-            }
+            "saving": "Uštedite"
           }
         ]
       }
