@@ -128,3 +128,10 @@
     margin: 0 auto;
   }
 }
+
+.course-option__description {
+  font-size: 18px;
+}
+.course-option__description:not(:last-of-type) {
+  margin-bottom: 15px;
+}

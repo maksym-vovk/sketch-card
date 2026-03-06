@@ -12,6 +12,289 @@
       "patternTitle": "Unesite najmanje 7 znamenki"
     }
   },
+  "productList": {
+    "niches": {
+      "joints": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Cardiform",
+                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
+              },
+              {
+                "name": "Steplex",
+                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
+              },
+
+              {
+                "name": "Guavital+",
+                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
+              }
+            ]
+          }
+        ]
+      },
+      "diabetes": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaže u održavanju normalne razine šećera u krvi."
+              },
+              {
+                "name": "Inspicure",
+                "description": "pomaže da se osjećate stabilno i veselo."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaže smanjiti želju za stalnim grickanjem."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Dialos",
+                "description": "pomaže u održavanju normalne razine šećera u krvi."
+              },
+              {
+                "name": "Inspicure",
+                "description": "pomaže da se osjećate stabilno i veselo."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
+              },
+              {
+                "name": "Guavital+",
+                "description": "pomaže smanjiti želju za stalnim grickanjem."
+              }
+            ]
+          }
+        ]
+      },
+      "blood-pressure": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaže držati krvni tlak pod kontrolom."
+              },
+              {
+                "name": "Guavital+",
+                "description": "uklanja višak soli i poboljšava metabolizam."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Kardivix",
+                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
+              },
+              {
+                "name": "Tonerin",
+                "description": "pomaže držati krvni tlak pod kontrolom."
+              },
+              {
+                "name": "Guavital+",
+                "description": "uklanja višak soli i poboljšava metabolizam."
+              }
+            ]
+          }
+        ]
+      },
+      "weight-loss": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaže u suzbijanju apetita tijekom dana."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi da radi kao sat."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaže tijelu brže razgrađivati hranu."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Slimital",
+                "description": "pomaže u suzbijanju apetita tijekom dana."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi da radi kao sat."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Ozenmic Soft",
+                "description": "pomaže tijelu brže razgrađivati hranu."
+              }
+            ]
+          }
+        ]
+      },
+      "tiredness": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vraća energiju i dobro raspoloženje."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi raditi bez zastoja."
+              },
+              {
+                "name": "Slimital",
+                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Guavital+",
+                "description": "vraća energiju i dobro raspoloženje."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "pomaže probavi raditi bez zastoja."
+              },
+              {
+                "name": "Slimital",
+                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
+              }
+            ]
+          }
+        ]
+      },
+      "parasites": {
+        "courses": [
+          {
+            "packs": 4,
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podržava jasnoću sluha i bistru glavu."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaštitu krvnih žila i srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "za dobru probavu i lakoću."
+              }
+            ]
+          },
+          {
+            "packs": 6,
+            "products": [
+              {
+                "name": "Ausen",
+                "description": "podržava jasnoću sluha i bistru glavu."
+              },
+              {
+                "name": "Vermixin",
+                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
+              },
+              {
+                "name": "Tonerin",
+                "description": "za zaštitu krvnih žila i srca."
+              },
+              {
+                "name": "Ultraxal",
+                "description": "za dobru probavu i lakoću."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+
   "intro": {
     "title": "Vaš poklon čeka: aktivirajte eurobonuse",
     "text1": "Dobili ste",
@@ -45,6 +328,7 @@
       "text": "Aktivirati bonuse"
     }
   },
+
   "course": {
     "title": "Вибір курсу",
     "niches": {
@@ -53,38 +337,20 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "You save 80 euros!",
             "price": "99€",
             "discount": "-50€",
-            "subtitle": "Комплекс для суглобів - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс для суглобів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "You save 80 euros!",
             "price": "138€",
             "discount": "-100€",
             "subtitle": "Комплекс для суглобів - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
+              "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє тривалому відчуттю легкості та допомагає підтримувати гнучкість щодня!"
             ]
           }
         ]
@@ -94,38 +360,20 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "You save 80 euros!",
             "price": "89€",
             "discount": "-40€",
-            "subtitle": "Комплекс при діабеті - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс при діабеті - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "You save 80 euros!",
             "price": "139€",
             "discount": "-85€",
             "subtitle": "Комплекс при діабеті - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Dialos та Guavital+!",
+              "Довша підтримка допомагає організму м’якше звикнути до нового режиму харчування! Це сприяє стабільному рівню енергії протягом дня."
             ]
           }
         ]
@@ -135,38 +383,20 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "You save 80 euros!",
             "price": "95€",
             "discount": "-50€",
-            "subtitle": "Комплекс для тиску - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс для тиску - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "You save 80 euros!",
             "price": "145€",
             "discount": "-95€",
             "subtitle": "Комплекс для тиску - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Tonerin та Ultraxal!.",
+              "Сприяє кращій адаптації до змін погоди та допомагає підтримувати ясність голови."
             ]
           }
         ]
@@ -176,32 +406,14 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "You save 80 euros!",
             "price": "92€",
             "discount": "-48€",
-            "subtitle": "Комплекс для схуднення - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс для схуднення - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "You save 80 euros!",
             "price": "142€",
             "discount": "-90€",
             "subtitle": "Комплекс для схуднення - 6 пакетів",
@@ -217,38 +429,20 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "You save 80 euros!",
             "price": "88€",
             "discount": "-45€",
-            "subtitle": "Комплекс від втоми - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс від втоми - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "You save 80 euros!",
             "price": "138€",
             "discount": "-88€",
             "subtitle": "Комплекс від втоми - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
+              "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу."
             ]
           }
         ]
@@ -258,38 +452,20 @@
         "courses": [
           {
             "packs": 4,
-            "badge": "Uštedite 80 EUR!",
+            "badge": "45%",
             "price": "94€",
             "discount": "-42€",
-            "subtitle": "Комплекс від паразитів - 4 пакети",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "removes the feeling of heaviness and improves blood circulation."
-              },
-              {
-                "name": "Steplex",
-                "description": "helps relieve pain and make it easier for joints to move."
-              },
-              {
-                "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
-              }
-            ]
+            "subtitle": "Комплекс від паразитів - 4 пакети"
           },
           {
             "packs": 6,
-            "badge": "Uštedite 90 EUR!",
+            "badge": "55%",
             "price": "144€",
             "discount": "-80€",
             "subtitle": "Комплекс від паразитів - 6 пакетів",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
+              "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню організму."
             ]
           }
         ]
@@ -297,6 +473,7 @@
     },
     "btnSelect": "Оберіть цей комплекс →"
   },
+
   "problems": {
     "title": "Odaberite područje koje vas zanima:",
     "btnNext": "Dalje",
@@ -370,25 +547,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Maksimalna udobnost za zglobove»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
-              },
-              {
-                "name": "Steplex",
-                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -411,25 +569,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Maksimalna udobnost za zglobove»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Cardiform",
-                "description": "uklanja osjećaj težine i poboljšava cirkulaciju krvi."
-              },
-              {
-                "name": "Steplex",
-                "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
-              },
-
-              {
-                "name": "Guavital+",
-                "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "poboljšava rad želuca tako da se sve korisno bolje apsorbira."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -456,24 +595,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna kontrola šećera»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Dialos",
-                "description": "pomaže u održavanju normalne razine šećera u krvi."
-              },
-              {
-                "name": "Inspicure",
-                "description": "pomaže da se osjećate stabilno i veselo."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
-              },
-              {
-                "name": "Guavital+",
-                "description": "pomaže smanjiti želju za stalnim grickanjem."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -496,24 +617,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna kontrola šećera»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Dialos",
-                "description": "pomaže u održavanju normalne razine šećera u krvi."
-              },
-              {
-                "name": "Inspicure",
-                "description": "pomaže da se osjećate stabilno i veselo."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "brine o zdravlju probavnog sustava i osjećaju lakoće."
-              },
-              {
-                "name": "Guavital+",
-                "description": "pomaže smanjiti želju za stalnim grickanjem."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -540,24 +643,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Kardivix",
-                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
-              },
-              {
-                "name": "Tonerin",
-                "description": "pomaže držati krvni tlak pod kontrolom."
-              },
-              {
-                "name": "Guavital+",
-                "description": "uklanja višak soli i poboljšava metabolizam."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -580,24 +665,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Set za krvne žile i ravnotežu tekućine»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Kardivix",
-                "description": "pomaže poboljšati cirkulaciju krvi i očistiti krvne žile."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže u uklanjanju oteklina i viška vode iz tijela."
-              },
-              {
-                "name": "Tonerin",
-                "description": "pomaže držati krvni tlak pod kontrolom."
-              },
-              {
-                "name": "Guavital+",
-                "description": "uklanja višak soli i poboljšava metabolizam."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -624,24 +691,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna kontrola težine»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Slimital",
-                "description": "pomaže u suzbijanju apetita tijekom dana."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže probavi da radi kao sat."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-              },
-              {
-                "name": "Ozenmic Soft",
-                "description": "pomaže tijelu brže razgrađivati hranu."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -664,24 +713,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna kontrola težine»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Slimital",
-                "description": "pomaže u suzbijanju apetita tijekom dana."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže probavi da radi kao sat."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-              },
-              {
-                "name": "Ozenmic Soft",
-                "description": "pomaže tijelu brže razgrađivati hranu."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -708,24 +739,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Set energija i ravnoteža»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Guavital+",
-                "description": "vraća energiju i dobro raspoloženje."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže probavi raditi bez zastoja."
-              },
-              {
-                "name": "Slimital",
-                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -748,24 +761,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Set energija i ravnoteža»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Guavital+",
-                "description": "vraća energiju i dobro raspoloženje."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od parazita i normalizaciji rada gastrointestinalnog trakta."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "pomaže probavi raditi bez zastoja."
-              },
-              {
-                "name": "Slimital",
-                "description": "održava Vas u formi i sprječava dobivanje viška kilograma zbog umora."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -792,24 +787,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Ausen",
-                "description": "podržava jasnoću sluha i bistru glavu."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-              },
-              {
-                "name": "Tonerin",
-                "description": "za zaštitu krvnih žila i srca."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "za dobru probavu i lakoću."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
@@ -832,24 +809,6 @@
             "recommendTitle": "Odabrali smo za Vas set:",
             "recommendName": "«Sveobuhvatna zdravstvena njega — maksimum»",
             "recommendExtra": "Extra text for 6 packs course",
-            "products": [
-              {
-                "name": "Ausen",
-                "description": "podržava jasnoću sluha i bistru glavu."
-              },
-              {
-                "name": "Vermixin",
-                "description": "pomaže u čišćenju tijela od svih nepotrebnih tvari."
-              },
-              {
-                "name": "Tonerin",
-                "description": "za zaštitu krvnih žila i srca."
-              },
-              {
-                "name": "Ultraxal",
-                "description": "za dobru probavu i lakoću."
-              }
-            ],
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite 80 EUR!",
             "price": {
