@@ -27,7 +27,6 @@
                 "name": "Steplex",
                 "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
               },
-
               {
                 "name": "Guavital+",
                 "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
@@ -49,7 +48,6 @@
                 "name": "Steplex",
                 "description": "pomaže ublažiti bol i olakšati pokretljivost zglobova."
               },
-
               {
                 "name": "Guavital+",
                 "description": "pomaže u smanjenju utjecaja prekomjerne težine na zglobove."
@@ -294,7 +292,6 @@
       }
     }
   },
-
   "intro": {
     "title": "Vaš poklon čeka: aktivirajte eurobonuse",
     "text1": "Dobili ste",
@@ -328,7 +325,6 @@
       "text": "Aktivirati bonuse"
     }
   },
-
   "course": {
     "title": "Вибір курсу",
     "niches": {
@@ -449,7 +445,6 @@
     },
     "btnSelect": "Оберіть цей комплекс →"
   },
-
   "problems": {
     "title": "Odaberite područje koje vas zanima:",
     "btnNext": "Dalje",
