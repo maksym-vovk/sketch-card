@@ -31,33 +31,28 @@
 .order-card__content {
   @include rm(768) {
     display: contents;
-    //flex-wrap: wrap;
   }
 
   //for additional info
   &--additional .order-additional {
-    font-size: 20px;
     display: block;
-    width: 100%;
-    //margin-bottom: 20px;
-
-    //@include rm(768){
-    //  margin-bottom: 0;
-    //}
-
-    @include rm(768) {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    @include rm(1024) {
-      margin-bottom: 20px;
-    }
-    @include rm(1220) {
-      margin-bottom: 50px;
-    }
   }
 }
+.order__description {
+  width: 100%;
+  font-size: 20px;
 
+  @include rm(768) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  @include rm(1024) {
+    margin-bottom: 20px;
+  }
+  @include rm(1220) {
+    margin-bottom: 50px;
+  }
+}
 
 .order__title {
   width: 100%;
