@@ -8,7 +8,6 @@
             courses: {
                 4: {
                     badge: nichesLocale.joints.courses[0].badge,
-                    price: nichesLocale.joints.courses[0].price,
                     discount: nichesLocale.joints.courses[0].discount,
                     subtitle: nichesLocale.joints.courses[0].subtitle,
                     products: nichesProductList.joints.courses[0].products,
@@ -16,7 +15,6 @@
                 },
                 6: {
                     badge: nichesLocale.joints.courses[1].badge,
-                    price: nichesLocale.joints.courses[1].price,
                     discount: nichesLocale.joints.courses[1].discount,
                     subtitle: nichesLocale.joints.courses[1].subtitle,
                     description: nichesLocale.joints.courses[1].description,
@@ -29,7 +27,6 @@
             courses: {
                 4: {
                     badge: nichesLocale.diabetes.courses[0].badge,
-                    price: nichesLocale.diabetes.courses[0].price,
                     discount: nichesLocale.diabetes.courses[0].discount,
                     subtitle: nichesLocale.diabetes.courses[0].subtitle,
                     products: nichesProductList.diabetes.courses[0].products,
@@ -37,7 +34,6 @@
                 },
                 6: {
                     badge: nichesLocale.diabetes.courses[1].badge,
-                    price: nichesLocale.diabetes.courses[1].price,
                     discount: nichesLocale.diabetes.courses[1].discount,
                     subtitle: nichesLocale.diabetes.courses[1].subtitle,
                     description: nichesLocale.diabetes.courses[1].description,
@@ -50,7 +46,6 @@
             courses: {
                 4: {
                     badge: nichesLocale['blood-pressure'].courses[0].badge,
-                    price: nichesLocale['blood-pressure'].courses[0].price,
                     discount: nichesLocale['blood-pressure'].courses[0].discount,
                     subtitle: nichesLocale['blood-pressure'].courses[0].subtitle,
                     products: nichesProductList['blood-pressure'].courses[0].products,
@@ -58,7 +53,6 @@
                 },
                 6: {
                     badge: nichesLocale['blood-pressure'].courses[1].badge,
-                    price: nichesLocale['blood-pressure'].courses[1].price,
                     discount: nichesLocale['blood-pressure'].courses[1].discount,
                     subtitle: nichesLocale['blood-pressure'].courses[1].subtitle,
                     description: nichesLocale['blood-pressure'].courses[1].description,
@@ -71,7 +65,6 @@
             courses: {
                 4: {
                     badge: nichesLocale['weight-loss'].courses[0].badge,
-                    price: nichesLocale['weight-loss'].courses[0].price,
                     discount: nichesLocale['weight-loss'].courses[0].discount,
                     subtitle: nichesLocale['weight-loss'].courses[0].subtitle,
                     products: nichesProductList['weight-loss'].courses[0].products,
@@ -79,7 +72,6 @@
                 },
                 6: {
                     badge: nichesLocale['weight-loss'].courses[1].badge,
-                    price: nichesLocale['weight-loss'].courses[1].price,
                     discount: nichesLocale['weight-loss'].courses[1].discount,
                     subtitle: nichesLocale['weight-loss'].courses[1].subtitle,
                     description: nichesLocale['weight-loss'].courses[1].description,
@@ -92,7 +84,6 @@
             courses: {
                 4: {
                     badge: nichesLocale.tiredness.courses[0].badge,
-                    price: nichesLocale.tiredness.courses[0].price,
                     discount: nichesLocale.tiredness.courses[0].discount,
                     subtitle: nichesLocale.tiredness.courses[0].subtitle,
                     products: nichesProductList.tiredness.courses[0].products,
@@ -100,7 +91,6 @@
                 },
                 6: {
                     badge: nichesLocale.tiredness.courses[1].badge,
-                    price: nichesLocale.tiredness.courses[1].price,
                     discount: nichesLocale.tiredness.courses[1].discount,
                     subtitle: nichesLocale.tiredness.courses[1].subtitle,
                     description: nichesLocale.tiredness.courses[1].description,
@@ -113,7 +103,6 @@
             courses: {
                 4: {
                     badge: nichesLocale.parasites.courses[0].badge,
-                    price: nichesLocale.parasites.courses[0].price,
                     discount: nichesLocale.parasites.courses[0].discount,
                     subtitle: nichesLocale.parasites.courses[0].subtitle,
                     products: nichesProductList.parasites.courses[0].products,
@@ -121,7 +110,6 @@
                 },
                 6: {
                     badge: nichesLocale.parasites.courses[1].badge,
-                    price: nichesLocale.parasites.courses[1].price,
                     discount: nichesLocale.parasites.courses[1].discount,
                     subtitle: nichesLocale.parasites.courses[1].subtitle,
                     description: nichesLocale.parasites.courses[1].description,
@@ -134,6 +122,7 @@
     function createCourseOption(niche, packs, complexNumber) {
         const config = COURSE_CONFIG[niche];
         const courseData = config.courses[packs];
+        const pricing = getCoursePrice(packs);
 
         return [
             {
@@ -170,7 +159,7 @@
                     {
                         tag: 'div',
                         className: 'price',
-                        text: courseData.price
+                        text: pricing.finalPrice + pricing.currency.short
                     },
                     // courseData.discount && {
                     //     tag: 'div',
