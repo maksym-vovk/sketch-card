@@ -135,18 +135,21 @@
   }
 }
 
-.course__problems,
+
 .course__details {
-  background: #fff;
-  color: #8b0000;
   margin-bottom: 15px;
 }
 
 .course__details {
-  margin-top: auto;
+  margin-top: 20px;
+ @include rm(1024){
+   margin-top: auto;
+ }
 }
 
 .course__problems {
+  background: #fff;
+  color: #8b0000;
   margin-bottom: 0;
 
   @include rm(1024) {
@@ -162,3 +165,4 @@
 .course-option__description:not(:last-of-type) {
   margin-bottom: 15px;
 }
+

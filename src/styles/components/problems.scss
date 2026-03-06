@@ -306,48 +306,41 @@
 }
 
 .accordion-content__btn {
-  //background: #fff;
-  //padding: 10px 20px;
-  //font-size: 20px;
-  ////margin: 15px 0 0;
-  //width: 100%;
-  //border-radius: 9px;
-  //font-weight: 300;
   position: relative;
-  ////color: #000;
-  //text-align: center;
-  //background: #e63900;
-  //color: #ffffff;
-  //cursor: pointer;
 
   max-width: 320px;
   margin: 0 auto;
   margin-top: 15px;
 }
-.accordion-content__btn:before, .accordion-content__btn:after{
-  content: '';
-  background: url("../../img/arrow3.svg") 0 center no-repeat;
-  height: 40px;
-  position: absolute;
-  top: 3px;
-  width: 40px;
-  -webkit-background-size: 30px;
-  background-size: 30px;
-  pointer-events: none;
+.accordion-content__btn:before {
+  transform: rotateZ(0deg);
+  background-size: auto;
+  right: 0;
+  left: auto;
 }
-.accordion-content__btn:before{
-  content: none;
-  left: 20px;
-  transform: rotateZ(45deg);
-  background-position-y: 12px;
-
-}
-.accordion-content__btn:after{
-  right: 20px;
-  transform: rotateZ(-315deg);
-  background-position-y: 15px;
-
-}
+//.accordion-content__btn:after{
+//  content: '';
+//  background: url("../../img/arrow3.svg") 0 center no-repeat;
+//  height: 40px;
+//  position: absolute;
+//  top: 3px;
+//  width: 40px;
+//  -webkit-background-size: 30px;
+//  background-size: 30px;
+//  pointer-events: none;
+//}
+//.accordion-content__btn:before{
+//  content: none;
+//  left: 20px;
+//  transform: rotateZ(45deg);
+//  background-position-y: 12px;
+//
+//}
+//.accordion-content__btn:after{
+//  right: 20px;
+//  transform: rotateZ(-315deg);
+//  background-position-y: 15px;
+//}
 
 
 .accordion-content ol {
