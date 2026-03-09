@@ -479,3 +479,10 @@ header {
 .btn-arrow--black::after {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmVyc2lvbj0iMS4wIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGUvPjxwb2x5Z29uIGZpbGw9IiMwMDAiIHBvaW50cz0iMzUgODAgNTAgNTAgMzUgMjAgNjUgNTAgMzUgODAiLz48L3N2Zz4=");
 }
+
+/* ─── цветовые вариации ─── */
+.btn-arrow--red::before,
+.btn-arrow--red::after {
+  top: 2px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZmlsbD0iIzhiMDAwMCIgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlLz48cG9seWdvbiBwb2ludHM9IjM1IDgwIDUwIDUwIDM1IDIwIDY1IDUwIDM1IDgwIi8+PC9zdmc+);
+}
