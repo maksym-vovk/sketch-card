@@ -88,7 +88,7 @@
 }
 
 .option-content .price {
-  width: fit-content;
+  width: 100%;
   padding: 10px;
   //padding-left: 20px;
   //padding-right: 20px;
@@ -104,13 +104,18 @@
     font-size: 17px;
   }
   @include rm(425){
+
     font-size: 21px;
   }
   @include rm(480){
+
     padding: 10px 15px;
   }
 
 
+  @include rm(640){
+    width: fit-content;
+  }
   @include rm(1024){
     width: fit-content;
     font-size: 23px;
