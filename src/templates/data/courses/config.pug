@@ -178,13 +178,20 @@
                 children: [
                     {
                         tag: 'div',
-                        className: 'badge',
-                        text: `${courseData.badge} ${pricing.discount} ${pricing.currency.full}!`
+                        className: 'subtitle',
+                        text: courseData.subtitle
                     },
+
                     {
                         tag: 'div',
                         className: 'products',
-                        children: [{
+                        children: [
+                            {
+                                tag: 'div',
+                                className: 'badge',
+                                text: `${courseData.badge} ${pricing.discount} ${pricing.currency.full}!`
+                            },
+                            {
                             tag: 'img',
                             attributes: {
                                 src: basePath + `img/${courseData.image}`,
@@ -202,11 +209,7 @@
                     //     className: 'discount',
                     //     text: courseData.discount
                     // },
-                    {
-                        tag: 'div',
-                        className: 'subtitle',
-                        text: courseData.subtitle
-                    },
+
                     packs === 4 && {
                         tag: 'ul',
                         children: courseData.products.map(product => ({
