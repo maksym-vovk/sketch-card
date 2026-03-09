@@ -106,6 +106,9 @@
   @include rm(425){
     font-size: 21px;
   }
+  @include rm(480){
+    padding: 10px 15px;
+  }
 
 
   @include rm(1024){
