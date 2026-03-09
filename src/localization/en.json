@@ -46,20 +46,20 @@
               {
                 "name": "Cardiform",
                 "amount": "(2 packs)",
-                "description": "removes the feeling of heaviness and improves blood circulation."
+                "description": "підтримує здоровий кровообіг у тканинах протягом усього періоду, допомагаючи корисним речовинам краще потрапляти до суглобів."
               },
               {
                 "name": "Steplex",
                 "amount": "(2 packs)",
-                "description": "helps relieve pain and make it easier for joints to move."
+                "description": "у перші 7 днів допомагає зменшити відчуття скутості та «ломоти», а після 2-го тижня сприяє поверненню комфорту та гнучкості навіть при тривалих"
               },
               {
                 "name": "Guavital+",
-                "description": "helps reduce the impact of excess weight on joints."
+                "description": "допомагає зменшити вплив надмірної ваги на суглоби."
               },
               {
                 "name": "Ultraxal",
-                "description": "improves the functioning of the stomach, so that everything healthy is better absorbed."
+                "description": "покращує роботу шлунку, щоб усе корисне краще засвоювалось."
               }
             ]
           }
@@ -94,20 +94,20 @@
               {
                 "name": "Dialos",
                 "amount": "(2 packs)",
-                "description": "helps keep sugar normal."
+                "description": " у перші дні прийому допомагає м'яко стабілізувати рівень цукру, а після 10 днів сприяє налагодженню тривалого вуглеводного балансу в організмі."
               },
               {
                 "name": "Inspicure",
-                "description": "helps you feel stable and energetic."
+                "description": "допомагає почуватися стабільно та бадьоро."
               },
               {
                 "name": "Ultraxal",
-                "description": "takes care of the digestive system and lightness."
+                "description": "піклується про здоров’я травної системи та легкість."
               },
               {
                 "name": "Guavital+",
                 "amount": "(2 packs)",
-                "description": "helps reduce the desire to constantly eat something."
+                "description": "протягом усього курсу допомагає контролювати потяг до солодкого та частих перекусів, що формує здорові харчові звички."
               }
             ]
           }
@@ -141,21 +141,21 @@
             "products": [
               {
                 "name": "Kardivix",
-                "description": "helps improve blood circulation and purify blood vessels."
+                "description": "сприяє покращенню кровообігу та очищенню судин."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "helps remove swelling and excess water from the body."
+                "description": "допомагає організму виводити зайву сіль та воду, сприяючи зменшенню набряків ніг та обличчя."
               },
               {
                 "name": "Tonerin",
                 "amount": "(2 packs)",
-                "description": "helps keep blood pressure under control."
+                "description": "з перших днів допомагає тримати тиск під контролем, а після тривалого прийому сприяє більш спокійній та стабільній реакції судин на зміну погоди."
               },
               {
                 "name": "Guavital+",
-                "description": "removes excess salt and improves metabolism."
+                "description": "виводить зайву сіль та покращує обмін речовин."
               }
             ]
           }
@@ -190,20 +190,20 @@
               {
                 "name": "Slimital",
                 "amount": "(2 packs)",
-                "description": "helps curb your appetite throughout the day."
+                "description": "протягом перших 10 днів сприяє прискоренню метаболізму, а з 3-го тижня прийому допомагає організму запустити природний процес спалювання жирових запасів."
               },
               {
                 "name": "Ultraxal",
-                "description": "helps digestion work like clockwork."
+                "description": "допомагає травленню працювати як годинник."
               },
               {
                 "name": "Vermixin",
-                "description": "helps to cleanse the body of all excess."
+                "description": "сприяє очищенню організму від усього зайвого."
               },
               {
                 "name": "Ozenmic Soft",
                 "amount": "(2 packs)",
-                "description": "helps the body break down food faster."
+                "description": "протягом усього курсу допомагає організму якісно розщеплювати їжу, не даючи калоріям перетворюватися на «зайве»."
               }
             ]
           }
@@ -237,21 +237,21 @@
             "products": [
               {
                 "name": "Guavital+",
-                "description": "brings back energy and good mood."
+                "description": "повертає бадьорість та гарний настрій."
               },
               {
                 "name": "Vermixin",
                 "amount": "(2 packs)",
-                "description": "helps cleanse the body of parasites and normalize the functioning of the gastrointestinal tract."
+                "description": "протягом перших 10 днів сприяє глибокому детокс-очищенню, а з 3-го тижня допомагає організму відновити внутрішній захист."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "helps digestion work smoothly."
+                "description": "протягом усього курсу підтримує роботу травної системи без збоїв, що є основою для високого рівня енергії та гарного настрою."
               },
               {
                 "name": "Slimital",
-                "description": "keeps you in shape and prevents you from gaining excess weight due to fatigue."
+                "description": "підтримує форму та не дає набирати зайву вагу через втому."
               }
             ]
           }
@@ -285,21 +285,21 @@
             "products": [
               {
                 "name": "Ausen",
-                "description": "supports clear hearing and mind."
+                "description": "підтримує чіткість слуху та ясну голову."
               },
               {
                 "name": "Vermixin",
-                "description": "helps to cleanse the body of all excess."
+                "description": "сприяє очищенню організму від усього зайвого."
               },
               {
                 "name": "Tonerin",
                 "amount": "(2 packs)",
-                "description": "to protect blood vessels and the heart."
+                "description": "протягом усього курсу допомагає підтримувати стабільну роботу серця та захищає судини від перевтоми."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "for good digestion and lightness."
+                "description": "з перших днів прийому допомагає налагодити травлення, а після 20 днів сприяє зміцненню імунітету та загальної опірності організму."
               }
             ]
           }
