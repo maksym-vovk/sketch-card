@@ -423,8 +423,12 @@ header {
 
 /* ─── одинарная стрелка влево ─── */
 .btn-arrow--left::before {
-  left: 10px;
+  left: -3px;
   transform: scaleX(-1);
+
+  @include rm(375){
+    left: 10px; /* чуть правее */
+  }
 }
 
 /* ─── двойные стрелки: показываем ::after ─── */
@@ -434,24 +438,40 @@ header {
 
 /* ─── двойная стрелка вправо: первая (::before) ─── */
 .btn-arrow--right.btn-arrow--double::before {
-  right: 15px; /* чуть левее, чтобы дать место второй */
+  right: 10px; /* чуть левее, чтобы дать место второй */
+
+  @include rm(375){
+    right: 15px;
+  }
 }
 
 /* ─── двойная стрелка вправо: вторая (::after) ─── */
 .btn-arrow--right.btn-arrow--double::after {
-  right: 0;
+  right: -3px;
   transform: scaleX(1);
+
+  @include rm(375){
+    right: 0px;
+  }
 }
 
 /* ─── двойная стрелка влево: первая (::before) ─── */
 .btn-arrow--left.btn-arrow--double::before {
-  left: 15px; /* чуть правее */
+  left: 5px; /* чуть правее */
+  @include rm(375){
+    left: 15px; /* чуть правее */
+  }
+
 }
 
 /* ─── двойная стрелка влево: вторая (::after) ─── */
 .btn-arrow--left.btn-arrow--double::after {
-  left: 0;
+  left: -5px;
   transform: scaleX(-1);
+
+  @include rm(375){
+    left: 0px; /* чуть правее */
+  }
 }
 
 /* ─── цветовые вариации ─── */
