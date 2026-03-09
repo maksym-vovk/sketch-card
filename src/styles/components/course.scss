@@ -17,6 +17,7 @@
 .course__title {
   margin: 0 0 24px;
   font-size: 26px;
+  font-weight: bold;
 }
 
 .course-options {
@@ -60,8 +61,12 @@
 }
 
 .option-content .products {
-  padding-top: 40px;
+  padding-top: 60px;
   margin-top: 0;
+
+  @include rm(1024){
+    padding-top: 60px;
+  }
 }
 
 .badge {
@@ -88,7 +93,7 @@
   //padding-left: 20px;
   //padding-right: 20px;
   background: green;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   border-radius: 20px;
@@ -96,10 +101,10 @@
   line-height: 1.3;
 
   @include rm(375){
-    font-size: 20px;
+    font-size: 18px;
   }
   @include rm(425){
-    font-size: 23px;
+    font-size: 22px;
   }
 
 
@@ -165,4 +170,26 @@
 .course-option__description:not(:last-of-type) {
   margin-bottom: 15px;
 }
+
+.course .products {
+  @include rm(1024){
+    height: 230px;
+    width: 100%;
+    overflow: hidden;
+  }
+  @include rm(1220){
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.course .products img{
+  @include rm(1024){
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
