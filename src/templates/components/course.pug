@@ -12,12 +12,12 @@ section.course.block(class="screen hidden" id="screen-course")
                         type="button"
                         id="from-course-to-presentations"
                         data-target-screen="screen-presentations"
-                    )= 'Детальніше'
+                    )!= t.common.actions.details
                     button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
                         type="button"
                         id="from-course-to-order-form"
                         data-target-screen="screen-order"
-                    )= 'Замовити'
+                    )!= t.common.actions.order
 
                 label.course-option
                     .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
@@ -25,15 +25,15 @@ section.course.block(class="screen hidden" id="screen-course")
                         type="button"
                         id="from-course-to-presentations"
                         data-target-screen="screen-presentations"
-                    )= 'Детальніше'
+                    )!= t.common.actions.details
                     button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
                            type="button"
                         id="from-course-to-order-form"
                         data-target-screen="screen-order"
-                    )= 'Замовити'
+                    )!= t.common.actions.order
 
             button.course__problems.btn.btn-arrow.btn-arrow--left.btn-arrow--red(
                 type="button"
                 id="from-course-to-problems"
                 data-target-screen="screen-problems"
-            )= 'Обрати іншу проблему'
+            )!= t.common.actions.selectAnotherProblem
