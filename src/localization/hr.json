@@ -9,10 +9,10 @@
 
     "actions": {
       "selectThisComplex": "Odaberite ovaj kompleks",
-      "details": "Više detalja",
-      "selectAnotherProblem": "Odaberite drugi problem",
-      "order": "Naručiti",
-      "selectAnotherCourse": "Odabrati drugi kurs"
+      "details": "Više",
+      "selectAnotherProblem": "Odabrati drugi problem",
+      "order": "Naruči",
+      "selectAnotherCourse": "Odabrati drugu kuru"
     },
 
     "price": {
