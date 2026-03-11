@@ -6,6 +6,13 @@
     "namePlaceholder": "Vaše ime",
     "phonePlaceholder": "Vaša številka",
     "privacyProtected": "Vaši osebni podatki so zaščiteni",
+    "actions": {
+      "selectThisComplex": "Izberite ta kompleks",
+      "details": "Več podrobnosti",
+      "selectAnotherProblem": "Izberite drugo težavo",
+      "order": "Naroči",
+      "selectAnotherCourse": "Izberite drug tečaj"
+    },
     "price": {
       "bonuses": "Cena z bonusi"
     }
@@ -46,20 +53,20 @@
               {
                 "name": "Cardiform",
                 "amount": "(2 packs)",
-                "description": "підтримує здоровий кровообіг у тканинах протягом усього періоду, допомагаючи корисним речовинам краще потрапляти до суглобів."
+                "description": "podpira zdravo prekrvavitev tkiv skozi celotno obdobje, kar pomaga koristnim snovem lažje priti do sklepov."
               },
               {
                 "name": "Steplex",
                 "amount": "(2 packs)",
-                "description": "у перші 7 днів допомагає зменшити відчуття скутості та «ломоти», а після 2-го тижня сприяє поверненню комфорту та гнучкості навіть при тривалих"
+                "description": "v prvih 7 dneh pomaga zmanjšati občutek togosti in »bolečine«, po 2. tednu pa prispeva k vrnitvi udobja in prožnosti tudi pri daljšem"
               },
               {
                 "name": "Guavital+",
-                "description": "допомагає зменшити вплив надмірної ваги на суглоби."
+                "description": "pomaga zmanjšati vpliv prekomerne telesne teže na sklepe."
               },
               {
                 "name": "Ultraxal",
-                "description": "покращує роботу шлунку, щоб усе корисне краще засвоювалось."
+                "description": "izboljša delovanje želodca, da se vse koristno bolje absorbira."
               }
             ]
           }
@@ -94,20 +101,20 @@
               {
                 "name": "Dialos",
                 "amount": "(2 packs)",
-                "description": " у перші дні прийому допомагає м'яко стабілізувати рівень цукру, а після 10 днів сприяє налагодженню тривалого вуглеводного балансу в організмі."
+                "description": "v prvih dneh jemanja pomaga nežno stabilizirati raven sladkorja, po 10 dneh pa prispeva k vzpostavitvi trajnega ogljikovega ravnovesja v organizmu."
               },
               {
                 "name": "Inspicure",
-                "description": "допомагає почуватися стабільно та бадьоро."
+                "description": "pomaga, da se počutite stabilno in polni energije."
               },
               {
                 "name": "Ultraxal",
-                "description": "піклується про здоров’я травної системи та легкість."
+                "description": "skrbi za zdravje prebavnega sistema in lahkotnost."
               },
               {
                 "name": "Guavital+",
                 "amount": "(2 packs)",
-                "description": "протягом усього курсу допомагає контролювати потяг до солодкого та частих перекусів, що формує здорові харчові звички."
+                "description": "med celotnim tečajem pomaga nadzorovati željo po sladkem in pogostem prehranjevanju, kar oblikuje zdrave prehranjevalne navade."
               }
             ]
           }
@@ -141,21 +148,21 @@
             "products": [
               {
                 "name": "Kardivix",
-                "description": "сприяє покращенню кровообігу та очищенню судин."
+                "description": "spodbuja izboljšanje krvnega obtoka in čiščenje žil."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "допомагає організму виводити зайву сіль та воду, сприяючи зменшенню набряків ніг та обличчя."
+                "description": "pomaga telesu izločati odvečno sol in vodo, kar prispeva k zmanjšanju oteklin na nogah in obrazu."
               },
               {
                 "name": "Tonerin",
                 "amount": "(2 packs)",
-                "description": "з перших днів допомагає тримати тиск під контролем, а після тривалого прийому сприяє більш спокійній та стабільній реакції судин на зміну погоди."
+                "description": "od prvih dni pomaga ohranjati krvni tlak pod nadzorom, po daljšem jemanju pa prispeva k bolj mirni in stabilni reakciji žil na spremembe vremena."
               },
               {
                 "name": "Guavital+",
-                "description": "виводить зайву сіль та покращує обмін речовин."
+                "description": "izloča odvečno sol in izboljša presnovo."
               }
             ]
           }
@@ -190,20 +197,20 @@
               {
                 "name": "Slimital",
                 "amount": "(2 packs)",
-                "description": "протягом перших 10 днів сприяє прискоренню метаболізму, а з 3-го тижня прийому допомагає організму запустити природний процес спалювання жирових запасів."
+                "description": "v prvih 10 dneh pospešuje metabolizem, od 3. tedna jemanja pa pomaga telesu sprožiti naravni proces izgorevanja maščobnih zalog."
               },
               {
                 "name": "Ultraxal",
-                "description": "допомагає травленню працювати як годинник."
+                "description": "pomaga prebavi delovati kot ura."
               },
               {
                 "name": "Vermixin",
-                "description": "сприяє очищенню організму від усього зайвого."
+                "description": "pomaga pri čiščenju telesa od vsega odvečnega."
               },
               {
                 "name": "Ozenmic Soft",
                 "amount": "(2 packs)",
-                "description": "протягом усього курсу допомагає організму якісно розщеплювати їжу, не даючи калоріям перетворюватися на «зайве»."
+                "description": "med celotnim tečajem pomaga telesu kakovostno razgrajevati hrano, tako da kalorije ne postanejo „odvečne“."
               }
             ]
           }
@@ -237,21 +244,21 @@
             "products": [
               {
                 "name": "Guavital+",
-                "description": "повертає бадьорість та гарний настрій."
+                "description": "vrača energijo in dobro razpoloženje."
               },
               {
                 "name": "Vermixin",
                 "amount": "(2 packs)",
-                "description": "протягом перших 10 днів сприяє глибокому детокс-очищенню, а з 3-го тижня допомагає організму відновити внутрішній захист."
+                "description": "v prvih 10 dneh spodbuja globoko detoksikacijo, od 3. tedna pa pomaga telesu obnoviti notranjo zaščito."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "протягом усього курсу підтримує роботу травної системи без збоїв, що є основою для високого рівня енергії та гарного настрою."
+                "description": "med celotnim tečajem podpira nemoteno delovanje prebavnega sistema, kar je osnova za visoko raven energije in dobro razpoloženje."
               },
               {
                 "name": "Slimital",
-                "description": "підтримує форму та не дає набирати зайву вагу через втому."
+                "description": "ohranja formo in preprečuje pridobivanje odvečne teže zaradi utrujenosti."
               }
             ]
           }
@@ -285,21 +292,21 @@
             "products": [
               {
                 "name": "Ausen",
-                "description": "підтримує чіткість слуху та ясну голову."
+                "description": "podpira jasnost sluha in jasno glavo."
               },
               {
                 "name": "Vermixin",
-                "description": "сприяє очищенню організму від усього зайвого."
+                "description": "pomaga pri čiščenju telesa od vsega odvečnega."
               },
               {
                 "name": "Tonerin",
                 "amount": "(2 packs)",
-                "description": "протягом усього курсу допомагає підтримувати стабільну роботу серця та захищає судини від перевтоми."
+                "description": "med celotnim tečajem pomaga ohranjati stabilno delovanje srca in ščiti žile pred preutrujenostjo."
               },
               {
                 "name": "Ultraxal",
                 "amount": "(2 packs)",
-                "description": "з перших днів прийому допомагає налагодити травлення, а після 20 днів сприяє зміцненню імунітету та загальної опірності організму."
+                "description": "že od prvih dni jemanja pomaga uravnovesiti prebavo, po 20 dneh pa krepi imunski sistem in splošno odpornost organizma."
               }
             ]
           }
@@ -341,124 +348,124 @@
     }
   },
   "course": {
-    "title": "Вибір курсу",
+    "title": "Izbira tečaja",
     "niches": {
       "joints": {
-        "title": "Комплекс для суглобів",
+        "title": "Kompleks za sklepe",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Легкий рух"
+            "badge": "Prihranite",
+            "subtitle": "Lahko gibanje"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Свобода рухів на максимум",
+            "badge": "Prihranite",
+            "subtitle": "Največja svoboda gibanja",
             "description": [
-              "Посилений курс із додатковими упаковками Steplex та Cardiform! ",
-              "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє тривалому відчуттю легкості та допомагає підтримувати гнучкість щодня!"
+              "Okrepljen program z dodatnimi pakiranji Steplex in Cardiform! ",
+              "Zagotavljate sklepom daljšo podporo. To prispeva k dolgotrajnemu občutku lahkotnosti in pomaga ohranjati prožnost vsak dan!"
             ]
           }
         ]
       },
       "diabetes": {
-        "title": "Комплекс при діабеті",
+        "title": "Kompleks pri sladkorni bolezni",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Комплексний контроль цукру"
+            "badge": "Prihranite",
+            "subtitle": "Celovit nadzor sladkorja"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Максимальний баланс цукру та енергія",
+            "badge": "Prihranite",
+            "subtitle": "Največje ravnovesje sladkorja in energije",
             "description": [
-              "Посилений курс із додатковими упаковками Dialos та Guavital+!",
-              "Довша підтримка допомагає організму м’якше звикнути до нового режиму харчування! Це сприяє стабільному рівню енергії протягом дня."
+              "Okrepljen tečaj z dodatnimi pakiranji Dialos in Guavital+!",
+              "Daljša podpora pomaga telesu, da se lažje privadi na nov način prehranjevanja! To prispeva k stabilni ravni energije skozi dan."
             ]
           }
         ]
       },
       "blood-pressure": {
-        "title": "Комплекс для тиску",
+        "title": "Kompleks za tlak",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Здорові судини"
+            "badge": "Prihranite",
+            "subtitle": "Zdrave žile"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Чисте серце та судини",
+            "badge": "Prihranite",
+            "subtitle": "Čisto srce in žile",
             "description": [
-              "Посилений курс із додатковими упаковками Tonerin та Ultraxal!",
-              "Сприяє кращій адаптації до змін погоди та допомагає підтримувати ясність голови."
+              "Okrepljen tečaj z dodatnimi pakiranji Tonerin in Ultraxal!",
+              "Pomaga pri boljši prilagoditvi na vremenske spremembe in ohranja jasnost uma."
             ]
           }
         ]
       },
       "weight-loss": {
-        "title": "Комплекс для схуднення",
+        "title": "Kompleks za hujšanje",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Базове Схуднення"
+            "badge": "Prihranite",
+            "subtitle": "Osnovno hujšanje"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Повне перевтілення",
+            "badge": "Prihranite",
+            "subtitle": "Popolna preobrazba",
             "description": [
-              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
-              "Більша кількість продукту дозволяє подовжити курс підтримки метаболізму. Це допомагає закріпленню результату на довший час."
+              "Okrepljen program z dodatnimi pakiranji Slimital in OzenmicSoft!",
+              "Večja količina izdelka omogoča podaljšanje cikla podpore metabolizma. To pomaga utrditi rezultat za dalj časa."
             ]
           }
         ]
       },
       "tiredness": {
-        "title": "Комплекс від втоми",
+        "title": "Kompleks proti utrujenosti",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Баланс енергії"
+            "badge": "Prihranite",
+            "subtitle": "Energijski balans"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Енергія 24/7",
+            "badge": "Prihranite",
+            "subtitle": "Energija 24/7",
             "description": [
-              "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
-              "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу."
+              "Okrepljen tečaj z dodatnimi pakiranji Vermixin in Ultraxal!",
+              "Spodbuja stabilen dotok energije, ki se kopičijo in ohranjajo vašo aktivnost skozi celoten tečaj."
             ]
           }
         ]
       },
       "parasites": {
-        "title": "Комплекс від паразитів",
+        "title": "Kompleks proti parazitom",
         "courses": [
           {
             "packs": 4,
-            "badge": "You save",
-            "subtitle": "Здоров’я щодня"
+            "badge": "Prihranite",
+            "subtitle": "Zdravje vsak dan"
           },
           {
             "packs": 6,
-            "badge": "You save",
-            "subtitle": "Золотий стандарт здоров'я",
+            "badge": "Prihranite",
+            "subtitle": "Zlati standard zdravja",
             "description": [
-              "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
-              "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню організму."
+              "Okrepljen program z dodatnimi pakiranji Ultraxal in Tonerin!",
+              "Dodatna pakiranja pomagajo ustvariti bolj stabilno osnovo za vaše zdravje. To prispeva k celostni krepitvi organizma."
             ]
           }
         ]
       }
     },
-    "btnSelect": "Оберіть цей комплекс →"
+    "btnSelect": "Izberite ta kompleks →"
   },
   "problems": {
     "title": "Izberite smer, ki vas zanima:",
@@ -531,7 +538,7 @@
               "sklepi prejmejo potrebno prehrano za udobno gibanje."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Легкий рух»",
+            "recommendName": "\"Lahko gibanje\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -547,7 +554,7 @@
               "sklepi prejmejo potrebno prehrano za udobno gibanje."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Свобода рухів на максимум»",
+            "recommendName": "\"Največja svoboda gibanja\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -567,7 +574,7 @@
               "povrne se energija, splošno počutje pa postane enakomerno in stabilno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Комплексний контроль цукру»",
+            "recommendName": "\"Celovit nadzor sladkorja\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -583,7 +590,7 @@
               "povrne se energija, splošno počutje pa postane enakomerno in stabilno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Максимальний баланс цукру та енергія»",
+            "recommendName": "\"Največje ravnovesje sladkorja in energije\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -603,7 +610,7 @@
               "tlak se stabilizira, glava pa postane jasna in »lahka«."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Здорові судини»",
+            "recommendName": "\"Zdrave žile\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -619,7 +626,7 @@
               "tlak se stabilizira, glava pa postane jasna in »lahka«."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Чисте серце та судини»",
+            "recommendName": "\"Čisto srce in žile\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -639,7 +646,7 @@
               "uravna presnovo, da se teža končno začne zniževati"
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Базове Схуднення»",
+            "recommendName": "\"Osnovno hujšanje\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -655,7 +662,7 @@
               "uravna presnovo, da se teža končno začne zniževati"
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Повне перевтілення»",
+            "recommendName": "\"Popolna preobrazba\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -675,7 +682,7 @@
               "začnete spati dovolj in občutite val moči, ki ga dolgo ni bilo."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Баланс енергії»",
+            "recommendName": "\"Energetski balans\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -691,7 +698,7 @@
               "začnete spati dovolj in občutite val moči, ki ga dolgo ni bilo."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Енергія 24/7»",
+            "recommendName": "\"Energija 24/7\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -711,7 +718,7 @@
               "zaščito vida in sluha, da se počutite samozavestno in aktivno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Здоров’я щодня»",
+            "recommendName": "\"Zdravje vsak dan\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -727,7 +734,7 @@
               "zaščito vida in sluha, da se počutite samozavestno in aktivno."
             ],
             "recommendTitle": "Za vas smo izbrali paket:",
-            "recommendName": "«Золотий стандарт здоров'я»",
+            "recommendName": "\"Zlati standard zdravja\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi se uporabijo samodejno",
             "saving": "Prihranite"
@@ -756,11 +763,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Приєднуйтесь до тисяч наших клієнтів, які вже повернули собі легкість рухів»"
+            "description": "\"Pridružite se tisočem našim strankam, ki so že ponovno pridobile lahkotnost gibanja.\""
           },
           {
             "packs": 6,
-            "description": "«Приєднуйтесь до тисяч наших клієнтів, які вже повернули собі легкість рухів»"
+            "description": "\"Pridružite se tisočem našim strankam, ki so že ponovno pridobile lahkotnost gibanja.\""
           }
         ]
       },
@@ -768,11 +775,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Оберіть життя без постійних \"гойдалок\" цукру та втоми»"
+            "description": "\"Izberite življenje brez nenehnega nihanja sladkorja in utrujenosti\""
           },
           {
             "packs": 6,
-            "description": "«Оберіть життя без постійних \"гойдалок\" цукру та втоми»"
+            "description": "\"Izberite življenje brez nenehnega nihanja sladkorja in utrujenosti\""
           }
         ]
       },
@@ -780,11 +787,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Подаруйте собі гарне самопочуття та забудьте про важкість у ногах!»"
+            "description": "\"Podarite si dobro počutje in pozabite na težke noge!\""
           },
           {
             "packs": 6,
-            "description": "«Подаруйте собі гарне самопочуття та забудьте про важкість у ногах!»"
+            "description": "\"Podarite si dobro počutje in pozabite na težke noge!\""
           }
         ]
       },
@@ -792,11 +799,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Вже за два тижні відображення у дзеркалі почне вас щиро радувати!»"
+            "description": "\"Že čez dva tedna vas bo vaš odsev v ogledalu začel iskreno veseliti!\""
           },
           {
             "packs": 6,
-            "description": "«Вже за два тижні відображення у дзеркалі почне вас щиро радувати!»"
+            "description": "\"Že čez dva tedna vas bo vaš odsev v ogledalu začel iskreno veseliti!\""
           }
         ]
       },
@@ -804,11 +811,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Прокидайтеся з новими силами та бажанням жити на повну!»"
+            "description": "\"Zbudite se z novo energijo in željo, da življenje uživate v polnosti!\""
           },
           {
             "packs": 6,
-            "description": "«Прокидайтеся з новими силами та бажанням жити на повну!»"
+            "description": "\"Zbudite se z novo energijo in željo, da življenje uživate v polnosti!\""
           }
         ]
       },
@@ -816,11 +823,11 @@
         "courses": [
           {
             "packs": 4,
-            "description": "«Подбайте про свій організм сьогодні, щоб він віддячив вам чудовим самопочуттям щодня!»"
+            "description": "\"Poskrbite za svoje telo danes, da vam bo vsak dan v zahvalo prineslo čudovito počutje!\""
           },
           {
             "packs": 6,
-            "description": "«Подбайте про свій організм сьогодні, щоб він віддячив вам чудовим самопочуттям щодня!»"
+            "description": "\"Poskrbite za svoje telo danes, da vam bo vsak dan v zahvalo prineslo čudovito počutje!\""
           }
         ]
       }
