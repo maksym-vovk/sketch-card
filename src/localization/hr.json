@@ -351,6 +351,8 @@
   },
   "course": {
     "title": "Odabir kure",
+    "subtitle": "Dobitni iznos možete iskoristiti samo za kupnju naših proizvoda*. \n",
+
     "niches": {
       "joints": {
         "title": "Kompleks za zglobove",
@@ -358,15 +360,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Lagano kretanje"
+            "subtitle": "Здорові суглоби"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Sloboda kretanja do maksimuma",
+            "subtitle": "Опорно-рухова система",
             "description": [
-              "Poboljšana kura s dodatnim Steplex i Cardiform paketima!",
-              "Zglobovima pružate dugotrajniju potporu. To pridonosi dugotrajnom osjećaju lakoće i pomaže u održavanju fleksibilnosti svaki dan!"
+              "Посилений курс із додатковими упаковками Steplex та Cardiform!",
+              "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє відновленню роботи не лише суглобів, а й кісток та усієї опорно-рухової системи."
             ]
           }
         ]
@@ -377,15 +379,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Sveobuhvatna kontrola šećera"
+            "subtitle": "Комплексний контроль цукру"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Maksimalna ravnoteža šećera i energija",
+            "subtitle": "Максимальний баланс цукру та енергія",
             "description": [
-              "Poboljšana kura s dodatnim Dialos i Guavital+ paketima!",
-              "Dulja podrška pomaže tijelu da se nježnije navikne na novu prehranu! To potiče stabilnu razinu energije tijekom dana."
+              "Посилений курс із додатковими упаковками Dialos та Guavital+!",
+              "Довша підтримка сприяє стабільному рівню енергії та допомагає покращити самопочуття людей які контролюють рівень цукру в крові."
             ]
           }
         ]
@@ -396,15 +398,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Zdrave žile"
+            "subtitle": "Здорові судини"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Čisto srce i krvne žile",
+            "subtitle": "Чисте серце та судини",
             "description": [
-              "Poboljšana kura s dodatnim Tonerin i Ultraxal paketima!",
-              "Potiče bolju prilagodbu vremenskim promjenama i pomaže u održavanju jasnoće uma."
+              "Посилений курс із додатковими упаковками Tonerin та Ultraxal!",
+              "Сприяє нормалізації усієї серцево-судинної системи та тиску на довготривалий період."
             ]
           }
         ]
@@ -415,15 +417,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Osnovno mršavljenje"
+            "subtitle": "Базове схуднення"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Potpuna transformacija",
+            "subtitle": "Повне перевтілення",
             "description": [
-              "Poboljšana kura s dodatnim Slimital i OzenmicSoft paketima!",
-              "Veća količina proizvoda omogućuje vam produljenje kure metaboličke potpore. To pomaže učvršćivanju rezultata tijekom duljeg vremenskog razdoblja."
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки пришвидшеного метаболізму, що дозволить закріпити результат без повернення кілограмів."
             ]
           }
         ]
@@ -434,15 +436,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Ravnoteža energije"
+            "subtitle": "Баланс енергії"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Energija 24/7",
+            "subtitle": "Максимальна активність",
             "description": [
-              "Poboljšana kura s dodatnim Vermixin i Ultraxal paketima!",
-              "Potiče stalan priljev energije koja se akumulira i održava vašu aktivnost tijekom cijele kure."
+              "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
+              "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу і ще 3 місяці після."
             ]
           }
         ]
@@ -453,15 +455,15 @@
           {
             "packs": 4,
             "badge": "Uštedite",
-            "subtitle": "Svakodnevno zdravlje"
+            "subtitle": "Здоров’я щодня"
           },
           {
             "packs": 6,
             "badge": "Uštedite",
-            "subtitle": "Zlatni standard zdravlja",
+            "subtitle": "Довголіття",
             "description": [
-              "Poboljšana kura s dodatnim Ultraxal i Tonerin paketima!",
-              "Dodatna pakiranja pomažu u stvaranju održivijeg temelja za vaše zdravlje. To doprinosi sveobuhvatnom jačanju tijela."
+              "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
+              "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню ключових органів та систем для загального самопочуття на довгий час."
             ]
           }
         ]
@@ -540,7 +542,7 @@
               "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Lagano kretanje\"",
+            "recommendName": "\"Здорові суглоби\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -556,7 +558,7 @@
               "zglobovi dobivaju potrebnu potporu i hranjive tvari za kretanje s više udobnosti."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Sloboda kretanja do maksimuma\"",
+            "recommendName": "\"Опорно-рухова система\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -576,7 +578,7 @@
               "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Sveobuhvatna kontrola šećera\"",
+            "recommendName": "\"Комплексний контроль цукру\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -592,7 +594,7 @@
               "vraća se energija, a opće stanje postaje ujednačeno i stabilno."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Maksimalna ravnoteža šećera i energija\"",
+            "recommendName": "\"Максимальний баланс цукру та енергія\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -612,7 +614,7 @@
               "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Zdrave žile\"",
+            "recommendName": "\"Здорові судини\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -628,7 +630,7 @@
               "tlak se stabilizira, a glava postaje bistra i \"lagana\"."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Čisto srce i krvne žile\"",
+            "recommendName": "\"Чисте серце та судини\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -648,7 +650,7 @@
               "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Osnovno mršavljenje\"",
+            "recommendName": "\"Базове схуднення\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -664,7 +666,7 @@
               "uspostavlja ravnotežu metabolizma kako bi težina napokon počela padati."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Potpuna transformacija\"",
+            "recommendName": "\"Повне перевтілення\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -684,7 +686,7 @@
               "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Ravnoteža energije\"",
+            "recommendName": "\"Баланс енергії\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -700,7 +702,7 @@
               "počinjete se bolje naspavati i osjećate nalet snage koji već dugo niste imali."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Energija 24/7\"",
+            "recommendName": "\"Максимальна активність\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -720,7 +722,7 @@
               "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Svakodnevno zdravlje\"",
+            "recommendName": "\"Здоров’я щодня\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -736,7 +738,7 @@
               "zaštita vida i sluha, kako biste se osjećali sigurno i aktivno."
             ],
             "recommendTitle": "Odabrali smo za Vas set:",
-            "recommendName": "\"Zlatni standard zdravlja\"",
+            "recommendName": "\"Довголіття\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonusi će se primijeniti automatski",
             "saving": "Uštedite"
@@ -753,11 +755,11 @@
     "tags": [
       {
         "packs": 4,
-        "tag": "Set (4 kom):"
+        "tag": "Set 4 kom:"
       },
       {
         "packs": 6,
-        "tag": "Set (6 kom):"
+        "tag": "Set 6 kom:"
       }
     ],
     "niches": {

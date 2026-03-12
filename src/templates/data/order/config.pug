@@ -212,23 +212,89 @@
                     }
                 ]
             },
+            // {
+            //     tag: 'div',
+            //     className: 'order__wrapper',
+            //     children: [
+            //         {
+            //             tag: 'div',
+            //             className: 'special__offer',
+            //             children: [
+            //                 {
+            //                     tag: 'span',
+            //                     className: 'tag',
+            //                     text: orderData.special + ': '
+            //                 },
+            //                 {
+            //                     tag: 'span',
+            //                     className: 'current',
+            //                     text: pricing.finalPrice + pricing.currency.short
+            //                 }
+            //             ]
+            //         }
+            //     ]
+            // },
             {
                 tag: 'div',
                 className: 'order__wrapper',
                 children: [
                     {
                         tag: 'div',
-                        className: 'special__offer',
+                        className: 'order__price',
                         children: [
                             {
-                                tag: 'span',
-                                className: 'tag',
-                                text: orderData.special + ': '
+                                tag: 'div',
+                                className: 'order__price-val',
+                                children: [
+                                    {
+                                        tag: 'h5',
+                                        className: 'order__price-title',
+                                        text: 'Старая цена'
+                                    },
+                                    {
+                                        tag: 'p',
+                                        className: 'order__price-before',
+                                        children: [
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-previous',
+                                                text: pricing.originalPrice
+                                            },
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-currency',
+                                                text: pricing.currency.short
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
-                                tag: 'span',
-                                className: 'current',
-                                text: pricing.finalPrice + pricing.currency.short
+                                tag: 'div',
+                                className: 'order__price-val',
+                                children: [
+                                    {
+                                        tag: 'h5',
+                                        className: 'order__price-title',
+                                        text: 'Новая цена'
+                                    },
+                                    {
+                                        tag: 'p',
+                                        className: 'order__price-after',
+                                        children: [
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-current',
+                                                text: pricing.finalPrice
+                                            },
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-currency',
+                                                text: pricing.currency.short
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
