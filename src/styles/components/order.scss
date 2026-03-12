@@ -304,7 +304,7 @@
 }
 
 .order__form {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   @include rm(768) {
     order: 3;
     width: 100%;
@@ -331,4 +331,87 @@
     order: 4;
     margin: 0 auto;
   }
+}
+
+
+.order__price {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  @include rm(768) {
+    gap: 30px;
+    width: 100%;
+    max-width: 280px;
+  }
+  @include rm(1024) {
+    gap: 40px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  @include rm(1220) {
+    gap: 50px;
+    max-width: 400px;
+  }
+}
+
+.action__timer .timer__text,
+.order__price-val {
+  text-align: center;
+}
+
+.order__price-title {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+/* старая цена */
+.order__price-before {
+  width: fit-content;
+  position: relative;
+  font-size: 35px;
+  margin: 0 auto;
+}
+
+.order__price-previous {
+
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.order__price-previous:before,
+.order__price-previous:after {
+  content: "";
+  width: calc(100% + 10px);
+  height: 2px;
+  background-color: #f23e2b;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+}
+
+.order__price-previous:before {
+  transform: rotate(15deg);
+}
+
+.order__price-previous:after {
+  transform: rotate(-15deg);
+}
+
+/* новая цена */
+.order__price-after {
+  font-size: 35px;
+  color: #e73e11;
+  font-weight: 900;
+}
+
+.order__price-before .order__price-currency,
+.order__price-after .order__price-currency {
+  font-size: 30px;
+  font-weight: 400;
 }

@@ -349,6 +349,7 @@
   },
   "course": {
     "title": "Course choice",
+    "subtitle": "The gift amount on the card can only be used to purchase our products.*",
     "niches": {
       "joints": {
         "title": "Joint Complex",
@@ -356,15 +357,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Easy movement"
+            "subtitle": "Здорові суглоби"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Maximum freedom of movement",
+            "subtitle": "Опорно-рухова система",
             "description": [
-              "An enhanced course with additional Steplex and Cardiform packages!",
-              "You provide your joints with longer-lasting support. This promotes a lasting feeling of lightness and helps maintain flexibility every day!"
+              "Посилений курс із додатковими упаковками Steplex та Cardiform!",
+              "Ви забезпечуєте суглобам більш тривалу підтримку. Це сприяє відновленню роботи не лише суглобів, а й кісток та усієї опорно-рухової системи."
             ]
           }
         ]
@@ -375,15 +376,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Comprehensive blood sugar control"
+            "subtitle": "Комплексний контроль цукру"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Maximum blood sugar balance and energy",
+            "subtitle": "Максимальний баланс цукру та енергія",
             "description": [
-              "An enhanced course with additional Dialos and Guavital+ packages!",
-              "Extended support helps the body adapt more gently to a new eating routine! This promotes stable energy levels throughout the day."
+              "Посилений курс із додатковими упаковками Dialos та Guavital+!",
+              "Довша підтримка сприяє стабільному рівню енергії та допомагає покращити самопочуття людей які контролюють рівень цукру в крові."
             ]
           }
         ]
@@ -394,15 +395,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Healthy vascular system"
+            "subtitle": "Здорові судини"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "A clean heart and healthy blood vessels",
+            "subtitle": "Чисте серце та судини",
             "description": [
-              "An enhanced course with additional packages Tonerin and Ultraxal packages!",
-              "Promotes better adaptation to weather changes and helps maintain mental clarity."
+              "Посилений курс із додатковими упаковками Tonerin та Ultraxal!",
+              "Сприяє нормалізації усієї серцево-судинної системи та тиску на довготривалий період."
             ]
           }
         ]
@@ -413,15 +414,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Basic Weight Loss"
+            "subtitle": "Базове схуднення"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Complete transformation",
+            "subtitle": "Повне перевтілення",
             "description": [
-              "An enhanced course with additional Slimital and OzenmicSoft packages!",
-              "A larger quantity of the product allows for a longer course of metabolism support. This helps maintain the result for a longer period."
+              "Посилений курс із додатковими упаковками Slimital та OzenmicSoft!",
+              "Більша кількість продукту дозволяє подовжити курс підтримки пришвидшеного метаболізму, що дозволить закріпити результат без повернення кілограмів."
             ]
           }
         ]
@@ -432,15 +433,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Energy balance"
+            "subtitle": "Баланс енергії"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "Energy 24/7",
+            "subtitle": "Максимальна активність",
             "description": [
-              "An enhanced course with additional Vermixin and Ultraxal packages!",
-              "Promotes a constant flow of energy that builds up and keeps you active throughout the course."
+              "Посилений курс із додатковими упаковками Vermixin та Ultraxal!",
+              "Сприяє стабільному припливу сил, який накопичується і підтримує вашу активність протягом усього курсу і ще 3 місяці після."
             ]
           }
         ]
@@ -451,15 +452,15 @@
           {
             "packs": 4,
             "badge": "You save",
-            "subtitle": "Everyday health"
+            "subtitle": "Здоров’я щодня"
           },
           {
             "packs": 6,
             "badge": "You save",
-            "subtitle": "The golden standard of health",
+            "subtitle": "Довголіття",
             "description": [
-              "An enhanced course with additional Ultraxal and Tonerin packages!",
-              "Additional packages help create a more stable foundation for your health. This contributes to the comprehensive strengthening of the body."
+              "Посилений курс із додатковими упаковками Ultraxal та Tonerin!",
+              "Додаткові упаковки допомагають створити більш стійку основу для вашого здоров'я. Це сприяє комплексному зміцненню ключових органів та систем для загального самопочуття на довгий час."
             ]
           }
         ]
@@ -538,7 +539,7 @@
               "joints receive the necessary nutrition to move comfortably."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Easy movement\"",
+            "recommendName": "\"Здорові суглоби\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -554,7 +555,7 @@
               "joints receive the necessary nutrition to move comfortably."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Maximum freedom of movement\"",
+            "recommendName": "\"Опорно-рухова система\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -574,7 +575,7 @@
               "strength appears, and the overall state of health becomes even and stable."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Comprehensive blood sugar control\"",
+            "recommendName": "\"Комплексний контроль цукру\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -590,7 +591,7 @@
               "strength appears, and the overall state of health becomes even and stable."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Maximum blood sugar balance and energy\"",
+            "recommendName": "\"Максимальний баланс цукру та енергія\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -610,7 +611,7 @@
               "the pressure stabilizes, and the head becomes clear and \"light\"."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Healthy vascular system\"",
+            "recommendName": "\"Здорові судини\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -626,7 +627,7 @@
               "the pressure stabilizes, and the head becomes clear and \"light\"."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"A clean heart and healthy blood vessels\"",
+            "recommendName": "\"Чисте серце та судини\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -646,7 +647,7 @@
               "adjusts the metabolism so that the weight finally begins to melt away."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Basic Weight Loss\"",
+            "recommendName": "\"Базове схуднення\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -662,7 +663,7 @@
               "adjusts the metabolism so that the weight finally begins to melt away."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Complete transformation\"",
+            "recommendName": "\"Повне перевтілення\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -682,7 +683,7 @@
               "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Energy balance\"",
+            "recommendName": "\"Баланс енергії\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -698,7 +699,7 @@
               "You start to get enough sleep and feel a surge of energy that you haven't had in a long time."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Energy 24/7\"",
+            "recommendName": "\"Максимальна активність\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -718,7 +719,7 @@
               "protect your vision and hearing to make you feel confident and active."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"Everyday health\"",
+            "recommendName": "\"Здоров’я щодня\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -734,7 +735,7 @@
               "protect your vision and hearing to make you feel confident and active."
             ],
             "recommendTitle": "We have selected a set for you:",
-            "recommendName": "\"The golden standard of health\"",
+            "recommendName": "\"Довголіття\"",
             "recommendExtra": "Extra text for 6 packs course",
             "footnote": "Bonuses will be applied automatically",
             "saving": "You save"
@@ -751,11 +752,11 @@
     "tags": [
       {
         "packs": 4,
-        "tag": "Set (4 units.):"
+        "tag": "Set 4 units:"
       },
       {
         "packs": 6,
-        "tag": "Set (6 units.):"
+        "tag": "Set 6 units:"
       }
     ],
     "niches": {

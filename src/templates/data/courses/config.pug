@@ -192,18 +192,83 @@
                                 text: `${courseData.badge} ${pricing.discount} ${pricing.currency.full}!`
                             },
                             {
-                            tag: 'img',
-                            attributes: {
-                                src: basePath + `img/${courseData.image}`,
-                                alt: config.title
-                            }
-                        }]
+                                tag: 'img',
+                                attributes: {
+                                    src: basePath + `img/${courseData.image}`,
+                                    alt: config.title
+                                }
+                            }]
                     },
+
+
                     {
                         tag: 'div',
-                        className: 'price',
-                        text: `${courseData.price.bonuses}: ${pricing.originalPrice} - ${pricing.discount} = ${pricing.finalPrice} ${pricing.currency.full}`
+                        className: 'order__price',
+                        children: [
+                            {
+                                tag: 'div',
+                                className: 'order__price-val',
+                                children: [
+                                    {
+                                        tag: 'h5',
+                                        className: 'order__price-title',
+                                        text: 'Старая цена'
+                                    },
+                                    {
+                                        tag: 'p',
+                                        className: 'order__price-before',
+                                        children: [
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-previous',
+                                                text: pricing.originalPrice
+                                            },
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-currency',
+                                                text: pricing.currency.short
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                tag: 'div',
+                                className: 'order__price-val',
+                                children: [
+                                    {
+                                        tag: 'h5',
+                                        className: 'order__price-title',
+                                        text: 'Новая цена'
+                                    },
+                                    {
+                                        tag: 'p',
+                                        className: 'order__price-after',
+                                        children: [
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-current',
+                                                text: pricing.finalPrice
+                                            },
+                                            {
+                                                tag: 'span',
+                                                className: 'order__price-currency',
+                                                text: pricing.currency.short
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     },
+
+                    {
+                        tag: 'div',
+                        className: 'product__counts',
+                        text: `${courseData.tags.tag}`
+                    },
+
+
                     // courseData.discount && {
                     //     tag: 'div',
                     //     className: 'discount',
