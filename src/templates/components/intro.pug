@@ -4,25 +4,45 @@
 section.intro.block(class="screen" id="screen-intro")
     .container
         h1.intro__title.text-gold-fill!= t.intro.title
+        p.intro__subtitle
+            | #{t.intro.text1}
+            |
+            span.text-bold.text-nowrap #{t.intro.scratch}<br>
+            |
+            | #{t.intro.text2}
 
-        .intro__text
-            p
-                | #{t.intro.text1}
-                |
-                span.text-bold.text-nowrap #{t.intro.scratch}<br>
-                |
-                | #{t.intro.text2}
+        .intro__inner
+            .intro__left
+                .intro__card
+                    img(src=basePath + cardSrcMap[locale] alt="EUROBONUS")
 
-            .intro__card
-                img(src=basePath + cardSrcMap[locale] alt="EUROBONUS")
+            .intro__right
+                .intro__steps
+                    each step, index in t.intro.steps
+                        .intro__step
+                            img(src=basePath + stepsIcon[index] alt="")
+                            span.text-bold #{step.text}
+                p.intro__fn #{t.intro.text3}
 
-            p #{t.intro.text3}
+        .intro-price
+            .intro-price__left
+                .intro-price__sale
+                    .intro-price__sale-percent -50%
+                    .intro-price__sale-text знижка на перевірені курси бренду
+                span.intro-price__separator
+                .intro-price__old
+                    .intro-price__old-title Стара ціна:
+                    .intro-price__old-value 167€
 
-        .intro__steps
-            each step, index in t.intro.steps
-                .intro__step
-                    img(src=basePath + stepsIcon[index] alt="")
-                    span.text-bold #{step.text}
+            .intro-price__right
+                .intro-price__new
+                    .intro-price__new-title Нова ціна з бонусом
+                    .intro-price__new-inner
+                        .intro-price__new-value 87€
+                        .intro-price__new-text Ціна після застосування вашого бонусу
+                .intro-price__note
+                    | Знижка застосовується автоматично при виборі курсу. Діє 3 дні
+
 
         .intro__actions
             button.intro__btn.intro__btn--call(data-target-screen="screen-intro-popup" id="from-intro-to-callback-form") #{t.intro.btnCall}
