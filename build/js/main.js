@@ -145,32 +145,30 @@
         this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
       },
 
-      async _syncData(data) {
-        if (!this.isEnabled || this._syncing) return;
-        this._syncing = true;
-
-        try {
-          // console.log('Attempting update...');
-          const updated = await this._tryUpdate(data); // console.log('Update result:', updated);
-
-          if (updated) {
-            console.log('Data synced successfully (updated)');
-            return;
-          } // console.log('Attempting create...');
-
-
-          const created = await this._tryCreate(data); // console.log('Create result:', created);
-
-          if (created) {
-            console.log('Data synced successfully (created)');
-          } else {
-            console.error('Failed to sync data');
-          }
-        } catch (error) {
-          console.error('Error syncing data:', error);
-        } finally {
-          this._syncing = false;
-        }
+      async _syncData(data) {// if (!this.isEnabled || this._syncing) return;
+        //
+        // this._syncing = true;
+        //
+        // try {
+        //     const updated = await this._tryUpdate(data);
+        //
+        //     if (updated) {
+        //         console.log('Data synced successfully (updated)');
+        //         return;
+        //     }
+        //
+        //     const created = await this._tryCreate(data);
+        //
+        //     if (created) {
+        //         console.log('Data synced successfully (created)');
+        //     } else {
+        //         console.error('Failed to sync data');
+        //     }
+        // } catch (error) {
+        //     console.error('Error syncing data:', error);
+        // } finally {
+        //     this._syncing = false;
+        // }
       },
 
       async _tryUpdate(data) {
@@ -818,16 +816,20 @@
         const firstItem = allItems[0];
         const radioInput = firstItem?.querySelector(SELECTORS$4.RADIO_INPUT);
         const niche = radioInput.dataset.niche;
-        const packs = Number(radioInput.dataset.packs);
-        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        const packs = Number(radioInput.dataset.packs); // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+
         const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
         if (!firstItem || !radioInput) return;
         radioInput.checked = true;
 
         this._handleAccordionClick(firstItem, allItems);
 
-        console.log(this.orderFormData);
-        UniversalRenderer.render(SELECTORS$4.PRESENTATION_CONTENT, presentationElements);
+        console.log(this.orderFormData); //
+        // UniversalRenderer.render(
+        //     SELECTORS.PRESENTATION_CONTENT,
+        //     presentationElements
+        // )
+
         UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, orderFormElements);
       },
 
@@ -836,14 +838,17 @@
         const radioInput = courseItem?.querySelector(SELECTORS$4.RADIO_INPUT);
         const niche = radioInput?.dataset.niche;
         const packs = Number(radioInput?.dataset.packs);
-        if (!courseItem || !radioInput || !niche || !packs || event.target === radioInput) return;
-        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        if (!courseItem || !radioInput || !niche || !packs || event.target === radioInput) return; // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+
         const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
         radioInput.checked = true;
 
-        this._handleAccordionClick(courseItem, allItems);
+        this._handleAccordionClick(courseItem, allItems); // UniversalRenderer.render(
+        //     SELECTORS.PRESENTATION_CONTENT,
+        //     presentationElements
+        // )
 
-        UniversalRenderer.render(SELECTORS$4.PRESENTATION_CONTENT, presentationElements);
+
         UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, orderFormElements);
       },
 
@@ -852,21 +857,20 @@
         const radioInput = activeItem?.querySelector(SELECTORS$4.RADIO_INPUT);
         const activeNiche = radioInput?.dataset.niche;
         const activePacks = Number(radioInput.dataset.packs);
-        if (!activeItem || !activeNiche) return;
-        const {
-          courseName,
-          price,
-          problemType,
-          productList
-        } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
-        AppState.set({
-          packs_count: activePacks,
-          course_name: courseName,
-          price: price,
-          niche_short: activeNiche,
-          chosen_problem: problemType,
-          product_list: productList
-        });
+        if (!activeItem || !activeNiche) return; // const {
+        //     courseName,
+        //     price,
+        //     problemType,
+        //     productList
+        // } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
+        // AppState.set({
+        //     packs_count: activePacks,
+        //     course_name: courseName,
+        //     price: price,
+        //     niche_short: activeNiche,
+        //     chosen_problem: problemType,
+        //     product_list: productList
+        // })
       },
 
       init() {

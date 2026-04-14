@@ -56,32 +56,30 @@
         this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
       },
 
-      async _syncData(data) {
-        if (!this.isEnabled || this._syncing) return;
-        this._syncing = true;
-
-        try {
-          // console.log('Attempting update...');
-          const updated = await this._tryUpdate(data); // console.log('Update result:', updated);
-
-          if (updated) {
-            console.log('Data synced successfully (updated)');
-            return;
-          } // console.log('Attempting create...');
-
-
-          const created = await this._tryCreate(data); // console.log('Create result:', created);
-
-          if (created) {
-            console.log('Data synced successfully (created)');
-          } else {
-            console.error('Failed to sync data');
-          }
-        } catch (error) {
-          console.error('Error syncing data:', error);
-        } finally {
-          this._syncing = false;
-        }
+      async _syncData(data) {// if (!this.isEnabled || this._syncing) return;
+        //
+        // this._syncing = true;
+        //
+        // try {
+        //     const updated = await this._tryUpdate(data);
+        //
+        //     if (updated) {
+        //         console.log('Data synced successfully (updated)');
+        //         return;
+        //     }
+        //
+        //     const created = await this._tryCreate(data);
+        //
+        //     if (created) {
+        //         console.log('Data synced successfully (created)');
+        //     } else {
+        //         console.error('Failed to sync data');
+        //     }
+        // } catch (error) {
+        //     console.error('Error syncing data:', error);
+        // } finally {
+        //     this._syncing = false;
+        // }
       },
 
       async _tryUpdate(data) {

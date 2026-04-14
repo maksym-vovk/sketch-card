@@ -36,7 +36,7 @@ export const CourseSwitcher = {
         const niche = radioInput.dataset.niche
         const packs = Number(radioInput.dataset.packs)
 
-        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
         const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
 
         if (!firstItem || !radioInput) return;
@@ -45,11 +45,11 @@ export const CourseSwitcher = {
         this._handleAccordionClick(firstItem, allItems);
 
         console.log(this.orderFormData);
-
-        UniversalRenderer.render(
-            SELECTORS.PRESENTATION_CONTENT,
-            presentationElements
-        )
+        //
+        // UniversalRenderer.render(
+        //     SELECTORS.PRESENTATION_CONTENT,
+        //     presentationElements
+        // )
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
@@ -65,16 +65,16 @@ export const CourseSwitcher = {
 
         if (!courseItem || !radioInput || !niche || !packs || event.target === radioInput) return;
 
-        const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+        // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
         const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
 
         radioInput.checked = true;
         this._handleAccordionClick(courseItem, allItems);
 
-        UniversalRenderer.render(
-            SELECTORS.PRESENTATION_CONTENT,
-            presentationElements
-        )
+        // UniversalRenderer.render(
+        //     SELECTORS.PRESENTATION_CONTENT,
+        //     presentationElements
+        // )
 
         UniversalRenderer.render(
             SELECTORS.ORDER_FORM_CONTENT,
@@ -90,21 +90,21 @@ export const CourseSwitcher = {
 
         if (!activeItem || !activeNiche) return;
 
-        const {
-            courseName,
-            price,
-            problemType,
-            productList
-        } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
+        // const {
+        //     courseName,
+        //     price,
+        //     problemType,
+        //     productList
+        // } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
 
-        AppState.set({
-            packs_count: activePacks,
-            course_name: courseName,
-            price: price,
-            niche_short: activeNiche,
-            chosen_problem: problemType,
-            product_list: productList
-        })
+        // AppState.set({
+        //     packs_count: activePacks,
+        //     course_name: courseName,
+        //     price: price,
+        //     niche_short: activeNiche,
+        //     chosen_problem: problemType,
+        //     product_list: productList
+        // })
     },
 
     init() {
