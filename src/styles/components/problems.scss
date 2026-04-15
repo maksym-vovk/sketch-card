@@ -395,18 +395,24 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    min-width: 177px;
-    max-width: 251px;
-    width: 177px;
-    height: 177px;
+    //min-width: 177px;
+    //max-width: 251px;
+    width: 160px;
+    height: 160px;
     padding: 20px;
     background: linear-gradient(180deg, #EB4716 0%, #FDF29F 100%);
-    border-radius: 50%;
+    //border-radius: 50%;
     cursor: pointer;
+
+    @include rm(480) {
+      width: 177px;
+      height: 177px;
+    }
 
     @include rm(1024) {
       width: 251px;
       height: 251px;
+      border-radius: 50%;
     }
   }
 
@@ -436,13 +442,17 @@
 
   &__text {
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
     color: #000;
     word-wrap: break-word;
     hyphens: auto;
     max-width: 100%;
+
+    @include rm(480) {
+      font-size: 17px;
+    }
 
     @include rm(1024) {
       font-size: 22px;
