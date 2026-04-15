@@ -1,3 +1,5 @@
+include ../data/reviews/index
+
 mixin stars(rating)
     - const full = Math.floor(rating)
     - const half = (rating - full) >= 0.5
@@ -12,80 +14,13 @@ mixin stars(rating)
             span.stars__item.stars__item--empty
 
 -
-    const slides = [
-        [
-            {
-                name: "María",
-                age: 47,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже можу нормально ходити по сходах без того щоб зупинятись."
-            },
-            {
-                name: "Carlos",
-                age: 63,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn'>курс “Преміум”</a>. Не скажу що повністю пройшло але різниця відчутна."
-            },
-            {
-                name: "Rosa",
-                age: 55,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже не прокидалась від болю вночі."
-            }
+    // Get mixed reviews (3 per slide from different niches)
+    const slides = getMixedReviewsSlides(3);
 
-        ],
-        [
-            {
-                name: "María",
-                age: 47,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже можу нормально ходити по сходах без того щоб зупинятись."
-            },
-            {
-                name: "Carlos",
-                age: 63,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn'>курс “Преміум”</a>. Не скажу що повністю пройшло але різниця відчутна."
-            },
-            {
-                name: "Rosa",
-                age: 55,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже не прокидалась від болю вночі."
-            }
-
-        ],
-        [
-            {
-                name: "María",
-                age: 47,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже можу нормально ходити по сходах без того щоб зупинятись."
-            },
-            {
-                name: "Carlos",
-                age: 63,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn'>курс “Преміум”</a>. Не скажу що повністю пройшло але різниця відчутна."
-            },
-            {
-                name: "Rosa",
-                age: 55,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn'>курсу “Стандарт”</a> вже не прокидалась від болю вночі."
-            }
-
-        ]
-    ]
+    // Calculate overall statistics
+    const allReviews = getAllReviews();
+    const totalReviews = allReviews.length;
+    const avgRating = (allReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1);
 
 .reviews
     h2.reviews__title Ознайомтесь з думками наших клієнтів
@@ -95,7 +30,7 @@ mixin stars(rating)
             | &nbsp;
             span 11.968
         .reviews__inner
-            +stars(3.7)
+            +stars(4.7)
             span.reviews__score 4.7
 
     // Slider
@@ -110,7 +45,7 @@ mixin stars(rating)
                                     source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
                                     img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
                                 .review-card__meta
-                                    .review-card__name #{r.name}, #{r.age}
+                                    .review-card__name #{r.name} | #{r.niche}, #{r.age}
                                     .review-card__rating
                                         +stars(r.rating)
                                         span.review-card__rating-num #{r.rating.toFixed(1)}
@@ -119,5 +54,5 @@ mixin stars(rating)
         // Navigation arrows with link in the middle
         .reviews__navigation
             button.reviews__nav-btn.reviews__nav-prev
-            a.reviews__all(href="#") Читать всі відгуки
+            //a.reviews__all(href="#") Читать всі відгуки
             button.reviews__nav-btn.reviews__nav-next

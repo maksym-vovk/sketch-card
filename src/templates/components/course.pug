@@ -1,40 +1,49 @@
-include ../data/courses/config
+include ../mixins/course-details
+
+-
+    const niches = ['joints', 'diabetes', 'blood-pressure', 'weight-loss', 'tiredness'];
 
 section.course.block(class="screen hidden" id="screen-course")
     .container
-        .course-modal
-            h2.course__title!= t.course.title
-            p.course__subtitle!= t.course.subtitle
+        each niche in niches
+             +courseDetails(niche)
 
-            .course-options
-                label.course-option
-                    .course-option__content#four-course(data-config=JSON.stringify(courseConfig[0]))
-                    button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
-                        type="button"
-                        id="from-course-to-presentations"
-                        data-target-screen="screen-presentations"
-                    )!= t.common.actions.details
-                    button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-                        type="button"
-                        id="from-course-to-order-form"
-                        data-target-screen="screen-order"
-                    )!= t.common.actions.order
-
-                label.course-option
-                    .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
-                    button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
-                        type="button"
-                        id="from-course-to-presentations"
-                        data-target-screen="screen-presentations"
-                    )!= t.common.actions.details
-                    button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-                           type="button"
-                        id="from-course-to-order-form"
-                        data-target-screen="screen-order"
-                    )!= t.common.actions.order
-
-            button.course__problems.btn.btn-arrow.btn-arrow--left.btn-arrow--red(
-                type="button"
-                id="from-course-to-problems"
-                data-target-screen="screen-problems"
-            )!= t.common.actions.selectAnotherProblem
+//include ../data/courses/config
+//section.course.block(class="screen hidden" id="screen-course")
+//    .container
+        //.course-modal
+        //    h2.course__title!= t.course.title
+        //    p.course__subtitle!= t.course.subtitle
+        //
+        //    .course-options
+        //        label.course-option
+        //            .course-option__content#four-course(data-config=JSON.stringify(courseConfig[0]))
+        //            button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
+        //                type="button"
+        //                id="from-course-to-presentations"
+        //                data-target-screen="screen-presentations"
+        //            )!= t.common.actions.details
+        //            button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+        //                type="button"
+        //                id="from-course-to-order-form"
+        //                data-target-screen="screen-order"
+        //            )!= t.common.actions.order
+        //
+        //        label.course-option
+        //            .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
+        //            button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
+        //                type="button"
+        //                id="from-course-to-presentations"
+        //                data-target-screen="screen-presentations"
+        //            )!= t.common.actions.details
+        //            button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+        //                   type="button"
+        //                id="from-course-to-order-form"
+        //                data-target-screen="screen-order"
+        //            )!= t.common.actions.order
+        //
+        //    button.course__problems.btn.btn-arrow.btn-arrow--left.btn-arrow--red(
+        //        type="button"
+        //        id="from-course-to-problems"
+        //        data-target-screen="screen-problems"
+        //    )!= t.common.actions.selectAnotherProblem

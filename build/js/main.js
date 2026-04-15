@@ -1,11 +1,6 @@
 (function () {
     'use strict';
 
-    function addModifierClass(elementSelector, modifier) {
-      const element = document.querySelector(`${elementSelector}`);
-      if (!element) return;
-      element.classList.add(`${element.classList[0]}--${modifier}`);
-    }
     function removeModifierClass(elementSelector, modifier) {
       const element = document.querySelector(`${elementSelector}`);
       if (!element) return;
@@ -701,208 +696,89 @@
     };
 
     const SELECTORS$3 = {
-      PROBLEMS_SCREEN: '#screen-problems',
-      ACCORDION_CONTAINER: '.problems-wrapper',
-      ACCORDION_ITEMS: '.accordion-item',
-      ACCORDION_HEADER: '.accordion-header',
-      ACCORDION_CONTENT: '.accordion-content',
-      RADIO_INPUT: `#screen-problems input[type="radio"]`,
-      NEXT_BUTTON: '.accordion-content__btn',
-      PRESENTATION_CONTENT: '.presentation-modal__content',
-      FOUR_COURSE_CONTENT: '#four-course',
-      SIX_COURSE_CONTENT: '#six-course',
-      ORDER_FORM_CONTENT: '.order-card__content'
-    };
-    const CSS_CLASSES$2 = {
-      ACTIVE: 'active'
-    };
-    const NichesAccordion = {
-      fourCourseData: dataConfigParser(SELECTORS$3.FOUR_COURSE_CONTENT),
-      sixCourseData: dataConfigParser(SELECTORS$3.SIX_COURSE_CONTENT),
-
-      _handleAccordionClick(clickedItem, allItems) {
-        allItems.forEach(item => item.classList.remove(CSS_CLASSES$2.ACTIVE));
-        clickedItem.classList.add(CSS_CLASSES$2.ACTIVE);
-      },
-
-      _handleClick(event, allItems) {
-        const accordionItem = event.target.closest(SELECTORS$3.ACCORDION_ITEMS);
-        const radioInput = accordionItem?.querySelector(SELECTORS$3.RADIO_INPUT);
-        const niche = accordionItem?.dataset.niche;
-        if (!accordionItem || !radioInput || event.target === radioInput || !niche) return;
-        radioInput.checked = true;
-
-        this._handleAccordionClick(accordionItem, allItems);
-
-        UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
-      },
-
-      _setFirstItemActive(allItems) {
-        const firstItem = allItems[0];
-        const radioInput = firstItem?.querySelector(SELECTORS$3.RADIO_INPUT);
-        const niche = firstItem.dataset.niche;
-        if (!firstItem || !radioInput) return;
-        radioInput.checked = true;
-
-        this._handleAccordionClick(firstItem, allItems);
-
-        UniversalRenderer.render(SELECTORS$3.FOUR_COURSE_CONTENT, this.fourCourseData.niches[niche].elements);
-        UniversalRenderer.render(SELECTORS$3.SIX_COURSE_CONTENT, this.sixCourseData.niches[niche].elements);
-      },
-
-      _confirmChoice(allItems) {
-        const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES$2.ACTIVE));
-        const activeNiche = activeItem?.dataset.niche;
-        if (!activeItem || !activeNiche) return; // const { courseName, price, problemType, productList } = this.presentationData.niches[activeNiche];
-        //
-        // AppState.set({
-        //     packs_count: this.presentationData.packs,
-        //     course_name: courseName,
-        //     price: price,
-        //     niche_short: activeNiche,
-        //     chosen_problem: problemType,
-        //     product_list: productList
-        // })
-      },
-
-      init() {
-        const problemsScreen = document.querySelector(SELECTORS$3.PROBLEMS_SCREEN);
-        if (!problemsScreen) return console.warn('Problems screen not found');
-        const accordionContainer = problemsScreen.querySelector(SELECTORS$3.ACCORDION_CONTAINER);
-        const accordionItems = problemsScreen.querySelectorAll(SELECTORS$3.ACCORDION_ITEMS);
-        if (!accordionContainer) return console.warn('AccordionContainer not found');
-
-        this._setFirstItemActive(accordionItems);
-
-        accordionContainer.addEventListener('click', e => {
-          if (e.target.closest(SELECTORS$3.NEXT_BUTTON)) {
-            this._confirmChoice(accordionItems);
-
-            return;
-          }
-
-          this._handleClick(e, accordionItems);
-        });
-      }
-
-    };
-
-    const SELECTORS$4 = {
       COURSE_SCREEN: '#screen-course',
-      COURSE_CONTAINER: '.course-options',
-      COURSE_ITEMS: '.course-option',
-      NEXT_BUTTON: '.course__select',
-      ORDER_BUTTON: '.course__select--order',
-      RADIO_INPUT: `#screen-course input[type="radio"]`,
-      PRESENTATION_CONTENT: '.presentation-modal__content',
-      FOUR_COURSE_CONTENT: '#four-course',
-      SIX_COURSE_CONTENT: '#six-course',
+      COURSE_DETAILS: '.course-details',
+      ORDER_BUTTON: '[data-course]',
       ORDER_FORM_CONTENT: '.order-card__content'
     };
-    const CSS_CLASSES$3 = {
-      ACTIVE: 'active'
-    };
-    const CourseSwitcher = {
-      presentationData: dataConfigParser(SELECTORS$4.PRESENTATION_CONTENT),
-      orderFormData: dataConfigParser(SELECTORS$4.ORDER_FORM_CONTENT),
+    const CourseOrderHandler = {
+      orderFormData: null,
 
-      _handleAccordionClick(clickedItem, allItems) {
-        allItems.forEach(item => item.classList.remove(CSS_CLASSES$3.ACTIVE));
-        clickedItem.classList.add(CSS_CLASSES$3.ACTIVE);
+      _initData() {
+        this.orderFormData = dataConfigParser(SELECTORS$3.ORDER_FORM_CONTENT);
+        console.log('Order form data loaded:', this.orderFormData);
       },
 
-      _setFirstItemActive(allItems) {
-        const firstItem = allItems[0];
-        const radioInput = firstItem?.querySelector(SELECTORS$4.RADIO_INPUT);
-        const niche = radioInput.dataset.niche;
-        const packs = Number(radioInput.dataset.packs); // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
+      _handleOrderClick(event) {
+        const button = event.target.closest(SELECTORS$3.ORDER_BUTTON);
+        if (!button) return;
+        const courseDetails = button.closest(SELECTORS$3.COURSE_DETAILS);
 
-        const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
-        if (!firstItem || !radioInput) return;
-        radioInput.checked = true;
+        if (!courseDetails) {
+          console.warn('Course details container not found');
+          return;
+        }
 
-        this._handleAccordionClick(firstItem, allItems);
+        const niche = courseDetails.dataset.niche;
+        const packs = Number(button.dataset.course);
+        console.log('Order button clicked:', {
+          niche,
+          packs
+        });
 
-        console.log(this.orderFormData); //
-        // UniversalRenderer.render(
-        //     SELECTORS.PRESENTATION_CONTENT,
-        //     presentationElements
-        // )
+        if (!niche || !packs) {
+          console.warn('Missing niche or packs:', {
+            niche,
+            packs
+          });
+          return;
+        }
 
-        UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, orderFormElements);
-      },
-
-      _handleClick(event, allItems) {
-        const courseItem = event.target.closest(SELECTORS$4.COURSE_ITEMS);
-        const radioInput = courseItem?.querySelector(SELECTORS$4.RADIO_INPUT);
-        const niche = radioInput?.dataset.niche;
-        const packs = Number(radioInput?.dataset.packs);
-        if (!courseItem || !radioInput || !niche || !packs || event.target === radioInput) return; // const presentationElements = this.presentationData.find(course => course.packs === packs).niches[niche].elements;
-
-        const orderFormElements = this.orderFormData.find(course => course.packs === packs).niches[niche].elements;
-        radioInput.checked = true;
-
-        this._handleAccordionClick(courseItem, allItems); // UniversalRenderer.render(
-        //     SELECTORS.PRESENTATION_CONTENT,
-        //     presentationElements
-        // )
+        if (!this.orderFormData) {
+          console.warn('Order form data not initialized');
+          return;
+        } // Find the order form elements for this niche and pack count
 
 
-        UniversalRenderer.render(SELECTORS$4.ORDER_FORM_CONTENT, orderFormElements);
-      },
+        const courseConfig = this.orderFormData.find(course => course.packs === packs);
 
-      _confirmChoice(allItems) {
-        const activeItem = Array.from(allItems).find(item => item.classList.contains(CSS_CLASSES$3.ACTIVE));
-        const radioInput = activeItem?.querySelector(SELECTORS$4.RADIO_INPUT);
-        const activeNiche = radioInput?.dataset.niche;
-        const activePacks = Number(radioInput.dataset.packs);
-        if (!activeItem || !activeNiche) return; // const {
-        //     courseName,
-        //     price,
-        //     problemType,
-        //     productList
-        // } = this.presentationData.find(course => course.packs === activePacks).niches[activeNiche].sendData;
-        // AppState.set({
-        //     packs_count: activePacks,
-        //     course_name: courseName,
-        //     price: price,
-        //     niche_short: activeNiche,
-        //     chosen_problem: problemType,
-        //     product_list: productList
-        // })
+        if (!courseConfig) {
+          console.warn(`No course config found for packs: ${packs}`, this.orderFormData);
+          return;
+        }
+
+        const orderFormElements = courseConfig.niches?.[niche]?.elements;
+
+        if (!orderFormElements) {
+          console.warn(`No order form data found for niche: ${niche}, packs: ${packs}`);
+          console.log('Available niches:', Object.keys(courseConfig.niches || {}));
+          return;
+        }
+
+        console.log('Rendering order form for:', {
+          niche,
+          packs
+        }); // Render the order form
+
+        UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, orderFormElements);
       },
 
       init() {
-        const problemsScreen = document.querySelector(SELECTORS$4.COURSE_SCREEN);
-        if (!problemsScreen) return console.warn('Problems screen not found');
-        const coursesContainer = problemsScreen.querySelector(SELECTORS$4.COURSE_CONTAINER);
-        const coursesItems = problemsScreen.querySelectorAll(SELECTORS$4.COURSE_ITEMS);
-        if (!coursesContainer) return console.warn('Courses Container not found');
+        const courseScreen = document.querySelector(SELECTORS$3.COURSE_SCREEN);
 
-        this._setFirstItemActive(coursesItems);
+        if (!courseScreen) {
+          console.warn('Course screen not found');
+          return;
+        } // Initialize data
 
-        coursesContainer.addEventListener('click', e => {
-          if (e.target.closest(SELECTORS$4.ORDER_BUTTON)) {
-            this._handleClick(e, coursesItems);
 
-            addModifierClass(SELECTORS$4.ORDER_FORM_CONTENT, 'additional');
+        this._initData(); // Listen for clicks on the entire course screen
 
-            this._confirmChoice(coursesItems);
 
-            return;
-          }
-
-          if (e.target.closest(SELECTORS$4.NEXT_BUTTON)) {
-            this._handleClick(e, coursesItems);
-
-            this._confirmChoice(coursesItems);
-
-            return;
-          }
-
-          this._handleClick(e, coursesItems);
+        courseScreen.addEventListener('click', e => {
+          this._handleOrderClick(e);
         });
+        console.log('CourseOrderHandler initialized');
       }
 
     };
@@ -6209,14 +6085,178 @@
 
     };
 
+    const SELECTORS$4 = {
+      PROBLEMS_SCREEN: '#screen-problems',
+      PROBLEMS_LIST: '.problems-list',
+      PROBLEMS_ITEM: '.problems-list__item',
+      COURSE_SCREEN: '#screen-course',
+      COURSE_DETAILS: '.course-details',
+      REVIEW_CARD_BTN: '.review-card__btn'
+    };
+    const CSS_CLASSES$2 = {
+      HIDDEN: 'hidden'
+    };
+    const NicheDisplayHandler = {
+      _showCourseDetailsForNiche(niche) {
+        // Hide all course-details blocks
+        const allCourseDetails = document.querySelectorAll(SELECTORS$4.COURSE_DETAILS);
+        allCourseDetails.forEach(block => {
+          block.classList.add(CSS_CLASSES$2.HIDDEN);
+        }); // Show the course-details block matching the selected niche
+
+        const targetCourseDetails = document.querySelector(`${SELECTORS$4.COURSE_DETAILS}[data-niche="${niche}"]`);
+
+        if (targetCourseDetails) {
+          targetCourseDetails.classList.remove(CSS_CLASSES$2.HIDDEN);
+          console.log(`Showing course details for niche: ${niche}`);
+        } else {
+          console.warn(`Course details block not found for niche: ${niche}`);
+        }
+      },
+
+      _handleProblemClick(event) {
+        const problemItem = event.target.closest(SELECTORS$4.PROBLEMS_ITEM);
+        if (!problemItem) return;
+        const niche = problemItem.dataset.niche;
+
+        if (!niche) {
+          console.warn('No niche data found on clicked problem item');
+          return;
+        } // Show the corresponding course-details block
+
+
+        this._showCourseDetailsForNiche(niche);
+      },
+
+      _handleReviewCardButtonClick(event) {
+        const button = event.target.closest(SELECTORS$4.REVIEW_CARD_BTN);
+        if (!button) return; // Prevent default link behavior
+
+        event.preventDefault();
+        const niche = button.dataset.niche;
+        const targetScreen = button.dataset.targetScreen;
+
+        if (!niche) {
+          console.warn('No niche data found on clicked review button');
+          return;
+        } // Show the corresponding course-details block
+
+
+        this._showCourseDetailsForNiche(niche); // Navigate to the target screen if specified
+
+
+        if (targetScreen && ScreenManager) {
+          ScreenManager.goToScreen(targetScreen);
+        }
+
+        console.log(`Review button clicked - Niche: ${niche}, Target: ${targetScreen}`);
+      },
+
+      init() {
+        const problemsScreen = document.querySelector(SELECTORS$4.PROBLEMS_SCREEN);
+
+        if (!problemsScreen) {
+          console.warn('Problems screen not found');
+          return;
+        }
+
+        const problemsList = problemsScreen.querySelector(SELECTORS$4.PROBLEMS_LIST);
+
+        if (!problemsList) {
+          console.warn('Problems list not found');
+          return;
+        } // Listen for clicks on the problems list
+
+
+        problemsList.addEventListener('click', e => {
+          this._handleProblemClick(e);
+        }); // Listen for clicks on review card buttons (event delegation on document)
+
+        document.addEventListener('click', e => {
+          if (e.target.closest(SELECTORS$4.REVIEW_CARD_BTN)) {
+            this._handleReviewCardButtonClick(e);
+          }
+        });
+        console.log('NicheDisplayHandler initialized');
+      }
+
+    }; // const SELECTORS = {
+    //     PROBLEMS_SCREEN: '#screen-problems',
+    //     PROBLEMS_LIST: '.problems-list',
+    //     PROBLEMS_ITEM: '.problems-list__item',
+    //     COURSE_SCREEN: '#screen-course',
+    //     COURSE_DETAILS: '.course-details',
+    // };
+    //
+    // const CSS_CLASSES = {
+    //     HIDDEN: 'hidden',
+    // };
+    //
+    // export const NicheDisplayHandler = {
+    //     _showCourseDetailsForNiche(niche) {
+    //         // Hide all course-details blocks
+    //         const allCourseDetails = document.querySelectorAll(SELECTORS.COURSE_DETAILS);
+    //         allCourseDetails.forEach(block => {
+    //             block.classList.add(CSS_CLASSES.HIDDEN);
+    //         });
+    //
+    //         // Show the course-details block matching the selected niche
+    //         const targetCourseDetails = document.querySelector(`${SELECTORS.COURSE_DETAILS}[data-niche="${niche}"]`);
+    //         if (targetCourseDetails) {
+    //             targetCourseDetails.classList.remove(CSS_CLASSES.HIDDEN);
+    //             console.log(`Showing course details for niche: ${niche}`);
+    //         } else {
+    //             console.warn(`Course details block not found for niche: ${niche}`);
+    //         }
+    //     },
+    //
+    //     _handleProblemClick(event) {
+    //         const problemItem = event.target.closest(SELECTORS.PROBLEMS_ITEM);
+    //
+    //         if (!problemItem) return;
+    //
+    //         const niche = problemItem.dataset.niche;
+    //
+    //         if (!niche) {
+    //             console.warn('No niche data found on clicked problem item');
+    //             return;
+    //         }
+    //
+    //         // Show the corresponding course-details block
+    //         this._showCourseDetailsForNiche(niche);
+    //     },
+    //
+    //     init() {
+    //         const problemsScreen = document.querySelector(SELECTORS.PROBLEMS_SCREEN);
+    //         if (!problemsScreen) {
+    //             console.warn('Problems screen not found');
+    //             return;
+    //         }
+    //
+    //         const problemsList = problemsScreen.querySelector(SELECTORS.PROBLEMS_LIST);
+    //         if (!problemsList) {
+    //             console.warn('Problems list not found');
+    //             return;
+    //         }
+    //
+    //         // Listen for clicks on the problems list
+    //         problemsList.addEventListener('click', (e) => {
+    //             this._handleProblemClick(e);
+    //         });
+    //
+    //         console.log('ProblemsSwitcher initialized');
+    //     }
+    // };
+
     function main() {
       AppState.init();
       LanguageSwitcher.init();
       ReviewsSlider.init();
       ScreenManager.init();
       FormsManager.init();
-      NichesAccordion.init();
-      CourseSwitcher.init();
+      NicheDisplayHandler.init(); // NichesAccordion.init();
+
+      CourseOrderHandler.init();
     }
 
     main();

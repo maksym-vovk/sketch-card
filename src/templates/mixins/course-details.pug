@@ -1,0 +1,21 @@
+include ../data/courses/config
+
+mixin courseDetails(niche)
+    .course-details.hidden(data-niche=niche)
+        h2.course__title!= niche + " title"
+        p.course__subtitle!= niche + " subtitle"
+        button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+            type="button"
+            data-course="4"
+            data-target-screen="screen-order"
+        )!= t.common.actions.order + ' 4'
+        button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+            type="button"
+            data-course="6"
+            data-target-screen="screen-order"
+        )!= t.common.actions.order + ' 6'
+        button.course__problems.btn.btn-arrow.btn-arrow--left.btn-arrow--red(
+            type="button"
+            id="from-course-to-problems"
+            data-target-screen="screen-problems"
+        )!= t.common.actions.selectAnotherProblem
