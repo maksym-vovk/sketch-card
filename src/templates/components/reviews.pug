@@ -23,15 +23,16 @@ mixin stars(rating)
     const avgRating = (allReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1);
 
 .reviews
-    h2.reviews__title Ознайомтесь з думками наших клієнтів
-
     .reviews__top
-        p.reviews__count Reviews
-            | &nbsp;
-            span 11.968
-        .reviews__inner
-            +stars(4.7)
-            span.reviews__score 4.7
+        h2.reviews__title Ознайомтесь з думками наших клієнтів
+
+        .reviews__rating
+            p.reviews__count Reviews
+                | &nbsp;
+                span 11.968
+            .reviews__inner
+                +stars(4.7)
+                span.reviews__score 4.7
 
     // Slider
     .reviews__slider.swiper

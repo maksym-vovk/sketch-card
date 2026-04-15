@@ -38,11 +38,26 @@
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 24px;
+
+    @include rm(1024) {
+      font-size: 42px;
+      margin: 0;
+    }
   }
 
   &__top {
     margin-bottom: 30px;
 
+    @include rm(1024) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__rating {
     .stars__item {
       width: 37px;
     }
@@ -52,6 +67,10 @@
     font-size: 32px;
     line-height: 1;
     margin-bottom: 10px;
+
+    @include rm(1024) {
+      text-align: left;
+    }
   }
 
   &__inner {
@@ -210,5 +229,10 @@
     background: none;
     cursor: pointer;
     color: #2558FF;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
