@@ -27,22 +27,20 @@ section.intro.block(class="screen" id="screen-intro")
         .intro-price
             .intro-price__left
                 .intro-price__sale
-                    .intro-price__sale-percent -50%
-                    .intro-price__sale-text знижка на перевірені курси бренду
+                    .intro-price__sale-percent!= t.intro.priceSection.salePercent
+                    .intro-price__sale-text!= t.intro.priceSection.saleText
                 span.intro-price__separator
                 .intro-price__old
-                    .intro-price__old-title Стара ціна:
-                    .intro-price__old-value 167€
+                    .intro-price__old-title!= t.intro.priceSection.oldPriceTitle
+                    .intro-price__old-value!= t.intro.priceSection.oldPriceValue
 
             .intro-price__right
                 .intro-price__new
-                    .intro-price__new-title Нова ціна з бонусом
+                    .intro-price__new-title!= t.intro.priceSection.newPriceTitle
                     .intro-price__new-inner
-                        .intro-price__new-value 87€
-                        .intro-price__new-text Ціна після застосування вашого бонусу
-                .intro-price__note
-                    | Знижка застосовується автоматично при виборі курсу. Діє 3 дні
-
+                        .intro-price__new-value!= t.intro.priceSection.newPriceValue
+                        .intro-price__new-text!= t.intro.priceSection.newPriceText
+                .intro-price__note!= t.intro.priceSection.note
 
         .intro__actions
             button.intro__btn.intro__btn--call(data-target-screen="screen-intro-popup" id="from-intro-to-callback-form") #{t.intro.btnCall}

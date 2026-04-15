@@ -331,8 +331,135 @@
         "text": "Choose a bargain set"
       }
     ],
+    "priceSection": {
+      "salePercent": "-50%",
+      "saleText": "знижка на перевірені курси бренду",
+      "oldPriceTitle": "Стара ціна:",
+      "oldPriceValue": "167€",
+      "newPriceTitle": "Нова ціна з бонусом",
+      "newPriceValue": "87€",
+      "newPriceText": "Ціна після застосування вашого бонусу",
+      "note": "Знижка застосовується автоматично при виборі курсу. Діє 3 дні"
+    },
     "btnCall": "Order an operator's call",
     "btnSite": "Request personally on the website"
+  },
+  "reviews": {
+    "title": "Ознайомтесь з думками наших клієнтів",
+    "count": "Reviews",
+    "readAll": "Читать всі відгуки",
+    "data": {
+      "joints": [
+        {
+          "name": "María",
+          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
+        },
+        {
+          "name": "Carlos",
+          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум\"</a>. Не скажу що повністю пройшло але різниця відчутна."
+        },
+        {
+          "name": "Rosa",
+          "text": "Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже не прокидалась від болю вночі."
+        },
+        {
+          "name": "Ana",
+          "text": "Суглоби болять менше, можу більше рухатися. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс \"Стандарт\"</a> справді допоміг."
+        },
+        {
+          "name": "Pedro",
+          "text": "Біль у спині майже пройшов після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Преміум\"</a>."
+        }
+      ],
+      "diabetes": [
+        {
+          "name": "Laura",
+          "text": "Рівень цукру стабілізувався, почуваюся набагато краще. Дякую <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a>!"
+        },
+        {
+          "name": "Diego",
+          "text": "Менше хочеться солодкого, енергії більше після прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Sofia",
+          "text": "Показники цукру в нормі вже два місяці. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> дійсно працює!"
+        },
+        {
+          "name": "Miguel",
+          "text": "Аналізи покращилися, лікар задоволений результатами <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Elena",
+          "text": "Самопочуття стало стабільним, цукор не стрибає після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a>."
+        }
+      ],
+      "blood-pressure": [
+        {
+          "name": "Antonio",
+          "text": "Тиск перестав стрибати, голова більше не болить. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>Курс \"Стандарт\"</a> допоміг!"
+        },
+        {
+          "name": "Carmen",
+          "text": "Набряки зменшилися, ноги не болять після прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Juan",
+          "text": "Відчуваю легкість, тиск стабільний завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a>."
+        },
+        {
+          "name": "Isabel",
+          "text": "Судини зміцнилися, почуваюся краще після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Fernando",
+          "text": "Тиск нормалізувався, можу жити повноцінно. Рекомендую <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Стандарт\"</a>!"
+        }
+      ],
+      "weight-loss": [
+        {
+          "name": "Lucia",
+          "text": "Схудла на 8 кг за два місяці, метаболізм прискорився після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Roberto",
+          "text": "Вага почала йти, одяг став вільніше. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс \"Стандарт\"</a> працює!"
+        },
+        {
+          "name": "Patricia",
+          "text": "Мінус 5 кг, почуваюся легше і активніше завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт\"</a>."
+        },
+        {
+          "name": "Jorge",
+          "text": "Апетит нормалізувався, вага йде поступово з <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсом \"Преміум\"</a>."
+        },
+        {
+          "name": "Monica",
+          "text": "Схудла на 10 кг, дуже задоволена результатом <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>!"
+        }
+      ],
+      "tiredness": [
+        {
+          "name": "Andres",
+          "text": "Втома пройшла, з'явилася енергія на весь день після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт\"</a>."
+        },
+        {
+          "name": "Valentina",
+          "text": "Почуваюся бадьоріше, сплю краще завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Ricardo",
+          "text": "Енергії вистачає на всі справи, втоми немає. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>Курс \"Стандарт\"</a> змінив життя!"
+        },
+        {
+          "name": "Diana",
+          "text": "Перестала відчувати постійну слабкість після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a>."
+        },
+        {
+          "name": "Manuel",
+          "text": "Сили повернулися, можу працювати продуктивно з <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсом \"Стандарт\"</a>."
+        }
+      ]
+    }
   },
   "introPopup": {
     "title": "Would you prefer us to do everything for you?",
@@ -470,57 +597,13 @@
   },
   "problems": {
     "title": "Choose the direction you are interested in:",
-    "btnNext": "Next",
-    "categories": [
-      {
-        "name": "Joint care",
-        "list": [
-          "Knees ache because of the weather",
-          "My back hurts and it's hard to move",
-          "Every step is a struggle"
-        ]
-      },
-      {
-        "name": "Diabetes / sugar control",
-        "list": [
-          "My blood sugar is spiking",
-          "Craving for sweets",
-          "Feeling of constant weakness"
-        ]
-      },
-      {
-        "name": "Pressure / Blood Vessels / Swelling",
-        "list": [
-          "Blood pressure often jumps",
-          "My head hurts",
-          "My legs are very swollen in the evening"
-        ]
-      },
-      {
-        "name": "Slimness and metabolism",
-        "list": [
-          "Weight stays the same or only increases over the years",
-          "My favorite clothes have become too tight",
-          "There is a heaviness in the body that was not there before"
-        ]
-      },
-      {
-        "name": "Fighting fatigue",
-        "list": [
-          "Constant feeling of fatigue",
-          "No energy at all",
-          "Nothing pleases"
-        ]
-      },
-      {
-        "name": "Overall health improvement",
-        "list": [
-          "The body needs total support",
-          "I constantly worry about my health",
-          "I want to feel protected and active"
-        ]
-      }
-    ]
+    "items": {
+      "joints": "Покращити здоров'я суглобів та кісток",
+      "diabetes": "Контролювати рівень цукру в крові",
+      "blood-pressure": "Сприяти нормалізації тиску",
+      "weight-loss": "Покращити метаболізм та фігуру",
+      "tiredness": "Збільшити прилив сил"
+    }
   },
   "presentation": {
     "btnChange": "Choose a different program",

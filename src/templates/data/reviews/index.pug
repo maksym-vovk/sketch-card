@@ -1,238 +1,72 @@
 -
-    const REVIEWS_DATA = {
+    const REVIEWS_STATIC = {
         'joints': [
-            {
-                niche: "joints",
-                name: "María",
-                age: 47,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
-            },
-            {
-                niche: "joints",
-                name: "Carlos",
-                age: 63,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум\"</a>. Не скажу що повністю пройшло але різниця відчутна."
-            },
-            {
-                niche: "joints",
-                name: "Rosa",
-                age: 55,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже не прокидалась від болю вночі."
-            },
-            {
-                niche: "joints",
-                name: "Ana",
-                age: 52,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Суглоби болять менше, можу більше рухатися. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс \"Стандарт\"</a> справді допоміг."
-            },
-            {
-                niche: "joints",
-                name: "Pedro",
-                age: 58,
-                avatar: "img/reviews-2.png",
-                rating: 5.0,
-                text: "Біль у спині майже пройшов після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Преміум\"</a>."
-            }
+            { age: 47, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 63, avatar: "img/reviews-2.png", rating: 4.0 },
+            { age: 55, avatar: "img/reviews-3.png", rating: 5.0 },
+            { age: 52, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 58, avatar: "img/reviews-2.png", rating: 5.0 }
         ],
         'diabetes': [
-            {
-                niche: "diabetes",
-                name: "Laura",
-                age: 49,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Рівень цукру стабілізувався, почуваюся набагато краще. Дякую <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a>!"
-            },
-            {
-                niche: "diabetes",
-                name: "Diego",
-                age: 61,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Менше хочеться солодкого, енергії більше після прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "diabetes",
-                name: "Sofia",
-                age: 54,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Показники цукру в нормі вже два місяці. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> дійсно працює!"
-            },
-            {
-                niche: "diabetes",
-                name: "Miguel",
-                age: 56,
-                avatar: "img/reviews-2.png",
-                rating: 4.5,
-                text: "Аналізи покращилися, лікар задоволений результатами <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "diabetes",
-                name: "Elena",
-                age: 50,
-                avatar: "img/reviews-1.png",
-                rating: 5.0,
-                text: "Самопочуття стало стабільним, цукор не стрибає після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a>."
-            }
+            { age: 49, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 61, avatar: "img/reviews-2.png", rating: 4.0 },
+            { age: 54, avatar: "img/reviews-3.png", rating: 5.0 },
+            { age: 56, avatar: "img/reviews-2.png", rating: 4.5 },
+            { age: 50, avatar: "img/reviews-1.png", rating: 5.0 }
         ],
         'blood-pressure': [
-            {
-                niche: "blood-pressure",
-                name: "Antonio",
-                age: 65,
-                avatar: "img/reviews-2.png",
-                rating: 4.5,
-                text: "Тиск перестав стрибати, голова більше не болить. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>Курс \"Стандарт\"</a> допоміг!"
-            },
-            {
-                niche: "blood-pressure",
-                name: "Carmen",
-                age: 58,
-                avatar: "img/reviews-3.png",
-                rating: 4.0,
-                text: "Набряки зменшилися, ноги не болять після прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "blood-pressure",
-                name: "Juan",
-                age: 60,
-                avatar: "img/reviews-2.png",
-                rating: 5.0,
-                text: "Відчуваю легкість, тиск стабільний завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a>."
-            },
-            {
-                niche: "blood-pressure",
-                name: "Isabel",
-                age: 62,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Судини зміцнилися, почуваюся краще після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "blood-pressure",
-                name: "Fernando",
-                age: 59,
-                avatar: "img/reviews-2.png",
-                rating: 5.0,
-                text: "Тиск нормалізувався, можу жити повноцінно. Рекомендую <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Стандарт\"</a>!"
-            }
+            { age: 65, avatar: "img/reviews-2.png", rating: 4.5 },
+            { age: 58, avatar: "img/reviews-3.png", rating: 4.0 },
+            { age: 60, avatar: "img/reviews-2.png", rating: 5.0 },
+            { age: 62, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 59, avatar: "img/reviews-2.png", rating: 5.0 }
         ],
         'weight-loss': [
-            {
-                niche: "weight-loss",
-                name: "Lucia",
-                age: 45,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Схудла на 8 кг за два місяці, метаболізм прискорився після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "weight-loss",
-                name: "Roberto",
-                age: 51,
-                avatar: "img/reviews-2.png",
-                rating: 4.0,
-                text: "Вага почала йти, одяг став вільніше. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс \"Стандарт\"</a> працює!"
-            },
-            {
-                niche: "weight-loss",
-                name: "Patricia",
-                age: 48,
-                avatar: "img/reviews-3.png",
-                rating: 5.0,
-                text: "Мінус 5 кг, почуваюся легше і активніше завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт\"</a>."
-            },
-            {
-                niche: "weight-loss",
-                name: "Jorge",
-                age: 53,
-                avatar: "img/reviews-2.png",
-                rating: 4.5,
-                text: "Апетит нормалізувався, вага йде поступово з <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсом \"Преміум\"</a>."
-            },
-            {
-                niche: "weight-loss",
-                name: "Monica",
-                age: 46,
-                avatar: "img/reviews-1.png",
-                rating: 5.0,
-                text: "Схудла на 10 кг, дуже задоволена результатом <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>!"
-            }
+            { age: 45, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 51, avatar: "img/reviews-2.png", rating: 4.0 },
+            { age: 48, avatar: "img/reviews-3.png", rating: 5.0 },
+            { age: 53, avatar: "img/reviews-2.png", rating: 4.5 },
+            { age: 46, avatar: "img/reviews-1.png", rating: 5.0 }
         ],
         'tiredness': [
-            {
-                niche: "tiredness",
-                name: "Andres",
-                age: 44,
-                avatar: "img/reviews-2.png",
-                rating: 4.5,
-                text: "Втома пройшла, з'явилася енергія на весь день після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт\"</a>."
-            },
-            {
-                niche: "tiredness",
-                name: "Valentina",
-                age: 42,
-                avatar: "img/reviews-3.png",
-                rating: 4.0,
-                text: "Почуваюся бадьоріше, сплю краще завдяки <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "tiredness",
-                name: "Ricardo",
-                age: 50,
-                avatar: "img/reviews-2.png",
-                rating: 5.0,
-                text: "Енергії вистачає на всі справи, втоми немає. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>Курс \"Стандарт\"</a> змінив життя!"
-            },
-            {
-                niche: "tiredness",
-                name: "Diana",
-                age: 43,
-                avatar: "img/reviews-1.png",
-                rating: 4.5,
-                text: "Перестала відчувати постійну слабкість після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a>."
-            },
-            {
-                niche: "tiredness",
-                name: "Manuel",
-                age: 47,
-                avatar: "img/reviews-2.png",
-                rating: 5.0,
-                text: "Сили повернулися, можу працювати продуктивно з <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсом \"Стандарт\"</a>."
-            }
-        ],
+            { age: 44, avatar: "img/reviews-2.png", rating: 4.5 },
+            { age: 42, avatar: "img/reviews-3.png", rating: 4.0 },
+            { age: 50, avatar: "img/reviews-2.png", rating: 5.0 },
+            { age: 43, avatar: "img/reviews-1.png", rating: 4.5 },
+            { age: 47, avatar: "img/reviews-2.png", rating: 5.0 }
+        ]
     };
 
-    // Helper function to get all reviews
+    // Merge static data with translated content (name + text)
+    const REVIEWS_DATA = {};
+    Object.keys(REVIEWS_STATIC).forEach(niche => {
+        REVIEWS_DATA[niche] = REVIEWS_STATIC[niche].map((staticData, index) => {
+            return Object.assign({}, staticData, {
+                niche: niche,
+                name: t.reviews.data[niche][index].name,
+                text: t.reviews.data[niche][index].text
+            });
+        });
+    });
+
+    // Helper functions remain the same
     function getAllReviews() {
         return Object.keys(REVIEWS_DATA).reduce((acc, niche) => {
             return acc.concat(REVIEWS_DATA[niche]);
         }, []);
     }
 
-    // Helper function to get reviews by niche
     function getReviewsByNiche(niche) {
         return REVIEWS_DATA[niche] || [];
     }
 
-    // Helper function to get reviews by niche WITHOUT clickable links (clean text)
     function getCleanReviewsByNiche(niche) {
         const reviews = REVIEWS_DATA[niche] || [];
         return reviews.map(review => (Object.assign({}, review, {
             text: review.text.replace(/<a[^>]*class=['"]review-card__btn['"][^>]*>(.*?)<\/a>/g, '<span>$1</span>')
-            })));
+        })));
     }
 
-    // Helper function to get mixed reviews for slider (one from each niche per slide)
     function getMixedReviewsSlides(reviewsPerSlide = 3) {
         const niches = Object.keys(REVIEWS_DATA);
         const maxReviews = Math.max(...niches.map(n => REVIEWS_DATA[n].length));

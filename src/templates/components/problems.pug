@@ -1,89 +1,3 @@
-//EN.JSON
-//{
-//    "problems": {
-//        "title": "Choose the direction you are interested in:",
-//        "items": [
-//            {
-//                "niche": "joints",
-//                "text": "Improve joint and bone health",
-//                "icon": "problems-joints.svg"
-//            },
-//            {
-//                "niche": "diabetes",
-//                "text": "Control blood sugar levels",
-//                "icon": "problems-diabetes.svg"
-//            },
-//            {
-//                "niche": "pressure",
-//                "text": "Help normalize blood pressure",
-//                "icon": "problems-pressure.svg"
-//            },
-//            {
-//                "niche": "weight",
-//                "text": "Improve metabolism and figure",
-//                "icon": "problems-weight.svg"
-//            },
-//            {
-//                "niche": "tiredness",
-//                "text": "Increase energy flow",
-//                "icon": "problems-tiredness.svg"
-//            }
-//        ]
-//    }
-//}
-//section.problems.block(class="screen hidden" id="screen-problems")
-//    .container
-//        h2.problems__title= t.problems.title
-//
-//        ul.problems-list
-//            each item in t.problems.items
-//                li.problems-list__item(
-//                    data-niche=item.niche
-//                    data-target-screen="screen-course"
-//                )
-//                    .problems-list__icon
-//                        img(src=basePath + "img/" + item.icon alt=item.text)
-//                    p.problems-list__text= item.text
-
-
-
-
-
-// -
-    // const categories = [
-    //     {
-    //         name: t.problems.categories[0].name,
-    //         niche: "joints",
-    //         list: t.problems.categories[0].list
-    //     },
-    //     {
-    //         name: t.problems.categories[1].name,
-    //         niche: "diabetes",
-    //         list: t.problems.categories[1].list
-    //     },
-    //     {
-    //         name: t.problems.categories[2].name,
-    //         niche: "blood-pressure",
-    //         list: t.problems.categories[2].list
-    //     },
-    //     {
-    //         name: t.problems.categories[3].name,
-    //         niche: "weight-loss",
-    //         list: t.problems.categories[3].list
-    //     },
-    //     {
-    //         name: t.problems.categories[4].name,
-    //         niche: "tiredness",
-    //         list: t.problems.categories[4].list
-    //     },
-    //     {
-    //         name: t.problems.categories[5].name,
-    //         niche: "parasites",
-    //         list: t.problems.categories[5].list
-    //     }
-    // ]
-
-//section.problems.block(class="screen" id="screen-problems")
 section.problems.block(class="screen hidden" id="screen-problems")
     .container
         h2.problems__title= t.problems.title
@@ -92,41 +6,20 @@ section.problems.block(class="screen hidden" id="screen-problems")
             li.problems-list__item(data-niche="joints" data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-joints.svg" alt="")
-                p.problems-list__text Покращити здоров'я суглобів та кісток
+                p.problems-list__text= t.problems.items.joints
             li.problems-list__item(data-niche="diabetes" data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-diabetes.svg" alt="")
-                p.problems-list__text Контролювати рівень цукру в крові
+                p.problems-list__text= t.problems.items.diabetes
             li.problems-list__item(data-niche="blood-pressure" data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-pressure.svg" alt="")
-                p.problems-list__text Сприяти нормалізації тиску
+                p.problems-list__text= t.problems.items['blood-pressure']
             li.problems-list__item(data-niche="weight-loss" data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-weight.svg" alt="")
-                p.problems-list__text Покращити метаболізм та фігуру
+                p.problems-list__text= t.problems.items['weight-loss']
             li.problems-list__item(data-niche="tiredness" data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-tiredness.svg" alt="")
-                p.problems-list__text Збільшити прилив сил
-
-        //.problems-wrapper
-        //    each cat in categories
-        //        .accordion-item(data-niche=cat.niche)
-        //            label.accordion-header
-        //                input(type="radio" name="problem" value=cat.name required)
-        //                span= cat.name
-        //
-        //            .accordion-content
-        //                .accordion-content__inner
-        //                    ol
-        //                        each problem, idx in cat.list
-        //                            li
-        //                                span #{idx + 1}. #{problem}
-        //                button.accordion-content__btn.btn.btn-arrow.btn-arrow--right(
-        //                    type="button"
-        //                    id=`from-problems-to-course-${cat.niche}`
-        //                    data-target-screen="screen-course"
-        //                )= t.problems.btnNext
-
-
+                p.problems-list__text= t.problems.items.tiredness
