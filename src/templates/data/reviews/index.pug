@@ -224,6 +224,14 @@
         return REVIEWS_DATA[niche] || [];
     }
 
+    // Helper function to get reviews by niche WITHOUT clickable links (clean text)
+    function getCleanReviewsByNiche(niche) {
+        const reviews = REVIEWS_DATA[niche] || [];
+        return reviews.map(review => (Object.assign({}, review, {
+            text: review.text.replace(/<a[^>]*class=['"]review-card__btn['"][^>]*>(.*?)<\/a>/g, '<span>$1</span>')
+            })));
+    }
+
     // Helper function to get mixed reviews for slider (one from each niche per slide)
     function getMixedReviewsSlides(reviewsPerSlide = 3) {
         const niches = Object.keys(REVIEWS_DATA);

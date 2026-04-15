@@ -1,9 +1,25 @@
-include ../data/courses/config
+//include ../data/courses/config
 
 mixin courseDetails(niche)
+    - const reviews = getCleanReviewsByNiche(niche);
+
     .course-details.hidden(data-niche=niche)
         h2.course__title!= niche + " title"
         p.course__subtitle!= niche + " subtitle"
+
+        each r in reviews
+            article.review-card
+                .review-card__head
+                    picture
+                        source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
+                        img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
+                    .review-card__meta
+                        .review-card__name #{r.name} | #{r.niche}, #{r.age}
+                        .review-card__rating
+                            +stars(r.rating)
+                            span.review-card__rating-num #{r.rating.toFixed(1)}
+                p.review-card__text!= '"' + r.text + '"'
+
         button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
             type="button"
             data-course="4"

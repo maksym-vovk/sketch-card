@@ -22,6 +22,7 @@ export const ReviewsSlider = {
             spaceBetween: 16,
             speed: 450,
             loop: false,
+            autoHeight: true,
 
             navigation: {
                 nextEl: '.reviews__nav-next',

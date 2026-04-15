@@ -607,27 +607,353 @@
       </div>
     </section>
     <!--include components/presentations-->
+    <!--include ../data/courses/config-->
     <section class="course block screen hidden" id="screen-course">
       <div class="container">
         <div class="course-details hidden" data-niche="joints">
           <h2 class="course__title">joints title</h2>
-          <p class="course__subtitle">joints subtitle</p><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
+          <p class="course__subtitle">joints subtitle</p>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="María avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">María | joints, 47</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Коліна почали боліти ще три роки тому. Після місяця <span>курсу "Стандарт"</span> вже можу нормально ходити по сходах без того щоб зупинятись."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Carlos avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Carlos | joints, 63</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <span>курс "Преміум"</span>. Не скажу що повністю пройшло але різниця відчутна."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Rosa avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Rosa | joints, 55</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Мені сказали що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <span>курсу "Стандарт"</span> вже не прокидалась від болю вночі."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Ana avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Ana | joints, 52</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Суглоби болять менше, можу більше рухатися. <span>Курс "Стандарт"</span> справді допоміг."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Pedro avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Pedro | joints, 58</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Біль у спині майже пройшов після <span>курсу "Преміум"</span>."</p>
+          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
         </div>
         <div class="course-details hidden" data-niche="diabetes">
           <h2 class="course__title">diabetes title</h2>
-          <p class="course__subtitle">diabetes subtitle</p><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
+          <p class="course__subtitle">diabetes subtitle</p>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Laura avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Laura | diabetes, 49</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Рівень цукру стабілізувався, почуваюся набагато краще. Дякую <span>курсу "Стандарт"</span>!"</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Diego avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Diego | diabetes, 61</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Менше хочеться солодкого, енергії більше після прийому <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Sofia avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Sofia | diabetes, 54</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Показники цукру в нормі вже два місяці. <span>Курс "Стандарт"</span> дійсно працює!"</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Miguel avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Miguel | diabetes, 56</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Аналізи покращилися, лікар задоволений результатами <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Elena avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Elena | diabetes, 50</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Самопочуття стало стабільним, цукор не стрибає після <span>курсу "Стандарт"</span>."</p>
+          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
         </div>
         <div class="course-details hidden" data-niche="blood-pressure">
           <h2 class="course__title">blood-pressure title</h2>
-          <p class="course__subtitle">blood-pressure subtitle</p><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
+          <p class="course__subtitle">blood-pressure subtitle</p>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Antonio avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Antonio | blood-pressure, 65</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Тиск перестав стрибати, голова більше не болить. <span>Курс "Стандарт"</span> допоміг!"</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Carmen avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Carmen | blood-pressure, 58</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Набряки зменшилися, ноги не болять після прийому <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Juan avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Juan | blood-pressure, 60</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Відчуваю легкість, тиск стабільний завдяки <span>курсу "Стандарт"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Isabel avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Isabel | blood-pressure, 62</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Судини зміцнилися, почуваюся краще після <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Fernando avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Fernando | blood-pressure, 59</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Тиск нормалізувався, можу жити повноцінно. Рекомендую <span>курс "Стандарт"</span>!"</p>
+          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
         </div>
         <div class="course-details hidden" data-niche="weight-loss">
           <h2 class="course__title">weight-loss title</h2>
-          <p class="course__subtitle">weight-loss subtitle</p><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
+          <p class="course__subtitle">weight-loss subtitle</p>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Lucia avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Lucia | weight-loss, 45</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Схудла на 8 кг за два місяці, метаболізм прискорився після <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Roberto avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Roberto | weight-loss, 51</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Вага почала йти, одяг став вільніше. <span>Курс "Стандарт"</span> працює!"</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Patricia avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Patricia | weight-loss, 48</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Мінус 5 кг, почуваюся легше і активніше завдяки <span>курсу "Стандарт"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Jorge avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Jorge | weight-loss, 53</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Апетит нормалізувався, вага йде поступово з <span>курсом "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Monica avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Monica | weight-loss, 46</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Схудла на 10 кг, дуже задоволена результатом <span>курсу "Преміум"</span>!"</p>
+          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
         </div>
         <div class="course-details hidden" data-niche="tiredness">
           <h2 class="course__title">tiredness title</h2>
-          <p class="course__subtitle">tiredness subtitle</p><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
+          <p class="course__subtitle">tiredness subtitle</p>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Andres avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Andres | tiredness, 44</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Втома пройшла, з'явилася енергія на весь день після <span>курсу "Стандарт"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Valentina avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Valentina | tiredness, 42</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Почуваюся бадьоріше, сплю краще завдяки <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ricardo avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Ricardo | tiredness, 50</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Енергії вистачає на всі справи, втоми немає. <span>Курс "Стандарт"</span> змінив життя!"</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Diana avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Diana | tiredness, 43</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Перестала відчувати постійну слабкість після <span>курсу "Преміум"</span>."</p>
+          </article>
+          <article class="review-card">
+            <div class="review-card__head">
+              <picture>
+                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Manuel avatar" loading="lazy"></picture>
+              <div class="review-card__meta">
+                <div class="review-card__name">Manuel | tiredness, 47</div>
+                <div class="review-card__rating">
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-card__text">"Сили повернулися, можу працювати продуктивно з <span>курсом "Стандарт"</span>."</p>
+          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left btn-arrow--red" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
         </div>
       </div>
     </section>
