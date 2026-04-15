@@ -227,13 +227,25 @@
           </div>
         </div>
         <div class="intro__actions"><button class="intro__btn intro__btn--call" data-target-screen="screen-intro-popup" id="from-intro-to-callback-form">Order an operator's call</button><button class="intro__btn intro__btn--site" data-target-screen="screen-intro-success" id="from-intro-to-promo-code">Request personally on the website</button></div>
+        <!--mixin stars(rating)-->
+        <!--    - const full = Math.floor(rating)-->
+        <!--    - const half = (rating - full) >= 0.5-->
+        <!--    - const empty = 5 - full - (half ? 1 : 0)-->
+        <!---->
+        <!--    .stars(aria-label=`Rating ${rating} out of 5`)-->
+        <!--        - for (let i = 0; i < full; i++)-->
+        <!--            span.stars__item.stars__item--full-->
+        <!--        - if (half)-->
+        <!--            span.stars__item.stars__item--half-->
+        <!--        - for (let i = 0; i < empty; i++)-->
+        <!--            span.stars__item.stars__item--empty-->
         <div class="reviews">
           <div class="reviews__top">
             <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
             <div class="reviews__rating">
               <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
               <div class="reviews__inner">
-                <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="reviews__score">4.7</span>
+                <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
               </div>
             </div>
           </div><!-- Slider-->
@@ -247,7 +259,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">María | joints, 47</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                       </div>
                     </div>
                   </div>
@@ -260,7 +272,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Lucía | diabetes, 49</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                       </div>
                     </div>
                   </div>
@@ -273,7 +285,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Antonio | blood-pressure, 65</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                       </div>
                     </div>
                   </div>
@@ -314,7 +326,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">José | weight-loss, 51</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                       </div>
                     </div>
                   </div>
@@ -342,7 +354,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Teresa | weight-loss, 48</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                       </div>
                     </div>
                   </div>
@@ -370,7 +382,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Sergio | weight-loss, 53</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                       </div>
                     </div>
                   </div>
@@ -383,7 +395,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Mercedes | tiredness, 43</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                       </div>
                     </div>
                   </div>
@@ -396,7 +408,7 @@
                     <div class="review-card__meta">
                       <div class="review-card__name">Javier | joints, 52</div>
                       <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                       </div>
                     </div>
                   </div>
@@ -524,7 +536,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">María | joints, 47</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -563,7 +575,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Javier | joints, 52</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -593,7 +605,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Lucía | diabetes, 49</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -632,7 +644,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Ramón | diabetes, 56</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -662,7 +674,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Antonio | blood-pressure, 65</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -701,7 +713,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Isabel | blood-pressure, 62</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -731,7 +743,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Ana | weight-loss, 45</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -744,7 +756,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">José | weight-loss, 51</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -757,7 +769,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Teresa | weight-loss, 48</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -770,7 +782,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Sergio | weight-loss, 53</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -783,7 +795,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Amparo | weight-loss, 46</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>
@@ -800,7 +812,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Manuel | tiredness, 44</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
                 </div>
               </div>
             </div>
@@ -839,7 +851,7 @@
               <div class="review-card__meta">
                 <div class="review-card__name">Mercedes | tiredness, 43</div>
                 <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4.5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--half"></span></div><span class="review-card__rating-num">4.5</span>
+                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
                 </div>
               </div>
             </div>

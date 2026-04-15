@@ -2,16 +2,34 @@ include ../data/reviews/index
 
 mixin stars(rating)
     - const full = Math.floor(rating)
-    - const half = (rating - full) >= 0.5
-    - const empty = 5 - full - (half ? 1 : 0)
+    - const decimal = rating - full
+    - const isHalf = decimal === 0.5
+    - const hasPartial = decimal > 0 && !isHalf
+    - const empty = (isHalf || hasPartial) ? 5 - full - 1 : 5 - full
 
     .stars(aria-label=`Rating ${rating} out of 5`)
         - for (let i = 0; i < full; i++)
             span.stars__item.stars__item--full
-        - if (half)
+        - if (isHalf)
             span.stars__item.stars__item--half
+        - else if (hasPartial)
+            span.stars__item.stars__item--partial(style=`--fill-percent: ${decimal * 100}%`)
         - for (let i = 0; i < empty; i++)
             span.stars__item.stars__item--empty
+
+
+//mixin stars(rating)
+//    - const full = Math.floor(rating)
+//    - const half = (rating - full) >= 0.5
+//    - const empty = 5 - full - (half ? 1 : 0)
+//
+//    .stars(aria-label=`Rating ${rating} out of 5`)
+//        - for (let i = 0; i < full; i++)
+//            span.stars__item.stars__item--full
+//        - if (half)
+//            span.stars__item.stars__item--half
+//        - for (let i = 0; i < empty; i++)
+//            span.stars__item.stars__item--empty
 
 -
     // Get mixed reviews (3 per slide from different niches)

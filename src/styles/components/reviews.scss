@@ -24,6 +24,10 @@
       background: $stars-empty-bg;
     }
 
+    &--partial {
+      background: linear-gradient(90deg, $stars-fill-bg var(--fill-percent, 50%), $stars-empty-bg var(--fill-percent, 50%));
+    }
+
     &--half {
       background: linear-gradient(90deg, $stars-fill-bg 50%, $stars-empty-bg 50%);
     }
