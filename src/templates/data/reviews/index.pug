@@ -1,55 +1,57 @@
 -
     const REVIEWS_STATIC = {
         'joints': [
-            { age: 47, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 63, avatar: "img/reviews-2.png", rating: 4.0 },
-            { age: 55, avatar: "img/reviews-3.png", rating: 5.0 },
-            { age: 52, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 58, avatar: "img/reviews-2.png", rating: 5.0 }
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-3.png" },
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" }
         ],
         'diabetes': [
-            { age: 49, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 61, avatar: "img/reviews-2.png", rating: 4.0 },
-            { age: 54, avatar: "img/reviews-3.png", rating: 5.0 },
-            { age: 56, avatar: "img/reviews-2.png", rating: 4.5 },
-            { age: 50, avatar: "img/reviews-1.png", rating: 5.0 }
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-3.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-1.png" }
         ],
         'blood-pressure': [
-            { age: 65, avatar: "img/reviews-2.png", rating: 4.5 },
-            { age: 58, avatar: "img/reviews-3.png", rating: 4.0 },
-            { age: 60, avatar: "img/reviews-2.png", rating: 5.0 },
-            { age: 62, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 59, avatar: "img/reviews-2.png", rating: 5.0 }
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-3.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" }
         ],
         'weight-loss': [
-            { age: 45, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 51, avatar: "img/reviews-2.png", rating: 4.0 },
-            { age: 48, avatar: "img/reviews-3.png", rating: 5.0 },
-            { age: 53, avatar: "img/reviews-2.png", rating: 4.5 },
-            { age: 46, avatar: "img/reviews-1.png", rating: 5.0 }
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-3.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-1.png" }
         ],
         'tiredness': [
-            { age: 44, avatar: "img/reviews-2.png", rating: 4.5 },
-            { age: 42, avatar: "img/reviews-3.png", rating: 4.0 },
-            { age: 50, avatar: "img/reviews-2.png", rating: 5.0 },
-            { age: 43, avatar: "img/reviews-1.png", rating: 4.5 },
-            { age: 47, avatar: "img/reviews-2.png", rating: 5.0 }
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-3.png" },
+            { avatar: "img/reviews-2.png" },
+            { avatar: "img/reviews-1.png" },
+            { avatar: "img/reviews-2.png" }
         ]
     };
 
-    // Merge static data with translated content (name + text)
+    // Merge static data with translated content (name, age, rating, text)
     const REVIEWS_DATA = {};
     Object.keys(REVIEWS_STATIC).forEach(niche => {
         REVIEWS_DATA[niche] = REVIEWS_STATIC[niche].map((staticData, index) => {
             return Object.assign({}, staticData, {
                 niche: niche,
                 name: t.reviews.data[niche][index].name,
+                age: t.reviews.data[niche][index].age,
+                rating: t.reviews.data[niche][index].rating,
                 text: t.reviews.data[niche][index].text
             });
         });
     });
 
-    // Helper functions remain the same
+    // Helper functions
     function getAllReviews() {
         return Object.keys(REVIEWS_DATA).reduce((acc, niche) => {
             return acc.concat(REVIEWS_DATA[niche]);
@@ -69,7 +71,7 @@
 
     function getMixedReviewsSlides(reviewsPerSlide = 3) {
         const niches = Object.keys(REVIEWS_DATA);
-        const maxReviews = Math.max(...niches.map(n => REVIEWS_DATA[n].length));
+        const maxReviews = Math.max.apply(Math, niches.map(function(n) { return REVIEWS_DATA[n].length; }));
         const slides = [];
 
         for (let i = 0; i < maxReviews; i++) {
@@ -78,7 +80,7 @@
                 const nicheIndex = (i + j) % niches.length;
                 const niche = niches[nicheIndex];
                 const reviews = REVIEWS_DATA[niche];
-                const reviewIndex = Math.floor(i / niches.length) % reviews.length;
+                const reviewIndex = i % reviews.length;
 
                 if (reviews[reviewIndex]) {
                     slide.push(reviews[reviewIndex]);
