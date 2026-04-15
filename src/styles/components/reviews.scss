@@ -99,7 +99,8 @@
 
   &__navigation {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     margin-top: 30px;
@@ -109,10 +110,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 52 / 25;
-    width: 52px;
-    background: url("../img/slider-arrow.svg") no-repeat center center / contain;
+    //aspect-ratio: 52 / 25;
+    //width: 52px;
+    width: 60px;
+    height: 60px;
+    background: #fff url("../img/slider-arrow.svg") no-repeat center center / 70%;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
     flex-shrink: 0;
@@ -123,7 +127,7 @@
     //}
 
     &:disabled {
-      background-color: transparent !important;
+      background-color: #fff !important;
       opacity: 0.3;
       cursor: not-allowed;
 
