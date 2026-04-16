@@ -54,6 +54,11 @@ mixin stars(rating)
 
     // Slider
     .reviews__slider.swiper
+        // Navigation arrows with link in the middle
+        .reviews__navigation
+            button.reviews__nav-btn.reviews__nav-prev
+            //a.reviews__all(href="#") Читать всі відгуки
+            button.reviews__nav-btn.reviews__nav-next
         .swiper-wrapper
             each slide in slides
                 .reviews__slide.swiper-slide
@@ -70,8 +75,3 @@ mixin stars(rating)
                                         span.review-card__rating-num #{r.rating.toFixed(1)}
                             p.review-card__text!= '"' + r.text + '"'
 
-        // Navigation arrows with link in the middle
-        .reviews__navigation
-            button.reviews__nav-btn.reviews__nav-prev
-            //a.reviews__all(href="#") Читать всі відгуки
-            button.reviews__nav-btn.reviews__nav-next

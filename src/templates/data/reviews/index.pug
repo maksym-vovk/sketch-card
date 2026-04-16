@@ -70,26 +70,55 @@
     }
 
     function getMixedReviewsSlides(reviewsPerSlide = 3) {
-        const niches = Object.keys(REVIEWS_DATA);
-        const maxReviews = Math.max.apply(Math, niches.map(function(n) { return REVIEWS_DATA[n].length; }));
+        // Get all reviews from all niches
+        const allReviews = getAllReviews();
+
+        // Shuffle the reviews randomly (Fisher-Yates shuffle algorithm)
+        const shuffled = allReviews.slice(); // Create a copy
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+
+        // Trim to make the total count divisible by reviewsPerSlide (3)
+        const remainder = shuffled.length % reviewsPerSlide;
+        if (remainder !== 0) {
+            // Remove excess reviews from the end
+            shuffled.splice(-remainder);
+        }
+
+        // Split into slides of reviewsPerSlide (3) reviews each
         const slides = [];
-
-        for (let i = 0; i < maxReviews; i++) {
-            const slide = [];
-            for (let j = 0; j < reviewsPerSlide && j < niches.length; j++) {
-                const nicheIndex = (i + j) % niches.length;
-                const niche = niches[nicheIndex];
-                const reviews = REVIEWS_DATA[niche];
-                const reviewIndex = i % reviews.length;
-
-                if (reviews[reviewIndex]) {
-                    slide.push(reviews[reviewIndex]);
-                }
-            }
-            if (slide.length > 0) {
-                slides.push(slide);
-            }
+        for (let i = 0; i < shuffled.length; i += reviewsPerSlide) {
+            slides.push(shuffled.slice(i, i + reviewsPerSlide));
         }
 
         return slides;
     }
+
+
+
+// function getMixedReviewsSlides(reviewsPerSlide = 3) {
+    //     const niches = Object.keys(REVIEWS_DATA);
+    //     const maxReviews = Math.max.apply(Math, niches.map(function(n) { return REVIEWS_DATA[n].length; }));
+    //     const slides = [];
+    //
+    //     for (let i = 0; i < maxReviews; i++) {
+    //         const slide = [];
+    //         for (let j = 0; j < reviewsPerSlide && j < niches.length; j++) {
+    //             const nicheIndex = (i + j) % niches.length;
+    //             const niche = niches[nicheIndex];
+    //             const reviews = REVIEWS_DATA[niche];
+    //             const reviewIndex = i % reviews.length;
+    //
+    //             if (reviews[reviewIndex]) {
+    //                 slide.push(reviews[reviewIndex]);
+    //             }
+    //         }
+    //         if (slide.length > 0) {
+    //             slides.push(slide);
+    //         }
+    //     }
+    //
+    //     return slides;
+    // }
