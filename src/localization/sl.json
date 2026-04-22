@@ -982,5 +982,487 @@
         "hint": "Prosimo, počakajte klic našega operaterja za potrditev podrobnosti dostave."
       }
     }
+  },
+  "courseDetails": {
+    "joints": {
+      "kit": {
+        "title": "Комплект для схуднення та покращення метаболізму",
+        "subtitle": "Не можете схуднути? Вага постійно повертається?",
+        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+      },
+      "firstProduct": {
+        "title": "Slimital",
+        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "components": [
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гурана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
+        ]
+      },
+      "secondProduct": {
+        "title": "Ultraxal",
+        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ",
+        "components": [
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
+        ]
+      },
+      "banner": {
+        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
+        "buttonText": "Order an operator's call"
+      },
+      "plans": [
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 30 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 60 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
+      ]
+    },
+    "diabetes": {
+      "kit": {
+        "title": "Комплект для схуднення та покращення метаболізму",
+        "subtitle": "Не можете схуднути? Вага постійно повертається?",
+        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+      },
+      "firstProduct": {
+        "title": "Slimital",
+        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "components": [
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гурана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
+        ]
+      },
+      "secondProduct": {
+        "title": "Ultraxal",
+        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ",
+        "components": [
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
+        ]
+      },
+      "banner": {
+        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
+        "buttonText": "Order an operator's call"
+      },
+      "plans": [
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 30 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 60 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
+      ]
+    },
+    "blood-pressure": {
+      "kit": {
+        "title": "Комплект для схуднення та покращення метаболізму",
+        "subtitle": "Не можете схуднути? Вага постійно повертається?",
+        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+      },
+      "firstProduct": {
+        "title": "Slimital",
+        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "components": [
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гурана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
+        ]
+      },
+      "secondProduct": {
+        "title": "Ultraxal",
+        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ",
+        "components": [
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
+        ]
+      },
+      "banner": {
+        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
+        "buttonText": "Order an operator's call"
+      },
+      "plans": [
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 30 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 60 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
+      ]
+    },
+    "weight-loss": {
+      "kit": {
+        "title": "Комплект для схуднення та покращення метаболізму",
+        "subtitle": "Не можете схуднути? Вага постійно повертається?",
+        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+      },
+      "firstProduct": {
+        "title": "Slimital",
+        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "components": [
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гурана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
+        ]
+      },
+      "secondProduct": {
+        "title": "Ultraxal",
+        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ",
+        "components": [
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
+        ]
+      },
+      "banner": {
+        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
+        "buttonText": "Order an operator's call"
+      },
+      "plans": [
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 30 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 60 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
+      ]
+    },
+    "tiredness": {
+      "kit": {
+        "title": "Комплект для схуднення та покращення метаболізму",
+        "subtitle": "Не можете схуднути? Вага постійно повертається?",
+        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+      },
+      "firstProduct": {
+        "title": "Slimital",
+        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "components": [
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гурана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
+        ]
+      },
+      "secondProduct": {
+        "title": "Ultraxal",
+        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ",
+        "components": [
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
+        ]
+      },
+      "banner": {
+        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
+        "buttonText": "Order an operator's call"
+      },
+      "plans": [
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 30 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 60 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "price": "87€",
+          "percentage": "-50%",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
+      ]
+    }
   }
 }

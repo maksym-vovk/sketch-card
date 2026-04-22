@@ -1,37 +1,145 @@
-//include ../data/courses/config
-
 mixin courseDetails(niche)
-    - const reviews = getCleanReviewsByNiche(niche);
+    -
+        const images = {
+            'joints': {
+                kit: 'img/kit-joints.png',
+                firstProduct: {
+                    pack: 'img/slimital-pack.png',
+                },
+                secondProduct: {
+                    pack: 'img/ultraxal-pack.png',
+                },
+            },
+            'diabetes': {
+                kit: 'img/kit-joints.png',
+                firstProduct: {
+                    pack: 'img/slimital-pack.png',
+                },
+                secondProduct: {
+                    pack: 'img/ultraxal-pack.png',
+                }
+            },
+            'blood-pressure': {
+                kit: 'img/kit-joints.png',
+                firstProduct: {
+                    pack: 'img/slimital-pack.png',
+                },
+                secondProduct: {
+                    pack: 'img/ultraxal-pack.png',
+                }
+            },
+            'weight-loss': {
+                kit: 'img/kit-joints.png',
+                firstProduct: {
+                    pack: 'img/slimital-pack.png',
+                },
+                secondProduct: {
+                    pack: 'img/ultraxal-pack.png',
+                }
+            },
+            'tiredness': {
+                kit: 'img/kit-joints.png',
+                firstProduct: {
+                    pack: 'img/slimital-pack.png',
+                },
+                secondProduct: {
+                    pack: 'img/ultraxal-pack.png',
+                }
+            }
+        };
 
-    .course-details.hidden(data-niche=niche)
-        h2.course__title!= niche + " title"
-        p.course__subtitle!= niche + " subtitle"
+        // Get localized content for this niche
+        const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
-        each r in reviews
-            article.review-card
-                .review-card__head
-                    picture
-                        source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
-                        img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
-                    .review-card__meta
-                        .review-card__name #{r.name} | #{r.niche}, #{r.age}
-                        .review-card__rating
-                            +stars(r.rating)
-                            span.review-card__rating-num #{r.rating.toFixed(1)}
-                p.review-card__text!= '"' + r.text + '"'
+    .course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
+        if content
+            section.course-kit
+                .container
+                    h2.course-kit__title= content.kit.title
+                    h3.course-kit__subtitle= content.kit.subtitle
+                    p.course-kit__description= content.kit.description
+                    .course-kit__products
+                        p.course-kit__description= content.firstProduct.description
 
-        button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-            type="button"
-            data-course="4"
-            data-target-screen="screen-order"
-        )!= t.common.actions.order + ' 4'
-        button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-            type="button"
-            data-course="6"
-            data-target-screen="screen-order"
-        )!= t.common.actions.order + ' 6'
-        button.course__problems.btn.btn-arrow.btn-arrow--left(
-            type="button"
-            id="from-course-to-problems"
-            data-target-screen="screen-problems"
-        )!= t.common.actions.selectAnotherProblem
+                        .course-kit__product
+                            source(srcset=images[niche].kit.replace(".png", ".webp") type="image/webp")
+                            img.course-kit__product-image(src=images[niche].kit alt="Product kit")
+
+                        p.course-kit__description= content.secondProduct.description
+
+
+            section.course-product
+                .container
+                    .course-product__pack
+                        source(srcset=images[niche].firstProduct.pack.replace(".png", ".webp") type="image/webp")
+                        img.course-kit__pack-image(src=images[niche].firstProduct.pack alt="Product")
+
+                    .components.course-product__components
+                        h3.components__title= content.firstProduct.title
+                        ul.components__inner
+                            each component in content.firstProduct.components
+                                li.components__item
+                                    img.components__icon(src=component.icon alt="Component")
+                                    p.components__description
+                                        b= component.name
+                                        |
+                                        | — #{component.description}
+
+            section.course-product.course-product--reversed
+                .container
+                    .course-product__pack
+                        source(srcset=images[niche].secondProduct.pack.replace(".png", ".webp") type="image/webp")
+                        img.course-kit__pack-image(src=images[niche].secondProduct.pack alt="Product")
+
+                    .components.course-product__components
+                        h3.components__title= content.secondProduct.title
+                        ul.components__inner
+                            each component in content.secondProduct.components
+                                li.components__item
+                                    img.components__icon(src=component.icon alt="Component")
+                                    p.components__description
+                                        b= component.name
+                                        |
+                                        | — #{component.description}
+
+            section.course-banner
+                .container
+                    h2.course-banner__title= content.banner.title
+                    button.course__button= content.banner.buttonText
+
+            section.course-reviews
+                .container
+                    +reviews(niche)
+
+            section.course-plans
+                .container
+                    .plans
+                        each plan in content.plans
+                            .plan(class=plan.selected ? 'plan--selected' : '')
+                                if plan.label
+                                    span.plan__label= plan.label
+
+                                h3.plan__title= plan.title
+                                p.plan__description= plan.description
+
+                                .plan__products
+                                    img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
+                                    .plan__products-label
+                                        .plan__products-title= plan.percentage
+                                        .plan__products-text= plan.saving
+
+                                ul.plan-list
+                                    li.plan-list__item= plan.packs
+                                    li.plan-list__item= plan.duration
+
+                                .plan-price
+                                    .plan-price__new-title= plan.priceTitle
+                                    .plan-price__new-inner
+                                        .plan-price__new-value= plan.price
+                                        .plan-price__new-text= plan.priceDescription
+
+                                button.plan__btn= plan.buttonText
+        else
+            //- Fallback for niches without localization data yet
+            p Content for #{niche} is not available yet
+

@@ -2,17 +2,20 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
 export const ReviewsSlider = {
-    instance: null,
+    instances: [],
 
     init() {
-        const el = this._getSliderElement();
-        if (!el) return;
+        const elements = this._getSliderElements();
+        if (!elements.length) return;
 
-        this.instance = this._createSwiper(el);
+        elements.forEach(el => {
+            const swiper = this._createSwiper(el);
+            this.instances.push(swiper);
+        });
     },
 
-    _getSliderElement() {
-        return document.querySelector('.reviews__slider');
+    _getSliderElements() {
+        return document.querySelectorAll('.reviews__slider');
     },
 
     _createSwiper(el) {
@@ -33,9 +36,11 @@ export const ReviewsSlider = {
     },
 
     destroy() {
-        if (this.instance) {
-            this.instance.destroy();
-            this.instance = null;
-        }
+        this.instances.forEach(instance => {
+            if (instance) {
+                instance.destroy();
+            }
+        });
+        this.instances = [];
     }
 };

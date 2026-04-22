@@ -1,77 +1,77 @@
-include ../data/reviews/index
-
-mixin stars(rating)
-    - const full = Math.floor(rating)
-    - const decimal = rating - full
-    - const isHalf = decimal === 0.5
-    - const hasPartial = decimal > 0 && !isHalf
-    - const empty = (isHalf || hasPartial) ? 5 - full - 1 : 5 - full
-
-    .stars(aria-label=`Rating ${rating} out of 5`)
-        - for (let i = 0; i < full; i++)
-            span.stars__item.stars__item--full
-        - if (isHalf)
-            span.stars__item.stars__item--half
-        - else if (hasPartial)
-            span.stars__item.stars__item--partial(style=`--fill-percent: ${decimal * 100}%`)
-        - for (let i = 0; i < empty; i++)
-            span.stars__item.stars__item--empty
-
-
+//include ../data/reviews/index
+//
 //mixin stars(rating)
 //    - const full = Math.floor(rating)
-//    - const half = (rating - full) >= 0.5
-//    - const empty = 5 - full - (half ? 1 : 0)
+//    - const decimal = rating - full
+//    - const isHalf = decimal === 0.5
+//    - const hasPartial = decimal > 0 && !isHalf
+//    - const empty = (isHalf || hasPartial) ? 5 - full - 1 : 5 - full
 //
 //    .stars(aria-label=`Rating ${rating} out of 5`)
 //        - for (let i = 0; i < full; i++)
 //            span.stars__item.stars__item--full
-//        - if (half)
+//        - if (isHalf)
 //            span.stars__item.stars__item--half
+//        - else if (hasPartial)
+//            span.stars__item.stars__item--partial(style=`--fill-percent: ${decimal * 100}%`)
 //        - for (let i = 0; i < empty; i++)
 //            span.stars__item.stars__item--empty
-
--
-    // Get mixed reviews (3 per slide from different niches)
-    const slides = getMixedReviewsSlides(3);
-
-    // Calculate overall statistics
-    const allReviews = getAllReviews();
-    const totalReviews = allReviews.length;
-    const avgRating = (allReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1);
-
-.reviews
-    .reviews__top
-        h2.reviews__title Ознайомтесь з думками наших клієнтів
-
-        .reviews__rating
-            p.reviews__count Reviews
-                | &nbsp;
-                span 11.968
-            .reviews__inner
-                +stars(4.7)
-                span.reviews__score 4.7
-
-    // Slider
-    .reviews__slider.swiper
-        // Navigation arrows with link in the middle
-        .reviews__navigation
-            button.reviews__nav-btn.reviews__nav-prev
-            //a.reviews__all(href="#") Читать всі відгуки
-            button.reviews__nav-btn.reviews__nav-next
-        .swiper-wrapper
-            each slide in slides
-                .reviews__slide.swiper-slide
-                    each r in slide
-                        article.review-card
-                            .review-card__head
-                                picture
-                                    source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
-                                    img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
-                                .review-card__meta
-                                    .review-card__name #{r.name} | #{r.niche}, #{r.age}
-                                    .review-card__rating
-                                        +stars(r.rating)
-                                        span.review-card__rating-num #{r.rating.toFixed(1)}
-                            p.review-card__text!= '"' + r.text + '"'
-
+//
+//
+////mixin stars(rating)
+////    - const full = Math.floor(rating)
+////    - const half = (rating - full) >= 0.5
+////    - const empty = 5 - full - (half ? 1 : 0)
+////
+////    .stars(aria-label=`Rating ${rating} out of 5`)
+////        - for (let i = 0; i < full; i++)
+////            span.stars__item.stars__item--full
+////        - if (half)
+////            span.stars__item.stars__item--half
+////        - for (let i = 0; i < empty; i++)
+////            span.stars__item.stars__item--empty
+//
+//-
+//    // Get mixed reviews (3 per slide from different niches)
+//    const slides = getMixedReviewsSlides(3);
+//
+//    // Calculate overall statistics
+//    const allReviews = getAllReviews();
+//    const totalReviews = allReviews.length;
+//    const avgRating = (allReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1);
+//
+//.reviews
+//    .reviews__top
+//        h2.reviews__title Ознайомтесь з думками наших клієнтів
+//
+//        .reviews__rating
+//            p.reviews__count Reviews
+//                | &nbsp;
+//                span 11.968
+//            .reviews__inner
+//                +stars(4.7)
+//                span.reviews__score 4.7
+//
+//    // Slider
+//    .reviews__slider.swiper
+//        // Navigation arrows with link in the middle
+//        .reviews__navigation
+//            button.reviews__nav-btn.reviews__nav-prev
+//            //a.reviews__all(href="#") Читать всі відгуки
+//            button.reviews__nav-btn.reviews__nav-next
+//        .swiper-wrapper
+//            each slide in slides
+//                .reviews__slide.swiper-slide
+//                    each r in slide
+//                        article.review-card
+//                            .review-card__head
+//                                picture
+//                                    source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
+//                                    img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
+//                                .review-card__meta
+//                                    .review-card__name #{r.name} | #{r.niche}, #{r.age}
+//                                    .review-card__rating
+//                                        +stars(r.rating)
+//                                        span.review-card__rating-num #{r.rating.toFixed(1)}
+//                            p.review-card__text!= '"' + r.text + '"'
+//
