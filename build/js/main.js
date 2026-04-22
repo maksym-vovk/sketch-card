@@ -6049,17 +6049,21 @@
     }
 
     const ReviewsSlider = {
-      instance: null,
+      instances: [],
 
       init() {
-        const el = this._getSliderElement();
+        const elements = this._getSliderElements();
 
-        if (!el) return;
-        this.instance = this._createSwiper(el);
+        if (!elements.length) return;
+        elements.forEach(el => {
+          const swiper = this._createSwiper(el);
+
+          this.instances.push(swiper);
+        });
       },
 
-      _getSliderElement() {
-        return document.querySelector('.reviews__slider');
+      _getSliderElements() {
+        return document.querySelectorAll('.reviews__slider');
       },
 
       _createSwiper(el) {
@@ -6079,10 +6083,12 @@
       },
 
       destroy() {
-        if (this.instance) {
-          this.instance.destroy();
-          this.instance = null;
-        }
+        this.instances.forEach(instance => {
+          if (instance) {
+            instance.destroy();
+          }
+        });
+        this.instances = [];
       }
 
     };

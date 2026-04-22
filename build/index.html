@@ -185,6 +185,29 @@
     </div>
   </header>
   <div class="wrapper">
+    <!-- function getMixedReviewsSlides(reviewsPerSlide = 3) {//     const niches = Object.keys(REVIEWS_DATA);
+//     const maxReviews = Math.max.apply(Math, niches.map(function(n) { return REVIEWS_DATA[n].length; }));
+//     const slides = [];
+//
+//     for (let i = 0; i < maxReviews; i++) {
+//         const slide = [];
+//         for (let j = 0; j < reviewsPerSlide && j < niches.length; j++) {
+//             const nicheIndex = (i + j) % niches.length;
+//             const niche = niches[nicheIndex];
+//             const reviews = REVIEWS_DATA[niche];
+//             const reviewIndex = i % reviews.length;
+//
+//             if (reviews[reviewIndex]) {
+//                 slide.push(reviews[reviewIndex]);
+//             }
+//         }
+//         if (slide.length > 0) {
+//             slides.push(slide);
+//         }
+//     }
+//
+//     return slides;
+// }-->
     <section class="intro block screen" id="screen-intro">
       <div class="container">
         <h1 class="intro__title text-gold-fill">Your gift is waiting for you: activate euro bonuses</h1>
@@ -227,386 +250,353 @@
           </div>
         </div>
         <div class="intro__actions"><button class="intro__btn intro__btn--call" data-target-screen="screen-intro-popup" id="from-intro-to-callback-form">Order an operator's call</button><button class="intro__btn intro__btn--site" data-target-screen="screen-intro-success" id="from-intro-to-promo-code">Request personally on the website</button></div>
-        <!-- function getMixedReviewsSlides(reviewsPerSlide = 3) {//     const niches = Object.keys(REVIEWS_DATA);
-//     const maxReviews = Math.max.apply(Math, niches.map(function(n) { return REVIEWS_DATA[n].length; }));
-//     const slides = [];
-//
-//     for (let i = 0; i < maxReviews; i++) {
-//         const slide = [];
-//         for (let j = 0; j < reviewsPerSlide && j < niches.length; j++) {
-//             const nicheIndex = (i + j) % niches.length;
-//             const niche = niches[nicheIndex];
-//             const reviews = REVIEWS_DATA[niche];
-//             const reviewIndex = i % reviews.length;
-//
-//             if (reviews[reviewIndex]) {
-//                 slide.push(reviews[reviewIndex]);
-//             }
-//         }
-//         if (slide.length > 0) {
-//             slides.push(slide);
-//         }
-//     }
-//
-//     return slides;
-// }-->
-        <!--mixin stars(rating)-->
-        <!--    - const full = Math.floor(rating)-->
-        <!--    - const half = (rating - full) >= 0.5-->
-        <!--    - const empty = 5 - full - (half ? 1 : 0)-->
-        <!---->
-        <!--    .stars(aria-label=`Rating ${rating} out of 5`)-->
-        <!--        - for (let i = 0; i < full; i++)-->
-        <!--            span.stars__item.stars__item--full-->
-        <!--        - if (half)-->
-        <!--            span.stars__item.stars__item--half-->
-        <!--        - for (let i = 0; i < empty; i++)-->
-        <!--            span.stars__item.stars__item--empty-->
-        <div class="reviews">
-          <div class="reviews__top">
-            <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
-            <div class="reviews__rating">
-              <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
-              <div class="reviews__inner">
-                <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+        <div class="intro__reviews">
+          <div class="reviews">
+            <div class="reviews__top">
+              <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+              <div class="reviews__rating">
+                <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                <div class="reviews__inner">
+                  <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                </div>
               </div>
-            </div>
-          </div><!-- Slider-->
-          <div class="reviews__slider swiper">
-            <!-- Navigation arrows with link in the middle-->
-            <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button>
-              <!--a.reviews__all(href="#") Читать всі відгуки--><button class="reviews__nav-btn reviews__nav-next"></button></div>
-            <div class="swiper-wrapper">
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Elena avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Elena | joints, 58</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+            </div><!-- Slider-->
+            <div class="reviews__slider swiper">
+              <!-- Navigation arrows-->
+              <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+              <div class="swiper-wrapper">
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Antonio avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Antonio | blood-pressure, 65</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Стандарт"</a> помітила що рухаюсь значно легше."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="María avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">María | joints, 47</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Teresa avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Teresa | weight-loss, 48</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже можу нормально ходити по сходах без того щоб зупинятись."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Mercedes avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Mercedes | tiredness, 43</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Преміум"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Concepción avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Concepción | tiredness, 42</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Нічого не тішило і не було сил навіть на прогулянку. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Стандарт"</a>. Зараз виходжу щодня і відчуваю себе значно краще."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Rosa avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Rosa | joints, 55</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Javier avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Javier | joints, 52</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Мені сказали, що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже не прокидалась від болю вночі."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Teresa avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Teresa | weight-loss, 48</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Займаюсь спортом і суглоби почали здавати раніше часу. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс "Преміум"</a> допоміг, відчуваю себе набагато краще на тренуваннях."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Fernando avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Fernando | blood-pressure, 59</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Преміум"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Fernando avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Fernando | blood-pressure, 59</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Преміум"</a> показники найкращі за весь цей час."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Pedro avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Pedro | diabetes, 61</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Преміум"</a> показники найкращі за весь цей час."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Lucía avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Lucía | diabetes, 49</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Постійна слабкість і втома були моїми супутниками роками. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курс "Преміум"</a>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Dolores avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Dolores | diabetes, 50</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Стандарт"</a> рівень значно рівніший. Менше тягне на солодке теж."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Pilar avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Pilar | diabetes, 54</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Преміум"</a> помітила що спокійніше проходжу повз кондитерський відділ."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Sergio avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Sergio | weight-loss, 53</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Слідкую за цукром вже сім років. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Isabel avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Isabel | blood-pressure, 62</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс "Стандарт"</a>, відчуваю себе легше і рухливіше."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="José avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">José | weight-loss, 51</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Ana avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Ana | weight-loss, 45</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Живіт залишався навіть після тренувань. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс "Преміум"</a> допоміг розігнати метаболізм і результати в залі стали помітніші."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ramón avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Ramón | diabetes, 56</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Стандарт"</a> нарешті почався рух. Мінус чотири кг за місяць."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Carlos avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Carlos | joints, 63</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Isabel avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Isabel | blood-pressure, 62</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Преміум"</a>. Не скажу що повністю пройшло але різниця відчутна."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Concepción avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Concepción | tiredness, 42</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Elena avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Elena | joints, 58</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Álvaro avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Álvaro | tiredness, 50</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Стандарт"</a> помітила що рухаюсь значно легше."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Lucía avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Lucía | diabetes, 49</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Преміум"</a> кількість кави скоротив вдвічі сам."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Javier avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Javier | joints, 52</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Стандарт"</a> рівень значно рівніший. Менше тягне на солодке теж."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Amparo avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Amparo | weight-loss, 46</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Займаюсь спортом і суглоби почали здавати раніше часу. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс "Преміум"</a> допоміг, відчуваю себе набагато краще на тренуваннях."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Dolores avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Dolores | diabetes, 50</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Juan avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Juan | blood-pressure, 60</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Преміум"</a> помітила що спокійніше проходжу повз кондитерський відділ."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Antonio avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Antonio | blood-pressure, 65</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс "Преміум"</a> так допоміг, але збігу такого не було давно."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Mercedes avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Mercedes | tiredness, 43</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Pedro avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Pedro | diabetes, 61</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Нічого не тішило і не було сил навіть на прогулянку. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Стандарт"</a>. Зараз виходжу щодня і відчуваю себе значно краще."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Ana avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Ana | weight-loss, 45</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Постійна слабкість і втома були моїми супутниками роками. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курс "Преміум"</a>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Carmen avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Carmen | blood-pressure, 58</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Стандарт"</a> нарешті почався рух. Мінус чотири кг за місяць."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Manuel avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Manuel | tiredness, 44</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Ноги набрякали до вечора так що не могла взути взуття. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс "Стандарт"</a>. Зараз набагато краще, набряки майже зникли."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Manuel avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Manuel | tiredness, 44</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Стандарт"</a> нарешті є відчуття що виспався."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Carlos avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Carlos | joints, 63</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Стандарт"</a> нарешті є відчуття що виспався."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Amparo avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Amparo | weight-loss, 46</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Преміум"</a>. Не скажу що повністю пройшло але різниця відчутна."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Rosa avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Rosa | joints, 55</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Sergio avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Sergio | weight-loss, 53</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Мені сказали, що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже не прокидалась від болю вночі."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ignacio avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Ignacio | tiredness, 47</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс "Стандарт"</a>, відчуваю себе легше і рухливіше."</p>
-                </article>
-              </div>
-              <div class="reviews__slide swiper-slide">
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ramón avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Ramón | diabetes, 56</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                    <p class="review-card__text">"Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Преміум"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."</p>
+                  </article>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Pilar avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Pilar | diabetes, 54</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ignacio avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Ignacio | tiredness, 47</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Слідкую за цукром вже сім років. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="María avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">María | joints, 47</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Преміум"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."</p>
-                </article>
-                <article class="review-card">
-                  <div class="review-card__head">
-                    <picture>
-                      <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Juan avatar" loading="lazy"></picture>
-                    <div class="review-card__meta">
-                      <div class="review-card__name">Juan | blood-pressure, 60</div>
-                      <div class="review-card__rating">
-                        <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                    <p class="review-card__text">"Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже можу нормально ходити по сходах без того щоб зупинятись."</p>
+                  </article>
+                  <article class="review-card">
+                    <div class="review-card__head">
+                      <picture>
+                        <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Álvaro avatar" loading="lazy"></picture>
+                      <div class="review-card__meta">
+                        <div class="review-card__name">Álvaro | tiredness, 50</div>
+                        <div class="review-card__rating">
+                          <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p class="review-card__text">"Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс "Преміум"</a> так допоміг, але збігу такого не було давно."</p>
-                </article>
+                    <p class="review-card__text">"Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Преміум"</a> кількість кави скоротив вдвічі сам."</p>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
+          <!--include reviews-->
         </div>
       </div>
     </section>
@@ -670,394 +660,1089 @@
       </div>
     </section>
     <!--include components/presentations-->
-    <!--include ../data/courses/config-->
-    <section class="course block screen hidden" id="screen-course">
-      <div class="container">
-        <div class="course-details hidden" data-niche="joints">
-          <h2 class="course__title">joints title</h2>
-          <p class="course__subtitle">joints subtitle</p>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="María avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">María | joints, 47</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+    <!--section.course.block(class="screen hidden" id="screen-course")-->
+    <section class="course block screen" id="screen-course">
+      <div class="course-details" data-niche="joints">
+        <section class="course-kit">
+          <div class="container">
+            <h2 class="course-kit__title">Комплект для схуднення та покращення метаболізму</h2>
+            <h3 class="course-kit__subtitle">Не можете схуднути? Вага постійно повертається?</h3>
+            <p class="course-kit__description">З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!</p>
+            <div class="course-kit__products">
+              <p class="course-kit__description">Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.</p>
+              <div class="course-kit__product">
+                <source srcset="img/kit-joints.webp" type="image/webp"><img class="course-kit__product-image" src="img/kit-joints.png" alt="Product kit"></div>
+              <p class="course-kit__description">Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ</p>
+            </div>
+          </div>
+        </section>
+        <section class="course-product">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/slimital-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/slimital-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Slimital</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/guarana-icon.png" alt="Component">
+                  <p class="components__description"><b>Гурана</b>
+                    — активація термогенезу</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pineapple-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт стебла ананаса</b>
+                    — прискорення розщеплення жирів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/acacia-fiber-icon.png" alt="Component">
+                  <p class="components__description"><b>Клітковина акації</b>
+                    — нормалізація апетиту</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/nopal-cactus-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт кактуса нопаля</b>
+                    — зменшення засвоєння жирів і вуглеводів</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-product course-product--reversed">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/ultraxal-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/ultraxal-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Ultraxal</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/dandelion-icon.png" alt="Component">
+                  <p class="components__description"><b>Корінь кульбаби</b>
+                    — відновлення слизової шлунку</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/artichoke-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт артишоку</b>
+                    — стимуляція вироблення ферментів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/milk-thistle-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт розторопші</b>
+                    — очищення від токсинів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pumpkin-seed-icon.png" alt="Component">
+                  <p class="components__description"><b>Гарбузове насіння</b>
+                    — покращення перистальтики</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/papaya-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт папайї</b>
+                    — поліпшення травлення</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-banner">
+          <div class="container">
+            <h2 class="course-banner__title">Почніть шлях до схуднення разом з Simital та Ultraxal</h2><button class="course__button">Order an operator's call</button>
+          </div>
+        </section>
+        <section class="course-reviews">
+          <div class="container">
+            <div class="reviews">
+              <div class="reviews__top">
+                <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+                <div class="reviews__rating">
+                  <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                  <div class="reviews__inner">
+                    <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                  </div>
+                </div>
+              </div><!-- Slider-->
+              <div class="reviews__slider swiper">
+                <!-- Navigation arrows-->
+                <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="María avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">María | joints, 47</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже можу нормально ходити по сходах без того щоб зупинятись."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Carlos avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Carlos | joints, 63</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Преміум"</a>. Не скажу що повністю пройшло але різниця відчутна."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Rosa avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Rosa | joints, 55</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Мені сказали, що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу "Стандарт"</a> вже не прокидалась від болю вночі."</p>
+                    </article>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Javier avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Javier | joints, 52</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Займаюсь спортом і суглоби почали здавати раніше часу. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс "Преміум"</a> допоміг, відчуваю себе набагато краще на тренуваннях."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Elena avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Elena | joints, 58</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс "Стандарт"</a> помітила що рухаюсь значно легше."</p>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="review-card__text">"Коліна почали боліти ще три роки тому. Після місяця <span>курсу "Стандарт"</span> вже можу нормально ходити по сходах без того щоб зупинятись."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Carlos avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Carlos | joints, 63</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+          </div>
+        </section>
+        <section class="course-plans">
+          <div class="container">
+            <div class="plans">
+              <div class="plan">
+                <h3 class="plan__title">Набор &quot;Стандарт Схуднення&quot;</h3>
+                <p class="plan__description">Легке схуднення без проблем. Найкраще для стрункості</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/joints-plan-1.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">2 упаковки Simital та 2 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Фігура вашої мрії за 30 днів</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+              <div class="plan plan--selected"><span class="plan__label">Ще більша вигода</span>
+                <h3 class="plan__title">Набор &quot;Преміум Схуднення&quot;</h3>
+                <p class="plan__description">Тривалий результат. Подвійний удар по зайвих кілограмах</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/joints-plan-2.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">3 упаковки Simital та 3 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Стабільне схуднення та очищення за 60 днів.</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="course-details hidden" data-niche="diabetes">
+        <section class="course-kit">
+          <div class="container">
+            <h2 class="course-kit__title">Комплект для схуднення та покращення метаболізму</h2>
+            <h3 class="course-kit__subtitle">Не можете схуднути? Вага постійно повертається?</h3>
+            <p class="course-kit__description">З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!</p>
+            <div class="course-kit__products">
+              <p class="course-kit__description">Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.</p>
+              <div class="course-kit__product">
+                <source srcset="img/kit-joints.webp" type="image/webp"><img class="course-kit__product-image" src="img/kit-joints.png" alt="Product kit"></div>
+              <p class="course-kit__description">Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ</p>
+            </div>
+          </div>
+        </section>
+        <section class="course-product">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/slimital-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/slimital-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Slimital</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/guarana-icon.png" alt="Component">
+                  <p class="components__description"><b>Гурана</b>
+                    — активація термогенезу</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pineapple-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт стебла ананаса</b>
+                    — прискорення розщеплення жирів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/acacia-fiber-icon.png" alt="Component">
+                  <p class="components__description"><b>Клітковина акації</b>
+                    — нормалізація апетиту</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/nopal-cactus-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт кактуса нопаля</b>
+                    — зменшення засвоєння жирів і вуглеводів</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-product course-product--reversed">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/ultraxal-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/ultraxal-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Ultraxal</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/dandelion-icon.png" alt="Component">
+                  <p class="components__description"><b>Корінь кульбаби</b>
+                    — відновлення слизової шлунку</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/artichoke-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт артишоку</b>
+                    — стимуляція вироблення ферментів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/milk-thistle-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт розторопші</b>
+                    — очищення від токсинів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pumpkin-seed-icon.png" alt="Component">
+                  <p class="components__description"><b>Гарбузове насіння</b>
+                    — покращення перистальтики</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/papaya-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт папайї</b>
+                    — поліпшення травлення</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-banner">
+          <div class="container">
+            <h2 class="course-banner__title">Почніть шлях до схуднення разом з Simital та Ultraxal</h2><button class="course__button">Order an operator's call</button>
+          </div>
+        </section>
+        <section class="course-reviews">
+          <div class="container">
+            <div class="reviews">
+              <div class="reviews__top">
+                <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+                <div class="reviews__rating">
+                  <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                  <div class="reviews__inner">
+                    <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                  </div>
+                </div>
+              </div><!-- Slider-->
+              <div class="reviews__slider swiper">
+                <!-- Navigation arrows-->
+                <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Lucía avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Lucía | diabetes, 49</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Стандарт"</a> рівень значно рівніший. Менше тягне на солодке теж."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Pedro avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Pedro | diabetes, 61</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Постійна слабкість і втома були моїми супутниками роками. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курс "Преміум"</a>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Pilar avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Pilar | diabetes, 54</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Слідкую за цукром вже сім років. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."</p>
+                    </article>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ramón avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Ramón | diabetes, 56</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс "Стандарт"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Dolores avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Dolores | diabetes, 50</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу "Преміум"</a> помітила що спокійніше проходжу повз кондитерський відділ."</p>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="review-card__text">"Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <span>курс "Преміум"</span>. Не скажу що повністю пройшло але різниця відчутна."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Rosa avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Rosa | joints, 55</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+          </div>
+        </section>
+        <section class="course-plans">
+          <div class="container">
+            <div class="plans">
+              <div class="plan">
+                <h3 class="plan__title">Набор &quot;Стандарт Схуднення&quot;</h3>
+                <p class="plan__description">Легке схуднення без проблем. Найкраще для стрункості</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/diabetes-plan-1.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">2 упаковки Simital та 2 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Фігура вашої мрії за 30 днів</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+              <div class="plan plan--selected"><span class="plan__label">Ще більша вигода</span>
+                <h3 class="plan__title">Набор &quot;Преміум Схуднення&quot;</h3>
+                <p class="plan__description">Тривалий результат. Подвійний удар по зайвих кілограмах</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/diabetes-plan-2.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">3 упаковки Simital та 3 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Стабільне схуднення та очищення за 60 днів.</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="course-details hidden" data-niche="blood-pressure">
+        <section class="course-kit">
+          <div class="container">
+            <h2 class="course-kit__title">Комплект для схуднення та покращення метаболізму</h2>
+            <h3 class="course-kit__subtitle">Не можете схуднути? Вага постійно повертається?</h3>
+            <p class="course-kit__description">З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!</p>
+            <div class="course-kit__products">
+              <p class="course-kit__description">Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.</p>
+              <div class="course-kit__product">
+                <source srcset="img/kit-joints.webp" type="image/webp"><img class="course-kit__product-image" src="img/kit-joints.png" alt="Product kit"></div>
+              <p class="course-kit__description">Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ</p>
+            </div>
+          </div>
+        </section>
+        <section class="course-product">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/slimital-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/slimital-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Slimital</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/guarana-icon.png" alt="Component">
+                  <p class="components__description"><b>Гурана</b>
+                    — активація термогенезу</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pineapple-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт стебла ананаса</b>
+                    — прискорення розщеплення жирів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/acacia-fiber-icon.png" alt="Component">
+                  <p class="components__description"><b>Клітковина акації</b>
+                    — нормалізація апетиту</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/nopal-cactus-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт кактуса нопаля</b>
+                    — зменшення засвоєння жирів і вуглеводів</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-product course-product--reversed">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/ultraxal-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/ultraxal-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Ultraxal</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/dandelion-icon.png" alt="Component">
+                  <p class="components__description"><b>Корінь кульбаби</b>
+                    — відновлення слизової шлунку</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/artichoke-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт артишоку</b>
+                    — стимуляція вироблення ферментів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/milk-thistle-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт розторопші</b>
+                    — очищення від токсинів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pumpkin-seed-icon.png" alt="Component">
+                  <p class="components__description"><b>Гарбузове насіння</b>
+                    — покращення перистальтики</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/papaya-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт папайї</b>
+                    — поліпшення травлення</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-banner">
+          <div class="container">
+            <h2 class="course-banner__title">Почніть шлях до схуднення разом з Simital та Ultraxal</h2><button class="course__button">Order an operator's call</button>
+          </div>
+        </section>
+        <section class="course-reviews">
+          <div class="container">
+            <div class="reviews">
+              <div class="reviews__top">
+                <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+                <div class="reviews__rating">
+                  <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                  <div class="reviews__inner">
+                    <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                  </div>
+                </div>
+              </div><!-- Slider-->
+              <div class="reviews__slider swiper">
+                <!-- Navigation arrows-->
+                <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Antonio avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Antonio | blood-pressure, 65</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Carmen avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Carmen | blood-pressure, 58</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Ноги набрякали до вечора так що не могла взути взуття. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс "Стандарт"</a>. Зараз набагато краще, набряки майже зникли."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Juan avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Juan | blood-pressure, 60</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс "Преміум"</a> так допоміг, але збігу такого не було давно."</p>
+                    </article>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Isabel avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Isabel | blood-pressure, 62</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Стандарт"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Fernando avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Fernando | blood-pressure, 59</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу "Преміум"</a> показники найкращі за весь цей час."</p>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="review-card__text">"Мені сказали, що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <span>курсу "Стандарт"</span> вже не прокидалась від болю вночі."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Javier avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Javier | joints, 52</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+          </div>
+        </section>
+        <section class="course-plans">
+          <div class="container">
+            <div class="plans">
+              <div class="plan">
+                <h3 class="plan__title">Набор &quot;Стандарт Схуднення&quot;</h3>
+                <p class="plan__description">Легке схуднення без проблем. Найкраще для стрункості</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/blood-pressure-plan-1.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">2 упаковки Simital та 2 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Фігура вашої мрії за 30 днів</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+              <div class="plan plan--selected"><span class="plan__label">Ще більша вигода</span>
+                <h3 class="plan__title">Набор &quot;Преміум Схуднення&quot;</h3>
+                <p class="plan__description">Тривалий результат. Подвійний удар по зайвих кілограмах</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/blood-pressure-plan-2.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">3 упаковки Simital та 3 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Стабільне схуднення та очищення за 60 днів.</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="course-details hidden" data-niche="weight-loss">
+        <section class="course-kit">
+          <div class="container">
+            <h2 class="course-kit__title">Комплект для схуднення та покращення метаболізму</h2>
+            <h3 class="course-kit__subtitle">Не можете схуднути? Вага постійно повертається?</h3>
+            <p class="course-kit__description">З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!</p>
+            <div class="course-kit__products">
+              <p class="course-kit__description">Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.</p>
+              <div class="course-kit__product">
+                <source srcset="img/kit-joints.webp" type="image/webp"><img class="course-kit__product-image" src="img/kit-joints.png" alt="Product kit"></div>
+              <p class="course-kit__description">Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ</p>
+            </div>
+          </div>
+        </section>
+        <section class="course-product">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/slimital-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/slimital-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Slimital</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/guarana-icon.png" alt="Component">
+                  <p class="components__description"><b>Гурана</b>
+                    — активація термогенезу</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pineapple-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт стебла ананаса</b>
+                    — прискорення розщеплення жирів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/acacia-fiber-icon.png" alt="Component">
+                  <p class="components__description"><b>Клітковина акації</b>
+                    — нормалізація апетиту</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/nopal-cactus-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт кактуса нопаля</b>
+                    — зменшення засвоєння жирів і вуглеводів</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-product course-product--reversed">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/ultraxal-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/ultraxal-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Ultraxal</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/dandelion-icon.png" alt="Component">
+                  <p class="components__description"><b>Корінь кульбаби</b>
+                    — відновлення слизової шлунку</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/artichoke-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт артишоку</b>
+                    — стимуляція вироблення ферментів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/milk-thistle-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт розторопші</b>
+                    — очищення від токсинів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pumpkin-seed-icon.png" alt="Component">
+                  <p class="components__description"><b>Гарбузове насіння</b>
+                    — покращення перистальтики</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/papaya-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт папайї</b>
+                    — поліпшення травлення</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-banner">
+          <div class="container">
+            <h2 class="course-banner__title">Почніть шлях до схуднення разом з Simital та Ultraxal</h2><button class="course__button">Order an operator's call</button>
+          </div>
+        </section>
+        <section class="course-reviews">
+          <div class="container">
+            <div class="reviews">
+              <div class="reviews__top">
+                <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+                <div class="reviews__rating">
+                  <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                  <div class="reviews__inner">
+                    <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                  </div>
+                </div>
+              </div><!-- Slider-->
+              <div class="reviews__slider swiper">
+                <!-- Navigation arrows-->
+                <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Ana avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Ana | weight-loss, 45</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Стандарт"</a> нарешті почався рух. Мінус чотири кг за місяць."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="José avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">José | weight-loss, 51</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Живіт залишався навіть після тренувань. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс "Преміум"</a> допоміг розігнати метаболізм і результати в залі стали помітніші."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Teresa avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Teresa | weight-loss, 48</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу "Преміум"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."</p>
+                    </article>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Sergio avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Sergio | weight-loss, 53</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс "Стандарт"</a>, відчуваю себе легше і рухливіше."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Amparo avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Amparo | weight-loss, 46</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."</p>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="review-card__text">"Займаюсь спортом і суглоби почали здавати раніше часу. <span>Курс "Преміум"</span> допоміг, відчуваю себе набагато краще на тренуваннях."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Elena avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Elena | joints, 58</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+          </div>
+        </section>
+        <section class="course-plans">
+          <div class="container">
+            <div class="plans">
+              <div class="plan">
+                <h3 class="plan__title">Набор &quot;Стандарт Схуднення&quot;</h3>
+                <p class="plan__description">Легке схуднення без проблем. Найкраще для стрункості</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/weight-loss-plan-1.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">2 упаковки Simital та 2 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Фігура вашої мрії за 30 днів</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+              <div class="plan plan--selected"><span class="plan__label">Ще більша вигода</span>
+                <h3 class="plan__title">Набор &quot;Преміум Схуднення&quot;</h3>
+                <p class="plan__description">Тривалий результат. Подвійний удар по зайвих кілограмах</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/weight-loss-plan-2.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">3 упаковки Simital та 3 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Стабільне схуднення та очищення за 60 днів.</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="course-details hidden" data-niche="tiredness">
+        <section class="course-kit">
+          <div class="container">
+            <h2 class="course-kit__title">Комплект для схуднення та покращення метаболізму</h2>
+            <h3 class="course-kit__subtitle">Не можете схуднути? Вага постійно повертається?</h3>
+            <p class="course-kit__description">З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!</p>
+            <div class="course-kit__products">
+              <p class="course-kit__description">Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.</p>
+              <div class="course-kit__product">
+                <source srcset="img/kit-joints.webp" type="image/webp"><img class="course-kit__product-image" src="img/kit-joints.png" alt="Product kit"></div>
+              <p class="course-kit__description">Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ</p>
+            </div>
+          </div>
+        </section>
+        <section class="course-product">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/slimital-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/slimital-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Slimital</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/guarana-icon.png" alt="Component">
+                  <p class="components__description"><b>Гурана</b>
+                    — активація термогенезу</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pineapple-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт стебла ананаса</b>
+                    — прискорення розщеплення жирів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/acacia-fiber-icon.png" alt="Component">
+                  <p class="components__description"><b>Клітковина акації</b>
+                    — нормалізація апетиту</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/nopal-cactus-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт кактуса нопаля</b>
+                    — зменшення засвоєння жирів і вуглеводів</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-product course-product--reversed">
+          <div class="container">
+            <div class="course-product__pack">
+              <source srcset="img/ultraxal-pack.webp" type="image/webp"><img class="course-kit__pack-image" src="img/ultraxal-pack.png" alt="Product"></div>
+            <div class="components course-product__components">
+              <h3 class="components__title">Ultraxal</h3>
+              <ul class="components__inner">
+                <li class="components__item"><img class="components__icon" src="img/dandelion-icon.png" alt="Component">
+                  <p class="components__description"><b>Корінь кульбаби</b>
+                    — відновлення слизової шлунку</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/artichoke-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт артишоку</b>
+                    — стимуляція вироблення ферментів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/milk-thistle-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт розторопші</b>
+                    — очищення від токсинів</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/pumpkin-seed-icon.png" alt="Component">
+                  <p class="components__description"><b>Гарбузове насіння</b>
+                    — покращення перистальтики</p>
+                </li>
+                <li class="components__item"><img class="components__icon" src="img/papaya-icon.png" alt="Component">
+                  <p class="components__description"><b>Екстракт папайї</b>
+                    — поліпшення травлення</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="course-banner">
+          <div class="container">
+            <h2 class="course-banner__title">Почніть шлях до схуднення разом з Simital та Ultraxal</h2><button class="course__button">Order an operator's call</button>
+          </div>
+        </section>
+        <section class="course-reviews">
+          <div class="container">
+            <div class="reviews">
+              <div class="reviews__top">
+                <h2 class="reviews__title">Ознайомтесь з думками наших клієнтів</h2>
+                <div class="reviews__rating">
+                  <p class="reviews__count">Reviews&nbsp;<span>11.968</span></p>
+                  <div class="reviews__inner">
+                    <div class="stars" aria-label="Rating 4.7 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--partial" style="--fill-percent: 70.00000000000001%"></span></div><span class="reviews__score">4.7</span>
+                  </div>
+                </div>
+              </div><!-- Slider-->
+              <div class="reviews__slider swiper">
+                <!-- Navigation arrows-->
+                <div class="reviews__navigation"><button class="reviews__nav-btn reviews__nav-prev"></button><button class="reviews__nav-btn reviews__nav-next"></button></div>
+                <div class="swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Manuel avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Manuel | tiredness, 44</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Стандарт"</a> нарешті є відчуття що виспався."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Concepción avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Concepción | tiredness, 42</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Álvaro avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Álvaro | tiredness, 50</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу "Преміум"</a> кількість кави скоротив вдвічі сам."</p>
+                    </article>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Mercedes avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Mercedes | tiredness, 43</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Нічого не тішило і не було сил навіть на прогулянку. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Стандарт"</a>. Зараз виходжу щодня і відчуваю себе значно краще."</p>
+                    </article>
+                    <article class="review-card">
+                      <div class="review-card__head">
+                        <picture>
+                          <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ignacio avatar" loading="lazy"></picture>
+                        <div class="review-card__meta">
+                          <div class="review-card__name">Ignacio | tiredness, 47</div>
+                          <div class="review-card__rating">
+                            <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="review-card__text">"Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс "Преміум"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."</p>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            <p class="review-card__text">"Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <span>курс "Стандарт"</span> помітила що рухаюсь значно легше."</p>
-          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
-        </div>
-        <div class="course-details hidden" data-niche="diabetes">
-          <h2 class="course__title">diabetes title</h2>
-          <p class="course__subtitle">diabetes subtitle</p>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Lucía avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Lucía | diabetes, 49</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
+          </div>
+        </section>
+        <section class="course-plans">
+          <div class="container">
+            <div class="plans">
+              <div class="plan">
+                <h3 class="plan__title">Набор &quot;Стандарт Схуднення&quot;</h3>
+                <p class="plan__description">Легке схуднення без проблем. Найкраще для стрункості</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/tiredness-plan-1.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
                 </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">2 упаковки Simital та 2 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Фігура вашої мрії за 30 днів</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
+              </div>
+              <div class="plan plan--selected"><span class="plan__label">Ще більша вигода</span>
+                <h3 class="plan__title">Набор &quot;Преміум Схуднення&quot;</h3>
+                <p class="plan__description">Тривалий результат. Подвійний удар по зайвих кілограмах</p>
+                <div class="plan__products"><img class="plan__products-image" src="img/tiredness-plan-2.png" alt="Plan">
+                  <div class="plan__products-label">
+                    <div class="plan__products-title">-50%</div>
+                    <div class="plan__products-text">по промокоду</div>
+                  </div>
+                </div>
+                <ul class="plan-list">
+                  <li class="plan-list__item">3 упаковки Simital та 3 упаковки Ultraxal</li>
+                  <li class="plan-list__item">Стабільне схуднення та очищення за 60 днів.</li>
+                </ul>
+                <div class="plan-price">
+                  <div class="plan-price__new-title">Нова ціна з бонусом</div>
+                  <div class="plan-price__new-inner">
+                    <div class="plan-price__new-value">87€</div>
+                    <div class="plan-price__new-text">Ціна після застосування вашого бонусу</div>
+                  </div>
+                </div><button class="plan__btn">Обрати цей комплекс</button>
               </div>
             </div>
-            <p class="review-card__text">"Цукор стрибав після кожного прийому їжі. Після місяця <span>курсу "Стандарт"</span> рівень значно рівніший. Менше тягне на солодке теж."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Pedro avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Pedro | diabetes, 61</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Постійна слабкість і втома були моїми супутниками роками. Пропив <span>курс "Преміум"</span>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Pilar avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Pilar | diabetes, 54</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Слідкую за цукром вже сім років. <span>Курс "Стандарт"</span> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ramón avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Ramón | diabetes, 56</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Мене попередили, що є ризики якщо не міняти спосіб життя. <span>Курс "Стандарт"</span> допоміг стабілізувати стан поки я паралельно змінюю харчування."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Dolores avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Dolores | diabetes, 50</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Тяга до солодкого була неконтрольована. Після трьох тижнів <span>курсу "Преміум"</span> помітила що спокійніше проходжу повз кондитерський відділ."</p>
-          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
-        </div>
-        <div class="course-details hidden" data-niche="blood-pressure">
-          <h2 class="course__title">blood-pressure title</h2>
-          <p class="course__subtitle">blood-pressure subtitle</p>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Antonio avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Antonio | blood-pressure, 65</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Тиск стрибав постійно, особливо ввечері. Після <span>курсу "Стандарт"</span> показники стабілізувались. Дружина теж помітила що я спокійніший став."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Carmen avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Carmen | blood-pressure, 58</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Ноги набрякали до вечора так що не могла взути взуття. Пропила <span>курс "Стандарт"</span>. Зараз набагато краще, набряки майже зникли."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Juan avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Juan | blood-pressure, 60</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <span>курс "Преміум"</span> так допоміг, але збігу такого не було давно."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Isabel avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Isabel | blood-pressure, 62</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Судини були проблемою ще з молодості. Після <span>курсу "Стандарт"</span> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Fernando avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Fernando | blood-pressure, 59</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Контролюю тиск вже п'ять років. Після <span>курсу "Преміум"</span> показники найкращі за весь цей час."</p>
-          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
-        </div>
-        <div class="course-details hidden" data-niche="weight-loss">
-          <h2 class="course__title">weight-loss title</h2>
-          <p class="course__subtitle">weight-loss subtitle</p>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Ana avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Ana | weight-loss, 45</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Вага стояла на місці вже два роки незалежно від того що робила. Після <span>курсу "Стандарт"</span> нарешті почався рух. Мінус чотири кг за місяць."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="José avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">José | weight-loss, 51</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Живіт залишався навіть після тренувань. <span>Курс "Преміум"</span> допоміг розігнати метаболізм і результати в залі стали помітніші."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Teresa avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Teresa | weight-loss, 48</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Улюблені джинси знову застібаються після 2 місяців <span>курсу "Преміум"</span>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Sergio avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Sergio | weight-loss, 53</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <span>курс "Стандарт"</span>, відчуваю себе легше і рухливіше."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Amparo avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Amparo | weight-loss, 46</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."</p>
-          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
-        </div>
-        <div class="course-details hidden" data-niche="tiredness">
-          <h2 class="course__title">tiredness title</h2>
-          <p class="course__subtitle">tiredness subtitle</p>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Manuel avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Manuel | tiredness, 44</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <span>курсу "Стандарт"</span> нарешті є відчуття що виспався."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-3.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-3.png" alt="Concepción avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Concepción | tiredness, 42</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Álvaro avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Álvaro | tiredness, 50</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <span>курсу "Преміум"</span> кількість кави скоротив вдвічі сам."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-1.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-1.png" alt="Mercedes avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Mercedes | tiredness, 43</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 4 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--empty"></span></div><span class="review-card__rating-num">4.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Нічого не тішило і не було сил навіть на прогулянку. Пропила <span>курс "Стандарт"</span>. Зараз виходжу щодня і відчуваю себе значно краще."</p>
-          </article>
-          <article class="review-card">
-            <div class="review-card__head">
-              <picture>
-                <source srcset="img/reviews-2.png" type="image/webp"><img class="review-card__avatar" src="img/reviews-2.png" alt="Ignacio avatar" loading="lazy"></picture>
-              <div class="review-card__meta">
-                <div class="review-card__name">Ignacio | tiredness, 47</div>
-                <div class="review-card__rating">
-                  <div class="stars" aria-label="Rating 5 out of 5"><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span><span class="stars__item stars__item--full"></span></div><span class="review-card__rating-num">5.0</span>
-                </div>
-              </div>
-            </div>
-            <p class="review-card__text">"Робота напружена і відновлення після неї займало весь вихідний. Придбав <span>курс "Преміум"</span>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."</p>
-          </article><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="4" data-target-screen="screen-order">Order 4</button><button class="course__select course__select--order btn btn-arrow btn-arrow--right btn-arrow--double" type="button" data-course="6" data-target-screen="screen-order">Order 6</button><button class="course__problems btn btn-arrow btn-arrow--left" type="button" id="from-course-to-problems" data-target-screen="screen-problems">Select another problem</button>
-        </div>
+          </div>
+        </section>
       </div>
     </section>
-    <!--include ../data/courses/config-->
-    <!--section.course.block(class="screen hidden" id="screen-course")-->
-    <!--    .container//.course-modal
-//    h2.course__title!= t.course.title
-//    p.course__subtitle!= t.course.subtitle
-//
-//    .course-options
-//        label.course-option
-//            .course-option__content#four-course(data-config=JSON.stringify(courseConfig[0]))
-//            button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
-//                type="button"
-//                id="from-course-to-presentations"
-//                data-target-screen="screen-presentations"
-//            )!= t.common.actions.details
-//            button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-//                type="button"
-//                id="from-course-to-order-form"
-//                data-target-screen="screen-order"
-//            )!= t.common.actions.order
-//
-//        label.course-option
-//            .course-option__content#six-course(data-config=JSON.stringify(courseConfig[1]))
-//            button.course__select.course__details.btn.btn-arrow.btn-arrow--right.btn-arrow--black(
-//                type="button"
-//                id="from-course-to-presentations"
-//                data-target-screen="screen-presentations"
-//            )!= t.common.actions.details
-//            button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-//                   type="button"
-//                id="from-course-to-order-form"
-//                data-target-screen="screen-order"
-//            )!= t.common.actions.order
-//
-//    button.course__problems.btn.btn-arrow.btn-arrow--left.btn-arrow--red(
-//        type="button"
-//        id="from-course-to-problems"
-//        data-target-screen="screen-problems"
-//    )!= t.common.actions.selectAnotherProblem-->
     <section class="order block screen hidden" id="screen-order">
       <div class="container">
         <div class="order-card">

@@ -1,0 +1,84 @@
+include ../data/reviews/index
+
+mixin stars(rating)
+    - const full = Math.floor(rating)
+    - const decimal = rating - full
+    - const isHalf = decimal === 0.5
+    - const hasPartial = decimal > 0 && !isHalf
+    - const empty = (isHalf || hasPartial) ? 5 - full - 1 : 5 - full
+
+    .stars(aria-label=`Rating ${rating} out of 5`)
+        - for (let i = 0; i < full; i++)
+            span.stars__item.stars__item--full
+        - if (isHalf)
+            span.stars__item.stars__item--half
+        - else if (hasPartial)
+            span.stars__item.stars__item--partial(style=`--fill-percent: ${decimal * 100}%`)
+        - for (let i = 0; i < empty; i++)
+            span.stars__item.stars__item--empty
+
+mixin reviews(niche)
+    -
+        // Get reviews based on niche parameter
+        let slides, allReviews, totalReviews, avgRating;
+
+        if (niche && niche !== 'all') {
+            // Filter reviews by specific niche
+            const nicheReviews = getReviewsByNiche(niche);
+
+            // Create slides from niche-specific reviews (3 per slide)
+            const reviewsPerSlide = 3;
+            slides = [];
+            for (let i = 0; i < nicheReviews.length; i += reviewsPerSlide) {
+                slides.push(nicheReviews.slice(i, i + reviewsPerSlide));
+            }
+
+            // Calculate statistics for this niche only
+            allReviews = nicheReviews;
+            totalReviews = nicheReviews.length;
+            avgRating = totalReviews > 0
+                    ? (nicheReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1)
+                    : '0.0';
+        } else {
+            // Get mixed reviews from all niches (default behavior)
+            slides = getMixedReviewsSlides(3);
+
+            // Calculate overall statistics
+            allReviews = getAllReviews();
+            totalReviews = allReviews.length;
+            avgRating = (allReviews.reduce((sum, r) => sum + r.rating, 0) / totalReviews).toFixed(1);
+        }
+
+    .reviews
+        .reviews__top
+            h2.reviews__title Ознайомтесь з думками наших клієнтів
+
+            .reviews__rating
+                p.reviews__count Reviews
+                    | &nbsp;
+                    span 11.968
+                .reviews__inner
+                    +stars(4.7)
+                    span.reviews__score 4.7
+
+        // Slider
+        .reviews__slider.swiper
+            // Navigation arrows
+            .reviews__navigation
+                button.reviews__nav-btn.reviews__nav-prev
+                button.reviews__nav-btn.reviews__nav-next
+            .swiper-wrapper
+                each slide in slides
+                    .reviews__slide.swiper-slide
+                        each r in slide
+                            article.review-card
+                                .review-card__head
+                                    picture
+                                        source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
+                                        img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
+                                    .review-card__meta
+                                        .review-card__name #{r.name} | #{r.niche}, #{r.age}
+                                        .review-card__rating
+                                            +stars(r.rating)
+                                            span.review-card__rating-num #{r.rating.toFixed(1)}
+                                p.review-card__text!= '"' + r.text + '"'
