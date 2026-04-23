@@ -53,84 +53,87 @@ mixin courseDetails(niche)
 
     .course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
         if content
-            section.course-kit
-                .container
-                    h2.course-kit__title= content.kit.title
+            section.course-kit.course-details__section
+                .container.block
+                    h2.course-kit__title.text-gold-fill= content.kit.title
                     h3.course-kit__subtitle= content.kit.subtitle
                     p.course-kit__description= content.kit.description
                     .course-kit__products
-                        p.course-kit__description= content.firstProduct.description
+                        p.course-kit__products-description= content.firstProduct.description
 
-                        .course-kit__product
+                        .course-kit__products-pack
                             source(srcset=images[niche].kit.replace(".png", ".webp") type="image/webp")
-                            img.course-kit__product-image(src=images[niche].kit alt="Product kit")
+                            img.course-kit__products-image(src=images[niche].kit alt="Product kit")
 
-                        p.course-kit__description= content.secondProduct.description
+                        p.course-kit__products-description= content.secondProduct.description
 
 
-            section.course-product
-                .container
+            section.course-product.course-details__section
+                .container.course-product__wrapper.block
                     .course-product__pack
                         source(srcset=images[niche].firstProduct.pack.replace(".png", ".webp") type="image/webp")
-                        img.course-kit__pack-image(src=images[niche].firstProduct.pack alt="Product")
+                        img.course-product__pack-image(src=images[niche].firstProduct.pack alt="Product")
 
                     .components.course-product__components
-                        h3.components__title= content.firstProduct.title
+                        h3.components__title.text-gold-fill= content.firstProduct.title
                         ul.components__inner
                             each component in content.firstProduct.components
                                 li.components__item
-                                    img.components__icon(src=component.icon alt="Component")
+                                    .components__icon
+                                        img.components__icon-image(src=component.icon alt="Component")
                                     p.components__description
                                         b= component.name
                                         |
                                         | — #{component.description}
 
-            section.course-product.course-product--reversed
-                .container
+            section.course-product.course-product--reversed.course-details__section.course-details__section--no-border
+                .container.course-product__wrapper.block
                     .course-product__pack
                         source(srcset=images[niche].secondProduct.pack.replace(".png", ".webp") type="image/webp")
-                        img.course-kit__pack-image(src=images[niche].secondProduct.pack alt="Product")
+                        img.course-product__pack-image(src=images[niche].secondProduct.pack alt="Product")
 
                     .components.course-product__components
-                        h3.components__title= content.secondProduct.title
+                        h3.components__title.text-gold-fill= content.secondProduct.title
                         ul.components__inner
                             each component in content.secondProduct.components
                                 li.components__item
-                                    img.components__icon(src=component.icon alt="Component")
+                                    .components__icon
+                                        img.components__icon-image(src=component.icon alt="Component")
                                     p.components__description
                                         b= component.name
                                         |
                                         | — #{component.description}
 
-            section.course-banner
+            section.course-banner.course-details__section.course-details__section--no-border
                 .container
                     h2.course-banner__title= content.banner.title
-                    button.course__button= content.banner.buttonText
+                    button.course-banner__button.intro__btn= content.banner.buttonText
 
-            section.course-reviews
-                .container
+            section.course-reviews.course-details__section
+                .container.block
                     +reviews(niche)
 
-            section.course-plans
-                .container
+            section.course-plans.course-details__section.course-details__section--no-border
+                .container.block
                     .plans
                         each plan in content.plans
                             .plan(class=plan.selected ? 'plan--selected' : '')
                                 if plan.label
                                     span.plan__label= plan.label
 
-                                h3.plan__title= plan.title
-                                p.plan__description= plan.description
+                                .plan__top
+                                    h3.plan__title= plan.title
+                                    p.plan__description= plan.description
 
-                                .plan__products
-                                    img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
-                                    .plan__products-label
-                                        .plan__products-title= plan.percentage
-                                        .plan__products-text= plan.saving
+                                    .plan__products
+                                        img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
+                                        .plan__products-label
+                                            .plan__products-title= plan.percentage
+                                            .plan__products-text= plan.saving
 
-                                ul.plan-list
-                                    li.plan-list__item= plan.packs
-                                    li.plan-list__item= plan.duration
+                                    ul.plan-list
+                                        li.plan-list__item= plan.packs
+                                        li.plan-list__item= plan.duration
 
                                 .plan-price
                                     .plan-price__new-title= plan.priceTitle
@@ -138,7 +141,8 @@ mixin courseDetails(niche)
                                         .plan-price__new-value= plan.price
                                         .plan-price__new-text= plan.priceDescription
 
-                                button.plan__btn= plan.buttonText
+                                .plan__bottom
+                                    button.plan__btn= plan.buttonText
         else
             //- Fallback for niches without localization data yet
             p Content for #{niche} is not available yet
