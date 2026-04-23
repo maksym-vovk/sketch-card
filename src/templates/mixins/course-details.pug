@@ -126,7 +126,8 @@ mixin courseDetails(niche)
                                     p.plan__description= plan.description
 
                                     .plan__products
-                                        img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
+                                        .plan__products-pack
+                                            img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
                                         .plan__products-label
                                             .plan__products-title= plan.percentage
                                             .plan__products-text= plan.saving
@@ -136,13 +137,30 @@ mixin courseDetails(niche)
                                         li.plan-list__item= plan.duration
 
                                 .plan-price
-                                    .plan-price__new-title= plan.priceTitle
-                                    .plan-price__new-inner
-                                        .plan-price__new-value= plan.price
-                                        .plan-price__new-text= plan.priceDescription
+                                    .plan-price__title= plan.priceTitle
+                                    .plan-price__inner
+                                        .plan-price__value= plan.price
+                                        .plan-price__text= plan.priceDescription
 
                                 .plan__bottom
-                                    button.plan__btn= plan.buttonText
+                                    button.plan__button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+                                        type="button"
+                                        data-course=plan.selected ? "6" : "4"
+                                        data-target-screen="screen-order"
+                                    )!= plan.buttonText
+                                    //button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
+                                    //    type="button"
+                                    //    data-course="6"
+                                    //    data-target-screen="screen-order"
+                                    //)!= t.common.actions.order + ' 6'
+                                    //
+            .course-controls
+                .container.block
+                    button.course-controls__button.btn.btn-arrow.btn-arrow--left(
+                        type="button"
+                        id="from-course-to-problems"
+                        data-target-screen="screen-problems"
+                    )!= t.common.actions.selectAnotherProblem
         else
             //- Fallback for niches without localization data yet
             p Content for #{niche} is not available yet

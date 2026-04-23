@@ -369,12 +369,304 @@
 .course-plans {
 }
 
+.plans {
+  @include rm(768) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  @include rm(1024) {
+    gap: 30px;
+  }
+}
+
 .plan {
+  $selected-label-h: 30px;
+
+  text-align: center;
   color: #000;
   background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
   border-radius: 18px;
+  max-width: 402px;
+  overflow: hidden;
+  margin-inline: auto;
+
+  @include rm(768) {
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include rm(768) {
+      margin: 0;
+    }
+  }
+
+  &:first-child {
+    @include rm(768) {
+      margin-top: $selected-label-h;
+    }
+  }
+
+  &--selected {
+    background: linear-gradient(90deg, #FFB938 0%, #F3CF78 28.37%, #FEF4B3 61.54%, #E0BE80 100%), #F9E5C7;
+
+    @include rm(768) {
+      padding-bottom: $selected-label-h / 2;
+    }
+
+    .plan-price {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background: linear-gradient(180deg, #42CC58 0%, #248333 100%), #42CC58;
+    padding: 4px;
+    min-height: $selected-label-h;
+
+    @include rm(375) {
+      font-size: 21px;
+    }
+  }
 
   &__top, &__bottom {
-    padding: 30px;
+    padding: 20px;
+
+    @include rm(375) {
+      padding: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+
+    @include rm(375) {
+      font-size: 34px;
+    }
+
+    @include rm(1024) {
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 700;
+
+    @include rm(375) {
+      font-size: 18px;
+    }
+
+    @include rm(1024) {
+      font-size: 22px;
+    }
+  }
+  
+  &__products {
+    position: relative;
+    width: fit-content;
+    padding-top: 30px;
+    margin: 0 auto 14px;
+  }
+
+  &__products-pack {
+    width: fit-content;
+    height: 136px;
+
+    @include rm(375) {
+      height: 172px;
+    }
+
+    @include rm(1024) {
+      height: 200px;
+    }
+  }
+
+  &__products-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__products-label {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 84px;
+    height: 84px;
+    background: url("../img/sticker.png") no-repeat center / contain;
+
+    @include rm(1024) {
+      width: 104px;
+      height: 104px;
+    }
+  }
+
+  &__products-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+
+    @include rm(1024) {
+      font-size: 38px;
+    }
+
+    &::before {
+      content: "-";
+    }
+
+    &::after {
+      content: "%";
+      font-size: .8em;
+    }
+  }
+
+  &__products-text {
+    font-size: 12px;
+    line-height: 10px;
+    width: 64%;
+
+    @include rm(1024) {
+      font-size: 14px;
+      line-height: 12px;
+    }
+  }
+
+  &__button.btn-arrow--right {
+    font-size: 14px;
+
+    @include rm(1024) {
+      font-size: 16px;
+    }
+
+    &::after, &::before {
+      width: 30px;
+      height: 30px;
+      top: 8px;
+    }
+
+    &::after {
+      right: 0;
+
+      @include rm(375) {
+        right: 6px;
+      }
+    }
+  }
+}
+
+.plan-price {
+  font-weight: 700;
+  text-align: left;
+  background-color: rgba(215, 215, 215, 0.5);
+  padding: 16px 20px;
+
+  @include rm(375) {
+    padding: 18px 30px;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+
+    @include rm(375) {
+      font-size: 18px;
+    }
+
+    @include rm(1024) {
+      font-size: 22px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__value {
+    font-size: 58px;
+    line-height: 0.8;
+    color: $text-red;
+
+    @include rm(375) {
+      font-size: 62px;
+    }
+
+    @include rm(1024) {
+      font-size: 70px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+
+    @include rm(375) {
+      font-size: 16px;
+    }
+
+    @include rm(1024) {
+      font-size: 18px;
+    }
+  }
+}
+
+.plan-list {
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  list-style: disc;
+  padding-left: 12px;
+
+  @include rm(375) {
+    font-size: 18px;
+  }
+
+  @include rm(1024) {
+    font-size: 22px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.course-controls {
+  &__button {
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include rm(375) {
+      font-size: 16px;
+    }
+
+    @include rm(1024) {
+      font-size: 20px;
+    }
   }
 }
