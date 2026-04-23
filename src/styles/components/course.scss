@@ -3,6 +3,13 @@
     display: none;
   }
 
+  & .block {
+    @include rm(1024) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
   &__section {
     position: relative;
 
@@ -366,13 +373,12 @@
 
 .course-reviews {}
 
-.course-plans {
-}
+.course-plans {}
 
 .plans {
   @include rm(768) {
     display: flex;
-    align-items: flex-start;
+    //align-items: flex-start;
     justify-content: center;
     gap: 20px;
   }
@@ -395,6 +401,9 @@
   margin-inline: auto;
 
   @include rm(768) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
   }
 
@@ -408,7 +417,8 @@
 
   &:first-child {
     @include rm(768) {
-      margin-top: $selected-label-h;
+      margin-top: $selected-label-h / 2;
+      margin-bottom: $selected-label-h / 2;
     }
   }
 
@@ -424,6 +434,20 @@
     }
   }
 
+  &--selected &__top {
+    @include rm(375) {
+      padding: $selected-label-h / 2 30px 30px;
+    }
+  }
+
+  &__top, &__bottom {
+    padding: 20px;
+
+    @include rm(375) {
+      padding: 30px;
+    }
+  }
+
   &__label {
     display: inline-flex;
     justify-content: center;
@@ -434,19 +458,11 @@
     line-height: 1;
     color: #fff;
     background: linear-gradient(180deg, #42CC58 0%, #248333 100%), #42CC58;
-    padding: 4px;
+    //padding: 4px;
     min-height: $selected-label-h;
 
     @include rm(375) {
       font-size: 21px;
-    }
-  }
-
-  &__top, &__bottom {
-    padding: 20px;
-
-    @include rm(375) {
-      padding: 30px;
     }
   }
 
@@ -585,6 +601,10 @@
 
   @include rm(375) {
     padding: 18px 30px;
+  }
+
+  @include rm(768) {
+    margin-top: auto;
   }
 
   &__title {
