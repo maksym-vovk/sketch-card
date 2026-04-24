@@ -1,5 +1,9 @@
 mixin courseDetails(niche)
     -
+        const currency = pricing.currency.short;
+        const firstCoursePrice = `${pricing.courses["4packs"].finalPrice}${currency}`
+        const secondCoursePrice = `${pricing.courses["6packs"].finalPrice}${currency}`
+
         const images = {
             'joints': {
                 kit: 'img/kit-joints.png',
@@ -51,7 +55,8 @@ mixin courseDetails(niche)
         // Get localized content for this niche
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
-    .course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
+    //.course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
+    .course-details(data-niche=niche)
         if content
             section.course-kit.course-details__section
                 .container.block
@@ -139,7 +144,7 @@ mixin courseDetails(niche)
                                 .plan-price
                                     .plan-price__title= plan.priceTitle
                                     .plan-price__inner
-                                        .plan-price__value= plan.price
+                                        .plan-price__value= plan.selected ? secondCoursePrice : firstCoursePrice
                                         .plan-price__text= plan.priceDescription
 
                                 .plan__bottom
@@ -148,12 +153,7 @@ mixin courseDetails(niche)
                                         data-course=plan.selected ? "6" : "4"
                                         data-target-screen="screen-order"
                                     )!= plan.buttonText
-                                    //button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(
-                                    //    type="button"
-                                    //    data-course="6"
-                                    //    data-target-screen="screen-order"
-                                    //)!= t.common.actions.order + ' 6'
-                                    //
+
             .course-controls
                 .container.block
                     button.course-controls__button.btn.btn-arrow.btn-arrow--left(
