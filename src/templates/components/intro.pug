@@ -3,6 +3,10 @@ include ../mixins/reviews
 - const stepsIcon = ["img/icon-scratch.svg", "img/icon-click.svg", "img/icon-gift.svg"]
 - const cardSrcMap = { en: "img/cupon-en.png",hr: "img/cupon-hr.png", sl: "img/cupon-sl.png"}
 
+- const currency = pricing.currency.short;
+- const firstCourseFinalPrice = `${pricing.courses["4packs"].finalPrice}${currency}`
+- const firstCourseOriginalPrice = `${pricing.courses["4packs"].originalPrice}${currency}`
+
 section.intro.block(class="screen" id="screen-intro")
     .container
         h1.intro__title.text-gold-fill!= t.intro.title
@@ -34,13 +38,13 @@ section.intro.block(class="screen" id="screen-intro")
                 span.intro-price__separator
                 .intro-price__old
                     .intro-price__old-title!= t.intro.priceSection.oldPriceTitle
-                    .intro-price__old-value!= t.intro.priceSection.oldPriceValue
+                    .intro-price__old-value!= firstCourseOriginalPrice
 
             .intro-price__right
                 .intro-price__new
                     .intro-price__new-title!= t.intro.priceSection.newPriceTitle
                     .intro-price__new-inner
-                        .intro-price__new-value!= t.intro.priceSection.newPriceValue
+                        .intro-price__new-value!= firstCourseFinalPrice
                         .intro-price__new-text!= t.intro.priceSection.newPriceText
                 .intro-price__note!= t.intro.priceSection.note
 
