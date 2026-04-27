@@ -8,25 +8,27 @@ mixin courseDetails(niche)
             'joints': {
                 kit: 'img/kit-joints.png',
                 firstProduct: {
-                    pack: 'img/slimital-pack.png',
+                    pack: 'img/steplex-pack.png',
+                    horizontal: true
                 },
                 secondProduct: {
-                    pack: 'img/ultraxal-pack.png',
+                    pack: 'img/cardiform-pack.png',
+                    horizontal: true
                 },
             },
             'diabetes': {
                 kit: 'img/kit-joints.png',
                 firstProduct: {
-                    pack: 'img/slimital-pack.png',
+                    pack: 'img/inspicure-pack.png',
                 },
                 secondProduct: {
-                    pack: 'img/ultraxal-pack.png',
+                    pack: 'img/guavital-pack.png',
                 }
             },
             'blood-pressure': {
                 kit: 'img/kit-joints.png',
                 firstProduct: {
-                    pack: 'img/slimital-pack.png',
+                    pack: 'img/tonerin-pack.png',
                 },
                 secondProduct: {
                     pack: 'img/ultraxal-pack.png',
@@ -44,10 +46,11 @@ mixin courseDetails(niche)
             'tiredness': {
                 kit: 'img/kit-joints.png',
                 firstProduct: {
-                    pack: 'img/slimital-pack.png',
+                    pack: 'img/vermixin-pack.png',
+                    horizontal: true
                 },
                 secondProduct: {
-                    pack: 'img/ultraxal-pack.png',
+                    pack: 'img/slimital-pack.png',
                 }
             }
         };
@@ -55,8 +58,14 @@ mixin courseDetails(niche)
         // Get localized content for this niche
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
+
     //.course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
     .course-details(data-niche=niche)
+        // Determine if firstProduct is horizontal
+        - const isFirstProductHorizontal = images[niche] && images[niche].firstProduct && images[niche].firstProduct.horizontal === true;
+        // Determine if secondProduct is horizontal
+        - const isSecondProductHorizontal = images[niche] && images[niche].secondProduct && images[niche].secondProduct.horizontal === true;
+
         if content
             section.course-kit.course-details__section
                 .container.block
@@ -75,7 +84,7 @@ mixin courseDetails(niche)
 
             section.course-product.course-details__section
                 .container.course-product__wrapper.block
-                    .course-product__pack
+                    .course-product__pack(class=isFirstProductHorizontal ? 'course-product__pack--horizontal' : '')
                         source(srcset=images[niche].firstProduct.pack.replace(".png", ".webp") type="image/webp")
                         img.course-product__pack-image(src=images[niche].firstProduct.pack alt="Product")
 
@@ -85,6 +94,7 @@ mixin courseDetails(niche)
                             each component in content.firstProduct.components
                                 li.components__item
                                     .components__icon
+                                        source(srcset=component.icon.replace(".png", ".webp") type="image/webp")
                                         img.components__icon-image(src=component.icon alt="Component")
                                     p.components__description
                                         b= component.name
@@ -93,7 +103,7 @@ mixin courseDetails(niche)
 
             section.course-product.course-product--reversed.course-details__section.course-details__section--no-border
                 .container.course-product__wrapper.block
-                    .course-product__pack
+                    .course-product__pack(class=isSecondProductHorizontal ? 'course-product__pack--horizontal' : '')
                         source(srcset=images[niche].secondProduct.pack.replace(".png", ".webp") type="image/webp")
                         img.course-product__pack-image(src=images[niche].secondProduct.pack alt="Product")
 
@@ -103,6 +113,7 @@ mixin courseDetails(niche)
                             each component in content.secondProduct.components
                                 li.components__item
                                     .components__icon
+                                        source(srcset=component.icon.replace(".png", ".webp") type="image/webp")
                                         img.components__icon-image(src=component.icon alt="Component")
                                     p.components__description
                                         b= component.name
@@ -164,4 +175,3 @@ mixin courseDetails(niche)
         else
             //- Fallback for niches without localization data yet
             p Content for #{niche} is not available yet
-

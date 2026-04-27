@@ -206,6 +206,32 @@
     @include rm(1024) {
       width: 300px;
     }
+
+    &--horizontal {
+      width: 200px;
+
+      @include rm(480) {
+        width: 220px;
+      }
+
+      @include rm(640) {
+        flex-shrink: 0;
+        //width: 220px;
+        margin: 0;
+      }
+
+      @include rm(768) {
+        width: 270px;
+      }
+
+      @include rm(1024) {
+        width: 370px;
+      }
+
+      @include rm(1220) {
+        width: 450px;
+      }
+    }
   }
 
   &__pack-image {
