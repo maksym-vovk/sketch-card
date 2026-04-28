@@ -6,18 +6,23 @@ mixin courseDetails(niche)
 
         const images = {
             'joints': {
-                kit: 'img/kit-joints.png',
+                kit: {
+                    src: 'img/kit-joints.png',
+                },
                 firstProduct: {
                     pack: 'img/steplex-pack.png',
-                    // horizontal: true
                 },
                 secondProduct: {
                     pack: 'img/cardiform-pack.png',
-                    horizontal: true
                 },
+                plans: {
+                    vertical: true
+                }
             },
             'diabetes': {
-                kit: 'img/kit-diabetes.png',
+                kit: {
+                    src: 'img/kit-diabetes.png',
+                },
                 firstProduct: {
                     pack: 'img/inspicure-pack.png',
                 },
@@ -26,7 +31,9 @@ mixin courseDetails(niche)
                 }
             },
             'blood-pressure': {
-                kit: 'img/kit-blood-pressure.png',
+                kit: {
+                    src: 'img/kit-blood-pressure.png',
+                },
                 firstProduct: {
                     pack: 'img/tonerin-pack.png',
                 },
@@ -35,7 +42,9 @@ mixin courseDetails(niche)
                 }
             },
             'weight-loss': {
-                kit: 'img/kit-weight-loss.png',
+                kit: {
+                    src: 'img/kit-weight-loss.png',
+                },
                 firstProduct: {
                     pack: 'img/slimital-pack.png',
                 },
@@ -44,13 +53,18 @@ mixin courseDetails(niche)
                 }
             },
             'tiredness': {
-                kit: 'img/kit-tiredness.png',
+                kit: {
+                    src: 'img/kit-tiredness.png',
+                },
                 firstProduct: {
                     pack: 'img/vermixin-pack.png',
                     horizontal: true
                 },
                 secondProduct: {
                     pack: 'img/slimital-pack.png',
+                },
+                plans: {
+                    vertical: true
                 }
             }
         };
@@ -59,8 +73,8 @@ mixin courseDetails(niche)
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
 
-    //.course-details(data-niche=niche)
-    .course-details.hidden(data-niche=niche)
+    //.course-details.hidden(data-niche=niche)
+    .course-details(data-niche=niche)
         // Determine if firstProduct is horizontal
         - const isFirstProductHorizontal = images[niche] && images[niche].firstProduct && images[niche].firstProduct.horizontal === true;
         // Determine if secondProduct is horizontal
@@ -76,8 +90,8 @@ mixin courseDetails(niche)
                         p.course-kit__products-description= content.firstProduct.description
 
                         .course-kit__products-pack
-                            source(srcset=images[niche].kit.replace(".png", ".webp") type="image/webp")
-                            img.course-kit__products-image(src=images[niche].kit alt="Product kit")
+                            source(srcset=images[niche].kit.src.replace(".png", ".webp") type="image/webp")
+                            img.course-kit__products-image(src=images[niche].kit.src alt="Product kit")
 
                         p.course-kit__products-description= content.secondProduct.description
 
@@ -141,8 +155,9 @@ mixin courseDetails(niche)
                                     h3.plan__title= plan.title
                                     p.plan__description= plan.description
 
-                                    .plan__products
+                                    .plan__products(class=images[niche].plans && images[niche].plans.vertical ? 'plan__products--vertical' : '')
                                         .plan__products-pack
+                                            source(srcset=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png`.replace(".png", ".webp") type="image/webp")
                                             img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
                                         .plan__products-label
                                             .plan__products-title= plan.percentage

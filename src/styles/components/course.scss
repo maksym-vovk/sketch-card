@@ -541,6 +541,10 @@
     }
   }
 
+  &__products-pack--vertical &__products-label {
+
+  }
+
   &__products-image {
     width: 100%;
     height: 100%;
@@ -565,6 +569,10 @@
       width: 104px;
       height: 104px;
     }
+  }
+
+  &__products--vertical &__products-label {
+    right: -68px;
   }
 
   &__products-title {
