@@ -73,8 +73,8 @@ mixin courseDetails(niche)
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
 
-    //.course-details.hidden(data-niche=niche)
-    .course-details(data-niche=niche)
+    //.course-details(data-niche=niche)
+    .course-details.hidden(data-niche=niche)
         // Determine if firstProduct is horizontal
         - const isFirstProductHorizontal = images[niche] && images[niche].firstProduct && images[niche].firstProduct.horizontal === true;
         // Determine if secondProduct is horizontal
