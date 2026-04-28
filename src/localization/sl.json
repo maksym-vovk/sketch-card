@@ -1012,7 +1012,7 @@
       },
       "banner": {
         "title": "Почніть шлях до здорової опорно-рухової системи  разом з Steplex та Cardiform",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         {
@@ -1069,7 +1069,7 @@
       },
       "banner": {
         "title": "Почніть шлях до стабілізації рівня цукру разом з Inspicure Contr Pharm та Guavital+",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Діабет\"", "description": "Рівень цукру під контролем. Простий крок до стабільного самопочуття", "packs": "2 упаковки Inspicure Contr Pharm та 2 упаковки Guavital+", "duration": "Стабілізація рівню цукру в крові за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1104,7 +1104,7 @@
       },
       "banner": {
         "title": "Почніть шлях до стабільного тиску разом з Tonerin та Ultraxal",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Тиск\"", "description": "Гіпертонія під контролем. Базова підтримка тиску та легкості в тілі щодня", "packs": "2 упаковки Tonerin та 2 упаковки Ultraxal", "duration": "Стабілізація артеріального тиску за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1140,7 +1140,7 @@
       },
       "banner": {
         "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Схуднення\"", "description": "Легке схуднення без проблем. Найкраще для стрункості", "packs": "2 упаковки Simital та 2 упаковки Ultraxal", "duration": "Фігура вашої мрії за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1177,11 +1177,11 @@
       },
       "banner": {
         "title": "Почніть шлях до активного життя разом з Vermixin та Slimital",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт  Енергія\"", "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності", "packs": "2 упаковки Vermixin та 2 упаковки Slimital", "duration": "Повернення активності за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум  Енергія\"", "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження", "label": "Ще більша вигода", "packs": "3 упаковки Vermixin та 3 упаковки Slimital", "duration": "Довготривалий баланс енергії та метаболізму за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        { "title": "Набор \"Стандарт Енергія\"", "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності", "packs": "2 упаковки Vermixin та 2 упаковки Slimital", "duration": "Повернення активності за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
+        { "title": "Набор \"Преміум Енергія\"", "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження", "label": "Ще більша вигода", "packs": "3 упаковки Vermixin та 3 упаковки Slimital", "duration": "Довготривалий баланс енергії та метаболізму за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
       ]
     }
   }

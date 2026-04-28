@@ -12,7 +12,7 @@ export default () => {
 
             if (!target) return; // если элемент не найден, ничего не делаем
 
-            var t = target.getBoundingClientRect().top - 20, // расстояние до элемента
+            var t = target.getBoundingClientRect().top, // расстояние до элемента
                 start = null;
 
             requestAnimationFrame(step);

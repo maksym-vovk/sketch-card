@@ -123,7 +123,7 @@ mixin courseDetails(niche)
             section.course-banner.course-details__section.course-details__section--no-border
                 .container
                     h2.course-banner__title= content.banner.title
-                    button.course-banner__button.intro__btn= content.banner.buttonText
+                    a.course-banner__button.intro__btn(href=`#plans-${niche}`)= content.banner.buttonText
 
             section.course-reviews.course-details__section
                 .container.block
@@ -131,7 +131,7 @@ mixin courseDetails(niche)
 
             section.course-plans.course-details__section
                 .container.block
-                    .plans
+                    .plans(id=`plans-${niche}`)
                         each plan in content.plans
                             .plan(class=plan.selected ? 'plan--selected' : '')
                                 if plan.label

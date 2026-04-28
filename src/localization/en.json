@@ -354,13 +354,13 @@
           "name": "María",
           "age": 47,
           "rating": 5.0,
-          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
+          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт Суглоби\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
         },
         {
           "name": "Carlos",
           "age": 63,
           "rating": 4.0,
-          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум\"</a>. Не скажу що повністю пройшло але різниця відчутна."
+          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум Суглоби\"</a>. Не скажу що повністю пройшло але різниця відчутна."
         },
         {
           "name": "Rosa",
@@ -378,7 +378,7 @@
           "name": "Elena",
           "age": 58,
           "rating": 5.0,
-          "text": "Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Стандарт\"</a> помітила що рухаюсь значно легше."
+          "text": "Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Стандарт Суглоби\"</a> помітила що рухаюсь значно легше."
         }
       ],
       "diabetes": [
@@ -386,7 +386,7 @@
           "name": "Lucía",
           "age": 49,
           "rating": 5.0,
-          "text": "Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a> рівень значно рівніший. Менше тягне на солодке теж."
+          "text": "Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт Діабет\"</a> рівень значно рівніший. Менше тягне на солодке теж."
         },
         {
           "name": "Pedro",
@@ -404,13 +404,13 @@
           "name": "Ramón",
           "age": 56,
           "rating": 4.0,
-          "text": "Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."
+          "text": "Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт Діабет\"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."
         },
         {
           "name": "Dolores",
           "age": 50,
           "rating": 5.0,
-          "text": "Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a> помітила що спокійніше проходжу повз кондитерський відділ."
+          "text": "Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум Діабет\"</a> помітила що спокійніше проходжу повз кондитерський відділ."
         }
       ],
       "blood-pressure": [
@@ -418,7 +418,7 @@
           "name": "Antonio",
           "age": 65,
           "rating": 5.0,
-          "text": "Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."
+          "text": "Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."
         },
         {
           "name": "Carmen",
@@ -430,19 +430,19 @@
           "name": "Juan",
           "age": 60,
           "rating": 5.0,
-          "text": "Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Преміум\"</a> так допоміг, але збігу такого не було давно."
+          "text": "Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Преміум Тиск\"</a> так допоміг, але збігу такого не було давно."
         },
         {
           "name": "Isabel",
           "age": 62,
           "rating": 4.0,
-          "text": "Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."
+          "text": "Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."
         },
         {
           "name": "Fernando",
           "age": 59,
           "rating": 5.0,
-          "text": "Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a> показники найкращі за весь цей час."
+          "text": "Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум Тиск\"</a> показники найкращі за весь цей час."
         }
       ],
       "weight-loss": [
@@ -450,7 +450,7 @@
           "name": "Ana",
           "age": 45,
           "rating": 4.0,
-          "text": "Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт\"</a> нарешті почався рух. Мінус чотири кг за місяць."
+          "text": "Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт Схуднення\"</a> нарешті почався рух. Мінус чотири кг за місяць."
         },
         {
           "name": "José",
@@ -462,13 +462,13 @@
           "name": "Teresa",
           "age": 48,
           "rating": 4.0,
-          "text": "Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."
+          "text": "Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум Схуднення\"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."
         },
         {
           "name": "Sergio",
           "age": 53,
           "rating": 5.0,
-          "text": "Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс \"Стандарт\"</a>, відчуваю себе легше і рухливіше."
+          "text": "Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс \"Стандарт Схуднення\"</a>, відчуваю себе легше і рухливіше."
         },
         {
           "name": "Amparo",
@@ -482,7 +482,7 @@
           "name": "Manuel",
           "age": 44,
           "rating": 5.0,
-          "text": "Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт\"</a> нарешті є відчуття що виспався."
+          "text": "Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт Енергія\"</a> нарешті є відчуття що виспався."
         },
         {
           "name": "Concepción",
@@ -494,7 +494,7 @@
           "name": "Álvaro",
           "age": 50,
           "rating": 5.0,
-          "text": "Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a> кількість кави скоротив вдвічі сам."
+          "text": "Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум Енергія\"</a> кількість кави скоротив вдвічі сам."
         },
         {
           "name": "Mercedes",
@@ -506,7 +506,7 @@
           "name": "Ignacio",
           "age": 47,
           "rating": 5.0,
-          "text": "Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Преміум\"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."
+          "text": "Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Преміум Енергія\"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."
         }
       ]
     }
@@ -1012,7 +1012,7 @@
       },
       "banner": {
         "title": "Почніть шлях до здорової опорно-рухової системи  разом з Steplex та Cardiform",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         {
@@ -1069,7 +1069,7 @@
       },
       "banner": {
         "title": "Почніть шлях до стабілізації рівня цукру разом з Inspicure Contr Pharm та Guavital+",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Діабет\"", "description": "Рівень цукру під контролем. Простий крок до стабільного самопочуття", "packs": "2 упаковки Inspicure Contr Pharm та 2 упаковки Guavital+", "duration": "Стабілізація рівню цукру в крові за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1104,7 +1104,7 @@
       },
       "banner": {
         "title": "Почніть шлях до стабільного тиску разом з Tonerin та Ultraxal",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Тиск\"", "description": "Гіпертонія під контролем. Базова підтримка тиску та легкості в тілі щодня", "packs": "2 упаковки Tonerin та 2 упаковки Ultraxal", "duration": "Стабілізація артеріального тиску за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1140,7 +1140,7 @@
       },
       "banner": {
         "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
         { "title": "Набор \"Стандарт Схуднення\"", "description": "Легке схуднення без проблем. Найкраще для стрункості", "packs": "2 упаковки Simital та 2 упаковки Ultraxal", "duration": "Фігура вашої мрії за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
@@ -1177,11 +1177,11 @@
       },
       "banner": {
         "title": "Почніть шлях до активного життя разом з Vermixin та Slimital",
-        "buttonText": "Order an operator's call"
+        "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт  Енергія\"", "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності", "packs": "2 упаковки Vermixin та 2 упаковки Slimital", "duration": "Повернення активності за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум  Енергія\"", "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження", "label": "Ще більша вигода", "packs": "3 упаковки Vermixin та 3 упаковки Slimital", "duration": "Довготривалий баланс енергії та метаболізму за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        { "title": "Набор \"Стандарт Енергія\"", "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності", "packs": "2 упаковки Vermixin та 2 упаковки Slimital", "duration": "Повернення активності за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
+        { "title": "Набор \"Преміум Енергія\"", "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження", "label": "Ще більша вигода", "packs": "3 упаковки Vermixin та 3 упаковки Slimital", "duration": "Довготривалий баланс енергії та метаболізму за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
       ]
     }
   }

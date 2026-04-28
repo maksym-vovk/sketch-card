@@ -1,3 +1,4 @@
+import smoothScroll from "./helpers/smooth-scroll";
 import {ScreenManager} from "./modules/ScreenManager";
 import {FormsManager} from "./modules/FormsManager";
 // import {NichesAccordion} from "./modules/NichesAccordion";
@@ -8,6 +9,7 @@ import {ReviewsSlider} from "./modules/ReviewsSlider";
 import {NicheDisplayHandler} from "./modules/NicheDisplayHandler";
 
 function main() {
+  smoothScroll()
   AppState.init()
   LanguageSwitcher.init()
   ReviewsSlider.init();

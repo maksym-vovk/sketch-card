@@ -24,7 +24,7 @@ mixin reviews(niche)
 
         if (niche && niche !== 'all') {
             // Filter reviews by specific niche
-            const nicheReviews = getReviewsByNiche(niche);
+            const nicheReviews = getCleanReviewsByNiche(niche);
 
             // Create slides from niche-specific reviews (3 per slide)
             const reviewsPerSlide = 3;
