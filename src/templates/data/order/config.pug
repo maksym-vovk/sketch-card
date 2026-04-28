@@ -12,9 +12,13 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale.joints.courses[0].description,
-                    image: 'joints-plan-1.png'
+                    image: 'weight-loss-plan-1.png'
                 },
                 6: {
                     title: {
@@ -24,9 +28,13 @@
                     tags: {
                         tag: t.order.tags[1].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale.joints.courses[1].description,
-                    image: 'joints-plan-2.png'
+                    image: 'weight-loss-plan-2.png'
                 }
             }
         },
@@ -40,6 +48,10 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale.diabetes.courses[0].description,
                     image: 'diabetes-plan-1.png'
@@ -51,6 +63,10 @@
                     },
                     tags: {
                         tag: t.order.tags[1].tag
+                    },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
                     },
                     special: t.order.special,
                     description: orderNichesLocale.diabetes.courses[1].description,
@@ -68,6 +84,10 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale['blood-pressure'].courses[0].description,
                     image: 'blood-pressure-plan-1.png'
@@ -79,6 +99,10 @@
                     },
                     tags: {
                         tag: t.order.tags[1].tag
+                    },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
                     },
                     special: t.order.special,
                     description: orderNichesLocale['blood-pressure'].courses[1].description,
@@ -96,6 +120,10 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale['weight-loss'].courses[0].description,
                     image: 'weight-loss-plan-1.png'
@@ -107,6 +135,10 @@
                     },
                     tags: {
                         tag: t.order.tags[1].tag
+                    },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
                     },
                     special: t.order.special,
                     description: orderNichesLocale['weight-loss'].courses[1].description,
@@ -124,6 +156,10 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale.tiredness.courses[0].description,
                     image: 'tiredness-plan-1.png'
@@ -135,6 +171,10 @@
                     },
                     tags: {
                         tag: t.order.tags[1].tag
+                    },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
                     },
                     special: t.order.special,
                     description: orderNichesLocale.tiredness.courses[1].description,
@@ -152,6 +192,10 @@
                     tags: {
                         tag: t.order.tags[0].tag
                     },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
+                    },
                     special: t.order.special,
                     description: orderNichesLocale.parasites.courses[0].description,
                     image: 'parasites-plan-1.png'
@@ -163,6 +207,10 @@
                     },
                     tags: {
                         tag: t.order.tags[1].tag
+                    },
+                    price: {
+                        oldTitle: t.common.price.oldTitle,
+                        newTitle: t.common.price.newTitle,
                     },
                     special: t.order.special,
                     description: orderNichesLocale.parasites.courses[1].description,
@@ -250,7 +298,7 @@
                                     {
                                         tag: 'h5',
                                         className: 'order__price-title',
-                                        text: 'Старая цена'
+                                        text: orderData.price.oldTitle
                                     },
                                     {
                                         tag: 'p',
@@ -277,7 +325,7 @@
                                     {
                                         tag: 'h5',
                                         className: 'order__price-title',
-                                        text: 'Новая цена'
+                                        text: orderData.price.newTitle
                                     },
                                     {
                                         tag: 'p',

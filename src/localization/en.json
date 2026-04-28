@@ -14,7 +14,9 @@
       "selectAnotherCourse": "Select another course"
     },
     "price": {
-      "bonuses": "Price with bonuses"
+      "bonuses": "Price with bonuses",
+      "oldTitle": "Old price",
+      "newTitle": "New price"
     }
   },
   "validation": {

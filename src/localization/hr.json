@@ -14,7 +14,9 @@
       "selectAnotherCourse": "Odabrati drugu kuru"
     },
     "price": {
-      "bonuses": "Cijena s bonusima"
+      "bonuses": "Cijena s bonusima",
+      "oldTitle": "Stara cijena",
+      "newTitle": "Nova cijena"
     }
   },
   "validation": {

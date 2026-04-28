@@ -14,7 +14,9 @@
       "selectAnotherCourse": "Izberite drug tečaj"
     },
     "price": {
-      "bonuses": "Cena z bonusi"
+      "bonuses": "Cena z bonusi",
+      "oldTitle": "Stara cena",
+      "newTitle": "Nova cena"
     }
   },
   "validation": {

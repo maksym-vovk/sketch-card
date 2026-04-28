@@ -9,7 +9,7 @@ mixin courseDetails(niche)
                 kit: 'img/kit-joints.png',
                 firstProduct: {
                     pack: 'img/steplex-pack.png',
-                    horizontal: true
+                    // horizontal: true
                 },
                 secondProduct: {
                     pack: 'img/cardiform-pack.png',
@@ -17,7 +17,7 @@ mixin courseDetails(niche)
                 },
             },
             'diabetes': {
-                kit: 'img/kit-joints.png',
+                kit: 'img/kit-diabetes.png',
                 firstProduct: {
                     pack: 'img/inspicure-pack.png',
                 },
@@ -26,7 +26,7 @@ mixin courseDetails(niche)
                 }
             },
             'blood-pressure': {
-                kit: 'img/kit-joints.png',
+                kit: 'img/kit-blood-pressure.png',
                 firstProduct: {
                     pack: 'img/tonerin-pack.png',
                 },
@@ -35,7 +35,7 @@ mixin courseDetails(niche)
                 }
             },
             'weight-loss': {
-                kit: 'img/kit-joints.png',
+                kit: 'img/kit-weight-loss.png',
                 firstProduct: {
                     pack: 'img/slimital-pack.png',
                 },
@@ -44,7 +44,7 @@ mixin courseDetails(niche)
                 }
             },
             'tiredness': {
-                kit: 'img/kit-joints.png',
+                kit: 'img/kit-tiredness.png',
                 firstProduct: {
                     pack: 'img/vermixin-pack.png',
                     horizontal: true
@@ -59,8 +59,8 @@ mixin courseDetails(niche)
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
 
-    //.course-details(data-niche=niche class=niche !== 'joints' ? 'hidden' : '')
-    .course-details(data-niche=niche)
+    //.course-details(data-niche=niche)
+    .course-details.hidden(data-niche=niche)
         // Determine if firstProduct is horizontal
         - const isFirstProductHorizontal = images[niche] && images[niche].firstProduct && images[niche].firstProduct.horizontal === true;
         // Determine if secondProduct is horizontal
