@@ -58,7 +58,7 @@
   }
 
   &__subtitle {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 14px;
@@ -74,7 +74,7 @@
   }
 
   &__description {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
 
@@ -107,16 +107,16 @@
   &__products-pack {
     order: 1;
     flex-shrink: 0;
-    width: 180px;
+    width: 220px;
     max-width: 100%;
 
     @include rm(480) {
-      width: 200px;
+      width: 240px;
     }
 
     @include rm(768) {
       order: 2;
-      width: 240px;
+      width: 260px;
     }
 
     @include rm(1024) {
@@ -607,7 +607,7 @@
   }
 
   &__button.btn-arrow--right {
-    font-size: 16px;
+    font-size: 17px;
 
     @include rm(1024) {
       font-size: 19px;
@@ -677,10 +677,10 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 15px;
 
     @include rm(375) {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @include rm(1024) {
@@ -694,7 +694,7 @@
   line-height: 1.2;
   text-align: left;
   list-style: disc;
-  padding-left: 12px;
+  //padding-left: 12px;
 
   @include rm(375) {
     font-size: 18px;
@@ -705,8 +705,22 @@
   }
 
   &__item {
+    position: relative;
+    list-style: none;
+    padding-left: 15px;
+    
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+    
+    &::before {
+      content: "";
+      height: 2px;
+      width: 8px;
+      background: #000;
+      position: absolute;
+      left: 0;
+      top: 10px;
     }
   }
 }
