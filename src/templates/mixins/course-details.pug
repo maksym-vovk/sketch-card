@@ -74,8 +74,8 @@ mixin courseDetails(niche)
         const content = t.courseDetails && t.courseDetails[niche] ? t.courseDetails[niche] : null;
 
 
-    //.course-details(data-niche=niche)
-    .course-details.hidden(data-niche=niche)
+    //.course-details.hidden(data-niche=niche)
+    .course-details(data-niche=niche)
         // Determine if firstProduct is horizontal
         - const isFirstProductHorizontal = images[niche] && images[niche].firstProduct && images[niche].firstProduct.horizontal === true;
         // Determine if secondProduct is horizontal
@@ -85,18 +85,19 @@ mixin courseDetails(niche)
             section.course-kit.course-details__section
                 .container.block
                     h2.course-kit__title.text-gold-fill= content.kit.title
-                    h3.course-kit__subtitle= content.kit.subtitle
 
-                    .course-kit__products
-                        //p.course-kit__products-description= content.firstProduct.description
-
+                    //.course-kit__products
+                    //    .course-kit__products-pack
+                    //        source(srcset=basePath + images[niche].kit.src.replace(".png", ".webp") type="image/webp")
+                    //        img.course-kit__products-image(src=basePath + images[niche].kit.src alt="Product kit")
+                    .course-kit__content
                         .course-kit__products-pack
                             source(srcset=basePath + images[niche].kit.src.replace(".png", ".webp") type="image/webp")
                             img.course-kit__products-image(src=basePath + images[niche].kit.src alt="Product kit")
 
-                        //p.course-kit__products-description= content.secondProduct.description
-
-                    p.course-kit__description= content.kit.description
+                        .course-kit__text
+                            h3.course-kit__subtitle= content.kit.subtitle
+                            p.course-kit__description= content.kit.description
 
 
             section.course-product.course-details__section
@@ -107,7 +108,7 @@ mixin courseDetails(niche)
 
                     .components.course-product__components
                         //h3.components__title.text-gold-fill= content.firstProduct.title
-                        p.course-kit__products-description= content.firstProduct.description
+                        p.course-product__products-description= content.firstProduct.description
                         ul.components__inner
                             each component in content.firstProduct.components
                                 li.components__item
@@ -127,7 +128,7 @@ mixin courseDetails(niche)
 
                     .components.course-product__components
                         //h3.components__title.text-gold-fill= content.secondProduct.title
-                        p.course-kit__products-description= content.secondProduct.description
+                        p.course-product__products-description= content.secondProduct.description
                         ul.components__inner
                             each component in content.secondProduct.components
                                 li.components__item
