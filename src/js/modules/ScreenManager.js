@@ -7,6 +7,7 @@ const SELECTORS = {
 
     ORDER_FORM_CONTENT: '.order-card__content',
     ORDER_BACK_BUTTON: '.order__next[data-target-screen="screen-course"]',
+    HEADER_BACK_BUTTON: '.header__button',
 
 };
 
@@ -19,6 +20,8 @@ const CSS_CLASSES = {
 const TRANSITION_DURATION = 300; // Match CSS transition duration
 
 export const ScreenManager = {
+    headerBackButton: document.querySelector(SELECTORS.HEADER_BACK_BUTTON),
+
     goToScreen(screenId) {
         const screens = document.querySelectorAll(SELECTORS.SCREEN);
         const targetScreen = document.getElementById(screenId);
@@ -33,6 +36,8 @@ export const ScreenManager = {
         if (currentScreen) {
             currentScreen.classList.add(CSS_CLASSES.SCREEN_EXIT);
 
+            this.headerBackButton.classList.add(CSS_CLASSES.HIDDEN);
+
             setTimeout(() => {
                 screens.forEach(screen => {
                     screen.classList.add(CSS_CLASSES.HIDDEN);
@@ -42,6 +47,7 @@ export const ScreenManager = {
                 targetScreen.classList.remove(CSS_CLASSES.HIDDEN);
                 targetScreen.classList.add(CSS_CLASSES.SCREEN_ENTER);
 
+                this._changeTopBackButtonVisibility(screenId);
                 window.scrollTo(0, 0);
             }, TRANSITION_DURATION);
         } else {
@@ -54,6 +60,17 @@ export const ScreenManager = {
         setTimeout(() => {
             removeModifierClass(SELECTORS.ORDER_FORM_CONTENT, 'additional');
         }, TRANSITION_DURATION);
+    },
+
+
+    _changeTopBackButtonVisibility(screenId) {
+        const screensWithTopBackButton = ['screen-course']
+
+        if (screensWithTopBackButton.includes(screenId)) {
+            this.headerBackButton.classList.remove(CSS_CLASSES.HIDDEN);
+        } else {
+            this.headerBackButton.classList.add(CSS_CLASSES.HIDDEN);
+        }
     },
 
     bindButtons() {

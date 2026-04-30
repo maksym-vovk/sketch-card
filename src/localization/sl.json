@@ -993,21 +993,57 @@
         "title": "Steplex",
         "description": "Steplex — допомагає при болях у суглобах м'язах, сприяє зменшенню запалення та відновленню рухливості.",
         "components": [
-          { "icon": "img/arnica-icon.png", "name": "Екстракт арніки", "description": "зняття запалення і набряку" },
-          { "icon": "img/menthol-icon.png", "name": "Ментол", "description": "знеболюючий та охолоджуючий ефект" },
-          { "icon": "img/eucalyptus-oil-icon.png", "name": "Ефірна олія евкаліпту", "description": "протизапальна і антисептична дія" },
-          { "icon": "img/camphor-oil-icon.png", "name": "Камфорна олія", "description": "зменшення скутості рухів" }
+          {
+            "icon": "img/arnica-icon.png",
+            "name": "Екстракт арніки",
+            "description": "зняття запалення і набряку"
+          },
+          {
+            "icon": "img/menthol-icon.png",
+            "name": "Ментол",
+            "description": "знеболюючий та охолоджуючий ефект"
+          },
+          {
+            "icon": "img/eucalyptus-oil-icon.png",
+            "name": "Ефірна олія евкаліпту",
+            "description": "протизапальна і антисептична дія"
+          },
+          {
+            "icon": "img/camphor-oil-icon.png",
+            "name": "Камфорна олія",
+            "description": "зменшення скутості рухів"
+          }
         ]
       },
       "secondProduct": {
         "title": "Cardiform",
         "description": "Cardiform — стимулює кровообіг в судинах та вироблення колагену, допомагає зберегти міцність кісток та суглобів.",
         "components": [
-          { "icon": "img/vitamin-c-icon.png", "name": "Вітамін C", "description": "зміцнення судин та синтез колагену" },
-          { "icon": "img/vitamin-d3-icon.png", "name": "Вітамін D3", "description": "засвоєння кальцію та фосфору" },
-          { "icon": "img/chromium-icon.png", "name": "Хром", "description": "нормальний обмін речовин" },
-          { "icon": "img/vitamin-b-complex-icon.png", "name": "Вітаміни B1, B6, B12", "description": "підтримка комфорту рухів" },
-          { "icon": "img/vitamin-e-icon.png", "name": "Вітамін E", "description": "антиоксидантний захист" }
+          {
+            "icon": "img/vitamin-c-icon.png",
+            "name": "Вітамін C",
+            "description": "зміцнення судин та синтез колагену"
+          },
+          {
+            "icon": "img/vitamin-d3-icon.png",
+            "name": "Вітамін D3",
+            "description": "засвоєння кальцію та фосфору"
+          },
+          {
+            "icon": "img/chromium-icon.png",
+            "name": "Хром",
+            "description": "нормальний обмін речовин"
+          },
+          {
+            "icon": "img/vitamin-b-complex-icon.png",
+            "name": "Вітаміни B1, B6, B12",
+            "description": "підтримка комфорту рухів"
+          },
+          {
+            "icon": "img/vitamin-e-icon.png",
+            "name": "Вітамін E",
+            "description": "антиоксидантний захист"
+          }
         ]
       },
       "banner": {
@@ -1019,7 +1055,7 @@
           "title": "Набор \"Стандарт Суглоби\"",
           "description": "Рух без болю. Активне життя без дискомфорту",
           "packs": "2 упаковки Steplex та 2 упаковки Cardiform",
-          "duration": "Усунення скутості і болю в суглобах за 30 днів",
+          "duration": "Усунення скутості і болю в суглобах за 10 днів",
           "priceTitle": "Нова ціна з бонусом",
           "percentage": "50",
           "saving": "по промокоду",
@@ -1031,7 +1067,7 @@
           "description": "Здорова опорно-рухова система. Тривала підтримка та захист",
           "label": "Ще більша вигода",
           "packs": "3 упаковки Steplex та 3 упаковки Cardiform",
-          "duration": "Профілактика захворювань суглобів та кісток за 60 днів.",
+          "duration": "Профілактика захворювань суглобів та кісток за 15 днів.",
           "priceTitle": "Нова ціна з бонусом",
           "percentage": "50",
           "saving": "по промокоду",
@@ -1051,20 +1087,52 @@
         "title": "Inspicure Contr Pharm",
         "description": "Inspicure Contr Pharm — сприяє зниженню рівня цукру в крові та допомагає стабілізувати стан діабетика.",
         "components": [
-          { "icon": "img/chromium-icon.png", "name": "Хром", "description": "стабілізація рівня цукру в крові" },
-          { "icon": "img/gymnema-icon.png", "name": "Екстракт Gymnema Sylvestre", "description": "підтримка здорової роботи підшлункової залози" },
-          { "icon": "img/olive-leaves-icon.png", "name": "Екстракт листя оливи", "description": "захист клітин від ушкоджень" },
-          { "icon": "img/vitamin-c-icon.png", "name": "Вітамін C", "description": "захист від ускладнень діабету" },
-          { "icon": "img/resveratrol-icon.png", "name": "Ресвератрол", "description": "зниження інсулінорезистентності" }
+          {
+            "icon": "img/chromium-icon.png",
+            "name": "Хром",
+            "description": "стабілізація рівня цукру в крові"
+          },
+          {
+            "icon": "img/gymnema-icon.png",
+            "name": "Екстракт Gymnema Sylvestre",
+            "description": "підтримка здорової роботи підшлункової залози"
+          },
+          {
+            "icon": "img/olive-leaves-icon.png",
+            "name": "Екстракт листя оливи",
+            "description": "захист клітин від ушкоджень"
+          },
+          {
+            "icon": "img/vitamin-c-icon.png",
+            "name": "Вітамін C",
+            "description": "захист від ускладнень діабету"
+          },
+          {
+            "icon": "img/resveratrol-icon.png",
+            "name": "Ресвератрол",
+            "description": "зниження інсулінорезистентності"
+          }
         ]
       },
       "secondProduct": {
         "title": "Guavital+",
         "description": "Guavital+ — допомагає контролювати апетит та знизити тягу до солодкого.",
         "components": [
-          { "icon": "img/guarana-icon.png", "name": "Екстракт гуави", "description": "контроль аппетита" },
-          { "icon": "img/green-tea-icon.png", "name": "Екстракт зеленого чаю", "description": "зниження потягу до солодкого" },
-          { "icon": "img/pineapple-icon.png", "name": "Екстракт гіркого апельсину", "description": "активізація метаболізму" }
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Екстракт гуави",
+            "description": "контроль аппетита"
+          },
+          {
+            "icon": "img/green-tea-icon.png",
+            "name": "Екстракт зеленого чаю",
+            "description": "зниження потягу до солодкого"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт гіркого апельсину",
+            "description": "активізація метаболізму"
+          }
         ]
       },
       "banner": {
@@ -1072,8 +1140,30 @@
         "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт Діабет\"", "description": "Рівень цукру під контролем. Простий крок до стабільного самопочуття", "packs": "2 упаковки Inspicure Contr Pharm та 2 упаковки Guavital+", "duration": "Стабілізація рівню цукру в крові за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум Діабет\"", "description": "Захист від ускладнень діабету. Глибока підтримка організму від ускладнень діабету", "label": "Ще більша вигода", "packs": "3 упаковки Inspicure Contr Pharm та 3 упаковки Guavital+", "duration": "Стабільний рівень цукру, більше енергії та впевненість у кожному дні за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        {
+          "title": "Набор \"Стандарт Діабет\"",
+          "description": "Рівень цукру під контролем. Простий крок до стабільного самопочуття",
+          "packs": "2 упаковки Inspicure Contr Pharm та 2 упаковки Guavital+",
+          "duration": "Стабілізація рівню цукру в крові за 20 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Діабет\"",
+          "description": "Захист від ускладнень діабету. Глибока підтримка організму від ускладнень діабету",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Inspicure Contr Pharm та 3 упаковки Guavital+",
+          "duration": "Стабільний рівень цукру, більше енергії та впевненість у кожному дні за 30 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
       ]
     },
     "blood-pressure": {
@@ -1086,20 +1176,52 @@
         "title": "Tonerin",
         "description": "Tonerin — сприяє зниженню артеріального тиску, допомагає відновити стан судин та серця, сприяє нормалізації рівня холестерину та цукру в крові.",
         "components": [
-          { "icon": "img/vitamin-c-icon.png", "name": "Вітамін C", "description": "міцність і еластичність судин, щоденний захист організму завдяки антиоксидантній дії." },
-          { "icon": "img/olive-leaves-icon.png", "name": "Екстракт оливкового листа", "description": "антиоксидантна підтримка, здоров’я судин, нормалізація рівня холестерину, захист серцево-судинну системи." },
-          { "icon": "img/chromium-icon.png", "name": "Хром", "description": "підтримка стабільного рівня цукру в крові нормалізація метаболізму, підтримка здоров’я серця і судин." }
+          {
+            "icon": "img/vitamin-c-icon.png",
+            "name": "Вітамін C",
+            "description": "міцність і еластичність судин, щоденний захист організму завдяки антиоксидантній дії."
+          },
+          {
+            "icon": "img/olive-leaves-icon.png",
+            "name": "Екстракт оливкового листа",
+            "description": "антиоксидантна підтримка, здоров’я судин, нормалізація рівня холестерину, захист серцево-судинну системи."
+          },
+          {
+            "icon": "img/chromium-icon.png",
+            "name": "Хром",
+            "description": "підтримка стабільного рівня цукру в крові нормалізація метаболізму, підтримка здоров’я серця і судин."
+          }
         ]
       },
       "secondProduct": {
         "title": "Ultraxal",
         "description": "Ultraxal — зменшення навантаження на судини, зниження рівня токсинів та усунення набряків.",
         "components": [
-          { "icon": "img/dandelion-icon.png", "name": "Корінь кульбаби", "description": "виведення зайвої рідини та токсинів" },
-          { "icon": "img/artichoke-icon.png", "name": "Aртишок", "description": "нормалізація обміну жирів та рівню холестерину" },
-          { "icon": "img/milk-thistle-icon.png", "name": "Розторопша", "description": "очищення і відновлення печінки" },
-          { "icon": "img/pumpkin-seed-icon.png", "name": "Гарбузове насіння", "description": "забезпечення організму мінералами, важливими для здоров’я серця і судин" },
-          { "icon": "img/papaya-icon.png", "name": "Рослинний фермент рapain", "description": "зниження навантаження на організм через покращення травлення" }
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "виведення зайвої рідини та токсинів"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Aртишок",
+            "description": "нормалізація обміну жирів та рівню холестерину"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Розторопша",
+            "description": "очищення і відновлення печінки"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "забезпечення організму мінералами, важливими для здоров’я серця і судин"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Рослинний фермент рapain",
+            "description": "зниження навантаження на організм через покращення травлення"
+          }
         ]
       },
       "banner": {
@@ -1107,8 +1229,30 @@
         "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт Тиск\"", "description": "Гіпертонія під контролем. Базова підтримка тиску та легкості в тілі щодня", "packs": "2 упаковки Tonerin та 2 упаковки Ultraxal", "duration": "Стабілізація артеріального тиску за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум Тиск\"", "description": "Здорова серцево-судинна система. Посилена формула для стабільного тиску та здорових судин", "label": "Ще більша вигода", "packs": "3 упаковки Tonerin та 3 упаковки Ultraxal", "duration": "Стабільний рівень тиску, здоров’я судин та ніяких набряків за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        {
+          "title": "Набор \"Стандарт Тиск\"",
+          "description": "Гіпертонія під контролем. Базова підтримка тиску та легкості в тілі щодня",
+          "packs": "2 упаковки Tonerin та 2 упаковки Ultraxal",
+          "duration": "Стабілізація артеріального тиску за 20 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Тиск\"",
+          "description": "Здорова серцево-судинна система. Посилена формула для стабільного тиску та здорових судин",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Tonerin та 3 упаковки Ultraxal",
+          "duration": "Стабільний рівень тиску, здоров’я судин та ніяких набряків за 30 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
       ]
     },
     "weight-loss": {
@@ -1121,21 +1265,57 @@
         "title": "Slimital",
         "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
         "components": [
-          { "icon": "img/guarana-icon.png", "name": "Гуарана", "description": "активація термогенезу" },
-          { "icon": "img/pineapple-icon.png", "name": "Екстракт стебла ананаса", "description": "прискорення розщеплення жирів" },
-          { "icon": "img/acacia-fiber-icon.png", "name": "Клітковина акації", "description": "нормалізація апетиту" },
-          { "icon": "img/nopal-cactus-icon.png", "name": "Екстракт кактуса нопаля", "description": "зменшення засвоєння жирів і вуглеводів" }
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Гуарана",
+            "description": "активація термогенезу"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "прискорення розщеплення жирів"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Клітковина акації",
+            "description": "нормалізація апетиту"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт кактуса нопаля",
+            "description": "зменшення засвоєння жирів і вуглеводів"
+          }
         ]
       },
       "secondProduct": {
         "title": "Ultraxal",
         "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ.",
         "components": [
-          { "icon": "img/dandelion-icon.png", "name": "Корінь кульбаби", "description": "відновлення слизової шлунку" },
-          { "icon": "img/artichoke-icon.png", "name": "Екстракт артишоку", "description": "стимуляція вироблення ферментів" },
-          { "icon": "img/milk-thistle-icon.png", "name": "Екстракт розторопші", "description": "очищення від токсинів" },
-          { "icon": "img/pumpkin-seed-icon.png", "name": "Гарбузове насіння", "description": "покращення перистальтики" },
-          { "icon": "img/papaya-icon.png", "name": "Екстракт папайї", "description": "поліпшення травлення" }
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "відновлення слизової шлунку"
+          },
+          {
+            "icon": "img/artichoke-icon.png",
+            "name": "Екстракт артишоку",
+            "description": "стимуляція вироблення ферментів"
+          },
+          {
+            "icon": "img/milk-thistle-icon.png",
+            "name": "Екстракт розторопші",
+            "description": "очищення від токсинів"
+          },
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Гарбузове насіння",
+            "description": "покращення перистальтики"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Екстракт папайї",
+            "description": "поліпшення травлення"
+          }
         ]
       },
       "banner": {
@@ -1143,8 +1323,30 @@
         "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт Схуднення\"", "description": "Легке схуднення без проблем. Найкраще для стрункості", "packs": "2 упаковки Simital та 2 упаковки Ultraxal", "duration": "Фігура вашої мрії за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум Схуднення\"", "description": "Тривалий результат. Подвійний удар по зайвих кілограмах", "label": "Ще більша вигода", "packs": "3 упаковки Simital та 3 упаковки Ultraxal", "duration": "Стабільне схуднення та очищення за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        {
+          "title": "Набор \"Стандарт Схуднення\"",
+          "description": "Легке схуднення без проблем. Найкраще для стрункості",
+          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
+          "duration": "Фігура вашої мрії за 20 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Схуднення\"",
+          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
+          "duration": "Стабільне схуднення та очищення за 30 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
       ]
     },
     "tiredness": {
@@ -1157,22 +1359,62 @@
         "title": "Vermixin",
         "description": "Vermixin — очищення організму, зменшення токсичного навантаження, підтримка імунітету.",
         "components": [
-          { "icon": "img/pumpkin-seed-icon.png", "name": "Насіння гарбуза", "description": "очищення організму, зменшення токсичного навантаження" },
-          { "icon": "img/garlic-icon.png", "name": "Часник", "description": "баланс мікрофлори кишківника, зменшення відчуття втоми" },
-          { "icon": "img/ginger-icon.png", "name": "Імбир", "description": "підтримка здорового травлення і кровообігу, відновлення енергії щодня" },
-          { "icon": "img/papaya-icon.png", "name": "Насіння папаї", "description": "детоксикація, покращення енергетичного обміну" },
-          { "icon": "img/dandelion-icon.png", "name": "Корінь кульбаби", "description": "очищення крові, печінки та нирок, природне відновлення сил і внутрішнього балансу" },
-          { "icon": "img/calendula-icon.png", "name": "Календула", "description": "антибактеріальний захист, зменшення відчуття виснаження" }
+          {
+            "icon": "img/pumpkin-seed-icon.png",
+            "name": "Насіння гарбуза",
+            "description": "очищення організму, зменшення токсичного навантаження"
+          },
+          {
+            "icon": "img/garlic-icon.png",
+            "name": "Часник",
+            "description": "баланс мікрофлори кишківника, зменшення відчуття втоми"
+          },
+          {
+            "icon": "img/ginger-icon.png",
+            "name": "Імбир",
+            "description": "підтримка здорового травлення і кровообігу, відновлення енергії щодня"
+          },
+          {
+            "icon": "img/papaya-icon.png",
+            "name": "Насіння папаї",
+            "description": "детоксикація, покращення енергетичного обміну"
+          },
+          {
+            "icon": "img/dandelion-icon.png",
+            "name": "Корінь кульбаби",
+            "description": "очищення крові, печінки та нирок, природне відновлення сил і внутрішнього балансу"
+          },
+          {
+            "icon": "img/calendula-icon.png",
+            "name": "Календула",
+            "description": "антибактеріальний захист, зменшення відчуття виснаження"
+          }
         ]
       },
       "secondProduct": {
         "title": "Slimital",
         "description": "Slimital — активізація метаболізму, підтримка балансу мікрофлори, комфортне травлення.",
         "components": [
-          { "icon": "img/guarana-icon.png", "name": "Екстракт насіння гуарани", "description": "активізація метаболізму, підвищення витривалості" },
-          { "icon": "img/pineapple-icon.png", "name": "Екстракт стебла ананаса", "description": "комфортне травлення, усунення відчуття важкості" },
-          { "icon": "img/acacia-fiber-icon.png", "name": "Акацієва клітковина", "description": "підтримка балансу мікрофлори" },
-          { "icon": "img/nopal-cactus-icon.png", "name": "Екстракт нопалу", "description": "природна підтримка контролю ваги" }
+          {
+            "icon": "img/guarana-icon.png",
+            "name": "Екстракт насіння гуарани",
+            "description": "активізація метаболізму, підвищення витривалості"
+          },
+          {
+            "icon": "img/pineapple-icon.png",
+            "name": "Екстракт стебла ананаса",
+            "description": "комфортне травлення, усунення відчуття важкості"
+          },
+          {
+            "icon": "img/acacia-fiber-icon.png",
+            "name": "Акацієва клітковина",
+            "description": "підтримка балансу мікрофлори"
+          },
+          {
+            "icon": "img/nopal-cactus-icon.png",
+            "name": "Екстракт нопалу",
+            "description": "природна підтримка контролю ваги"
+          }
         ]
       },
       "banner": {
@@ -1180,8 +1422,30 @@
         "buttonText": "Замовити"
       },
       "plans": [
-        { "title": "Набор \"Стандарт Енергія\"", "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності", "packs": "2 упаковки Vermixin та 2 упаковки Slimital", "duration": "Повернення активності за 30 днів", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс" },
-        { "title": "Набор \"Преміум Енергія\"", "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження", "label": "Ще більша вигода", "packs": "3 упаковки Vermixin та 3 упаковки Slimital", "duration": "Довготривалий баланс енергії та метаболізму за 60 днів.", "priceTitle": "Нова ціна з бонусом", "percentage": "50", "saving": "по промокоду", "priceDescription": "Ціна після застосування вашого бонусу", "buttonText": "Обрати цей комплекс", "selected": true }
+        {
+          "title": "Набор \"Стандарт Енергія\"",
+          "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності",
+          "packs": "2 упаковки Vermixin та 2 упаковки Slimital",
+          "duration": "Повернення активності за 20 днів",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс"
+        },
+        {
+          "title": "Набор \"Преміум Енергія\"",
+          "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження",
+          "label": "Ще більша вигода",
+          "packs": "3 упаковки Vermixin та 3 упаковки Slimital",
+          "duration": "Довготривалий баланс енергії та метаболізму за 30 днів.",
+          "priceTitle": "Нова ціна з бонусом",
+          "percentage": "50",
+          "saving": "по промокоду",
+          "priceDescription": "Ціна після застосування вашого бонусу",
+          "buttonText": "Обрати цей комплекс",
+          "selected": true
+        }
       ]
     }
   }

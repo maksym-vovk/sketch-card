@@ -12,9 +12,8 @@ append head
     link(rel="stylesheet", href=basePath + "css/style.min.css")
 
 append content
-    header
-        .container
-            +lang-switcher()
+    include components/header
+
     .wrapper
         include components/intro
         include components/intro-popup

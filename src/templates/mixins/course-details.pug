@@ -90,8 +90,8 @@ mixin courseDetails(niche)
                         p.course-kit__products-description= content.firstProduct.description
 
                         .course-kit__products-pack
-                            source(srcset=images[niche].kit.src.replace(".png", ".webp") type="image/webp")
-                            img.course-kit__products-image(src=images[niche].kit.src alt="Product kit")
+                            source(srcset=basePath + images[niche].kit.src.replace(".png", ".webp") type="image/webp")
+                            img.course-kit__products-image(src=basePath + images[niche].kit.src alt="Product kit")
 
                         p.course-kit__products-description= content.secondProduct.description
 
@@ -99,8 +99,8 @@ mixin courseDetails(niche)
             section.course-product.course-details__section
                 .container.course-product__wrapper.block
                     .course-product__pack(class=isFirstProductHorizontal ? 'course-product__pack--horizontal' : '')
-                        source(srcset=images[niche].firstProduct.pack.replace(".png", ".webp") type="image/webp")
-                        img.course-product__pack-image(src=images[niche].firstProduct.pack alt="Product")
+                        source(srcset=basePath + images[niche].firstProduct.pack.replace(".png", ".webp") type="image/webp")
+                        img.course-product__pack-image(src=basePath + images[niche].firstProduct.pack alt="Product")
 
                     .components.course-product__components
                         h3.components__title.text-gold-fill= content.firstProduct.title
@@ -108,8 +108,8 @@ mixin courseDetails(niche)
                             each component in content.firstProduct.components
                                 li.components__item
                                     .components__icon
-                                        source(srcset=component.icon.replace(".png", ".webp") type="image/webp")
-                                        img.components__icon-image(src=component.icon alt="Component")
+                                        source(srcset=basePath + component.icon.replace(".png", ".webp") type="image/webp")
+                                        img.components__icon-image(src=basePath + component.icon alt="Component")
                                     p.components__description
                                         b= component.name
                                         |
@@ -118,8 +118,8 @@ mixin courseDetails(niche)
             section.course-product.course-product--reversed.course-details__section.course-details__section--no-border
                 .container.course-product__wrapper.block
                     .course-product__pack(class=isSecondProductHorizontal ? 'course-product__pack--horizontal' : '')
-                        source(srcset=images[niche].secondProduct.pack.replace(".png", ".webp") type="image/webp")
-                        img.course-product__pack-image(src=images[niche].secondProduct.pack alt="Product")
+                        source(srcset=basePath + images[niche].secondProduct.pack.replace(".png", ".webp") type="image/webp")
+                        img.course-product__pack-image(src=basePath + images[niche].secondProduct.pack alt="Product")
 
                     .components.course-product__components
                         h3.components__title.text-gold-fill= content.secondProduct.title
@@ -127,8 +127,8 @@ mixin courseDetails(niche)
                             each component in content.secondProduct.components
                                 li.components__item
                                     .components__icon
-                                        source(srcset=component.icon.replace(".png", ".webp") type="image/webp")
-                                        img.components__icon-image(src=component.icon alt="Component")
+                                        source(srcset=basePath + component.icon.replace(".png", ".webp") type="image/webp")
+                                        img.components__icon-image(src=basePath + component.icon alt="Component")
                                     p.components__description
                                         b= component.name
                                         |
@@ -157,8 +157,8 @@ mixin courseDetails(niche)
 
                                     .plan__products(class=images[niche].plans && images[niche].plans.vertical ? 'plan__products--vertical' : '')
                                         .plan__products-pack
-                                            source(srcset=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png`.replace(".png", ".webp") type="image/webp")
-                                            img.plan__products-image(src=`img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
+                                            source(srcset=basePath + `img/${niche}-plan-${plan.selected ? '2' : '1'}.png`.replace(".png", ".webp") type="image/webp")
+                                            img.plan__products-image(src=basePath + `img/${niche}-plan-${plan.selected ? '2' : '1'}.png` alt="Plan")
                                         .plan__products-label
                                             .plan__products-title= plan.percentage
                                             .plan__products-text= plan.saving

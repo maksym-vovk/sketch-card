@@ -74,8 +74,8 @@ mixin reviews(niche)
                             article.review-card
                                 .review-card__head
                                     picture
-                                        source(srcset=r.avatar.replace(".jpg", ".webp") type="image/webp")
-                                        img.review-card__avatar(src=r.avatar alt=`${r.name} avatar` loading="lazy")
+                                        source(srcset=basePath + r.avatar.replace(".jpg", ".webp") type="image/webp")
+                                        img.review-card__avatar(src=basePath + r.avatar alt=`${r.name} avatar` loading="lazy")
                                     .review-card__meta
                                         .review-card__name #{r.name} | #{r.niche}, #{r.age}
                                         .review-card__rating
