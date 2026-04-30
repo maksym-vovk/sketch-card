@@ -14,6 +14,7 @@ mixin courseDetails(niche)
                 },
                 secondProduct: {
                     pack: 'img/cardiform-pack.png',
+                    horizontal: true
                 },
                 plans: {
                     vertical: true
@@ -85,15 +86,17 @@ mixin courseDetails(niche)
                 .container.block
                     h2.course-kit__title.text-gold-fill= content.kit.title
                     h3.course-kit__subtitle= content.kit.subtitle
-                    p.course-kit__description= content.kit.description
+
                     .course-kit__products
-                        p.course-kit__products-description= content.firstProduct.description
+                        //p.course-kit__products-description= content.firstProduct.description
 
                         .course-kit__products-pack
                             source(srcset=basePath + images[niche].kit.src.replace(".png", ".webp") type="image/webp")
                             img.course-kit__products-image(src=basePath + images[niche].kit.src alt="Product kit")
 
-                        p.course-kit__products-description= content.secondProduct.description
+                        //p.course-kit__products-description= content.secondProduct.description
+
+                    p.course-kit__description= content.kit.description
 
 
             section.course-product.course-details__section
@@ -103,7 +106,8 @@ mixin courseDetails(niche)
                         img.course-product__pack-image(src=basePath + images[niche].firstProduct.pack alt="Product")
 
                     .components.course-product__components
-                        h3.components__title.text-gold-fill= content.firstProduct.title
+                        //h3.components__title.text-gold-fill= content.firstProduct.title
+                        p.course-kit__products-description= content.firstProduct.description
                         ul.components__inner
                             each component in content.firstProduct.components
                                 li.components__item
@@ -122,7 +126,8 @@ mixin courseDetails(niche)
                         img.course-product__pack-image(src=basePath + images[niche].secondProduct.pack alt="Product")
 
                     .components.course-product__components
-                        h3.components__title.text-gold-fill= content.secondProduct.title
+                        //h3.components__title.text-gold-fill= content.secondProduct.title
+                        p.course-kit__products-description= content.secondProduct.description
                         ul.components__inner
                             each component in content.secondProduct.components
                                 li.components__item

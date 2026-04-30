@@ -46,6 +46,7 @@
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    color: gold;
     margin: 0 0 20px;
 
     @include rm(768) {
@@ -76,15 +77,15 @@
   &__description {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 
     @include rm(768) {
-      margin-bottom: 30px;
+      //margin-bottom: 30px;
     }
 
     @include rm(1024) {
       font-size: 19px;
-      margin-bottom: 40px;
+      //margin-bottom: 40px;
     }
   }
 
@@ -107,12 +108,13 @@
   &__products-pack {
     order: 1;
     flex-shrink: 0;
-    width: 220px;
+    width: 250px;
     max-width: 100%;
+    margin-bottom: 14px;
 
-    @include rm(480) {
-      width: 240px;
-    }
+    //@include rm(480) {
+    //  width: 240px;
+    //}
 
     @include rm(768) {
       order: 2;
@@ -133,7 +135,7 @@
 
   &__products-description {
     order: 2;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.3;
     text-align: center;
@@ -141,6 +143,8 @@
     border-radius: 10px;
     width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.4);
 
     @include rm(768) {
       font-size: 18px;
@@ -186,7 +190,9 @@
   }
 
   &__pack {
-    width: 100px;
+    //160 - horizontal
+    //200 - vertical
+    width: 160px;
     max-width: 100%;
     margin: 0 auto 20px;
 
@@ -471,7 +477,7 @@
   &__top, &__bottom {
     padding: 20px;
 
-    @include rm(375) {
+    @include rm(768) {
       padding: 30px;
     }
   }
@@ -510,11 +516,11 @@
   }
 
   &__description {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 
     @include rm(375) {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     @include rm(1024) {
@@ -542,8 +548,16 @@
     }
   }
 
-  &__products-pack--vertical &__products-label {
+  &__products--vertical &__products-pack {
+    height: 300px;
 
+    @include rm(375) {
+      height: 300px;
+    }
+
+    @include rm(1024) {
+      height: 300px;
+    }
   }
 
   &__products-image {
@@ -573,7 +587,7 @@
   }
 
   &__products--vertical &__products-label {
-    right: -68px;
+    right: -20px;
   }
 
   &__products-title {
@@ -635,7 +649,7 @@
   background-color: rgba(215, 215, 215, 0.5);
   padding: 16px 20px;
 
-  @include rm(375) {
+  @include rm(768) {
     padding: 18px 30px;
   }
 
@@ -644,11 +658,11 @@
   }
 
   &__title {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 8px;
 
     @include rm(375) {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     @include rm(1024) {
