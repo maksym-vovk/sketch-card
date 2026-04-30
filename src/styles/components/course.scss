@@ -459,6 +459,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    flex-basis: 50%;
   }
 
   &:not(:last-child) {
