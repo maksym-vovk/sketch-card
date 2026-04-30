@@ -10,18 +10,24 @@
   &__button {
     position: relative;
     z-index: 2;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
-    flex-basis: 240px;
+    flex-basis: 190px;
+    background: indianred;
     visibility: visible;
     opacity: 1;
     transition: .3s ease-in-out;
 
+    @include rm(375) {
+      font-size: 16px;
+      flex-basis: 200px;
+    }
+
     &.btn-arrow--left::before {
       width: 30px;
       height: 30px;
-      top: 6px;
-      left: 8px;
+      top: 4px;
+      left: 0;
     }
 
     &.hidden {
