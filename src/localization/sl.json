@@ -354,14 +354,14 @@
         {
           "name": "María",
           "age": 47,
-          "rating": 4.5,
-          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
+          "rating": 5.0,
+          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт Суглоби\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
         },
         {
           "name": "Carlos",
           "age": 63,
           "rating": 4.0,
-          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум\"</a>. Не скажу що повністю пройшло але різниця відчутна."
+          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум Суглоби\"</a>. Не скажу що повністю пройшло але різниця відчутна."
         },
         {
           "name": "Rosa",
@@ -371,143 +371,143 @@
         },
         {
           "name": "Javier",
-          "age": 52,
-          "rating": 4.5,
+          "age": 39,
+          "rating": 4.0,
           "text": "Займаюсь спортом і суглоби почали здавати раніше часу. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс \"Преміум\"</a> допоміг, відчуваю себе набагато краще на тренуваннях."
         },
         {
           "name": "Elena",
           "age": 58,
           "rating": 5.0,
-          "text": "Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Стандарт\"</a> помітила що рухаюсь значно легше."
+          "text": "Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Стандарт Суглоби\"</a> помітила що рухаюсь значно легше."
         }
       ],
       "diabetes": [
         {
           "name": "Lucía",
-          "age": 49,
-          "rating": 4.5,
-          "text": "Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт\"</a> рівень значно рівніший. Менше тягне на солодке теж."
+          "age": 52,
+          "rating": 5.0,
+          "text": "Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт Діабет\"</a> рівень значно рівніший. Менше тягне на солодке теж."
         },
         {
           "name": "Pedro",
-          "age": 61,
+          "age": 64,
           "rating": 4.0,
           "text": "Постійна слабкість і втома були моїми супутниками роками. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курс \"Преміум\"</a>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."
         },
         {
           "name": "Pilar",
-          "age": 54,
+          "age": 57,
           "rating": 5.0,
           "text": "Слідкую за цукром вже сім років. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."
         },
         {
           "name": "Ramón",
-          "age": 56,
-          "rating": 4.5,
-          "text": "Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."
+          "age": 44,
+          "rating": 4.0,
+          "text": "Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт Діабет\"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."
         },
         {
           "name": "Dolores",
-          "age": 50,
+          "age": 68,
           "rating": 5.0,
-          "text": "Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум\"</a> помітила що спокійніше проходжу повз кондитерський відділ."
+          "text": "Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум Діабет\"</a> помітила що спокійніше проходжу повз кондитерський відділ."
         }
       ],
       "blood-pressure": [
         {
           "name": "Antonio",
-          "age": 65,
-          "rating": 4.5,
-          "text": "Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."
+          "age": 61,
+          "rating": 5.0,
+          "text": "Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."
         },
         {
           "name": "Carmen",
-          "age": 58,
+          "age": 54,
           "rating": 4.0,
           "text": "Ноги набрякали до вечора так що не могла взути взуття. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Стандарт\"</a>. Зараз набагато краще, набряки майже зникли."
         },
         {
           "name": "Juan",
-          "age": 60,
+          "age": 67,
           "rating": 5.0,
-          "text": "Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Преміум\"</a> так допоміг, але збігу такого не було давно."
+          "text": "Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Преміум Тиск\"</a> так допоміг, але збігу такого не було давно."
         },
         {
           "name": "Isabel",
-          "age": 62,
-          "rating": 4.5,
-          "text": "Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт\"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."
+          "age": 48,
+          "rating": 4.0,
+          "text": "Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."
         },
         {
           "name": "Fernando",
-          "age": 59,
+          "age": 70,
           "rating": 5.0,
-          "text": "Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум\"</a> показники найкращі за весь цей час."
+          "text": "Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум Тиск\"</a> показники найкращі за весь цей час."
         }
       ],
       "weight-loss": [
         {
           "name": "Ana",
-          "age": 45,
-          "rating": 4.5,
-          "text": "Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт\"</a> нарешті почався рух. Мінус чотири кг за місяць."
+          "age": 36,
+          "rating": 4.0,
+          "text": "Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт Схуднення\"</a> нарешті почався рух. Мінус чотири кг за місяць."
         },
         {
           "name": "José",
-          "age": 51,
-          "rating": 4.0,
+          "age": 43,
+          "rating": 5.0,
           "text": "Живіт залишався навіть після тренувань. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс \"Преміум\"</a> допоміг розігнати метаболізм і результати в залі стали помітніші."
         },
         {
           "name": "Teresa",
-          "age": 48,
-          "rating": 5.0,
-          "text": "Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум\"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."
+          "age": 50,
+          "rating": 4.0,
+          "text": "Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум Схуднення\"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."
         },
         {
           "name": "Sergio",
-          "age": 53,
-          "rating": 4.5,
-          "text": "Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс \"Стандарт\"</a>, відчуваю себе легше і рухливіше."
+          "age": 38,
+          "rating": 5.0,
+          "text": "Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс \"Стандарт Схуднення\"</a>, відчуваю себе легше і рухливіше."
         },
         {
           "name": "Amparo",
-          "age": 46,
-          "rating": 5.0,
+          "age": 61,
+          "rating": 4.0,
           "text": "Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."
         }
       ],
       "tiredness": [
         {
           "name": "Manuel",
-          "age": 44,
-          "rating": 4.5,
-          "text": "Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт\"</a> нарешті є відчуття що виспався."
+          "age": 45,
+          "rating": 5.0,
+          "text": "Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт Енергія\"</a> нарешті є відчуття що виспався."
         },
         {
           "name": "Concepción",
-          "age": 42,
+          "age": 53,
           "rating": 4.0,
           "text": "Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."
         },
         {
           "name": "Álvaro",
-          "age": 50,
+          "age": 41,
           "rating": 5.0,
-          "text": "Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум\"</a> кількість кави скоротив вдвічі сам."
+          "text": "Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум Енергія\"</a> кількість кави скоротив вдвічі сам."
         },
         {
           "name": "Mercedes",
-          "age": 43,
-          "rating": 4.5,
+          "age": 66,
+          "rating": 4.0,
           "text": "Нічого не тішило і не було сил навіть на прогулянку. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Стандарт\"</a>. Зараз виходжу щодня і відчуваю себе значно краще."
         },
         {
           "name": "Ignacio",
-          "age": 47,
+          "age": 49,
           "rating": 5.0,
-          "text": "Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Преміум\"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."
+          "text": "Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Преміум Енергія\"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."
         }
       ]
     }
