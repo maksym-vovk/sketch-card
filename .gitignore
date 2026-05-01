@@ -42,6 +42,8 @@ coverage/
 *.pid
 *.seed
 *.backup
+google1.js
+google2.js
 
 #Archive
 *.zip
