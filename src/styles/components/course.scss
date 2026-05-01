@@ -218,6 +218,7 @@
     @include rm(768) {
       flex-shrink: 0;
       width: 190px;
+      margin: 0;
     }
 
     @include rm(1024) {
