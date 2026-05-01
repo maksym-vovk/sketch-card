@@ -1,25 +1,36 @@
+-
+    const problems = tEn.problems.items
+
+    function getProductList(niche) {
+        if (typeof niche !== 'string') throw new Error('Niche must be a string');
+
+        const detailsByNiche = tEn.courseDetails[niche];
+
+        return `${detailsByNiche.firstProduct.title}, ${detailsByNiche.secondProduct.title}`
+    }
+
 section.problems.block(class="screen hidden" id="screen-problems")
     .container
         h2.problems__title= t.problems.title
 
         ul.problems-list
-            li.problems-list__item(data-niche="joints" data-target-screen="screen-course")
+            li.problems-list__item(data-niche="joints" data-niche-full=problems['joints'] data-products=getProductList('joints') data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-joints.svg" alt="")
-                p.problems-list__text= t.problems.items.joints
-            li.problems-list__item(data-niche="diabetes" data-target-screen="screen-course")
+                p.problems-list__text= problems['joints']
+            li.problems-list__item(data-niche="diabetes" data-niche-full=problems['diabetes'] data-products=getProductList('diabetes') data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-diabetes.svg" alt="")
-                p.problems-list__text= t.problems.items.diabetes
-            li.problems-list__item(data-niche="blood-pressure" data-target-screen="screen-course")
+                p.problems-list__text= problems['diabetes']
+            li.problems-list__item(data-niche="blood-pressure" data-niche-full=problems['blood-pressure'] data-products=getProductList('blood-pressure') data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-pressure.svg" alt="")
-                p.problems-list__text= t.problems.items['blood-pressure']
-            li.problems-list__item(data-niche="weight-loss" data-target-screen="screen-course")
+                p.problems-list__text= problems['blood-pressure']
+            li.problems-list__item(data-niche="weight-loss" data-niche-full=problems['weight-loss'] data-products=getProductList('weight-loss') data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-weight.svg" alt="")
-                p.problems-list__text= t.problems.items['weight-loss']
-            li.problems-list__item(data-niche="tiredness" data-target-screen="screen-course")
+                p.problems-list__text= problems['weight-loss']
+            li.problems-list__item(data-niche="tiredness" data-niche-full=problems['tiredness'] data-products=getProductList('tiredness') data-target-screen="screen-course")
                 .problems-list__icon
                     img(src=basePath + "img/problems-tiredness.svg" alt="")
-                p.problems-list__text= t.problems.items.tiredness
+                p.problems-list__text= problems['tiredness']

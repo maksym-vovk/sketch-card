@@ -1,5 +1,6 @@
 import {dataConfigParser} from "../utils/dataConfigParser";
 import {UniversalRenderer} from "./UniversalRenderer";
+import {AppState} from "./AppState";
 
 const SELECTORS = {
     COURSE_SCREEN: '#screen-course',
@@ -64,6 +65,15 @@ export const CourseOrderHandler = {
             SELECTORS.ORDER_FORM_CONTENT,
             orderFormElements
         );
+
+        const price = button.dataset.price;
+        const plan = button.dataset.plan;
+
+        AppState.set({
+            price: price,
+            packs_count: packs,
+            course_name: plan
+        });
     },
 
     init() {

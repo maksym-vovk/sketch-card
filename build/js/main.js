@@ -198,30 +198,30 @@
         this.debounceTimer = setTimeout(() => this._syncData(data), CONFIG.debounceDelay);
       },
 
-      async _syncData(data) {// if (!this.isEnabled || this._syncing) return;
-        //
-        // this._syncing = true;
-        //
-        // try {
-        //     const updated = await this._tryUpdate(data);
-        //
-        //     if (updated) {
-        //         console.log('Data synced successfully (updated)');
-        //         return;
-        //     }
-        //
-        //     const created = await this._tryCreate(data);
-        //
-        //     if (created) {
-        //         console.log('Data synced successfully (created)');
-        //     } else {
-        //         console.error('Failed to sync data');
-        //     }
-        // } catch (error) {
-        //     console.error('Error syncing data:', error);
-        // } finally {
-        //     this._syncing = false;
-        // }
+      async _syncData(data) {
+        if (!this.isEnabled || this._syncing) return;
+        this._syncing = true;
+
+        try {
+          const updated = await this._tryUpdate(data);
+
+          if (updated) {
+            console.log('Data synced successfully (updated)');
+            return;
+          }
+
+          const created = await this._tryCreate(data);
+
+          if (created) {
+            console.log('Data synced successfully (created)');
+          } else {
+            console.error('Failed to sync data');
+          }
+        } catch (error) {
+          console.error('Error syncing data:', error);
+        } finally {
+          this._syncing = false;
+        }
       },
 
       async _tryUpdate(data) {
@@ -819,6 +819,13 @@
         }); // Render the order form
 
         UniversalRenderer.render(SELECTORS$3.ORDER_FORM_CONTENT, orderFormElements);
+        const price = button.dataset.price;
+        const plan = button.dataset.plan;
+        AppState.set({
+          price: price,
+          packs_count: packs,
+          course_name: plan
+        });
       },
 
       init() {
@@ -6184,14 +6191,23 @@
         const problemItem = event.target.closest(SELECTORS$4.PROBLEMS_ITEM);
         if (!problemItem) return;
         const niche = problemItem.dataset.niche;
+        const nicheFullName = problemItem.dataset.nicheFull;
+        const products = problemItem.dataset.products;
 
-        if (!niche) {
-          console.warn('No niche data found on clicked problem item');
+        if (!niche || !nicheFullName || !products) {
+          console.warn('No niche, niche full name or products data found on clicked problem item');
           return;
-        } // Show the corresponding course-details block
+        }
 
+        console.log(products); // Show the corresponding course-details block
 
         this._showCourseDetailsForNiche(niche);
+
+        AppState.set({
+          niche_short: niche,
+          chosen_problem: nicheFullName,
+          product_list: products
+        });
       },
 
       _handleReviewCardButtonClick(event) {

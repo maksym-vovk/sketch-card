@@ -1,4 +1,5 @@
 import {ScreenManager} from "./ScreenManager";
+import {AppState} from "./AppState";
 
 const SELECTORS = {
     PROBLEMS_SCREEN: '#screen-problems',
@@ -37,14 +38,24 @@ export const NicheDisplayHandler = {
         if (!problemItem) return;
 
         const niche = problemItem.dataset.niche;
+        const nicheFullName = problemItem.dataset.nicheFull;
+        const products = problemItem.dataset.products;
 
-        if (!niche) {
-            console.warn('No niche data found on clicked problem item');
+        if (!niche || !nicheFullName || !products) {
+            console.warn('No niche, niche full name or products data found on clicked problem item');
             return;
         }
 
+        console.log(products);
+
         // Show the corresponding course-details block
         this._showCourseDetailsForNiche(niche);
+
+        AppState.set({
+            niche_short: niche,
+            chosen_problem: nicheFullName,
+            product_list: products
+        });
     },
 
     _handleReviewCardButtonClick(event) {
