@@ -174,10 +174,11 @@ mixin courseDetails(niche)
                                         li.plan-list__item= plan.duration
 
                                 .plan-price
-                                    .plan-price__title= plan.priceTitle
+                                    p.plan-price__title= plan.priceTitle
                                     .plan-price__inner
-                                        .plan-price__value= plan.selected ? secondCoursePrice : firstCoursePrice
-                                        .plan-price__text= plan.priceDescription
+                                        p.plan-price__value= plan.selected ? secondCoursePrice : firstCoursePrice
+                                        p.plan-price__text!= plan.pricePacks
+                                    p.plan-price__note= plan.priceDescription
 
                                 .plan__bottom
                                     button.plan__button.course__select.course__select--order.btn.btn-arrow.btn-arrow--right.btn-arrow--double(

@@ -2,9 +2,9 @@ header.header
     .header__wrapper.container
         button.header__button.btn.btn-arrow.btn-arrow--left.hidden(
             type="button"
-            id="from-course-to-problems"
+            id="header-back-button"
             data-target-screen="screen-problems"
-        )!= t.common.actions.selectAnotherProblem
+        )!= t.common.actions.returnToPreviousStep
 
         +lang-switcher()
 

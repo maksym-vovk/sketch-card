@@ -12,15 +12,20 @@
     z-index: 2;
     font-size: 15px;
     padding: 10px;
-    flex-basis: 190px;
-    background: indianred;
+    flex-basis: 120px;
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgb(102, 102, 102);
     visibility: visible;
     opacity: 1;
     transition: .3s ease-in-out;
 
     @include rm(375) {
       font-size: 16px;
-      flex-basis: 200px;
+      flex-basis: 130px;
+    }
+
+    &:hover {
+      border-color: #fff;
     }
 
     &.btn-arrow--left::before {

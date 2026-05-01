@@ -11,7 +11,8 @@
       "details": "Više",
       "selectAnotherProblem": "Odabrati drugi problem",
       "order": "Naruči",
-      "selectAnotherCourse": "Odabrati drugu kuru"
+      "selectAnotherCourse": "Odabrati drugu kuru",
+      "returnToPreviousStep": "Return"
     },
     "price": {
       "bonuses": "Cijena s bonusima",

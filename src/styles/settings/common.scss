@@ -215,7 +215,8 @@ button:disabled:focus {
 
 
 .text-gold-fill {
-  background: linear-gradient(45deg, #FFD700, #DAA520, #B8860B, #FFD700);
+  background: gold;
+  //background: linear-gradient(45deg, #FFD700, #DAA520, #B8860B, #FFD700);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -281,13 +282,13 @@ button:disabled:focus {
     padding: 10px 16px;
     border: 1px solid #666;
     border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
       border-color: #fff;
-      background-color: rgba(255, 255, 255, 0.1);
+      //background-color: rgba(255, 255, 255, 0.5);
       box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
     }
   }

@@ -447,7 +447,7 @@
 
   text-align: center;
   color: #000;
-  background-color: #fff;
+  background-color: navajowhite;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.50);
   border-radius: 18px;
   max-width: 402px;
@@ -667,8 +667,10 @@
 .plan-price {
   font-weight: 700;
   text-align: left;
-  background-color: rgba(215, 215, 215, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 16px 20px;
+
+  $price-inner-gap: 12px;
 
   @include rm(768) {
     padding: 18px 30px;
@@ -694,10 +696,12 @@
   &__inner {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: $price-inner-gap;
+    margin-bottom: 8px;
   }
 
   &__value {
+    display: inline-flex;
     font-size: 58px;
     line-height: 0.8;
     color: $text-red;
@@ -709,17 +713,39 @@
     @include rm(1024) {
       font-size: 70px;
     }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      background: $text-red;
+      margin-left: $price-inner-gap;
+    }
   }
 
   &__text {
+    font-size: 19px;
+    color: $text-red;
+
+    @include rm(375) {
+      font-size: 22px;
+    }
+
+    @include rm(1024) {
+      font-size: 24px;
+    }
+  }
+
+  &__note {
     font-size: 15px;
+    font-weight: 400;
 
     @include rm(375) {
       font-size: 18px;
     }
 
     @include rm(1024) {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 }
@@ -764,21 +790,31 @@
   &__button {
     font-size: 16px;
     max-width: 500px;
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgb(102, 102, 102);
     margin: 0 auto;
-
-    &.btn-arrow--left::before {
-      width: 40px;
-      height: 40px;
-      top: 4px;
-      left: 0;
-    }
 
     @include rm(375) {
       font-size: 16px;
     }
 
     @include rm(1024) {
-      font-size: 20px;
+      font-size: 18px;
+    }
+
+    &:hover {
+      border-color: #fff;
+    }
+
+    &.btn-arrow--left::before {
+      width: 40px;
+      height: 40px;
+      top: 4px;
+      left: 0;
+
+      @include rm(1024) {
+        top: 5px;
+      }
     }
   }
 }

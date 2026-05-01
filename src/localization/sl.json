@@ -11,7 +11,8 @@
       "details": "Več podrobnosti",
       "selectAnotherProblem": "Izberite drugo težavo",
       "order": "Naroči",
-      "selectAnotherCourse": "Izberite drug tečaj"
+      "selectAnotherCourse": "Izberite drug tečaj",
+      "returnToPreviousStep": "Return"
     },
     "price": {
       "bonuses": "Cena z bonusi",

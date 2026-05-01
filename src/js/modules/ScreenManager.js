@@ -64,11 +64,16 @@ export const ScreenManager = {
 
 
     _changeTopBackButtonVisibility(screenId) {
-        const screensWithTopBackButton = ['screen-course']
+        const screensWithTopBackButton = {
+            'screen-course': 'screen-problems',
+            'screen-intro-popup': 'screen-intro',
+        }
 
-        if (screensWithTopBackButton.includes(screenId)) {
+        if (screensWithTopBackButton[screenId]) {
+            this.headerBackButton.setAttribute('data-target-screen', screensWithTopBackButton[screenId]);
             this.headerBackButton.classList.remove(CSS_CLASSES.HIDDEN);
         } else {
+            this.headerBackButton.removeAttribute('data-target-screen');
             this.headerBackButton.classList.add(CSS_CLASSES.HIDDEN);
         }
     },
