@@ -74,10 +74,10 @@ mixin reviews(niche)
                             article.review-card
                                 .review-card__head
                                     picture
-                                        source(srcset=basePath + r.avatar.replace(".jpg", ".webp") type="image/webp")
+                                        //source(srcset=basePath + r.avatar.replace(".jpg", ".webp") type="image/webp")
                                         img.review-card__avatar(src=basePath + r.avatar alt=`${r.name} avatar` loading="lazy")
                                     .review-card__meta
-                                        .review-card__name #{r.name} | #{r.niche}, #{r.age}
+                                        .review-card__name #{r.name}, #{r.age}
                                         .review-card__rating
                                             +stars(r.rating)
                                             span.review-card__rating-num #{r.rating.toFixed(1)}
