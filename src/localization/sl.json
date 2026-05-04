@@ -12,7 +12,7 @@
       "selectAnotherProblem": "Izberite drugo težavo",
       "order": "Naroči",
       "selectAnotherCourse": "Izberite drug tečaj",
-      "returnToPreviousStep": "Return"
+      "returnToPreviousStep": "Vrnitev"
     },
     "price": {
       "bonuses": "Cena z bonusi",
@@ -44,50 +44,50 @@
     ],
     "priceSection": {
       "salePercent": "-50%",
-      "saleText": "знижка на перевірені комплекти для здоров'я",
-      "oldPriceTitle": "Стара ціна:",
-      "newPriceTitle": "Нова ціна комплекту з 4-х продуктів",
-      "newPriceText": "Ціна після застосування вашого бонусу",
-      "note": "Знижка застосовується автоматично при виборі курсу. Діє 3 дні"
+      "saleText": "popust na preverjene komplete za zdravje",
+      "oldPriceTitle": "Stara cena:",
+      "newPriceTitle": "Nova cena kompleta iz 4 izdelkov",
+      "newPriceText": "Cena po uporabi vašega bonusa",
+      "note": "Popust se samodejno uporabi ob izbiri programa. Velja 3 dni"
     },
     "btnCall": "Zahtevajte klic operaterja",
     "btnSite": "Izpolnite obrazec sami na spletni strani"
   },
   "reviews": {
-    "title": "Ознайомтесь з думками наших клієнтів",
-    "count": "Reviews",
+    "title": "Spoznajte mnenja naših strank",
+    "count": "Ocene",
     "readAll": "Читать всі відгуки",
     "data": {
       "joints": [
         {
-          "name": "María",
+          "name": "Marija",
           "age": 47,
           "rating": 5.0,
-          "text": "Коліна почали боліти ще три роки тому. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт Суглоби\"</a> вже можу нормально ходити по сходах без того щоб зупинятись."
+          "text": "Kolena so me začela boleti že pred tremi leti. Po enem mesecu <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>programa »Standard Sklepi«</a> lahko  normalno hodim po stopnicah brez ustavljanja."
         },
         {
           "name": "Carlos",
           "age": 63,
           "rating": 4.0,
-          "text": "Спина боліла постійно, особливо вранці. Зараз значно краще, приймав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Преміум Суглоби\"</a>. Не скажу що повністю пройшло але різниця відчутна."
+          "text": "Hrbet me je bolel ves čas, še posebej zjutraj. Zdaj je veliko bolje, jemal sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>program »Premium Sklepi«</a>. Ne morem reči, da je popolnoma izginilo, vendar je razlika očitna."
         },
         {
           "name": "Rosa",
           "age": 55,
           "rating": 5.0,
-          "text": "Мені сказали, що це вікове і нічого не вдієш. Вирішила спробувати сама. Через три тижні прийому <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курсу \"Стандарт\"</a> вже не прокидалась від болю вночі."
+          "text": "Rekli so mi, da je to povezano s starostjo in da se ne da nič narediti. Odločila sem se poskusiti sama. Po treh tednih jemanja <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>programa »Standard«</a> se ponoči nisem več zbujala zaradi bolečine."
         },
         {
           "name": "Javier",
           "age": 39,
           "rating": 4.0,
-          "text": "Займаюсь спортом і суглоби почали здавати раніше часу. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Курс \"Преміум\"</a> допоміг, відчуваю себе набагато краще на тренуваннях."
+          "text": "Ukvarjam se s športom in sklepi so začeli pešati prezgodaj. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>Program »Premium«</a> mi je pomagal, na treningih se počutim veliko bolje."
         },
         {
           "name": "Elena",
           "age": 58,
           "rating": 5.0,
-          "text": "Подруга порадила спробувати. Я скептично поставилась, але вже за два тижні як почала <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>курс \"Стандарт Суглоби\"</a> помітила що рухаюсь значно легше."
+          "text": "Prijateljica mi je priporočila, naj poskusim. Bila sem skeptična, vendar sem že po dveh tednih jemanja <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='joints'>programa »Standard Sklepi«</a> opazila, da se gibam veliko lažje."
         }
       ],
       "diabetes": [
@@ -95,31 +95,31 @@
           "name": "Lucía",
           "age": 52,
           "rating": 5.0,
-          "text": "Цукор стрибав після кожного прийому їжі. Після місяця <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Стандарт Діабет\"</a> рівень значно рівніший. Менше тягне на солодке теж."
+          "text": "Sladkor mi je skakal po vsakem obroku. Po enem mesecu <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>programa »Standard Diabetes«</a> je raven veliko bolj stabilna. Tudi želja po sladkem se je zmanjšala."
         },
         {
           "name": "Pedro",
           "age": 64,
           "rating": 4.0,
-          "text": "Постійна слабкість і втома були моїми супутниками роками. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курс \"Преміум\"</a>, 2 місяці. Зараз є сили дійти до кінця дня без того щоб лягати відпочивати."
+          "text": "Stalna šibkost in utrujenost sta me spremljali leta. Opravil sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>program »Premium«</a> 2 meseca. Zdaj imam dovolj energije, da zdržim do konca dneva brez počivanja."
         },
         {
           "name": "Pilar",
           "age": 57,
           "rating": 5.0,
-          "text": "Слідкую за цукром вже сім років. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт\"</a> став один з небагатьох де реально відчула різницю, а не просто прочитала красивий опис."
+          "text": "Spremljam sladkor že sedem let. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Program »Standard«</a> je eden redkih, kjer sem res občutila razliko, ne le prebrala lep opis."
         },
         {
           "name": "Ramón",
           "age": 44,
           "rating": 4.0,
-          "text": "Мене попередили, що є ризики якщо не міняти спосіб життя. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Курс \"Стандарт Діабет\"</a> допоміг стабілізувати стан поки я паралельно змінюю харчування."
+          "text": "Opozorili so me na tveganja, če ne spremenim življenjskega sloga. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>Program »Standard Diabetes«</a> mi je pomagal stabilizirati stanje, medtem ko hkrati spreminjam prehrano."
         },
         {
           "name": "Dolores",
           "age": 68,
           "rating": 5.0,
-          "text": "Тяга до солодкого була неконтрольована. Після трьох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>курсу \"Преміум Діабет\"</a> помітила що спокійніше проходжу повз кондитерський відділ."
+          "text": "Želja po sladkem je bila neobvladljiva. Po treh tednih <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='diabetes'>programa »Premium Diabetes«</a> sem opazila, da lažje grem mimo slaščičarskega oddelka."
         }
       ],
       "blood-pressure": [
@@ -127,31 +127,31 @@
           "name": "Antonio",
           "age": 61,
           "rating": 5.0,
-          "text": "Тиск стрибав постійно, особливо ввечері. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> показники стабілізувались. Дружина теж помітила що я спокійніший став."
+          "text": "Pritisk mi je stalno nihal, zlasti zvečer. Po <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>programu »Standard Pritisk«</a> so se vrednosti stabilizirale. Tudi žena je opazila, da sem bolj miren."
         },
         {
           "name": "Carmen",
           "age": 54,
           "rating": 4.0,
-          "text": "Ноги набрякали до вечора так що не могла взути взуття. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Стандарт\"</a>. Зараз набагато краще, набряки майже зникли."
+          "text": "Noge so mi do večera tako otekle, da nisem mogla obuti čevljev. Opravila sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>program »Standard«</a>. Zdaj je veliko bolje, oteklina je skoraj izginila."
         },
         {
           "name": "Juan",
           "age": 67,
           "rating": 5.0,
-          "text": "Голова боліла майже щодня. Вже три тижні як не було жодного разу. Не знаю чи це <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курс \"Преміум Тиск\"</a> так допоміг, але збігу такого не було давно."
+          "text": "Glava me je bolela skoraj vsak dan. Že tri tedne me ni bolela niti enkrat. Ne vem, ali je to zaradi <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>programa »Premium Pritisk«</a>, vendar takšnega naključja že dolgo ni bilo."
         },
         {
           "name": "Isabel",
           "age": 48,
           "rating": 4.0,
-          "text": "Судини були проблемою ще з молодості. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Стандарт Тиск\"</a> помітила що руки і ноги менше мерзнуть і загалом відчуваю себе бадьоріше."
+          "text": "Žile so mi povzročale težave že od mladosti. Po <a href=‚‘ class=‚review-card__btn‘ data-target-screen=‚screen-course‘ data-niche=‚blood-pressure‘>programu »Standardni krvni tlak«</a> sem opazila, da mi roke in noge manj zmrzujejo in se na splošno počutim bolj polna energije."
         },
         {
           "name": "Fernando",
           "age": 70,
           "rating": 5.0,
-          "text": "Контролюю тиск вже п'ять років. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>курсу \"Преміум Тиск\"</a> показники найкращі за весь цей час."
+          "text": "Pritisk nadzorujem že pet let. Po <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='blood-pressure'>programu »Premium Pritisk«</a> so rezultati najboljši do zdaj."
         }
       ],
       "weight-loss": [
@@ -159,31 +159,31 @@
           "name": "Ana",
           "age": 36,
           "rating": 4.0,
-          "text": "Вага стояла на місці вже два роки незалежно від того що робила. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Стандарт Схуднення\"</a> нарешті почався рух. Мінус чотири кг за місяць."
+          "text": "Teža je ostala nespremenjena že dve leti, ne glede na to, kaj sem počela. Po <a href=‚‘ class=‚review-card__btn‘ data-target-screen=‚screen-course‘ data-niche=‚weight-loss‘>tečaju »Standard hujšanja«</a> se je končno začelo kaj dogajati. Minus štiri kilograme v enem mesecu."
         },
         {
           "name": "José",
           "age": 43,
           "rating": 5.0,
-          "text": "Живіт залишався навіть після тренувань. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Курс \"Преміум\"</a> допоміг розігнати метаболізм і результати в залі стали помітніші."
+          "text": "Trebuh je ostal tudi po treningih. <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>Program »Premium«</a> je pospešil metabolizem in rezultati v telovadnici so postali bolj vidni."
         },
         {
           "name": "Teresa",
           "age": 50,
           "rating": 4.0,
-          "text": "Улюблені джинси знову застібаються після 2 місяців <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курсу \"Преміум Схуднення\"</a>. Не скажу що це магія але в комплексі з нормальним харчуванням результат є."
+          "text": "Najljubše kavbojke se po 2 mesecih <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>programa »Premium Hujšanje«</a> spet zapnejo. Ne bi rekla, da je to čudež, vendar v kombinaciji z zdravo prehrano deluje."
         },
         {
           "name": "Sergio",
           "age": 38,
           "rating": 5.0,
-          "text": "Важкість в тілі яка була постійно зникла вже за перший тиждень. Пропив <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>курс \"Стандарт Схуднення\"</a>, відчуваю себе легше і рухливіше."
+          "text": "Občutek teže v telesu je izginil že po prvem tednu. Opravil sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='weight-loss'>program »Standard Hujšanje«</a>, počutim se lažje in bolj gibljivo."
         },
         {
           "name": "Amparo",
           "age": 61,
           "rating": 4.0,
-          "text": "Подруга схудла на цьому курсі і порадила мені. Я більш обережна в очікуваннях але результат є і він мене радує."
+          "text": "Prijateljica je shujšala s tem programom in mi ga priporočila. Sem bolj previdna glede pričakovanj, vendar rezultat obstaja in me veseli."
         }
       ],
       "tiredness": [
@@ -191,31 +191,31 @@
           "name": "Manuel",
           "age": 45,
           "rating": 5.0,
-          "text": "Прокидався вже втомленим. Думав це просто вік. Після двох тижнів <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Стандарт Енергія\"</a> нарешті є відчуття що виспався."
+          "text": "Zbujal sem se že utrujen. Mislil sem, da je to samo starost. Po dveh tednih <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>programa »Standard Energija«</a> imam končno občutek, da sem spočit."
         },
         {
           "name": "Concepción",
           "age": 53,
           "rating": 4.0,
-          "text": "Енергії не вистачало ні на роботу ні на дітей. Зараз доходжу до вечора і ще маю сили на щось для себе."
+          "text": "Energije ni bilo dovolj niti za delo niti za otroke. Zdaj pridem do večera in imam še vedno moč za nekaj zase."
         },
         {
           "name": "Álvaro",
           "age": 41,
           "rating": 5.0,
-          "text": "Кава вже не рятувала. Три чашки на день і все одно хотілось спати. Після <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курсу \"Преміум Енергія\"</a> кількість кави скоротив вдвічі сам."
+          "text": "Kava ni več pomagala. Tri skodelice na dan in še vedno sem bil zaspan. Po <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>programu »Premium Energija«</a> sem količino kave sam zmanjšal na polovico."
         },
         {
           "name": "Mercedes",
           "age": 66,
           "rating": 4.0,
-          "text": "Нічого не тішило і не було сил навіть на прогулянку. Пропила <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Стандарт\"</a>. Зараз виходжу щодня і відчуваю себе значно краще."
+          "text": "Nič me ni veselilo in nisem imela moči niti za sprehod. Opravila sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>program »Standard«</a>. Zdaj hodim ven vsak dan in se počutim veliko bolje."
         },
         {
           "name": "Ignacio",
           "age": 49,
           "rating": 5.0,
-          "text": "Робота напружена і відновлення після неї займало весь вихідний. Придбав <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>курс \"Преміум Енергія\"</a>. Зараз вже в суботу вранці є енергія щоб кудись поїхати."
+          "text": "Delo je naporno in okrevanje po njem mi je vzelo ves vikend. Kupil sem <a href='' class='review-card__btn' data-target-screen='screen-course' data-niche='tiredness'>program »Premium Energija«</a>. Zdaj imam že v soboto zjutraj dovolj energije, da grem kam."
         }
       ]
     }
@@ -234,13 +234,13 @@
     }
   },
   "problems": {
-    "title": "Choose the direction you are interested in:",
+    "title": "Izberite področje, ki vas zanima:",
     "items": {
-      "joints": "Покращити здоров'я суглобів та кісток",
-      "diabetes": "Контролювати рівень цукру в крові",
-      "blood-pressure": "Сприяти нормалізації тиску",
-      "weight-loss": "Покращити метаболізм та фігуру",
-      "tiredness": "Збільшити прилив сил"
+      "joints": "Izboljšati zdravje sklepov in kosti",
+      "diabetes": "Nadzorovati raven sladkorja v krvi",
+      "blood-pressure": "Prispevati k normalizaciji krvnega tlaka",
+      "weight-loss": "Izboljšati metabolizem in postavo",
+      "tiredness": "Povečati raven energije"
     }
   },
   "order": {
@@ -351,475 +351,475 @@
   "courseDetails": {
     "joints": {
       "kit": {
-        "title": "Комплект для покращення опорно-рухової системи",
-        "subtitle": "Вам важко рухатись через біль у суглобах? Часто відчуваєте дискомфорт?",
-        "description": "Steplex — ваш надійний помічник в підтримці опорно-рухового апарату в нормі! Він забезпечить легкість у русі та надійний захист суглобів щодня. А про нормальний кровообіг та відновлення кісток подбає Cardiform!"
+        "title": "Komplet za izboljšanje mišično-skeletnega sistema",
+        "subtitle": "Se težko gibate zaradi bolečin v sklepih? Pogosto čutite nelagodje?",
+        "description": "Steplex — vaš zanesljiv pomočnik pri ohranjanju mišično-skeletnega sistema v dobrem stanju! Zagotavlja lahkotnost gibanja in vsakodnevno zaščito sklepov. Za normalen krvni obtok in obnovo kosti pa poskrbi Cardiform!"
       },
       "firstProduct": {
         "title": "Steplex",
-        "description": "Steplex — допомагає при болях у суглобах м'язах, сприяє зменшенню запалення та відновленню рухливості.",
+        "description": "Steplex — pomaga pri bolečinah v sklepih in mišicah, zmanjšuje vnetja ter izboljšuje gibljivost.",
         "components": [
           {
             "icon": "img/arnica-icon.png",
-            "name": "Екстракт арніки",
-            "description": "зняття запалення і набряку"
+            "name": "Ekstrakt arnike",
+            "description": "zmanjšanje vnetja in oteklin"
           },
           {
             "icon": "img/menthol-icon.png",
-            "name": "Ментол",
-            "description": "знеболюючий та охолоджуючий ефект"
+            "name": "Mentol",
+            "description": "protibolečinski in hladilni učinek"
           },
           {
             "icon": "img/eucalyptus-oil-icon.png",
-            "name": "Ефірна олія евкаліпту",
-            "description": "протизапальна і антисептична дія"
+            "name": "Eterično olje evkaliptusa",
+            "description": "protivnetno in antiseptično delovanje"
           },
           {
             "icon": "img/camphor-oil-icon.png",
-            "name": "Камфорна олія",
-            "description": "зменшення скутості рухів"
+            "name": "Kamforjevo olje",
+            "description": "zmanjšanje togosti gibanja"
           }
         ]
       },
       "secondProduct": {
         "title": "Cardiform",
-        "description": "Cardiform — стимулює кровообіг в судинах та вироблення колагену, допомагає зберегти міцність кісток та суглобів.",
+        "description": "Cardiform — spodbuja krvni obtok v žilah in tvorbo kolagena, pomaga ohranjati trdnost kosti in sklepov.",
         "components": [
           {
             "icon": "img/vitamin-c-icon.png",
-            "name": "Вітамін C",
-            "description": "зміцнення судин та синтез колагену"
+            "name": "Vitamin C",
+            "description": "krepitev žil in sinteza kolagena"
           },
           {
             "icon": "img/vitamin-d3-icon.png",
-            "name": "Вітамін D3",
-            "description": "засвоєння кальцію та фосфору"
+            "name": "Vitamin D3",
+            "description": "absorpcija kalcija in fosforja"
           },
           {
             "icon": "img/chromium-icon.png",
-            "name": "Хром",
-            "description": "нормальний обмін речовин"
+            "name": "Krom",
+            "description": "normalen metabolizem"
           },
           {
             "icon": "img/vitamin-b-complex-icon.png",
-            "name": "Вітаміни B1, B6, B12",
-            "description": "підтримка комфорту рухів"
+            "name": "Vitamini B1, B6, B12",
+            "description": "podpora udobju gibanja"
           },
           {
             "icon": "img/vitamin-e-icon.png",
-            "name": "Вітамін E",
-            "description": "антиоксидантний захист"
+            "name": "Vitamin E",
+            "description": "antioksidativna zaščita"
           }
         ]
       },
       "banner": {
-        "title": "Почніть шлях до здорової опорно-рухової системи  разом з Steplex та Cardiform",
-        "buttonText": "Замовити"
+        "title": "Začnite pot do zdravega mišično-skeletnega sistema skupaj s Steplexom in Cardiformom",
+        "buttonText": "Naroči"
       },
       "plans": [
         {
-          "title": "Набор \"Стандарт Суглоби\"",
-          "description": "Рух без болю. Активне життя без дискомфорту",
-          "packs": "2 упаковки Steplex та 2 упаковки Cardiform",
-          "duration": "Усунення скутості і болю в суглобах за 10 днів",
-          "priceTitle": "Акційні умови",
+          "title": "Paket »Standard Sklepi«",
+          "description": "Gibanje brez bolečin. Aktivno življenje brez nelagodja",
+          "packs": "2 pakiranji Steplexa in 2 pakiranji Cardiforma",
+          "duration": "Odprava togosti in bolečin v sklepih v 10 dneh",
+          "priceTitle": "Akcijski pogoji ",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 4 упаковки",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс"
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 4 pakiranja",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket"
         },
         {
-          "title": "Набор \"Преміум Суглоби\"",
-          "description": "Здорова опорно-рухова система. Тривала підтримка та захист",
-          "label": "Ще більша вигода",
-          "packs": "3 упаковки Steplex та 3 упаковки Cardiform",
-          "duration": "Профілактика захворювань суглобів та кісток за 15 днів.",
-          "priceTitle": "Супер знижка!",
+          "title": "Paket »Premium Sklepi«",
+          "description": "Zdrav mišično-skeletni sistem. Dolgotrajna podpora in zaščita",
+          "label": "Večja ugodnost",
+          "packs": "3 pakiranja Steplexa in 3 pakiranja Cardiforma",
+          "duration": "Preventiva bolezni sklepov in kosti v 15 dneh",
+          "priceTitle": "Super popust!",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 6 упаковок",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс",
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 6 pakiranj",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket",
           "selected": true
         }
       ]
     },
     "diabetes": {
       "kit": {
-        "title": "Комплект для контролю цукру",
-        "subtitle": "Втомили коливання рівня цукру в крові? Не можете позбутися тяги до солодкого?",
-        "description": "З Inspicure ви зможете забути про проблеми з цукром та убезпечити себе надовго. Засіб потурбується про підтримку підшлункової залози. А з Guavital+ солодке буде під контролем, а самопочуття — під захистом!"
+        "title": "Komplet za nadzor sladkorja",
+        "subtitle": "Ste utrujeni od nihanja ravni sladkorja v krvi? Ne morete premagati želje po sladkem?",
+        "description": "Z Inspicure boste lahko pozabili na težave s sladkorjem in se dolgoročno zaščitili. Izdelek podpira delovanje trebušne slinavke. Z Guavital+ pa bo želja po sladkem pod nadzorom, vaše počutje pa zaščiteno!"
       },
       "firstProduct": {
         "title": "Inspicure",
-        "description": "Inspicure — сприяє зниженню рівня цукру в крові та допомагає стабілізувати стан діабетика.",
+        "description": "Inspicure — pomaga zniževati raven sladkorja v krvi  in stabilizirati stanje pri sladkorni bolezni.",
         "components": [
           {
             "icon": "img/chromium-icon.png",
-            "name": "Хром",
-            "description": "стабілізація рівня цукру в крові"
+            "name": "Krom",
+            "description": "in stabilizirati stanje pri sladkorni bolezni."
           },
           {
             "icon": "img/gymnema-icon.png",
-            "name": "Екстракт Gymnema Sylvestre",
-            "description": "підтримка здорової роботи підшлункової залози"
+            "name": "Ekstrakt Gymnema Sylvestre",
+            "description": "podpora trebušni slinavki"
           },
           {
             "icon": "img/olive-leaves-icon.png",
-            "name": "Екстракт листя оливи",
-            "description": "захист клітин від ушкоджень"
+            "name": "Ekstrakt oljčnih listov",
+            "description": "zaščita celic pred poškodbami"
           },
           {
             "icon": "img/vitamin-c-icon.png",
-            "name": "Вітамін C",
-            "description": "захист від ускладнень діабету"
+            "name": "Vitamin C",
+            "description": "zaščita pred zapleti sladkorne bolezni"
           },
           {
             "icon": "img/resveratrol-icon.png",
-            "name": "Ресвератрол",
-            "description": "зниження інсулінорезистентності"
+            "name": "Resveratrol",
+            "description": "zmanjšanje inzulinske rezistence"
           }
         ]
       },
       "secondProduct": {
         "title": "Guavital+",
-        "description": "Guavital+ — допомагає контролювати апетит та знизити тягу до солодкого.",
+        "description": "Guavital+ — pomaga nadzorovati apetit in zmanjšati željo po sladkem.",
         "components": [
           {
             "icon": "img/guarana-icon.png",
-            "name": "Екстракт гуави",
-            "description": "контроль аппетита"
+            "name": "Ekstrakt guave",
+            "description": "nadzor apetita"
           },
           {
             "icon": "img/green-tea-icon.png",
-            "name": "Екстракт зеленого чаю",
-            "description": "зниження потягу до солодкого"
+            "name": "Ekstrakt zelenega čaja",
+            "description": "zmanjšanje želje po sladkem"
           },
           {
             "icon": "img/pineapple-icon.png",
-            "name": "Екстракт гіркого апельсину",
-            "description": "активізація метаболізму"
+            "name": "Ekstrakt grenkega pomarančevca",
+            "description": "pospešitev metabolizma"
           }
         ]
       },
       "banner": {
-        "title": "Почніть шлях до стабілізації рівня цукру разом з Inspicure та Guavital+",
-        "buttonText": "Замовити"
+        "title": "Začnite pot do stabilne ravni sladkorja skupaj z Inspicure in Guavital+",
+        "buttonText": "Naroči"
       },
       "plans": [
         {
-          "title": "Набор \"Стандарт Діабет\"",
-          "description": "Рівень цукру під контролем. Простий крок до стабільного самопочуття",
-          "packs": "2 упаковки Inspicure та 2 упаковки Guavital+",
-          "duration": "Стабілізація рівню цукру в крові за 20 днів",
-          "priceTitle": "Акційні умови",
+          "title": "Paket »Standard Diabetes«",
+          "description": "Raven sladkorja pod nadzorom. Preprost korak do stabilnega počutja",
+          "packs": "2 pakiranji Inspicure in 2 pakiranji Guavital+",
+          "duration": "Stabilizacija sladkorja v 20 dneh",
+          "priceTitle": "Akcijski pogoji ",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 4 упаковки",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс"
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 4 pakiranja",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket"
         },
         {
-          "title": "Набор \"Преміум Діабет\"",
-          "description": "Захист від ускладнень діабету. Глибока підтримка організму від ускладнень діабету",
-          "label": "Ще більша вигода",
-          "packs": "3 упаковки Inspicure та 3 упаковки Guavital+",
-          "duration": "Стабільний рівень цукру, більше енергії та впевненість у кожному дні за 30 днів.",
-          "priceTitle": "Супер знижка!",
+          "title": "Paket »Premium Diabetes«",
+          "description": "Zaščita pred zapleti sladkorne bolezni",
+          "label": "Večja ugodnost",
+          "packs": "3 pakiranja Inspicure in 3 pakiranja Guavital+",
+          "duration": "Stabilen sladkor, več energije in samozavesti v 30 dneh.",
+          "priceTitle": "Super popust!",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 6 упаковок",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс",
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 6 pakiranj",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket",
           "selected": true
         }
       ]
     },
     "blood-pressure": {
       "kit": {
-        "title": "Комплект для контролю тиску",
-        "subtitle": "Втомився від стрибків тиску та відчуття важкості в ногах?",
-        "description": "Tonerin сприяє м’якій нормалізації артеріального тиску та підтримує стабільну роботу серцево-судинної системи. Поєднуючи його з прийомом Ultraxal, ви зможете позбутися набряків та симптомів гіпертоніі!"
+        "title": "Komplet za nadzor krvnega tlaka",
+        "subtitle": "Ste utrujeni od nihanj tlaka in občutka teže v nogah?",
+        "description": "Tonerin pomaga nežno normalizirati krvni tlak in podpira delovanje srčno-žilnega sistema. V kombinaciji z Ultraxalom pomaga odpraviti otekline in simptome hipertenzije!"
       },
       "firstProduct": {
         "title": "Tonerin",
-        "description": "Tonerin — сприяє зниженню артеріального тиску, допомагає відновити стан судин та серця, сприяє нормалізації рівня холестерину та цукру в крові.",
+        "description": "Tonerin — prispeva k znižanju krvnega tlaka, pomaga obnoviti stanje žil in srca, ter podpira normalizacijo ravni holesterola in sladkorja v krvi.",
         "components": [
           {
             "icon": "img/vitamin-c-icon.png",
-            "name": "Вітамін C",
-            "description": "міцність і еластичність судин, щоденний захист організму завдяки антиоксидантній дії."
+            "name": "Vitamin C",
+            "description": "krepi čvrstost in elastičnost žil ter zagotavlja vsakodnevno zaščito organizma zaradi antioksidativnega delovanja."
           },
           {
             "icon": "img/olive-leaves-icon.png",
-            "name": "Екстракт оливкового листа",
-            "description": "антиоксидантна підтримка, здоров’я судин, нормалізація рівня холестерину, захист серцево-судинну системи."
+            "name": "Ekstrakt oljčnih listov",
+            "description": "antioksidativna podpora, zdravje žil, normalizacija ravni holesterola, zaščita srčno-žilnega sistema."
           },
           {
             "icon": "img/chromium-icon.png",
-            "name": "Хром",
-            "description": "підтримка стабільного рівня цукру в крові нормалізація метаболізму, підтримка здоров’я серця і судин."
+            "name": "Krom",
+            "description": "podpora stabilni ravni sladkorja v krvi, normalizacija presnove, podpora zdravju srca in žil."
           }
         ]
       },
       "secondProduct": {
         "title": "Ultraxal",
-        "description": "Ultraxal — зменшення навантаження на судини, зниження рівня токсинів та усунення набряків.",
+        "description": "Ultraxal — zmanjšuje obremenitev žil, znižuje raven toksinov in odpravlja otekline.",
         "components": [
           {
             "icon": "img/dandelion-icon.png",
-            "name": "Корінь кульбаби",
-            "description": "виведення зайвої рідини та токсинів"
+            "name": "Korenina regrata",
+            "description": "odvajanje odvečne tekočine in toksinov"
           },
           {
             "icon": "img/artichoke-icon.png",
-            "name": "Aртишок",
-            "description": "нормалізація обміну жирів та рівню холестерину"
+            "name": "Artičoka",
+            "description": "normalizacija presnove maščob in ravni holesterola"
           },
           {
             "icon": "img/milk-thistle-icon.png",
-            "name": "Розторопша",
-            "description": "очищення і відновлення печінки"
+            "name": "Pegasti badelj",
+            "description": "čiščenje in obnova jeter"
           },
           {
             "icon": "img/pumpkin-seed-icon.png",
-            "name": "Гарбузове насіння",
-            "description": "забезпечення організму мінералами, важливими для здоров’я серця і судин"
+            "name": "Bučna semena",
+            "description": "oskrba organizma z minerali, pomembnimi za zdravje srca in žil"
           },
           {
             "icon": "img/papaya-icon.png",
-            "name": "Рослинний фермент рapain",
-            "description": "зниження навантаження на організм через покращення травлення"
+            "name": "Rastlinski encim papain",
+            "description": "zmanjšanje obremenitve organizma z izboljšanjem prebave"
           }
         ]
       },
       "banner": {
-        "title": "Почніть шлях до стабільного тиску разом з Tonerin та Ultraxal",
-        "buttonText": "Замовити"
+        "title": "Začnite pot do stabilnega krvnega tlaka s Tonerinom in Ultraxalom",
+        "buttonText": "Naroči"
       },
       "plans": [
         {
-          "title": "Набор \"Стандарт Тиск\"",
-          "description": "Гіпертонія під контролем. Базова підтримка тиску та легкості в тілі щодня",
-          "packs": "2 упаковки Tonerin та 2 упаковки Ultraxal",
-          "duration": "Стабілізація артеріального тиску за 20 днів",
-          "priceTitle": "Акційні умови",
+          "title": "Komplet »Standardni tlak«",
+          "description": "Hipertenzija pod nadzorom. Osnovna podpora tlaku in lahkotnosti v telesu vsak dan",
+          "packs": "2 pakiranji Tonerina in 2 pakiranji Ultraxala",
+          "duration": "Stabilizacija krvnega tlaka v 20 dneh",
+          "priceTitle": "Akcijski pogoji ",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 4 упаковки",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс"
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 4 pakiranja",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket"
         },
         {
-          "title": "Набор \"Преміум Тиск\"",
-          "description": "Здорова серцево-судинна система. Посилена формула для стабільного тиску та здорових судин",
-          "label": "Ще більша вигода",
-          "packs": "3 упаковки Tonerin та 3 упаковки Ultraxal",
-          "duration": "Стабільний рівень тиску, здоров’я судин та ніяких набряків за 30 днів.",
-          "priceTitle": "Супер знижка!",
+          "title": "Komplet »Premium tlak«",
+          "description": "Zdrav srčno-žilni sistem. Okrepljena formula za stabilen tlak in zdrave žile",
+          "label": "Večja ugodnost",
+          "packs": "3 pakiranja Tonerina in 3 pakiranja Ultraxala",
+          "duration": "Stabilna raven tlaka, zdravje žil in brez oteklin v 30 dneh.",
+          "priceTitle": "Super popust!",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 6 упаковок",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс",
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 6 pakiranj",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket",
           "selected": true
         }
       ]
     },
     "weight-loss": {
       "kit": {
-        "title": "Комплект для схуднення та покращення метаболізму",
-        "subtitle": "Не можете схуднути? Вага постійно повертається?",
-        "description": "З Slimital ви можете не тільки скинути зайві кілограми без виснажуючих дієт і спорту, але й надовго зберегти результат, не набравши вагу знову. А про безпечний детокс організму подбає Ultraxal!"
+        "title": "Komplet za hujšanje in izboljšanje presnove",
+        "subtitle": "Ne morete shujšati? Se teža nenehno vrača?",
+        "description": "S Slimitalom lahko ne samo izgubite odvečne kilograme brez napornih diet in vadbe, ampak tudi dolgoročno ohranite rezultat, ne da bi se teža ponovno vrnila. Za varen razstrupljevalni učinek organizma pa poskrbi Ultraxal!"
       },
       "firstProduct": {
         "title": "Slimital",
-        "description": "Slimital — активація термогенезу та запуск механізму жироспалювання всередині організму з довготривалим результатом.",
+        "description": "Slimital — aktivacija termogeneze in zagon mehanizma izgorevanja maščob v telesu z dolgotrajnim učinkom.",
         "components": [
           {
             "icon": "img/guarana-icon.png",
-            "name": "Гуарана",
-            "description": "активація термогенезу"
+            "name": "Guarana",
+            "description": "aktivacija termogeneze"
           },
           {
             "icon": "img/pineapple-icon.png",
-            "name": "Екстракт стебла ананаса",
-            "description": "прискорення розщеплення жирів"
+            "name": "Ekstrakt stebla ananasa",
+            "description": "pospešuje razgradnjo maščob"
           },
           {
             "icon": "img/acacia-fiber-icon.png",
-            "name": "Клітковина акації",
-            "description": "нормалізація апетиту"
+            "name": "Akacijeva vlaknina",
+            "description": "normalizacija apetita"
           },
           {
             "icon": "img/nopal-cactus-icon.png",
-            "name": "Екстракт кактуса нопаля",
-            "description": "зменшення засвоєння жирів і вуглеводів"
+            "name": "Ekstrakt kaktusa nopala",
+            "description": "zmanjšanje absorpcije maščob in ogljikovih hidratov"
           }
         ]
       },
       "secondProduct": {
         "title": "Ultraxal",
-        "description": "Ultraxal — детоксикація, очищення, поліпшення роботи ШКТ.",
+        "description": "Ultraxal — razstrupljanje, čiščenje, izboljšanje delovanja prebavil.",
         "components": [
           {
             "icon": "img/dandelion-icon.png",
-            "name": "Корінь кульбаби",
-            "description": "відновлення слизової шлунку"
+            "name": "Korenina regrata",
+            "description": "obnova želodčne sluznice"
           },
           {
             "icon": "img/artichoke-icon.png",
-            "name": "Екстракт артишоку",
-            "description": "стимуляція вироблення ферментів"
+            "name": "Ekstrakt artičoke",
+            "description": "spodbuja tvorbo encimov"
           },
           {
             "icon": "img/milk-thistle-icon.png",
-            "name": "Екстракт розторопші",
-            "description": "очищення від токсинів"
+            "name": "Ekstrakt pegastega badlja",
+            "description": "čiščenje toksinov"
           },
           {
             "icon": "img/pumpkin-seed-icon.png",
-            "name": "Гарбузове насіння",
-            "description": "покращення перистальтики"
+            "name": "Bučna semena",
+            "description": "izboljšanje peristaltike"
           },
           {
             "icon": "img/papaya-icon.png",
-            "name": "Екстракт папайї",
-            "description": "поліпшення травлення"
+            "name": "Ekstrakt papaje",
+            "description": "izboljšanje prebave"
           }
         ]
       },
       "banner": {
-        "title": "Почніть шлях до схуднення разом з Simital та Ultraxal",
-        "buttonText": "Замовити"
+        "title": "Začnite pot do hujšanja skupaj s Simitalom in Ultraxalom",
+        "buttonText": "Naroči"
       },
       "plans": [
         {
-          "title": "Набор \"Стандарт Схуднення\"",
-          "description": "Легке схуднення без проблем. Найкраще для стрункості",
-          "packs": "2 упаковки Simital та 2 упаковки Ultraxal",
-          "duration": "Фігура вашої мрії за 20 днів",
-          "priceTitle": "Акційні умови",
+          "title": "Komplet »Standardno hujšanje«",
+          "description": "Enostavno hujšanje brez težav. Najboljše za vitko postavo",
+          "packs": "2 pakiranji Simitala in 2 pakiranji Ultraxala",
+          "duration": "Postava vaših sanj v 20 dneh",
+          "priceTitle": "Akcijski pogoji ",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 4 упаковки",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс"
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 4 pakiranja",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket"
         },
         {
-          "title": "Набор \"Преміум Схуднення\"",
-          "description": "Тривалий результат. Подвійний удар по зайвих кілограмах",
-          "label": "Ще більша вигода",
-          "packs": "3 упаковки Simital та 3 упаковки Ultraxal",
-          "duration": "Стабільне схуднення та очищення за 30 днів.",
-          "priceTitle": "Супер знижка!",
+          "title": "Komplet »Premium hujšanje«",
+          "description": "Dolgotrajen rezultat. Dvojni učinek proti odvečnim kilogramom",
+          "label": "Večja ugodnost",
+          "packs": "3 pakiranja Simitala in 3 pakiranja Ultraxala",
+          "duration": "Stabilno hujšanje in čiščenje v 30 dneh",
+          "priceTitle": "Super popust!",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 6 упаковок",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс",
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 6 pakiranj",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket",
           "selected": true
         }
       ]
     },
     "tiredness": {
       "kit": {
-        "title": "Комплект для повернення енергії та сил",
-        "subtitle": "Відчуваєте постійну втому, легко підхоплюєте простуду та віруси?",
-        "description": "З Vermixin ви зможете позбутися токсинів, які труять ваш організм і посилити імунітет, відновити енергію та працездатність. А Slimital  підтримає травну систему і комфортне травлення!"
+        "title": "Komplet za povrnitev energije in moči",
+        "subtitle": "Se počutite stalno utrujeni, pogosto zbolite za prehladi in virusi?",
+        "description": "Z Vermixinom se lahko znebite toksinov, ki obremenjujejo vaš organizem, okrepite imunski sistem ter obnovite energijo in delovno sposobnost. Slimital pa bo podprl prebavni sistem in zagotovil udobno prebavo!"
       },
       "firstProduct": {
         "title": "Vermixin",
-        "description": "Vermixin — очищення організму, зменшення токсичного навантаження, підтримка імунітету.",
+        "description": "Vermixin — čiščenje organizma, zmanjšanje toksične obremenitve, podpora imunskemu sistemu.",
         "components": [
           {
             "icon": "img/pumpkin-seed-icon.png",
-            "name": "Насіння гарбуза",
-            "description": "очищення організму, зменшення токсичного навантаження"
+            "name": "Bučna semena",
+            "description": "čiščenje organizma, zmanjšanje toksične obremenitve"
           },
           {
             "icon": "img/garlic-icon.png",
-            "name": "Часник",
-            "description": "баланс мікрофлори кишківника, зменшення відчуття втоми"
+            "name": "Česen",
+            "description": "ravnovesje črevesne mikroflore, zmanjšanje občutka utrujenosti"
           },
           {
             "icon": "img/ginger-icon.png",
-            "name": "Імбир",
-            "description": "підтримка здорового травлення і кровообігу, відновлення енергії щодня"
+            "name": "Ingver",
+            "description": "podpora zdravemu prebavljanju in krvnemu obtoku, vsakodnevna obnova energije"
           },
           {
             "icon": "img/papaya-icon.png",
-            "name": "Насіння папаї",
-            "description": "детоксикація, покращення енергетичного обміну"
+            "name": "Semena papaje",
+            "description": "detoksikacija, izboljšanje energijskega metabolizma"
           },
           {
             "icon": "img/dandelion-icon.png",
-            "name": "Корінь кульбаби",
-            "description": "очищення крові, печінки та нирок, природне відновлення сил і внутрішнього балансу"
+            "name": "Korenina regrata",
+            "description": "čiščenje krvi, jeter in ledvic, naravna obnova moči in notranjega ravnovesja"
           },
           {
             "icon": "img/calendula-icon.png",
-            "name": "Календула",
-            "description": "антибактеріальний захист, зменшення відчуття виснаження"
+            "name": "Ognjič",
+            "description": "antibakterijska zaščita, zmanjšanje občutka izčrpanosti"
           }
         ]
       },
       "secondProduct": {
         "title": "Slimital",
-        "description": "Slimital — активізація метаболізму, підтримка балансу мікрофлори, комфортне травлення.",
+        "description": "Slimital — aktivacija metabolizma, podpora ravnovesju mikroflore, udobna prebava.",
         "components": [
           {
             "icon": "img/guarana-icon.png",
-            "name": "Екстракт насіння гуарани",
-            "description": "активізація метаболізму, підвищення витривалості"
+            "name": "Ekstrakt semen guarane",
+            "description": "aktivacija metabolizma, povečanje vzdržljivosti"
           },
           {
             "icon": "img/pineapple-icon.png",
-            "name": "Екстракт стебла ананаса",
-            "description": "комфортне травлення, усунення відчуття важкості"
+            "name": "Ekstrakt stebla ananasa",
+            "description": "udobna prebava, odpravljanje občutka teže"
           },
           {
             "icon": "img/acacia-fiber-icon.png",
-            "name": "Акацієва клітковина",
-            "description": "підтримка балансу мікрофлори"
+            "name": "Akacijeva vlaknina",
+            "description": "podpora ravnovesju mikroflore"
           },
           {
             "icon": "img/nopal-cactus-icon.png",
-            "name": "Екстракт нопалу",
-            "description": "природна підтримка контролю ваги"
+            "name": "Ekstrakt nopala",
+            "description": "naravna podpora nadzoru telesne teže"
           }
         ]
       },
       "banner": {
-        "title": "Почніть шлях до активного життя разом з Vermixin та Slimital",
-        "buttonText": "Замовити"
+        "title": "Začnite pot do aktivnega življenja skupaj z Vermixinom in Slimitalom",
+        "buttonText": "Naroči"
       },
       "plans": [
         {
-          "title": "Набор \"Стандарт Енергія\"",
-          "description": "Менше втоми — більше життєвої сили. Відновлення енергії та продуктивності",
-          "packs": "2 упаковки Vermixin та 2 упаковки Slimital",
-          "duration": "Повернення активності за 20 днів",
-          "priceTitle": "Акційні умови",
+          "title": "Komplet »Standardna energija«",
+          "description": "Manj utrujenosti — več življenjske moči. Obnova energije in produktivnosti",
+          "packs": "2 pakiranji Vermixina in 2 pakiranji Slimitala",
+          "duration": "Povrnitev aktivnosti v 20 dneh",
+          "priceTitle": "Akcijski pogoji ",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 4 упаковки",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс"
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 4 pakiranja",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket"
         },
         {
-          "title": "Набор \"Преміум Енергія\"",
-          "description": "Стійка трансформація вашего самопочуття. Баланс очищення та відновлення для активного життя без виснаження",
-          "label": "Ще більша вигода",
-          "packs": "3 упаковки Vermixin та 3 упаковки Slimital",
-          "duration": "Довготривалий баланс енергії та метаболізму за 30 днів.",
-          "priceTitle": "Супер знижка!",
+          "title": "Komplet »Premium energija«",
+          "description": "Trajna preobrazba vašega počutja. Ravnovesje čiščenja in obnove za aktivno življenje brez izčrpanosti",
+          "label": "Večja ugodnost",
+          "packs": "3 pakiranja Vermixina in 3 pakiranja Slimitala",
+          "duration": "Dolgotrajno ravnovesje energije in metabolizma v 30 dneh.",
+          "priceTitle": "Super popust!",
           "percentage": "50",
-          "saving": "по промокоду",
-          "pricePacks": "ціна за <br> 6 упаковок",
-          "priceDescription": "Ціна після застосування вашого бонусу",
-          "buttonText": "Обрати цей комплекс",
+          "saving": "po promocijski kodi",
+          "pricePacks": "cena za <br> 6 pakiranj",
+          "priceDescription": "Cena po uporabi vašega bonusa",
+          "buttonText": "Izberi ta paket",
           "selected": true
         }
       ]
