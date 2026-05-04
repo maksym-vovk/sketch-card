@@ -51,10 +51,10 @@ mixin reviews(niche)
 
     .reviews
         .reviews__top
-            h2.reviews__title Ознайомтесь з думками наших клієнтів
+            h2.reviews__title= t.reviews.title
 
             .reviews__rating
-                p.reviews__count Reviews
+                p.reviews__count= t.reviews.count
                     | &nbsp;
                     span 11.968
                 .reviews__inner
