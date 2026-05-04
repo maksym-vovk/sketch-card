@@ -1,5 +1,5 @@
 import { formatLocalDate, formatKyivDate } from "../utils/dataFormatters";
-import {DataSync} from "./DataSync";
+import { DataSync } from "./DataSync";
 
 export const AppState = {
     storageKey: 'appState',
